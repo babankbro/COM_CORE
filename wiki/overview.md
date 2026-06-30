@@ -6,7 +6,7 @@ updated: 2026-06-30T09:25:00
 
 # Computer Engineering Essentials (EN-001-019)
 
-**Purpose**: This vault acts as the comprehensive knowledge base and 16-week study plan for the course EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ (Computer Engineering Essentials).
+**Purpose**: This vault acts as the comprehensive knowledge base and 17-week study plan for the course EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ (Computer Engineering Essentials).
 
 ## Course Description
 Overview of computer engineering, information system and information technology; hardware and software; logic circuit and processor; algorithm and program; database; computer network and internet, artificial intelligence and robot; embedded system; data center; security; computer ethics; intellectual property; academic visits computer industry.

@@ -1,7 +1,7 @@
 # Computer Engineering Essentials: LLM Wiki
 
 Mode: Mode F (Course notes wiki)
-Purpose: 16-week study plan and knowledge base for EN-001-019 Computer Engineering Essentials
+Purpose: 17-week study plan and knowledge base for EN-001-019 Computer Engineering Essentials
 Owner: Student / Instructor
 Created: 2026-06-30
 
@@ -13,7 +13,7 @@ vault/
 │   ├── characters/    # experts, AI Agents, personas
 │   ├── themes/        # major themes (AI, Hardware, Security)
 │   ├── concepts/      # domain-specific terms and frameworks
-│   ├── timeline/      # 16-week curriculum sequence
+│   ├── timeline/      # 17-week curriculum sequence
 │   └── synthesis/     # takeaways, notes, applications
 ├── _meta/
 │   ├── index.md       # Master index of the vault

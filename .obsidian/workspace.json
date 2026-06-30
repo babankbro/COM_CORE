@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 01 - Introduction to CE & IT.md",
+                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 01 - Introduction to CE & IT"
+              "title": "01-ผลลัพธ์การเรียนรู้-CLO"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week 01 - Introduction to CE & IT.md",
+                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Week 01 - Introduction to CE & IT"
+              "title": "Backlinks for 01-ผลลัพธ์การเรียนรู้-CLO"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Week 01 - Introduction to CE & IT.md",
+                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Week 01 - Introduction to CE & IT"
+              "title": "Outgoing links from 01-ผลลัพธ์การเรียนรู้-CLO"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Week 01 - Introduction to CE & IT.md",
+                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Week 01 - Introduction to CE & IT"
+              "title": "Outline of 01-ผลลัพธ์การเรียนรู้-CLO"
             }
           }
         ]
@@ -185,6 +185,21 @@
   },
   "active": "14bc28b1f5ccb2d6",
   "lastOpenFiles": [
+    "01-เนื้อหา/03-วงจรตรรกและหน่วยประมวลผล.md",
+    "01-เนื้อหา/03-วงจรตรรกและหน่วยประมวลผล.md.tmp.32888.35848a4d6322",
+    "wiki/timeline/Week 17 - Final Examination.md",
+    "wiki/timeline/Week 16 - Final Project Presentation.md",
+    "00-แผนการสอน/02-แผนการสอนรายสัปดาห์-OBE.md",
+    "01-เนื้อหา/02-ฮาร์ดแวร์และซอฟต์แวร์.md",
+    "01-เนื้อหา/01-ภาพรวม-วิศวกรรมคอมพิวเตอร์-IS-IT.md",
+    "01-เนื้อหา/01-ภาพรวม-วิศวกรรมคอมพิวเตอร์-IS-IT.md.tmp.32888.bc924e173e40",
+    "01-เนื้อหา",
+    "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
+    "00-แผนการสอน/00-ข้อมูลรายวิชา.md",
+    "Week 01 - Introduction to CE & IT.md",
+    "00-แผนการสอน/04-กิจกรรมปฏิบัติการและโครงงาน.md",
+    "00-แผนการสอน/03-การวัดและประเมินผล.md",
+    "00-แผนการสอน/02-แผนการสอนรายสัปดาห์-OBE.md.tmp.32888.fce4c90a59cc",
     "wiki/timeline/Week 16 - Final Project Presentation & Examination.md",
     "wiki/timeline/Week 15 - Academic Visits & Computer Industry Tour.md",
     "wiki/timeline/Week 14 - Applied System Engineering & DevOps.md",
@@ -193,7 +208,6 @@
     "wiki/timeline/Week 11 - Embedded Systems & IoT.md",
     "wiki/timeline/Week 10 - Generative AI & Modern Robotics.md",
     "wiki/timeline/Week 09 - AI & Machine Learning Foundations.md",
-    "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
     "wiki/timeline/Week 08 - Midterm Examination.md",
     "wiki/timeline/Week 07 - Data Center & Cloud Infrastructure.md",
     "wiki/timeline/Week 06 - Computer Networks & Internet.md",
@@ -201,14 +215,7 @@
     "wiki/timeline/Week 04 - Algorithms & Programming Paradigms.md",
     "wiki/timeline/Week 03 - Digital Logic & Modern Processors.md",
     "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
-    "wiki/timeline/Week 01 - Introduction to CE & IT.md",
-    "00-แผนการสอน/00-ข้อมูลรายวิชา.md",
     "00-แผนการสอน",
-    "README.md",
-    "README.md.tmp.32888.cc0aedb11e98",
-    "wiki/index.md",
-    "Week 01 - Introduction to CE & IT.md",
-    "wiki/overview.md",
-    "wiki/log.md"
+    "README.md.tmp.32888.cc0aedb11e98"
   ]
 }
