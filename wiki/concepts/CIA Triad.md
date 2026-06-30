@@ -1,0 +1,23 @@
+---
+type: concept
+status: complete
+source_chapters: [Week 12, Week 15]
+first_appearance: "Week 12 - Cybersecurity & Trust Architecture"
+tags: [concept, security, cia-triad]
+created: "2026-06-30"
+updated: "2026-06-30"
+---
+
+# CIA Triad
+
+## Definition
+หลักการพื้นฐาน 3 เสาของความปลอดภัยสารสนเทศ:
+- **Confidentiality (ความลับ):** ข้อมูลเข้าถึงได้เฉพาะผู้มีสิทธิ์
+- **Integrity (ความถูกต้อง):** ข้อมูลไม่ถูกแก้ไขโดยไม่ได้รับอนุญาต
+- **Availability (ความพร้อมใช้งาน):** ระบบ/ข้อมูลพร้อมใช้เมื่อต้องการ
+
+## Course Context
+กรอบหลักของหัวข้อความปลอดภัย ([[Week 12 - Cybersecurity & Trust Architecture]]) ใช้วิเคราะห์ว่าภัยคุกคามแต่ละแบบกระทบเสาใด (เช่น ransomware กระทบ Availability + Confidentiality); เชื่อมแนวคิด [[Zero-Trust Architecture]]
+
+## อ้างอิง
+- Stallings, W. (2022). *Cryptography and Network Security* (8th ed.). Pearson.

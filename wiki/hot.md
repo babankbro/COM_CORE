@@ -1,21 +1,24 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-06-30T09:25:00
+updated: "2026-06-30T11:30:00"
 ---
 
 # Recent Context
 
 ## Last Updated
-2026-06-30. Scaffolded the initial Obsidian Vault for EN-001-019 Computer Engineering Essentials.
+2026-06-30. เติมเนื้อหาฉบับสมบูรณ์ลง timeline ทั้ง 17 สัปดาห์ และเพิ่มชั้น concepts/themes/synthesis
 
 ## Key Recent Facts
-- The vault uses Mode F (Course notes wiki) to map out a 16-week curriculum.
-- Focus areas include modern tech like AI, Edge Computing, and Zero-Trust Security.
+- Vault ใช้ Mode F (Course notes wiki) แผนการสอน **17 สัปดาห์** (สอบกลางภาค W8, ปลายภาค W17)
+- ภาษา: ไทยเป็นหลัก + ศัพท์เทคนิคอังกฤษ
+- โฟกัส: AI/Agentic AI, Edge Computing/TinyML, Zero-Trust Security, Vector Database พร้อมแหล่งอ้างอิง 2025–2026
 
 ## Recent Changes
-- Created: [[index]], [[overview]], [[log]], and folder structure.
+- ปรับสถานะ timeline ทั้ง 17 สัปดาห์จาก `stub` → `complete` (เนื้อหา + แนวโน้ม 2025–2026 + กิจกรรม OBE + อ้างอิง)
+- เพิ่ม 17 หน้าใน [[Concepts Index]], 5 หน้าใน [[Themes Index]], 4 หน้าใน [[Synthesis Index]] (แผนการสอน/การประเมิน/แล็บ/รายงาน)
+- อัปเดต [[index]], [[overview]] และเพิ่ม alias ให้หน้า _index ทุกหมวด
 
 ## Active Threads
-- User just approved the 16-week implementation plan.
-- The next step is for the user to start ingesting materials and drafting week-by-week lesson notes.
+- เนื้อหาหลักครบถ้วนแล้ว — พร้อมใช้สอน
+- ขั้นถัดไป (ถ้าต้องการ): เพิ่มสไลด์/ใบงานจริงในแต่ละสัปดาห์ หรือ ingest แหล่งข้อมูลเพิ่มเข้า `.raw/`

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
+                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-ผลลัพธ์การเรียนรู้-CLO"
+              "title": "แผนการสอนและ CLO"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
+                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01-ผลลัพธ์การเรียนรู้-CLO"
+              "title": "Backlinks for แผนการสอนและ CLO"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
+                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01-ผลลัพธ์การเรียนรู้-CLO"
+              "title": "Outgoing links from แผนการสอนและ CLO"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
+                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01-ผลลัพธ์การเรียนรู้-CLO"
+              "title": "Outline of แผนการสอนและ CLO"
             }
           }
         ]
@@ -185,37 +185,41 @@
   },
   "active": "14bc28b1f5ccb2d6",
   "lastOpenFiles": [
-    "01-เนื้อหา/03-วงจรตรรกและหน่วยประมวลผล.md",
-    "01-เนื้อหา/03-วงจรตรรกและหน่วยประมวลผล.md.tmp.32888.35848a4d6322",
-    "wiki/timeline/Week 17 - Final Examination.md",
-    "wiki/timeline/Week 16 - Final Project Presentation.md",
-    "00-แผนการสอน/02-แผนการสอนรายสัปดาห์-OBE.md",
-    "01-เนื้อหา/02-ฮาร์ดแวร์และซอฟต์แวร์.md",
-    "01-เนื้อหา/01-ภาพรวม-วิศวกรรมคอมพิวเตอร์-IS-IT.md",
-    "01-เนื้อหา/01-ภาพรวม-วิศวกรรมคอมพิวเตอร์-IS-IT.md.tmp.32888.bc924e173e40",
-    "01-เนื้อหา",
-    "00-แผนการสอน/01-ผลลัพธ์การเรียนรู้-CLO.md",
-    "00-แผนการสอน/00-ข้อมูลรายวิชา.md",
-    "Week 01 - Introduction to CE & IT.md",
-    "00-แผนการสอน/04-กิจกรรมปฏิบัติการและโครงงาน.md",
-    "00-แผนการสอน/03-การวัดและประเมินผล.md",
-    "00-แผนการสอน/02-แผนการสอนรายสัปดาห์-OBE.md.tmp.32888.fce4c90a59cc",
-    "wiki/timeline/Week 16 - Final Project Presentation & Examination.md",
-    "wiki/timeline/Week 15 - Academic Visits & Computer Industry Tour.md",
-    "wiki/timeline/Week 14 - Applied System Engineering & DevOps.md",
-    "wiki/timeline/Week 13 - Computer Ethics & Intellectual Property.md",
-    "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md",
-    "wiki/timeline/Week 11 - Embedded Systems & IoT.md",
-    "wiki/timeline/Week 10 - Generative AI & Modern Robotics.md",
-    "wiki/timeline/Week 09 - AI & Machine Learning Foundations.md",
-    "wiki/timeline/Week 08 - Midterm Examination.md",
-    "wiki/timeline/Week 07 - Data Center & Cloud Infrastructure.md",
-    "wiki/timeline/Week 06 - Computer Networks & Internet.md",
-    "wiki/timeline/Week 05 - Database & Data Management.md",
+    "wiki/index.md",
+    "wiki/hot.md",
+    "update_labs.py",
+    "wiki/overview.md",
+    "wiki/timeline/Week 15 - Academic Visits & Computer Industry Tour.md.tmp.32888.0b6593875f10",
+    "wiki/timeline/Week 14 - Applied System Engineering & DevOps.md.tmp.32888.f149ddb9f4ab",
+    "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md.tmp.32888.734e63bf6f12",
+    "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md.tmp.32888.f77f66d3725c",
+    "wiki/timeline/Week 03 - Digital Logic & Modern Processors.md.tmp.32888.2d43f185a719",
+    "wiki/synthesis/CLO-PLO-KSA Mapping.md",
+    "wiki/synthesis/CLO-PLO-KSA Mapping.md.tmp.32888.c4a02507dce4",
+    "wiki/synthesis/แผนการสอนและ CLO.md",
+    "wiki/synthesis/รายงานวิชาการ-ภาพรวม.md",
+    "wiki/synthesis/กิจกรรมปฏิบัติการและโครงงาน.md",
+    "wiki/synthesis/การวัดและประเมินผล.md",
+    "wiki/overview.md.tmp.32888.7100f424a33f",
+    "wiki/index.md.tmp.32888.d63f2dd01572",
+    "wiki/timeline/_index.md.tmp.32888.4c7db95d81db",
+    "wiki/themes/การกำกับดูแล จริยธรรม และกฎหมาย.md",
+    "wiki/themes/ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม).md",
+    "wiki/themes/Green Computing และความยั่งยืน.md",
+    "wiki/themes/Edge Computing และระบบกระจาย.md",
+    "wiki/themes/ปัญญาประดิษฐ์เป็นแรงขับเคลื่อนข้ามศาสตร์.md",
     "wiki/timeline/Week 04 - Algorithms & Programming Paradigms.md",
-    "wiki/timeline/Week 03 - Digital Logic & Modern Processors.md",
-    "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
-    "00-แผนการสอน",
-    "README.md.tmp.32888.cc0aedb11e98"
+    "wiki/concepts/PDPA.md",
+    "wiki/concepts/Zero-Trust Architecture.md",
+    "wiki/concepts/CIA Triad.md",
+    "wiki/concepts/TinyML และ Edge AI.md",
+    "wiki/concepts/MLOps.md",
+    "wiki/concepts/Liquid Cooling.md",
+    "wiki/concepts/PUE.md",
+    "wiki/concepts/TCP-IP Model.md",
+    "wiki/concepts/RAG และ LLM.md",
+    "wiki/concepts/Vector Database.md",
+    "wiki/concepts/Big-O Notation.md",
+    "wiki/concepts/Boolean Algebra และ Logic Gates.md"
   ]
 }

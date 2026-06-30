@@ -1,3 +1,21 @@
-# Synthesis & Takeaways
+---
+type: meta
+title: "Synthesis Index"
+aliases: ["Synthesis Index"]
+updated: "2026-06-30"
+---
 
-Notes on synthesis, reflections, and insights gained throughout the course.
+# Synthesis & Takeaways — แผนการสอนและบทสังเคราะห์
+
+เอกสารระดับรายวิชา (teaching plan, การประเมิน, รายงานภาพรวม) และข้อสังเคราะห์
+
+## แผนการสอน (OBE)
+- [[แผนการสอนและ CLO]] — ข้อมูลรายวิชา + ผลลัพธ์การเรียนรู้ (CLO) + PLO ที่รับผิดชอบ
+- [[CLO-PLO-KSA Mapping]] — 🗂️ ดัชนีตารางความสอดคล้อง CLO ↔ PLO ↔ K/S/A (เชิงระบบ)
+- [[การวัดและประเมินผล]] — สัดส่วนคะแนน + เกณฑ์เกรด + rubric
+- [[กิจกรรมปฏิบัติการและโครงงาน]] — ใบงานแล็บ 9 ชุด + โครงงานกลุ่ม
+
+## รายงาน
+- [[รายงานวิชาการ-ภาพรวม]] — รายงานเชิงบูรณาการทั้งหลักสูตร
+
+> กลับ [[index]] · ดูตารางสอนที่ [[Timeline & Curriculum Map]]

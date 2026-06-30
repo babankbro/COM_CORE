@@ -1,3 +1,18 @@
-# Themes Index
+---
+type: meta
+title: "Themes Index"
+aliases: ["Themes Index"]
+updated: "2026-06-30"
+---
 
-List of major themes covered in this course (e.g., Artificial Intelligence, Edge Computing, Security Architecture, Green Computing).
+# Themes Index — ธีมตัดขวางของรายวิชา
+
+ธีมใหญ่ที่ร้อยเรียงหลายหัวข้อเข้าด้วยกัน (cross-cutting themes)
+
+- [[ปัญญาประดิษฐ์เป็นแรงขับเคลื่อนข้ามศาสตร์]] — ธีมหลักของยุค 2025–2026
+- [[Edge Computing และระบบกระจาย]]
+- [[Green Computing และความยั่งยืน]]
+- [[ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม)]]
+- [[การกำกับดูแล จริยธรรม และกฎหมาย]]
+
+> กลับ [[index]] · ดูศัพท์ที่ [[Concepts Index]]

@@ -1,23 +1,20 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-06-30T09:25:00
+updated: "2026-06-30T11:30:00"
 ---
 
 # Computer Engineering Essentials (EN-001-019)
 
-Master catalog of all pages in the vault.
+Master catalog ของทุกหน้าใน vault · รายวิชา **แก่นวิศวกรรมคอมพิวเตอร์** 3(2-2-5) · ดูภาพรวมที่ [[overview]]
 
-## Characters & Personas
-- [[Characters Index]]
+## 🧭 เริ่มต้นที่นี่ (Start Here)
+- [[overview]] — ภาพรวม vault และวิธีใช้งาน
+- [[Timeline & Curriculum Map]] — แผนการสอน 17 สัปดาห์
+- [[แผนการสอนและ CLO]] — ผลลัพธ์การเรียนรู้ (OBE)
+- [[รายงานวิชาการ-ภาพรวม]] — รายงานเชิงบูรณาการ
 
-## Themes
-- [[Themes Index]]
-
-## Concepts
-- [[Concepts Index]]
-
-## Timeline (17-Week Curriculum)
+## 🗓️ Timeline (17-Week Curriculum)
 - [[Week 01 - Introduction to CE & IT]]
 - [[Week 02 - Hardware & Software Ecosystems]]
 - [[Week 03 - Digital Logic & Modern Processors]]
@@ -36,5 +33,24 @@ Master catalog of all pages in the vault.
 - [[Week 16 - Final Project Presentation]]
 - [[Week 17 - Final Examination]]
 
-## Synthesis & Takeaways
+## 📚 Synthesis & Teaching Plan
 - [[Synthesis Index]]
+  - [[แผนการสอนและ CLO]] — CLO + PLO ที่รับผิดชอบ
+  - [[CLO-PLO-KSA Mapping]] — 🗂️ ดัชนีตารางความสอดคล้อง CLO ↔ PLO ↔ K/S/A
+  - [[การวัดและประเมินผล]]
+  - [[กิจกรรมปฏิบัติการและโครงงาน]]
+  - [[รายงานวิชาการ-ภาพรวม]]
+
+## 🔑 Concepts (พจนานุกรมศัพท์)
+- [[Concepts Index]] — รวม 17 ศัพท์/กรอบแนวคิด (เช่น [[Vector Database]], [[Zero-Trust Architecture]], [[RISC-V]], [[Agentic AI]], [[PUE]], [[PDPA]])
+
+## 🎨 Themes (ธีมตัดขวาง)
+- [[Themes Index]]
+  - [[ปัญญาประดิษฐ์เป็นแรงขับเคลื่อนข้ามศาสตร์]]
+  - [[Edge Computing และระบบกระจาย]]
+  - [[Green Computing และความยั่งยืน]]
+  - [[ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม)]]
+  - [[การกำกับดูแล จริยธรรม และกฎหมาย]]
+
+## 👤 Characters & Personas
+- [[Characters Index]] — องค์กรมาตรฐาน (ACM/IEEE, UNESCO, NIST/OWASP, DIP) และผู้เขียนตำราอ้างอิง
