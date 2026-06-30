@@ -1,0 +1,12 @@
+/* Vault Colors - Inspired by modern UI themes */
+body {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #252526;
+    --text-normal: #d4d4d4;
+    --text-muted: #808080;
+    --interactive-accent: #007acc;
+    --interactive-accent-hover: #0098ff;
+    --text-accent: #569cd6;
+    --text-accent-hover: #9cdcfe;
+    --font-monospace: 'Consolas', 'Courier New', monospace;
+}
