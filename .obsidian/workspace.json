@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
+                "file": "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 02 - Hardware & Software Ecosystems"
+              "title": "Lab 01 - IDE Setup and Project Planning"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
+                "file": "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Week 02 - Hardware & Software Ecosystems"
+              "title": "Backlinks for Lab 01 - IDE Setup and Project Planning"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
+                "file": "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Week 02 - Hardware & Software Ecosystems"
+              "title": "Outgoing links from Lab 01 - IDE Setup and Project Planning"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
+                "file": "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Week 02 - Hardware & Software Ecosystems"
+              "title": "Outline of Lab 01 - IDE Setup and Project Planning"
             }
           }
         ]
@@ -183,8 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "d0240a644afb5dfe",
+  "active": "14bc28b1f5ccb2d6",
   "lastOpenFiles": [
+    "update_timeline_mod1.py",
+    "update_mod1.py",
+    "scripts/build_week_slides.mjs",
+    "wiki/labs/_index.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
+    "scripts",
+    "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
     "wiki/labs/Module 3 - IoT & Smart Systems/Lab 12 - Security Implementation and Module 3 Presentation.md",
     "wiki/labs/Module 3 - IoT & Smart Systems/Lab 11 - MQTT Data Transmission.md",
     "wiki/labs/Module 3 - IoT & Smart Systems/Lab 10 - GenAI API and ESP32 Sensors.md",
@@ -198,8 +205,6 @@
     "wiki/labs/Module 1 - Foundation & Programming/Lab 04 - Algorithm Flowchart and Module 1 Presentation.md",
     "wiki/labs/Module 1 - Foundation & Programming/Lab 03 - Logic Circuit and Data Processing.md",
     "wiki/labs/Module 1 - Foundation & Programming/Lab 02 - Hardware Specs and Data Extraction.md",
-    "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
-    "wiki/labs/_index.md",
     "wiki/labs/Module 3 - IoT & Smart Systems",
     "wiki/labs/Module 4 - Computer Vision",
     "wiki/labs/Module 2 - Web Development",
@@ -212,14 +217,9 @@
     "wiki/hot.md",
     "update_labs.py",
     "wiki/overview.md",
-    "wiki/timeline/Week 15 - Academic Visits & Computer Industry Tour.md.tmp.32888.0b6593875f10",
-    "wiki/timeline/Week 14 - Applied System Engineering & DevOps.md.tmp.32888.f149ddb9f4ab",
-    "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md.tmp.32888.734e63bf6f12",
     "wiki/synthesis/CLO-PLO-KSA Mapping.md",
     "wiki/synthesis/รายงานวิชาการ-ภาพรวม.md",
     "wiki/synthesis/กิจกรรมปฏิบัติการและโครงงาน.md",
-    "wiki/synthesis/การวัดและประเมินผล.md",
-    "wiki/themes/การกำกับดูแล จริยธรรม และกฎหมาย.md",
-    "wiki/themes/ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม).md"
+    "wiki/synthesis/การวัดและประเมินผล.md"
   ]
 }

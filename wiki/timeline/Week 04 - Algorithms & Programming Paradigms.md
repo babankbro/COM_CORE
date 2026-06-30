@@ -39,7 +39,7 @@ updated: "2026-06-30"
 - ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม [[Week 13 - Computer Ethics & Intellectual Property]])
 
 ## 🧪 กิจกรรม/ปฏิบัติการ (OBE) — Lab 3–4
-Lab 1 ชม. (วิเคราะห์ Big-O/Flowchart) + Project 1 ชม. (สรุปและนำเสนอ Mini Project 1) — **Module 1: Foundation & Programming**
+Lab 1 ชม. (วิเคราะห์ Big-O/Flowchart) + Project 1 ชม. (สรุป นำเสนอ และสาธิตการเล่นเกม) — **Module 1: Foundation & Programming**
 > อ้างอิงจากแผน 4 โมดูล: ดูรายละเอียดเต็มที่ [[กิจกรรมปฏิบัติการและโครงงาน]]
 
 ## ❓ คำถามทบทวน

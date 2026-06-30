@@ -9,13 +9,13 @@ created: "2026-06-30"
 updated: "2026-06-30"
 ---
 
-# 🧪 Lab 01: การตั้งค่าเครื่องมือ IDE (Python) และวางแผน Mini-Project 1
+# 🧪 Lab 01: การตั้งค่าเครื่องมือ IDE (Python) และวางแผนพัฒนาเกม
 
 > **โมดูล:** Module 1 - Foundation & Programming (Mini-Project 1)
 > **เวลาที่ใช้:** 2 ชั่วโมง (ในห้องปฏิบัติการ) + เวลาศึกษาด้วยตนเอง
 
 ## 🎯 จุดประสงค์การทดลอง (Objectives)
-- ติดตั้ง Python, VS Code, Git และวางแผนทำ Automated Data Processor
+- ติดตั้ง Python, VS Code, Git และวางแผนทำ Simple Text/2D Game
 - ประยุกต์ใช้ความรู้จากภาคทฤษฎี (สัปดาห์ที่ 1) สู่การปฏิบัติจริง
 - เสริมสร้างทักษะการทำงานกลุ่มผ่าน Mini-Project
 

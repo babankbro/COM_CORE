@@ -40,7 +40,7 @@ updated: "2026-06-30"
 - **ยุคตัวเร่ง AI (AI accelerators):** GPU ก้อนเดียวไม่ใช่ค่าเริ่มต้นอีกต่อไป ตลาดตัวเร่ง AI โตหลายแสนล้านดอลลาร์ภายในปี 2030 (เชื่อม [[Week 07 - Data Center & Cloud Infrastructure]])
 
 ## 🧪 กิจกรรม/ปฏิบัติการ (OBE) — Lab 2
-Lab 1 ชม. (จำลองวงจร Logisim) + Project 1 ชม. (สร้างฟังก์ชันตรรกะประมวลผลข้อมูล) — **Module 1: Foundation & Programming**
+Lab 1 ชม. (จำลองวงจร Logisim) + Project 1 ชม. (เขียนเงื่อนไข/ตรรกะ (Game Logic) ของตัวเกม) — **Module 1: Foundation & Programming**
 > อ้างอิงจากแผน 4 โมดูล: ดูรายละเอียดเต็มที่ [[กิจกรรมปฏิบัติการและโครงงาน]]
 
 ## ❓ คำถามทบทวน

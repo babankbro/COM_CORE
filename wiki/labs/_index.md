@@ -9,7 +9,7 @@ updated: "2026-06-30T12:00:00"
 วิชานี้ใช้สถาปัตยกรรม 4 โมดูล (4 Mini-Projects) โดยแบ่งตามโฟลเดอร์ดังนี้:
 
 ## 🟩 Module 1: The Foundation & Programming (W1 - W4)
-**เป้าหมาย:** สร้างโปรแกรมจัดการข้อมูลขนาดเล็ก (Automated Data Processor)
+**เป้าหมาย:** สร้างเกมเบื้องต้น (Simple Text/2D Game)
 - [[Lab 01 - IDE Setup and Project Planning]]
 - [[Lab 02 - Hardware Specs and Data Extraction]]
 - [[Lab 03 - Logic Circuit and Data Processing]]
