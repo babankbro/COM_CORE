@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
+                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "แผนการสอนและ CLO"
+              "title": "Week 02 - Hardware & Software Ecosystems"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
+                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for แผนการสอนและ CLO"
+              "title": "Backlinks for Week 02 - Hardware & Software Ecosystems"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
+                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from แผนการสอนและ CLO"
+              "title": "Outgoing links from Week 02 - Hardware & Software Ecosystems"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/synthesis/แผนการสอนและ CLO.md",
+                "file": "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of แผนการสอนและ CLO"
+              "title": "Outline of Week 02 - Hardware & Software Ecosystems"
             }
           }
         ]
@@ -183,8 +183,31 @@
       "bases:Create new base": false
     }
   },
-  "active": "14bc28b1f5ccb2d6",
+  "active": "d0240a644afb5dfe",
   "lastOpenFiles": [
+    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 12 - Security Implementation and Module 3 Presentation.md",
+    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 11 - MQTT Data Transmission.md",
+    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 10 - GenAI API and ESP32 Sensors.md",
+    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 09 - ML Basics and IoT Architecture.md",
+    "wiki/labs/Module 4 - Computer Vision/Lab 15 - Final Integration and Presentation Prep.md",
+    "wiki/labs/Module 4 - Computer Vision/Lab 14 - CI-CD Pipeline and System Integration.md",
+    "wiki/labs/Module 4 - Computer Vision/Lab 13 - AI Bias and Object Detection.md",
+    "wiki/labs/Module 2 - Web Development/Lab 07 - Cloud Deployment and Docker.md",
+    "wiki/labs/Module 2 - Web Development/Lab 06 - Network Simulation and API Router.md",
+    "wiki/labs/Module 2 - Web Development/Lab 05 - Database Design and SQL.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 04 - Algorithm Flowchart and Module 1 Presentation.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 03 - Logic Circuit and Data Processing.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 02 - Hardware Specs and Data Extraction.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
+    "wiki/labs/_index.md",
+    "wiki/labs/Module 3 - IoT & Smart Systems",
+    "wiki/labs/Module 4 - Computer Vision",
+    "wiki/labs/Module 2 - Web Development",
+    "wiki/labs/Module 1 - Foundation & Programming",
+    "wiki/labs",
+    "generate_labs.py",
+    "wiki/timeline/Week 01 - Introduction to CE & IT.md",
+    "wiki/synthesis/แผนการสอนและ CLO.md",
     "wiki/index.md",
     "wiki/hot.md",
     "update_labs.py",
@@ -192,34 +215,11 @@
     "wiki/timeline/Week 15 - Academic Visits & Computer Industry Tour.md.tmp.32888.0b6593875f10",
     "wiki/timeline/Week 14 - Applied System Engineering & DevOps.md.tmp.32888.f149ddb9f4ab",
     "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md.tmp.32888.734e63bf6f12",
-    "wiki/timeline/Week 12 - Cybersecurity & Trust Architecture.md.tmp.32888.f77f66d3725c",
-    "wiki/timeline/Week 03 - Digital Logic & Modern Processors.md.tmp.32888.2d43f185a719",
     "wiki/synthesis/CLO-PLO-KSA Mapping.md",
-    "wiki/synthesis/CLO-PLO-KSA Mapping.md.tmp.32888.c4a02507dce4",
-    "wiki/synthesis/แผนการสอนและ CLO.md",
     "wiki/synthesis/รายงานวิชาการ-ภาพรวม.md",
     "wiki/synthesis/กิจกรรมปฏิบัติการและโครงงาน.md",
     "wiki/synthesis/การวัดและประเมินผล.md",
-    "wiki/overview.md.tmp.32888.7100f424a33f",
-    "wiki/index.md.tmp.32888.d63f2dd01572",
-    "wiki/timeline/_index.md.tmp.32888.4c7db95d81db",
     "wiki/themes/การกำกับดูแล จริยธรรม และกฎหมาย.md",
-    "wiki/themes/ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม).md",
-    "wiki/themes/Green Computing และความยั่งยืน.md",
-    "wiki/themes/Edge Computing และระบบกระจาย.md",
-    "wiki/themes/ปัญญาประดิษฐ์เป็นแรงขับเคลื่อนข้ามศาสตร์.md",
-    "wiki/timeline/Week 04 - Algorithms & Programming Paradigms.md",
-    "wiki/concepts/PDPA.md",
-    "wiki/concepts/Zero-Trust Architecture.md",
-    "wiki/concepts/CIA Triad.md",
-    "wiki/concepts/TinyML และ Edge AI.md",
-    "wiki/concepts/MLOps.md",
-    "wiki/concepts/Liquid Cooling.md",
-    "wiki/concepts/PUE.md",
-    "wiki/concepts/TCP-IP Model.md",
-    "wiki/concepts/RAG และ LLM.md",
-    "wiki/concepts/Vector Database.md",
-    "wiki/concepts/Big-O Notation.md",
-    "wiki/concepts/Boolean Algebra และ Logic Gates.md"
+    "wiki/themes/ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ (ธีม).md"
   ]
 }
