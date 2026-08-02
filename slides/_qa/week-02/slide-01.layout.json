@@ -1,0 +1,585 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/cqz42p",
+    "id": "cqz42p",
+    "slide": 1,
+    "layoutId": "e94121d4-b3b9-4a01-8594-3b9360118796",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "dd9e39ae-d728-4a4e-8577-b345f429ac31",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e94121d4-b3b9-4a01-8594-3b9360118796",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "dd9e39ae-d728-4a4e-8577-b345f429ac31",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "dd9e39ae-d728-4a4e-8577-b345f429ac31",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "1",
+      "name": "eyebrow",
+      "bbox": [
+        42,
+        42,
+        360,
+        30
+      ],
+      "geometry": "rect",
+      "text": "WEEK 02",
+      "textPreview": "WEEK 02",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 02",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 02",
+              "fontSize": 16,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "2",
+      "name": "title",
+      "bbox": [
+        42,
+        145,
+        860,
+        190
+      ],
+      "geometry": "rect",
+      "text": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่",
+      "textPreview": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ฮาร์ดแวร์ ซอฟต์แวร์"
+          },
+          {
+            "index": 2,
+            "text": "และระบบนิเวศสมัยใหม่"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่",
+              "fontSize": 52,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.05
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fepkzup",
+      "id": "3",
+      "name": "week-block",
+      "bbox": [
+        942,
+        94,
+        246,
+        412
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "4",
+      "name": "week-number",
+      "bbox": [
+        958,
+        148,
+        210,
+        130
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 92,
+      "resolvedTextStyle": {
+        "fontSize": 92,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 92,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 92,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixczed8v",
+      "id": "5",
+      "name": "course-name",
+      "bbox": [
+        970,
+        304,
+        190,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Computer Engineering Essentials",
+      "textPreview": "Computer Engineering Essentials",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Computer"
+          },
+          {
+            "index": 2,
+            "text": "Engineering"
+          },
+          {
+            "index": 3,
+            "text": "Essentials"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Computer Engineering Essentials",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Computer Engineering Essentials",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovahoza",
+      "id": "6",
+      "name": "subtitle",
+      "bbox": [
+        42,
+        390,
+        760,
+        130
+      ],
+      "geometry": "rect",
+      "text": "คอมพิวเตอร์ทำงานเป็น ชั้น (layers): ฮาร์ดแวร์ ↔ เฟิร์มแวร์/ระบบปฏิบัติการ ↔ ซอฟต์แวร์ประยุกต์ สัปดาห์นี้ยังเน้นแนวโน้มสำคัญคือ Edge Computing และ Green Computing",
+      "textPreview": "คอมพิวเตอร์ทำงานเป็น ชั้น (layers): ฮาร์ดแวร์ ↔ เฟิร์มแวร์/ระบบปฏิบัติการ ↔ ซอฟต์แวร์ประยุกต์ สัปดาห์นี้ยังเน้นแนวโน้มสำคัญคือ Edge Compu...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "คอมพิวเตอร์ทำงานเป็น ชั้น (layers): ฮาร์ดแวร์ ↔ เฟิร์มแวร์/ระบบปฏิบัติการ"
+          },
+          {
+            "index": 2,
+            "text": "↔ ซอฟต์แวร์ประยุกต์ สัปดาห์นี้ยังเน้นแนวโน้มสำคัญคือ Edge Computing"
+          },
+          {
+            "index": 3,
+            "text": "และ Green Computing"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "คอมพิวเตอร์ทำงานเป็น ชั้น (layers): ฮาร์ดแวร์ ↔ เฟิร์มแวร์/ระบบปฏิบัติการ ↔ ซอฟต์แวร์ประยุกต์ สัปดาห์นี้ยังเน้นแนวโน้มสำคัญคือ Edge Computing และ Green Computing",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.25
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "คอมพิวเตอร์ทำงานเป็น ชั้น (layers): ฮาร์ดแวร์ ↔ เฟิร์มแวร์/ระบบปฏิบัติการ ↔ ซอฟต์แวร์ประยุกต์ สัปดาห์นี้ยังเน้นแนวโน้มสำคัญคือ Edge Computing และ Green Computing",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.25
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "7",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b6xkf6dc",
+      "id": "8",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 02",
+      "textPreview": "EN-001-019 | Week 02",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 02",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 02",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il0rqd4v",
+      "id": "9",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "1/5",
+      "textPreview": "1/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

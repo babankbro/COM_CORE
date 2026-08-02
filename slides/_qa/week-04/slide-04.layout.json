@@ -1,0 +1,969 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pkn1ii",
+    "id": "pkn1ii",
+    "slide": 4,
+    "layoutId": "660357ad-b36d-4e0e-8d84-0fe02b6d7aa3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "acafd9d3-79b2-4b4b-a79a-bd1451c3d439",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "660357ad-b36d-4e0e-8d84-0fe02b6d7aa3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "acafd9d3-79b2-4b4b-a79a-bd1451c3d439",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "acafd9d3-79b2-4b4b-a79a-bd1451c3d439",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s36hcrmh",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Core Content",
+      "textPreview": "Core Content",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core Content"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core Content",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core Content",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zidonyd0",
+      "id": "2",
+      "name": "left-panel",
+      "bbox": [
+        66,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1gvy90j",
+      "id": "3",
+      "name": "right-panel",
+      "bbox": [
+        642,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgn29gr2",
+      "id": "4",
+      "name": "left-head",
+      "bbox": [
+        94,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "ต้องเข้าใจ",
+      "textPreview": "ต้องเข้าใจ",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ต้องเข้าใจ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ต้องเข้าใจ",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องเข้าใจ",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svu9knih",
+      "id": "5",
+      "name": "dot-0",
+      "bbox": [
+        100,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/za1gvy90",
+      "id": "6",
+      "name": "bullet-0",
+      "bbox": [
+        128,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design",
+      "textPreview": "การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "การคิดเชิงคำนวณ: decomposition, pattern"
+          },
+          {
+            "index": 2,
+            "text": "recognition, abstraction, algorithm design"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap4r65wj",
+      "id": "7",
+      "name": "dot-1",
+      "bbox": [
+        100,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "8",
+      "name": "bullet-1",
+      "bbox": [
+        128,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)",
+      "textPreview": "การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "การแทนอัลกอริทึม: ผังงาน (flowchart),"
+          },
+          {
+            "index": 2,
+            "text": "รหัสเทียม (pseudocode)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "9",
+      "name": "dot-2",
+      "bbox": [
+        100,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0fepkz",
+      "id": "10",
+      "name": "bullet-2",
+      "bbox": [
+        128,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)",
+      "textPreview": "โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else),"
+          },
+          {
+            "index": 2,
+            "text": "วนซ้ำ (for/while)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2t83itg",
+      "id": "11",
+      "name": "right-head",
+      "bbox": [
+        670,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "แนวโน้ม/บริบทปัจจุบัน",
+      "textPreview": "แนวโน้ม/บริบทปัจจุบัน",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวโน้ม/บริบทปัจจุบัน"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวโน้ม/บริบทปัจจุบัน",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวโน้ม/บริบทปัจจุบัน",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        676,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        704,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…",
+      "textPreview": "AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4"
+          },
+          {
+            "index": 2,
+            "text": "พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง"
+          },
+          {
+            "index": 3,
+            "text": "codebase ได้ — แต่…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5o7qpg3",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        676,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        704,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data",
+      "textPreview": "Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Python"
+          },
+          {
+            "index": 2,
+            "text": "ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงา"
+          },
+          {
+            "index": 3,
+            "text": "น AI/data"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "16",
+      "name": "dot-2",
+      "bbox": [
+        676,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "17",
+      "name": "bullet-2",
+      "bbox": [
+        704,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)",
+      "textPreview": "ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI"
+          },
+          {
+            "index": 2,
+            "text": "(เชื่อม Week 13 - Computer Ethics &"
+          },
+          {
+            "index": 3,
+            "text": "Intellectual Property)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxc3ylc7",
+      "id": "18",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji5snelo",
+      "id": "19",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 04",
+      "textPreview": "EN-001-019 | Week 04",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 04",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 04",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bat47y1k",
+      "id": "20",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "4/5",
+      "textPreview": "4/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

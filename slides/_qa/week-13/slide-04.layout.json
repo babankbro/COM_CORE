@@ -1,0 +1,973 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/bttjsy",
+    "id": "bttjsy",
+    "slide": 4,
+    "layoutId": "c4fbbb04-1b29-499d-88c0-2d62aeb32581",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "aa52e700-6cb8-4f3d-abe7-0524deb63763",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c4fbbb04-1b29-499d-88c0-2d62aeb32581",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "aa52e700-6cb8-4f3d-abe7-0524deb63763",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "aa52e700-6cb8-4f3d-abe7-0524deb63763",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Core Content",
+      "textPreview": "Core Content",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core Content"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core Content",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core Content",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "2",
+      "name": "left-panel",
+      "bbox": [
+        66,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "3",
+      "name": "right-panel",
+      "bbox": [
+        642,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "4",
+      "name": "left-head",
+      "bbox": [
+        94,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "ต้องเข้าใจ",
+      "textPreview": "ต้องเข้าใจ",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ต้องเข้าใจ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ต้องเข้าใจ",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องเข้าใจ",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "5",
+      "name": "dot-0",
+      "bbox": [
+        100,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "6",
+      "name": "bullet-0",
+      "bbox": [
+        128,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "ประเด็นคลาสสิก: privacy, digital divide, เสรีภาพการแสดงออก, อาชญากรรมคอมพิวเตอร์",
+      "textPreview": "ประเด็นคลาสสิก: privacy, digital divide, เสรีภาพการแสดงออก, อาชญากรรมคอมพิวเตอร์",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ประเด็นคลาสสิก: privacy, digital divide,"
+          },
+          {
+            "index": 2,
+            "text": "เสรีภาพการแสดงออก,"
+          },
+          {
+            "index": 3,
+            "text": "อาชญากรรมคอมพิวเตอร์"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ประเด็นคลาสสิก: privacy, digital divide, เสรีภาพการแสดงออก, อาชญากรรมคอมพิวเตอร์",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ประเด็นคลาสสิก: privacy, digital divide, เสรีภาพการแสดงออก, อาชญากรรมคอมพิวเตอร์",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "7",
+      "name": "dot-1",
+      "bbox": [
+        100,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "8",
+      "name": "bullet-1",
+      "bbox": [
+        128,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "จรรยาบรรณวิชาชีพ: ACM Code of Ethics, IEEE Code of Ethics; กรอบ PAPA (Privacy, Accuracy, Property, Accessibil…",
+      "textPreview": "จรรยาบรรณวิชาชีพ: ACM Code of Ethics, IEEE Code of Ethics; กรอบ PAPA (Privacy, Accuracy, Property, Accessibil…",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "จรรยาบรรณวิชาชีพ: ACM Code of Ethics,"
+          },
+          {
+            "index": 2,
+            "text": "IEEE Code of Ethics; กรอบ PAPA (Privacy,"
+          },
+          {
+            "index": 3,
+            "text": "Accuracy, Property, Accessibil…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "จรรยาบรรณวิชาชีพ: ACM Code of Ethics, IEEE Code of Ethics; กรอบ PAPA (Privacy, Accuracy, Property, Accessibil…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "จรรยาบรรณวิชาชีพ: ACM Code of Ethics, IEEE Code of Ethics; กรอบ PAPA (Privacy, Accuracy, Property, Accessibil…",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "9",
+      "name": "dot-2",
+      "bbox": [
+        100,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "10",
+      "name": "bullet-2",
+      "bbox": [
+        128,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "จริยธรรม AI: bias & fairness, transparency & explainability, human oversight, accountability",
+      "textPreview": "จริยธรรม AI: bias & fairness, transparency & explainability, human oversight, accountability",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "จริยธรรม AI: bias & fairness, transparency &"
+          },
+          {
+            "index": 2,
+            "text": "explainability, human oversight,"
+          },
+          {
+            "index": 3,
+            "text": "accountability"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "จริยธรรม AI: bias & fairness, transparency & explainability, human oversight, accountability",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "จริยธรรม AI: bias & fairness, transparency & explainability, human oversight, accountability",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "11",
+      "name": "right-head",
+      "bbox": [
+        670,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "แนวโน้ม/บริบทปัจจุบัน",
+      "textPreview": "แนวโน้ม/บริบทปัจจุบัน",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวโน้ม/บริบทปัจจุบัน"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวโน้ม/บริบทปัจจุบัน",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวโน้ม/บริบทปัจจุบัน",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eloj2t83",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        676,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        704,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "UNESCO Recommendation on the Ethics of AI: แนวทางจริยธรรม AI ฉบับแรกระดับโลก รับรองโดย 193 ประเทศ ว…",
+      "textPreview": "UNESCO Recommendation on the Ethics of AI: แนวทางจริยธรรม AI ฉบับแรกระดับโลก รับรองโดย 193 ประเทศ ว…",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "UNESCO Recommendation on the Ethics of"
+          },
+          {
+            "index": 2,
+            "text": "AI: แนวทางจริยธรรม AI ฉบับแรกระดับโลก"
+          },
+          {
+            "index": 3,
+            "text": "รับรองโดย 193 ประเทศ ว…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "UNESCO Recommendation on the Ethics of AI: แนวทางจริยธรรม AI ฉบับแรกระดับโลก รับรองโดย 193 ประเทศ ว…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "UNESCO Recommendation on the Ethics of AI: แนวทางจริยธรรม AI ฉบับแรกระดับโลก รับรองโดย 193 ประเทศ ว…",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        676,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        704,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "EU AI Act + UNESCO กำหนดทิศทางกำกับ AI ทั่วโลก",
+      "textPreview": "EU AI Act + UNESCO กำหนดทิศทางกำกับ AI ทั่วโลก",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EU AI Act + UNESCO กำหนดทิศทางกำกับ AI"
+          },
+          {
+            "index": 2,
+            "text": "ทั่วโลก"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EU AI Act + UNESCO กำหนดทิศทางกำกับ AI ทั่วโลก",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EU AI Act + UNESCO กำหนดทิศทางกำกับ AI ทั่วโลก",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "16",
+      "name": "dot-2",
+      "bbox": [
+        676,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "17",
+      "name": "bullet-2",
+      "bbox": [
+        704,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "คดีละเมิดลิขสิทธิ์จาก generative AI เป็นที่ถกเถียงมากขึ้นในไทยและสากล",
+      "textPreview": "คดีละเมิดลิขสิทธิ์จาก generative AI เป็นที่ถกเถียงมากขึ้นในไทยและสากล",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "คดีละเมิดลิขสิทธิ์จาก generative AI"
+          },
+          {
+            "index": 2,
+            "text": "เป็นที่ถกเถียงมากขึ้นในไทยและสากล"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "คดีละเมิดลิขสิทธิ์จาก generative AI เป็นที่ถกเถียงมากขึ้นในไทยและสากล",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "คดีละเมิดลิขสิทธิ์จาก generative AI เป็นที่ถกเถียงมากขึ้นในไทยและสากล",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "18",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "19",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 13",
+      "textPreview": "EN-001-019 | Week 13",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 13"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 13",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 13",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9w3m94fu",
+      "id": "20",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "4/5",
+      "textPreview": "4/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,89 @@
+{"kind":"deck","id":"pr/ygthvl","name":"Deck"}
+{"kind":"layout","layoutId":"acafd9d3-79b2-4b4b-a79a-bd1451c3d439","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"660357ad-b36d-4e0e-8d84-0fe02b6d7aa3","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ak3293","slide":1,"title":"WEEK 04","textShapes":7}
+{"kind":"textbox","id":"sh/p4r65wju","slide":1,"name":"eyebrow","text":"WEEK 04","textPreview":"WEEK 04","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":1,"name":"title","text":"อัลกอริทึมและการเขียนโปรแกรม","textPreview":"อัลกอริทึมและการเขียนโปรแกรม","textChars":28,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":1,"name":"week-number","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":1,"name":"subtitle","text":"อัลกอริทึม คือลำดับขั้นตอนแก้ปัญหาที่ชัดเจนและสิ้นสุดได้ ส่วน โปรแกรม คืออัลกอริทึมที่เขียนด้วยภาษาที่เครื่องเข้าใจ ทักษะแกนคือ \"การคิดเชิงคำนวณ (computational thinking)\"","textPreview":"อัลกอริทึม คือลำดับขั้นตอนแก้ปัญหาที่ชัดเจนและสิ้นสุดได้ ส่วน โปรแกรม คืออัลกอริทึมที่เขียนด้วยภาษาที่เครื่องเข้าใจ ทักษะแกนคือ \"การคิดเช...","textChars":170,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/0z61032l","slide":1,"name":"footer-left","text":"EN-001-019 | Week 04","textPreview":"EN-001-019 | Week 04","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/ak3293","slide":1,"text":""}
+{"kind":"slide","id":"sl/mw3vci","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":2,"name":"bullet-0","text":"ผู้เรียนเข้าใจแนวคิดและสามารถออกแบบอัลกอริทึมพื้นฐานเพื่อแก้ปัญหาได้ — CLO3","textPreview":"ผู้เรียนเข้าใจแนวคิดและสามารถออกแบบอัลกอริทึมพื้นฐานเพื่อแก้ปัญหาได้ — CLO3","textChars":75,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":2,"name":"bullet-1","text":"ผู้เรียนรู้จักกระบวนทัศน์การเขียนโปรแกรม (Programming Paradigms) แบบต่าง ๆ — CLO3","textPreview":"ผู้เรียนรู้จักกระบวนทัศน์การเขียนโปรแกรม (Programming Paradigms) แบบต่าง ๆ — CLO3","textChars":81,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/72x4nap4","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":2,"name":"bullet-2","text":"ผู้เรียนสามารถประยุกต์ใช้ AI Assistant ในการเขียนโปรแกรมได้อย่างมีประสิทธิภาพและรับผิดชอบ — CLO3","textPreview":"ผู้เรียนสามารถประยุกต์ใช้ AI Assistant ในการเขียนโปรแกรมได้อย่างมีประสิทธิภาพและรับผิดชอบ — CLO3","textChars":96,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/p4r65wju","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/lwval87e","slide":2,"name":"footer-left","text":"EN-001-019 | Week 04","textPreview":"EN-001-019 | Week 04","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/mw3vci","slide":2,"text":""}
+{"kind":"slide","id":"sl/7385z5","slide":3,"title":"Knowledge Map","textShapes":14}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/lwval87e","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":3,"name":"bullet-0","text":"แนวคิดอัลกอริทึมและโครงสร้างข้อมูลเบื้องต้น; ความซั…","textPreview":"แนวคิดอัลกอริทึมและโครงสร้างข้อมูลเบื้องต้น; ความซั…","textChars":52,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/loj2t83i","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":3,"name":"bullet-1","text":"กระบวนทัศน์การเขียนโปรแกรม (Procedural, Object-Orie…","textPreview":"กระบวนทัศน์การเขียนโปรแกรม (Procedural, Object-Orie…","textChars":52,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":3,"name":"bullet-2","text":"การทำงานร่วมกับ AI ในการเขียนโค้ด (GitHub Copilot,…","textPreview":"การทำงานร่วมกับ AI ในการเขียนโค้ด (GitHub Copilot,…","textChars":51,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/knih4byh","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":3,"name":"dot-0","bbox":[482,295,12,12]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":3,"name":"bullet-0","text":"การคิดเชิงคำนวณ: decomposition, pattern recognition…","textPreview":"การคิดเชิงคำนวณ: decomposition, pattern recognition…","textChars":52,"textLines":1,"bbox":[510,286,260,86]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":3,"name":"dot-1","bbox":[482,387,12,12]}
+{"kind":"textbox","id":"sh/d0z61032","slide":3,"name":"bullet-1","text":"การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (ps…","textPreview":"การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (ps…","textChars":52,"textLines":1,"bbox":[510,378,260,86]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":3,"name":"dot-2","bbox":[482,479,12,12]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":3,"name":"bullet-2","text":"โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (…","textPreview":"โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (…","textChars":52,"textLines":1,"bbox":[510,470,260,86]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":3,"name":"dot-0","bbox":[872,295,12,12]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":3,"name":"bullet-0","text":"Big-O Notation","textPreview":"Big-O Notation","textChars":14,"textLines":1,"bbox":[900,286,260,86]}
+{"kind":"shape","id":"sh/z61032ls","slide":3,"name":"dot-1","bbox":[872,387,12,12]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":3,"name":"bullet-1","text":"Agentic AI","textPreview":"Agentic AI","textChars":10,"textLines":1,"bbox":[900,378,260,86]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":3,"name":"footer-left","text":"EN-001-019 | Week 04","textPreview":"EN-001-019 | Week 04","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/7385z5","slide":3,"text":""}
+{"kind":"slide","id":"sl/pkn1ii","slide":4,"title":"Core Content","textShapes":11}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/zidonyd0","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"shape","id":"sh/svu9knih","slide":4,"name":"dot-0","bbox":[100,265,12,12]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":4,"name":"bullet-0","text":"การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design","textPreview":"การคิดเชิงคำนวณ: decomposition, pattern recognition, abstraction, algorithm design","textChars":82,"textLines":1,"bbox":[128,256,405,70]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":4,"name":"dot-1","bbox":[100,341,12,12]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":4,"name":"bullet-1","text":"การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)","textPreview":"การแทนอัลกอริทึม: ผังงาน (flowchart), รหัสเทียม (pseudocode)","textChars":60,"textLines":1,"bbox":[128,332,405,70]}
+{"kind":"shape","id":"sh/sji5snel","slide":4,"name":"dot-2","bbox":[100,417,12,12]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":4,"name":"bullet-2","text":"โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)","textPreview":"โครงสร้างควบคุม: ลำดับ, เงื่อนไข (if/else), วนซ้ำ (for/while)","textChars":61,"textLines":1,"bbox":[128,408,405,70]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":4,"name":"bullet-0","text":"AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…","textPreview":"AI ช่วยเขียนโค้ด โตจาก ~550 ล้าน เป็น ~4 พันล้านดอลลาร์ในปีเดียว โมเดลตีความทั้ง codebase ได้ — แต่…","textChars":100,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":4,"name":"bullet-1","text":"Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data","textPreview":"Python ครองอันดับภาษายอดนิยมสำหรับผู้เริ่มต้นและงาน AI/data","textChars":59,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/8bat47y1","slide":4,"name":"dot-2","bbox":[676,417,12,12]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":4,"name":"bullet-2","text":"ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)","textPreview":"ประเด็นความซื่อสัตย์ทางวิชาการในการใช้ AI (เชื่อม Week 13 - Computer Ethics & Intellectual Property)","textChars":100,"textLines":1,"bbox":[704,408,405,70]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":4,"name":"footer-left","text":"EN-001-019 | Week 04","textPreview":"EN-001-019 | Week 04","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/pkn1ii","slide":4,"text":""}
+{"kind":"slide","id":"sl/g0njxd","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/72x4nap4","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":5,"name":"activity","text":"Lab 1 ชม. (วิเคราะห์ Big-O/Flowchart) + Project 1 ชม.","textPreview":"Lab 1 ชม. (วิเคราะห์ Big-O/Flowchart) + Project 1 ชม.","textChars":53,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/0z61032l","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/i5sneloj","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":5,"name":"footer-left","text":"EN-001-019 | Week 04","textPreview":"EN-001-019 | Week 04","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/g0njxd","slide":5,"text":""}

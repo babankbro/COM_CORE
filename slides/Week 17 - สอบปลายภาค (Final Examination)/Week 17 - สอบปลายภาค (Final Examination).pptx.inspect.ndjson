@@ -1,0 +1,55 @@
+{"kind":"deck","id":"pr/v0fqmr","name":"Deck"}
+{"kind":"layout","layoutId":"70933142-a5b2-4af1-89ed-2b7a6d4fa6dd","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4ec6fe7c-450c-4e1c-b878-cd66298afb48","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/zcti7e","slide":1,"title":"WEEK 17","textShapes":7}
+{"kind":"textbox","id":"sh/idonyd0z","slide":1,"name":"eyebrow","text":"WEEK 17","textPreview":"WEEK 17","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":1,"name":"title","text":"สอบปลายภาค (Final Examination)","textPreview":"สอบปลายภาค (Final Examination)","textChars":30,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/0je9cvix","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":1,"name":"week-number","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":1,"name":"subtitle","text":"วัดผลสัมฤทธิ์รวมตลอดหลักสูตร (น้ำหนัก 25% — ดู การวัดและประเมินผล) เน้น CLO1–CLO2 (ความรู้), CLO4 (เทคโนโลยีทันสมัย) และ CLO5 (จริยธรรม/ทรัพย์สินทางปัญญา)","textPreview":"วัดผลสัมฤทธิ์รวมตลอดหลักสูตร (น้ำหนัก 25% — ดู การวัดและประเมินผล) เน้น CLO1–CLO2 (ความรู้), CLO4 (เทคโนโลยีทันสมัย) และ CLO5 (จริยธรรม/ท...","textChars":154,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":1,"name":"footer-left","text":"EN-001-019 | Week 17","textPreview":"EN-001-019 | Week 17","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/zcti7e","slide":1,"text":""}
+{"kind":"slide","id":"sl/zjcb1c","slide":2,"title":"Learning Objectives","textShapes":4}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/ulwval87","slide":2,"name":"subtitle","text":"เชื่อมโยง [CLO1, CLO2, CLO4, CLO5]","textPreview":"เชื่อมโยง [CLO1, CLO2, CLO4, CLO5]","textChars":34,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/j6tovaho","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":2,"name":"footer-left","text":"EN-001-019 | Week 17","textPreview":"EN-001-019 | Week 17","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/zjcb1c","slide":2,"text":""}
+{"kind":"slide","id":"sl/l5wu4h","slide":3,"title":"Knowledge Map","textShapes":6}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/c7u54zid","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/u9knih4b","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/judg7ads","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/1032lszq","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/udg7adsj","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":3,"name":"footer-left","text":"EN-001-019 | Week 17","textPreview":"EN-001-019 | Week 17","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/l5wu4h","slide":3,"text":""}
+{"kind":"slide","id":"sl/jr3tbx","slide":4,"title":"Core Content","textShapes":5}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/zidonyd0","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/svu9knih","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":4,"name":"footer-left","text":"EN-001-019 | Week 17","textPreview":"EN-001-019 | Week 17","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/sji5snel","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/jr3tbx","slide":4,"text":""}
+{"kind":"slide","id":"sl/e5sgtv","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/8bat47y1","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":5,"name":"activity","text":"กิจกรรมประจำสัปดาห์ตามแผน OBE","textPreview":"กิจกรรมประจำสัปดาห์ตามแผน OBE","textChars":29,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":5,"name":"footer-left","text":"EN-001-019 | Week 17","textPreview":"EN-001-019 | Week 17","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/e5sgtv","slide":5,"text":""}

@@ -1,0 +1,1288 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/1gtny4",
+    "id": "1gtny4",
+    "slide": 3,
+    "layoutId": "72c7eec6-f097-430a-8252-96f237f7436d",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "bf511898-09cc-497e-828b-c257367191ad",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "72c7eec6-f097-430a-8252-96f237f7436d",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "bf511898-09cc-497e-828b-c257367191ad",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "bf511898-09cc-497e-828b-c257367191ad",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Knowledge Map",
+      "textPreview": "Knowledge Map",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Knowledge Map"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Knowledge Map",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Knowledge Map",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "2",
+      "name": "panel-0",
+      "bbox": [
+        64,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "3",
+      "name": "panel-title-0",
+      "bbox": [
+        88,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "หัวข้อหลัก",
+      "textPreview": "หัวข้อหลัก",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "หัวข้อหลัก"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "หัวข้อหลัก",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "หัวข้อหลัก",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "4",
+      "name": "dot-0",
+      "bbox": [
+        92,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "5",
+      "name": "bullet-0",
+      "bbox": [
+        120,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)",
+      "textPreview": "สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "สถาปัตยกรรมและการเขียนโปรแกร"
+          },
+          {
+            "index": 2,
+            "text": "มไมโครคอนโทรลเลอร์ (MCU)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "6",
+      "name": "dot-1",
+      "bbox": [
+        92,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "7",
+      "name": "bullet-1",
+      "bbox": [
+        120,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…",
+      "textPreview": "โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โครงสร้าง IoT (Sensors → Edge"
+          },
+          {
+            "index": 2,
+            "text": "processing → Cloud ba…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "8",
+      "name": "dot-2",
+      "bbox": [
+        92,
+        479,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "9",
+      "name": "bullet-2",
+      "bbox": [
+        120,
+        470,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "โปรโตคอล IoT (MQTT, CoAP, Zigbee)",
+      "textPreview": "โปรโตคอล IoT (MQTT, CoAP, Zigbee)",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โปรโตคอล IoT (MQTT, CoAP,"
+          },
+          {
+            "index": 2,
+            "text": "Zigbee)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โปรโตคอล IoT (MQTT, CoAP, Zigbee)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โปรโตคอล IoT (MQTT, CoAP, Zigbee)",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5o7qpg",
+      "id": "10",
+      "name": "panel-1",
+      "bbox": [
+        454,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "11",
+      "name": "panel-title-1",
+      "bbox": [
+        478,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "แก่นความรู้",
+      "textPreview": "แก่นความรู้",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แก่นความรู้"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แก่นความรู้",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แก่นความรู้",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        482,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        510,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…",
+      "textPreview": "MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MCU: CPU + หน่วยความจำ +"
+          },
+          {
+            "index": 2,
+            "text": "I/O บนชิปเดียว (ESP32, Ard…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3itgfmlk",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        482,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ex0nuxc3",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        510,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…",
+      "textPreview": "คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "คุณลักษณะ: เรียลไทม์,"
+          },
+          {
+            "index": 2,
+            "text": "ข้อจำกัดพลังงาน/หน่วยความจำ,…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "16",
+      "name": "dot-2",
+      "bbox": [
+        482,
+        479,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3m94fu1",
+      "id": "17",
+      "name": "bullet-2",
+      "bbox": [
+        510,
+        470,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…",
+      "textPreview": "I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "I/O: เซนเซอร์"
+          },
+          {
+            "index": 2,
+            "text": "(อุณหภูมิ/แสง/การเคลื่อนไหว)"
+          },
+          {
+            "index": 3,
+            "text": "และแอกชู…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ex0nuxc",
+      "id": "18",
+      "name": "panel-2",
+      "bbox": [
+        844,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at47y1kr",
+      "id": "19",
+      "name": "panel-title-2",
+      "bbox": [
+        868,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "แนวคิดเชื่อมโยง",
+      "textPreview": "แนวคิดเชื่อมโยง",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวคิดเชื่อมโยง"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวคิดเชื่อมโยง",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวคิดเชื่อมโยง",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixczed8v",
+      "id": "20",
+      "name": "dot-0",
+      "bbox": [
+        872,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bi9s36hc",
+      "id": "21",
+      "name": "bullet-0",
+      "bbox": [
+        900,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "TinyML และ Edge AI",
+      "textPreview": "TinyML และ Edge AI",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TinyML และ Edge AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TinyML และ Edge AI",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TinyML และ Edge AI",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/032lszqt",
+      "id": "22",
+      "name": "dot-1",
+      "bbox": [
+        872,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovahoza",
+      "id": "23",
+      "name": "bullet-1",
+      "bbox": [
+        900,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "RISC-V",
+      "textPreview": "RISC-V",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RISC-V"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RISC-V",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RISC-V",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "24",
+      "name": "dot-2",
+      "bbox": [
+        872,
+        479,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bulwval8",
+      "id": "25",
+      "name": "bullet-2",
+      "bbox": [
+        900,
+        470,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "Edge Computing",
+      "textPreview": "Edge Computing",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Edge Computing"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Edge Computing",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Edge Computing",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fepkzup",
+      "id": "26",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p0bi9s36",
+      "id": "27",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 11",
+      "textPreview": "EN-001-019 | Week 11",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 11"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 11",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 11",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/idonyd0z",
+      "id": "28",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "3/5",
+      "textPreview": "3/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

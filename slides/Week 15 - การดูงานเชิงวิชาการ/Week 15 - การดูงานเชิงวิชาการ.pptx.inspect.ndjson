@@ -1,0 +1,73 @@
+{"kind":"deck","id":"pr/nzszs3","name":"Deck"}
+{"kind":"layout","layoutId":"ea480849-5146-4d8c-bd0d-4d23b5145ba4","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"7ae2a7e0-c117-460e-a05f-a81985f1f5fd","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/zuciij","slide":1,"title":"WEEK 15","textShapes":7}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":1,"name":"eyebrow","text":"WEEK 15","textPreview":"WEEK 15","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":1,"name":"title","text":"การดูงานเชิงวิชาการ","textPreview":"การดูงานเชิงวิชาการ","textChars":19,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/9knih4by","slide":1,"name":"week-number","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":1,"name":"subtitle","text":"การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)","textPreview":"การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)","textChars":132,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/2t83itgf","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":1,"name":"footer-left","text":"EN-001-019 | Week 15","textPreview":"EN-001-019 | Week 15","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/zuciij","slide":1,"text":""}
+{"kind":"slide","id":"sl/nfcn04","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/dcbulwva","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/val87ed8","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":2,"name":"bullet-0","text":"ผู้เรียนได้รับประสบการณ์ตรงจากสภาพแวดล้อมการทำงานจริง — CLO6","textPreview":"ผู้เรียนได้รับประสบการณ์ตรงจากสภาพแวดล้อมการทำงานจริง — CLO6","textChars":60,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/donyd0z6","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":2,"name":"bullet-1","text":"ผู้เรียนเข้าใจการประยุกต์ความรู้สู่การแก้ปัญหาในอุตสาหกรรม — CLO4","textPreview":"ผู้เรียนเข้าใจการประยุกต์ความรู้สู่การแก้ปัญหาในอุตสาหกรรม — CLO4","textChars":65,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/vixczed8","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":2,"name":"bullet-2","text":"ผู้เรียนได้รับแรงบันดาลใจในการประกอบอาชีพวิศวกรคอมพิวเตอร์ — CLO6","textPreview":"ผู้เรียนได้รับแรงบันดาลใจในการประกอบอาชีพวิศวกรคอมพิวเตอร์ — CLO6","textChars":65,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/d0z61032","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":2,"name":"footer-left","text":"EN-001-019 | Week 15","textPreview":"EN-001-019 | Week 15","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/nfcn04","slide":2,"text":""}
+{"kind":"slide","id":"sl/dyfzjj","slide":3,"title":"Knowledge Map","textShapes":9}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/gvy90je9","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":3,"name":"bullet-0","text":"การเยี่ยมชมสถานประกอบการจริง: ศูนย์ข้อมูล (Week 07…","textPreview":"การเยี่ยมชมสถานประกอบการจริง: ศูนย์ข้อมูล (Week 07…","textChars":51,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":3,"name":"bullet-1","text":"การทัศนศึกษาเสมือนจริง (Virtual Tour) บริษัทเทคโนโล…","textPreview":"การทัศนศึกษาเสมือนจริง (Virtual Tour) บริษัทเทคโนโล…","textChars":52,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":3,"name":"bullet-2","text":"บรรยายพิเศษจากวิทยากรรับเชิญในอุตสาหกรรม (Guest Spe…","textPreview":"บรรยายพิเศษจากวิทยากรรับเชิญในอุตสาหกรรม (Guest Spe…","textChars":52,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/1orytsvu","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/judg7ads","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":3,"name":"footer-left","text":"EN-001-019 | Week 15","textPreview":"EN-001-019 | Week 15","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/1032lszq","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/dyfzjj","slide":3,"text":""}
+{"kind":"slide","id":"sl/sqph3w","slide":4,"title":"Core Content","textShapes":8}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/nih4byhg","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/yxobm58z","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/r65wjudg","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":4,"name":"bullet-0","text":"การเยี่ยมชมสถานประกอบการจริง: ศูนย์ข้อมูล (Week 07 - Data Center & Cloud Infrastructure),…","textPreview":"การเยี่ยมชมสถานประกอบการจริง: ศูนย์ข้อมูล (Week 07 - Data Center & Cloud Infrastructure),…","textChars":90,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/90je9cvi","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":4,"name":"bullet-1","text":"การทัศนศึกษาเสมือนจริง (Virtual Tour) บริษัทเทคโนโลยีชั้นนำ (Google, AWS, NVIDIA)","textPreview":"การทัศนศึกษาเสมือนจริง (Virtual Tour) บริษัทเทคโนโลยีชั้นนำ (Google, AWS, NVIDIA)","textChars":81,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/65wjudg7","slide":4,"name":"dot-2","bbox":[676,417,12,12]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":4,"name":"bullet-2","text":"บรรยายพิเศษจากวิทยากรรับเชิญในอุตสาหกรรม (Guest Speakers)","textPreview":"บรรยายพิเศษจากวิทยากรรับเชิญในอุตสาหกรรม (Guest Speakers)","textChars":57,"textLines":1,"bbox":[704,408,405,70]}
+{"kind":"shape","id":"sh/obm58z25","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":4,"name":"footer-left","text":"EN-001-019 | Week 15","textPreview":"EN-001-019 | Week 15","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/sqph3w","slide":4,"text":""}
+{"kind":"slide","id":"sl/16s4qv","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":5,"name":"activity","text":"Lab 1 ชม. (Virtual Tour/ดูงานศูนย์ข้อมูล) + Project 1 ชม.","textPreview":"Lab 1 ชม. (Virtual Tour/ดูงานศูนย์ข้อมูล) + Project 1 ชม.","textChars":57,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":5,"name":"footer-left","text":"EN-001-019 | Week 15","textPreview":"EN-001-019 | Week 15","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/16s4qv","slide":5,"text":""}

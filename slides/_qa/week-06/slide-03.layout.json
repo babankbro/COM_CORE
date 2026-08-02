@@ -1,0 +1,1203 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/fcpabq",
+    "id": "fcpabq",
+    "slide": 3,
+    "layoutId": "ee15713d-3e03-415e-a12b-e45bcc71e188",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ee15713d-3e03-415e-a12b-e45bcc71e188",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p8nqxs72",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Knowledge Map",
+      "textPreview": "Knowledge Map",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Knowledge Map"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Knowledge Map",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Knowledge Map",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "2",
+      "name": "panel-0",
+      "bbox": [
+        64,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "3",
+      "name": "panel-title-0",
+      "bbox": [
+        88,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "หัวข้อหลัก",
+      "textPreview": "หัวข้อหลัก",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "หัวข้อหลัก"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "หัวข้อหลัก",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "หัวข้อหลัก",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0z61032l",
+      "id": "4",
+      "name": "dot-0",
+      "bbox": [
+        92,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkzupwb2",
+      "id": "5",
+      "name": "bullet-0",
+      "bbox": [
+        120,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "สถาปัตยกรรมเครือข่ายพื้นฐาน, OSI และ TCP-IP Model",
+      "textPreview": "สถาปัตยกรรมเครือข่ายพื้นฐาน, OSI และ TCP-IP Model",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "สถาปัตยกรรมเครือข่ายพื้นฐาน,"
+          },
+          {
+            "index": 2,
+            "text": "OSI และ TCP-IP Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "สถาปัตยกรรมเครือข่ายพื้นฐาน, OSI และ TCP-IP Model",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "สถาปัตยกรรมเครือข่ายพื้นฐาน, OSI และ TCP-IP Model",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itgfmlkj",
+      "id": "6",
+      "name": "dot-1",
+      "bbox": [
+        92,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ed8bat4",
+      "id": "7",
+      "name": "bullet-1",
+      "bbox": [
+        120,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่ (5G/6G, W…",
+      "textPreview": "โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่ (5G/6G, W…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โปรโตคอลอินเทอร์เน็ตและการสื่อ"
+          },
+          {
+            "index": 2,
+            "text": "สารสมัยใหม่ (5G/6G, W…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่ (5G/6G, W…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่ (5G/6G, W…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bi9s36h",
+      "id": "8",
+      "name": "dot-2",
+      "bbox": [
+        92,
+        479,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwb2hwfy",
+      "id": "9",
+      "name": "bullet-2",
+      "bbox": [
+        120,
+        470,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "เครือข่ายสำหรับ Cloud-native และ Microservices",
+      "textPreview": "เครือข่ายสำหรับ Cloud-native และ Microservices",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "เครือข่ายสำหรับ Cloud-native"
+          },
+          {
+            "index": 2,
+            "text": "และ Microservices"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "เครือข่ายสำหรับ Cloud-native และ Microservices",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "เครือข่ายสำหรับ Cloud-native และ Microservices",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fu18jq",
+      "id": "10",
+      "name": "panel-1",
+      "bbox": [
+        454,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "11",
+      "name": "panel-title-1",
+      "bbox": [
+        478,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "แก่นความรู้",
+      "textPreview": "แก่นความรู้",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แก่นความรู้"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แก่นความรู้",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แก่นความรู้",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2p8nqxs",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        482,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        510,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+      "textPreview": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ประเภทเครือข่าย: LAN, WAN,"
+          },
+          {
+            "index": 2,
+            "text": "MAN, PAN; มีสาย/ไร้สาย"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gr2p8nq",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        482,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        510,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+      "textPreview": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ"
+          },
+          {
+            "index": 2,
+            "text": "TCP-IP Model 4 ชั้น"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "16",
+      "name": "dot-2",
+      "bbox": [
+        482,
+        479,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p8nqxs7",
+      "id": "17",
+      "name": "bullet-2",
+      "bbox": [
+        510,
+        470,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS,…",
+      "textPreview": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS,…",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โพรโทคอล: IP (IPv4/IPv6),"
+          },
+          {
+            "index": 2,
+            "text": "TCP/UDP, HTTP/HTTPS, DNS,…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS,…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS,…",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9knih4by",
+      "id": "18",
+      "name": "panel-2",
+      "bbox": [
+        844,
+        164,
+        330,
+        400
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzupwb2h",
+      "id": "19",
+      "name": "panel-title-2",
+      "bbox": [
+        868,
+        204,
+        282,
+        44
+      ],
+      "geometry": "rect",
+      "text": "แนวคิดเชื่อมโยง",
+      "textPreview": "แนวคิดเชื่อมโยง",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวคิดเชื่อมโยง"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวคิดเชื่อมโยง",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวคิดเชื่อมโยง",
+              "fontSize": 25,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0nuxc3yl",
+      "id": "20",
+      "name": "dot-0",
+      "bbox": [
+        872,
+        295,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p8nqxs72",
+      "id": "21",
+      "name": "bullet-0",
+      "bbox": [
+        900,
+        286,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "TCP-IP Model",
+      "textPreview": "TCP-IP Model",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TCP-IP Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TCP-IP Model",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TCP-IP Model",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "22",
+      "name": "dot-1",
+      "bbox": [
+        872,
+        387,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "23",
+      "name": "bullet-1",
+      "bbox": [
+        900,
+        378,
+        260,
+        86
+      ],
+      "geometry": "rect",
+      "text": "Edge Computing",
+      "textPreview": "Edge Computing",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Edge Computing"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Edge Computing",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Edge Computing",
+              "fontSize": 17,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0z61032l",
+      "id": "24",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkzupwb2",
+      "id": "25",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 06",
+      "textPreview": "EN-001-019 | Week 06",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 06",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 06",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itgfmlkj",
+      "id": "26",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "3/5",
+      "textPreview": "3/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

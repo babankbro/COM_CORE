@@ -1,0 +1,957 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/w9dfon",
+    "id": "w9dfon",
+    "slide": 4,
+    "layoutId": "ee15713d-3e03-415e-a12b-e45bcc71e188",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ee15713d-3e03-415e-a12b-e45bcc71e188",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "924b23c6-4cc4-400c-b4d8-a8667cc15b2e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Core Content",
+      "textPreview": "Core Content",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core Content"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core Content",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core Content",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "2",
+      "name": "left-panel",
+      "bbox": [
+        66,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4r65wju",
+      "id": "3",
+      "name": "right-panel",
+      "bbox": [
+        642,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5sneloj",
+      "id": "4",
+      "name": "left-head",
+      "bbox": [
+        94,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "ต้องเข้าใจ",
+      "textPreview": "ต้องเข้าใจ",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ต้องเข้าใจ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ต้องเข้าใจ",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องเข้าใจ",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qpg3ex0",
+      "id": "5",
+      "name": "dot-0",
+      "bbox": [
+        100,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bi9s36h",
+      "id": "6",
+      "name": "bullet-0",
+      "bbox": [
+        128,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+      "textPreview": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN;"
+          },
+          {
+            "index": 2,
+            "text": "มีสาย/ไร้สาย"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ประเภทเครือข่าย: LAN, WAN, MAN, PAN; มีสาย/ไร้สาย",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwb2hwfy",
+      "id": "7",
+      "name": "dot-1",
+      "bbox": [
+        100,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itgfmlkj",
+      "id": "8",
+      "name": "bullet-1",
+      "bbox": [
+        128,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+      "textPreview": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP"
+          },
+          {
+            "index": 2,
+            "text": "Model 4 ชั้น"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แบบจำลองอ้างอิง: OSI 7 ชั้น และ TCP-IP Model 4 ชั้น",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ed8bat4",
+      "id": "9",
+      "name": "dot-2",
+      "bbox": [
+        100,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2p8nqxs",
+      "id": "10",
+      "name": "bullet-2",
+      "bbox": [
+        128,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS, DHCP",
+      "textPreview": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS, DHCP",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP,"
+          },
+          {
+            "index": 2,
+            "text": "HTTP/HTTPS, DNS, DHCP"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS, DHCP",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โพรโทคอล: IP (IPv4/IPv6), TCP/UDP, HTTP/HTTPS, DNS, DHCP",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "11",
+      "name": "right-head",
+      "bbox": [
+        670,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "แนวโน้ม/บริบทปัจจุบัน",
+      "textPreview": "แนวโน้ม/บริบทปัจจุบัน",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวโน้ม/บริบทปัจจุบัน"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวโน้ม/บริบทปัจจุบัน",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวโน้ม/บริบทปัจจุบัน",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fu18jq",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        676,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        704,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Wi‑Fi 7 (802.11be) เริ่มวางตลาดจริงกลางปี 2025 ความเร็วหลายกิกะบิต หน่วงต่ำ",
+      "textPreview": "Wi‑Fi 7 (802.11be) เริ่มวางตลาดจริงกลางปี 2025 ความเร็วหลายกิกะบิต หน่วงต่ำ",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Wi‑Fi 7 (802.11be) เริ่มวางตลาดจริงกลางปี"
+          },
+          {
+            "index": 2,
+            "text": "2025 ความเร็วหลายกิกะบิต หน่วงต่ำ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Wi‑Fi 7 (802.11be) เริ่มวางตลาดจริงกลางปี 2025 ความเร็วหลายกิกะบิต หน่วงต่ำ",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Wi‑Fi 7 (802.11be) เริ่มวางตลาดจริงกลางปี 2025 ความเร็วหลายกิกะบิต หน่วงต่ำ",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        676,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p8nqxs7",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        704,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "5G‑Advanced → 6G: 6G ตั้งเป้าความเร็วระดับ Tbps; เริ่มกระบวนการมาตรฐาน",
+      "textPreview": "5G‑Advanced → 6G: 6G ตั้งเป้าความเร็วระดับ Tbps; เริ่มกระบวนการมาตรฐาน",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5G‑Advanced → 6G: 6G ตั้งเป้าความเร็วระดับ"
+          },
+          {
+            "index": 2,
+            "text": "Tbps; เริ่มกระบวนการมาตรฐาน"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5G‑Advanced → 6G: 6G ตั้งเป้าความเร็วระดับ Tbps; เริ่มกระบวนการมาตรฐาน",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5G‑Advanced → 6G: 6G ตั้งเป้าความเร็วระดับ Tbps; เริ่มกระบวนการมาตรฐาน",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gr2p8nq",
+      "id": "16",
+      "name": "dot-2",
+      "bbox": [
+        676,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "17",
+      "name": "bullet-2",
+      "bbox": [
+        704,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "AI ในเครือข่าย + SDN/NFV: บริหารเครือข่ายอัตโนมัติตลอดวงจรชีวิต",
+      "textPreview": "AI ในเครือข่าย + SDN/NFV: บริหารเครือข่ายอัตโนมัติตลอดวงจรชีวิต",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI ในเครือข่าย + SDN/NFV:"
+          },
+          {
+            "index": 2,
+            "text": "บริหารเครือข่ายอัตโนมัติตลอดวงจรชีวิต"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI ในเครือข่าย + SDN/NFV: บริหารเครือข่ายอัตโนมัติตลอดวงจรชีวิต",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI ในเครือข่าย + SDN/NFV: บริหารเครือข่ายอัตโนมัติตลอดวงจรชีวิต",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/re1w7mp0",
+      "id": "18",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t83itgf",
+      "id": "19",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 06",
+      "textPreview": "EN-001-019 | Week 06",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 06",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 06",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpg3ex0n",
+      "id": "20",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "4/5",
+      "textPreview": "4/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

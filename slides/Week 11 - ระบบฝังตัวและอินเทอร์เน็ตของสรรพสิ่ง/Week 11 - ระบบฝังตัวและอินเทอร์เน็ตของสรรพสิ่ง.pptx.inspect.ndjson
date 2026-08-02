@@ -1,0 +1,91 @@
+{"kind":"deck","id":"pr/gls11a","name":"Deck"}
+{"kind":"layout","layoutId":"bf511898-09cc-497e-828b-c257367191ad","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"72c7eec6-f097-430a-8252-96f237f7436d","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/b9fpxu","slide":1,"title":"WEEK 11","textShapes":7}
+{"kind":"textbox","id":"sh/65wjudg7","slide":1,"name":"eyebrow","text":"WEEK 11","textPreview":"WEEK 11","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":1,"name":"title","text":"ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง","textPreview":"ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง","textChars":36,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/obm58z25","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":1,"name":"week-number","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":1,"name":"subtitle","text":"ระบบฝังตัวคือคอมพิวเตอร์เฉพาะงานที่ฝังในอุปกรณ์ ทำงานเรียลไทม์ ใช้ทรัพยากร/พลังงานจำกัด เป็นรากฐานของ IoT และปัจจุบันรวมเข้ากับ AI ที่ขอบเครือข่าย (TinyML และ Edge AI)","textPreview":"ระบบฝังตัวคือคอมพิวเตอร์เฉพาะงานที่ฝังในอุปกรณ์ ทำงานเรียลไทม์ ใช้ทรัพยากร/พลังงานจำกัด เป็นรากฐานของ IoT และปัจจุบันรวมเข้ากับ AI ที่ขอบ...","textChars":167,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/z61032ls","slide":1,"name":"footer-left","text":"EN-001-019 | Week 11","textPreview":"EN-001-019 | Week 11","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/b9fpxu","slide":1,"text":""}
+{"kind":"slide","id":"sl/xb49gv","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":2,"name":"bullet-0","text":"ผู้เรียนออกแบบ/พัฒนาโปรแกรมสำหรับระบบฝังตัวขั้นพื้นฐานได้ — CLO2","textPreview":"ผู้เรียนออกแบบ/พัฒนาโปรแกรมสำหรับระบบฝังตัวขั้นพื้นฐานได้ — CLO2","textChars":64,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":2,"name":"bullet-1","text":"ผู้เรียนเข้าใจสถาปัตยกรรมเครือข่าย IoT — CLO2","textPreview":"ผู้เรียนเข้าใจสถาปัตยกรรมเครือข่าย IoT — CLO2","textChars":45,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/0z61032l","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":2,"name":"bullet-2","text":"ผู้เรียนประยุกต์ใช้เซนเซอร์ร่วมกับ IoT Platform ได้ — CLO4","textPreview":"ผู้เรียนประยุกต์ใช้เซนเซอร์ร่วมกับ IoT Platform ได้ — CLO4","textChars":58,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/i5sneloj","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":2,"name":"footer-left","text":"EN-001-019 | Week 11","textPreview":"EN-001-019 | Week 11","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/xb49gv","slide":2,"text":""}
+{"kind":"slide","id":"sl/1gtny4","slide":3,"title":"Knowledge Map","textShapes":15}
+{"kind":"textbox","id":"sh/7adsji5s","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/wval87ed","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":3,"name":"bullet-0","text":"สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)","textPreview":"สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์ (MCU)","textChars":52,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"name":"bullet-1","text":"โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…","textPreview":"โครงสร้าง IoT (Sensors → Edge processing → Cloud ba…","textChars":52,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/ed8bat47","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/7u54zido","slide":3,"name":"bullet-2","text":"โปรโตคอล IoT (MQTT, CoAP, Zigbee)","textPreview":"โปรโตคอล IoT (MQTT, CoAP, Zigbee)","textChars":33,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/lwval87e","slide":3,"name":"dot-0","bbox":[482,295,12,12]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":3,"name":"bullet-0","text":"MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…","textPreview":"MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Ard…","textChars":52,"textLines":1,"bbox":[510,286,260,86]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":3,"name":"dot-1","bbox":[482,387,12,12]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":3,"name":"bullet-1","text":"คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…","textPreview":"คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ,…","textChars":51,"textLines":1,"bbox":[510,378,260,86]}
+{"kind":"shape","id":"sh/loj2t83i","slide":3,"name":"dot-2","bbox":[482,479,12,12]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":3,"name":"bullet-2","text":"I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…","textPreview":"I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชู…","textChars":52,"textLines":1,"bbox":[510,470,260,86]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/ixczed8v","slide":3,"name":"dot-0","bbox":[872,295,12,12]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":3,"name":"bullet-0","text":"TinyML และ Edge AI","textPreview":"TinyML และ Edge AI","textChars":18,"textLines":1,"bbox":[900,286,260,86]}
+{"kind":"shape","id":"sh/032lszqt","slide":3,"name":"dot-1","bbox":[872,387,12,12]}
+{"kind":"textbox","id":"sh/tovahoza","slide":3,"name":"bullet-1","text":"RISC-V","textPreview":"RISC-V","textChars":6,"textLines":1,"bbox":[900,378,260,86]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":3,"name":"dot-2","bbox":[872,479,12,12]}
+{"kind":"textbox","id":"sh/bulwval8","slide":3,"name":"bullet-2","text":"Edge Computing","textPreview":"Edge Computing","textChars":14,"textLines":1,"bbox":[900,470,260,86]}
+{"kind":"shape","id":"sh/0fepkzup","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":3,"name":"footer-left","text":"EN-001-019 | Week 11","textPreview":"EN-001-019 | Week 11","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/1gtny4","slide":3,"text":""}
+{"kind":"slide","id":"sl/4dqbo9","slide":4,"title":"Core Content","textShapes":11}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/dsji5sne","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"shape","id":"sh/vy90je9c","slide":4,"name":"dot-0","bbox":[100,265,12,12]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":4,"name":"bullet-0","text":"MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Arduino/AVR, STM32)","textPreview":"MCU: CPU + หน่วยความจำ + I/O บนชิปเดียว (ESP32, Arduino/AVR, STM32)","textChars":67,"textLines":1,"bbox":[128,256,405,70]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":4,"name":"dot-1","bbox":[100,341,12,12]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":4,"name":"bullet-1","text":"คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ, ความน่าเชื่อถือสูง","textPreview":"คุณลักษณะ: เรียลไทม์, ข้อจำกัดพลังงาน/หน่วยความจำ, ความน่าเชื่อถือสูง","textChars":69,"textLines":1,"bbox":[128,332,405,70]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":4,"name":"dot-2","bbox":[100,417,12,12]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":4,"name":"bullet-2","text":"I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชูเอเตอร์ (มอเตอร์/รีเลย์)","textPreview":"I/O: เซนเซอร์ (อุณหภูมิ/แสง/การเคลื่อนไหว) และแอกชูเอเตอร์ (มอเตอร์/รีเลย์)","textChars":75,"textLines":1,"bbox":[128,408,405,70]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":4,"name":"bullet-0","text":"Edge AI & TinyML: MCU รันโมเดล ML แบบเบาในเครื่อง ~70% ของงาน AI จะประมวลผลบนอุปกรณ์ขอบ; โมเดล Mobi…","textPreview":"Edge AI & TinyML: MCU รันโมเดล ML แบบเบาในเครื่อง ~70% ของงาน AI จะประมวลผลบนอุปกรณ์ขอบ; โมเดล Mobi…","textChars":100,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/61032lsz","slide":4,"name":"bullet-1","text":"RISC-V มาแรง: คาดมีคอร์ในตลาด >2 หมื่นล้านคอร์ ปี 2025 เช่น ESP32‑C6 (RISC‑V + Wi‑Fi 6)","textPreview":"RISC-V มาแรง: คาดมีคอร์ในตลาด >2 หมื่นล้านคอร์ ปี 2025 เช่น ESP32‑C6 (RISC‑V + Wi‑Fi 6)","textChars":87,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/dsji5sne","slide":4,"name":"dot-2","bbox":[676,417,12,12]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":4,"name":"bullet-2","text":"ตลาดโต: ชิป Edge AI ~7 พันล้านดอลลาร์ (2025) → ~57 พันล้าน (2030); ระบบฝังตัวรวม ~103 พันล้าน (2024…","textPreview":"ตลาดโต: ชิป Edge AI ~7 พันล้านดอลลาร์ (2025) → ~57 พันล้าน (2030); ระบบฝังตัวรวม ~103 พันล้าน (2024…","textChars":100,"textLines":1,"bbox":[704,408,405,70]}
+{"kind":"shape","id":"sh/vahoza1g","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":4,"name":"footer-left","text":"EN-001-019 | Week 11","textPreview":"EN-001-019 | Week 11","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/4dqbo9","slide":4,"text":""}
+{"kind":"slide","id":"sl/1clmm3","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":5,"name":"activity","text":"Lab 1 ชม. (การส่งข้อมูลผ่าน MQTT) + Project 1 ชม.","textPreview":"Lab 1 ชม. (การส่งข้อมูลผ่าน MQTT) + Project 1 ชม.","textChars":49,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/yxobm58z","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":5,"name":"footer-left","text":"EN-001-019 | Week 11","textPreview":"EN-001-019 | Week 11","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/1clmm3","slide":5,"text":""}

@@ -1,0 +1,884 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/qddcip",
+    "id": "qddcip",
+    "slide": 4,
+    "layoutId": "6f4b1bd3-d5d9-44c3-9dbf-63c95962759a",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "4e0210a2-2a55-4e59-8b45-7255c863f72d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "6f4b1bd3-d5d9-44c3-9dbf-63c95962759a",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "4e0210a2-2a55-4e59-8b45-7255c863f72d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "4e0210a2-2a55-4e59-8b45-7255c863f72d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        42,
+        40,
+        720,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Core Content",
+      "textPreview": "Core Content",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core Content"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core Content",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core Content",
+              "fontSize": 40,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "2",
+      "name": "left-panel",
+      "bbox": [
+        66,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "3",
+      "name": "right-panel",
+      "bbox": [
+        642,
+        148,
+        502,
+        398
+      ],
+      "geometry": "rect",
+      "fillColor": "#E6F4F1",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "4",
+      "name": "left-head",
+      "bbox": [
+        94,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "ต้องเข้าใจ",
+      "textPreview": "ต้องเข้าใจ",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ต้องเข้าใจ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ต้องเข้าใจ",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องเข้าใจ",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "5",
+      "name": "dot-0",
+      "bbox": [
+        100,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "6",
+      "name": "bullet-0",
+      "bbox": [
+        128,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)",
+      "textPreview": "ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ระดับของ AI: narrow AI (เฉพาะงาน) vs"
+          },
+          {
+            "index": 2,
+            "text": "general AI (สมมุติฐาน)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "7",
+      "name": "dot-1",
+      "bbox": [
+        100,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa9w3m9",
+      "id": "8",
+      "name": "bullet-1",
+      "bbox": [
+        128,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "สาขา ML: supervised, unsupervised, reinforcement learning",
+      "textPreview": "สาขา ML: supervised, unsupervised, reinforcement learning",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "สาขา ML: supervised, unsupervised,"
+          },
+          {
+            "index": 2,
+            "text": "reinforcement learning"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "สาขา ML: supervised, unsupervised, reinforcement learning",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "สาขา ML: supervised, unsupervised, reinforcement learning",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "9",
+      "name": "dot-2",
+      "bbox": [
+        100,
+        417,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#1F2937",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xs72x4na",
+      "id": "10",
+      "name": "bullet-2",
+      "bbox": [
+        128,
+        408,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…",
+      "textPreview": "Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Deep Learning: neural networks,"
+          },
+          {
+            "index": 2,
+            "text": "การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU"
+          },
+          {
+            "index": 3,
+            "text": "(เชื่อม Week 03 - Digital Logic & Moder…"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87ed8bat",
+      "id": "11",
+      "name": "right-head",
+      "bbox": [
+        670,
+        184,
+        420,
+        40
+      ],
+      "geometry": "rect",
+      "text": "แนวโน้ม/บริบทปัจจุบัน",
+      "textPreview": "แนวโน้ม/บริบทปัจจุบัน",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "แนวโน้ม/บริบทปัจจุบัน"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "แนวโน้ม/บริบทปัจจุบัน",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "แนวโน้ม/บริบทปัจจุบัน",
+              "fontSize": 26,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlkjm1c",
+      "id": "12",
+      "name": "dot-0",
+      "bbox": [
+        676,
+        265,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1orytsv",
+      "id": "13",
+      "name": "bullet-0",
+      "bbox": [
+        704,
+        256,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์",
+      "textPreview": "โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "โมเดลเฉพาะทาง (domain-specific"
+          },
+          {
+            "index": 2,
+            "text": "foundation models) + on-device AI"
+          },
+          {
+            "index": 3,
+            "text": "มาแทนโมเดลยักษ์อเนกประสงค์"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gvy90je",
+      "id": "14",
+      "name": "dot-1",
+      "bbox": [
+        676,
+        341,
+        12,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8z25kb6x",
+      "id": "15",
+      "name": "bullet-1",
+      "bbox": [
+        704,
+        332,
+        405,
+        70
+      ],
+      "geometry": "rect",
+      "text": "AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง",
+      "textPreview": "AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI-ready data และ MLOps"
+          },
+          {
+            "index": 2,
+            "text": "เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI"
+          },
+          {
+            "index": 3,
+            "text": "ไปใช้จริง"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง",
+          "lineSpacingPercent": 118000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "lineSpacing": 1.18
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง",
+              "fontSize": 20,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "lineSpacing": 1.18
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9cvixc",
+      "id": "16",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "17",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 09",
+      "textPreview": "EN-001-019 | Week 09",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 09"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 09",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 09",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xczed8v6",
+      "id": "18",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "4/5",
+      "textPreview": "4/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5fe7a09b18c7afa0",
+        "id": "b22218764a6b4082",
         "type": "tabs",
         "children": [
           {
-            "id": "14bc28b1f5ccb2d6",
+            "id": "3bf968c7ec705a69",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -78,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 379.5026054382324
   },
   "right": {
     "id": "b2aefa355b57861d",
@@ -183,43 +185,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "14bc28b1f5ccb2d6",
+  "active": "d0240a644afb5dfe",
   "lastOpenFiles": [
-    "update_timeline_mod1.py",
-    "update_mod1.py",
-    "scripts/build_week_slides.mjs",
-    "wiki/labs/_index.md",
-    "wiki/labs/Module 1 - Foundation & Programming/Lab 01 - IDE Setup and Project Planning.md",
-    "scripts",
-    "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
-    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 12 - Security Implementation and Module 3 Presentation.md",
-    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 11 - MQTT Data Transmission.md",
-    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 10 - GenAI API and ESP32 Sensors.md",
-    "wiki/labs/Module 3 - IoT & Smart Systems/Lab 09 - ML Basics and IoT Architecture.md",
-    "wiki/labs/Module 4 - Computer Vision/Lab 15 - Final Integration and Presentation Prep.md",
-    "wiki/labs/Module 4 - Computer Vision/Lab 14 - CI-CD Pipeline and System Integration.md",
-    "wiki/labs/Module 4 - Computer Vision/Lab 13 - AI Bias and Object Detection.md",
-    "wiki/labs/Module 2 - Web Development/Lab 07 - Cloud Deployment and Docker.md",
-    "wiki/labs/Module 2 - Web Development/Lab 06 - Network Simulation and API Router.md",
-    "wiki/labs/Module 2 - Web Development/Lab 05 - Database Design and SQL.md",
-    "wiki/labs/Module 1 - Foundation & Programming/Lab 04 - Algorithm Flowchart and Module 1 Presentation.md",
-    "wiki/labs/Module 1 - Foundation & Programming/Lab 03 - Logic Circuit and Data Processing.md",
+    "wiki/learning/Learning Content Week 11 - ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง.md",
+    "wiki/learning/_index.md",
+    "wiki/learning/Learning Content Week 15 - การดูงานเชิงวิชาการและอุตสาหกรรม.md",
+    "wiki/learning/Learning Content Week 17 - ทบทวนและสอบปลายภาค.md",
+    "wiki/learning/Learning Content Week 16 - นำเสนอโครงงานประยุกต์.md",
+    "wiki/learning/Learning Content Week 14 - โครงงานประยุกต์และวิศวกรรมระบบ.md",
+    "wiki/learning/Learning Content Week 13 - จริยธรรมทางคอมพิวเตอร์และทรัพย์สินทางปัญญา.md",
+    "wiki/learning/Learning Content Week 12 - Cybersecurity และ Zero Trust.md",
+    "wiki/learning/Learning Content Week 09 - ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง.md",
+    "wiki/learning/Learning Content Week 10 - Generative AI และวิทยาการหุ่นยนต์.md",
+    "wiki/learning/Learning Content Week 08 - ทบทวนและสอบกลางภาค.md",
+    "wiki/learning/Learning Content Week 07 - ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์.md",
+    "wiki/learning/Learning Content Week 06 - เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต.md",
+    "wiki/learning/Learning Content Week 05 - ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่.md",
+    "wiki/learning/Learning Content Week 04 - อัลกอริทึมและการเขียนโปรแกรม.md",
+    "wiki/learning/Learning Content Week 03 - วงจรตรรกะและหน่วยประมวลผล.md",
+    "wiki/learning/Learning Content Week 02 - ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่.md",
+    "wiki/learning/Learning Content Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI.md",
+    "wiki/learning",
+    "scripts/add_weekly_research.mjs",
+    "slides/Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI/~$Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI.pptx",
+    "slides/Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI/Untitled",
     "wiki/labs/Module 1 - Foundation & Programming/Lab 02 - Hardware Specs and Data Extraction.md",
-    "wiki/labs/Module 3 - IoT & Smart Systems",
-    "wiki/labs/Module 4 - Computer Vision",
-    "wiki/labs/Module 2 - Web Development",
-    "wiki/labs/Module 1 - Foundation & Programming",
-    "wiki/labs",
-    "generate_labs.py",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 03 - Logic Circuit and Data Processing.md",
+    "wiki/labs/Module 1 - Foundation & Programming/Lab 04 - Algorithm Flowchart and Module 1 Presentation.md",
     "wiki/timeline/Week 01 - Introduction to CE & IT.md",
-    "wiki/synthesis/แผนการสอนและ CLO.md",
-    "wiki/index.md",
-    "wiki/hot.md",
-    "update_labs.py",
-    "wiki/overview.md",
-    "wiki/synthesis/CLO-PLO-KSA Mapping.md",
-    "wiki/synthesis/รายงานวิชาการ-ภาพรวม.md",
-    "wiki/synthesis/กิจกรรมปฏิบัติการและโครงงาน.md",
-    "wiki/synthesis/การวัดและประเมินผล.md"
+    "wiki/timeline/Week 02 - Hardware & Software Ecosystems.md",
+    "wiki/timeline/Week 03 - Digital Logic & Modern Processors.md",
+    "wiki/timeline/Week 04 - Algorithms & Programming Paradigms.md",
+    "wiki/timeline/Week 05 - Database & Data Management.md",
+    "slides/Week 03 - วงจรตรรกะและหน่วยประมวลผล/Week 03 - วงจรตรรกะและหน่วยประมวลผล - preview.webp",
+    "slides/Week 04 - อัลกอริทึมและการเขียนโปรแกรม/Week 04 - อัลกอริทึมและการเขียนโปรแกรม - preview.webp",
+    "slides/Week 05 - ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่/Week 05 - ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่ - preview.webp",
+    "slides/Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI/Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI - preview.webp",
+    "slides/_qa/week-15/slide-05.layout.json",
+    "slides/_qa/week-15/slide-05.png",
+    "slides/_qa/week-15/slide-04.layout.json",
+    "slides/_qa/week-15/slide-04.png",
+    "slides/manifest.json",
+    "slides/Week 17 - สอบปลายภาค (Final Examination)/Week 17 - สอบปลายภาค (Final Examination).pptx.inspect.ndjson",
+    "slides/Week 17 - สอบปลายภาค (Final Examination)/Week 17 - สอบปลายภาค (Final Examination).pptx",
+    "slides/Week 17 - สอบปลายภาค (Final Examination)/Week 17 - สอบปลายภาค (Final Examination) - preview.webp",
+    "slides/_qa/week-17/slide-05.layout.json",
+    "slides/_qa/week-17/slide-05.png",
+    "slides/_qa/week-17/slide-04.png",
+    "slides/_qa/week-17/slide-03.png"
   ]
 }

@@ -1,0 +1,589 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/czrigy",
+    "id": "czrigy",
+    "slide": 1,
+    "layoutId": "627f9af9-d6dd-4e56-b14e-8d3eb63dddfd",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "60c7ea12-0ba5-4fdd-9733-b9476c9e1614",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "627f9af9-d6dd-4e56-b14e-8d3eb63dddfd",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "60c7ea12-0ba5-4fdd-9733-b9476c9e1614",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "60c7ea12-0ba5-4fdd-9733-b9476c9e1614",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25kb6xkf",
+      "id": "1",
+      "name": "eyebrow",
+      "bbox": [
+        42,
+        42,
+        360,
+        30
+      ],
+      "geometry": "rect",
+      "text": "WEEK 07",
+      "textPreview": "WEEK 07",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 07",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 07",
+              "fontSize": 16,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9w3m94fu",
+      "id": "2",
+      "name": "title",
+      "bbox": [
+        42,
+        145,
+        860,
+        190
+      ],
+      "geometry": "rect",
+      "text": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์",
+      "textPreview": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดั"
+          },
+          {
+            "index": 2,
+            "text": "บคลาวด์"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์",
+              "fontSize": 52,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.05
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kb6xkf6d",
+      "id": "3",
+      "name": "week-block",
+      "bbox": [
+        942,
+        94,
+        246,
+        412
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/re1w7mp0",
+      "id": "4",
+      "name": "week-number",
+      "bbox": [
+        958,
+        148,
+        210,
+        130
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 92,
+      "resolvedTextStyle": {
+        "fontSize": 92,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 92,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 92,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t83itgf",
+      "id": "5",
+      "name": "course-name",
+      "bbox": [
+        970,
+        304,
+        190,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Computer Engineering Essentials",
+      "textPreview": "Computer Engineering Essentials",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Computer"
+          },
+          {
+            "index": 2,
+            "text": "Engineering"
+          },
+          {
+            "index": 3,
+            "text": "Essentials"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Computer Engineering Essentials",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Computer Engineering Essentials",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9knih4by",
+      "id": "6",
+      "name": "subtitle",
+      "bbox": [
+        42,
+        390,
+        760,
+        130
+      ],
+      "geometry": "rect",
+      "text": "ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื่อง 24/7 การมาของ AI เปลี่ยนการออกแบบศูนย์ข้อมูลอย่างสิ้นเชิง",
+      "textPreview": "ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล"
+          },
+          {
+            "index": 2,
+            "text": "รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน"
+          },
+          {
+            "index": 3,
+            "text": "ให้บริการคลาวด์และ AI ต่อเนื่อง 24/7 การมาของ AI"
+          },
+          {
+            "index": 4,
+            "text": "เปลี่ยนการออกแบบศูนย์ข้อมูลอย่างสิ้นเชิง"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื่อง 24/7 การมาของ AI เปลี่ยนการออกแบบศูนย์ข้อมูลอย่างสิ้นเชิง",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.25
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื่อง 24/7 การมาของ AI เปลี่ยนการออกแบบศูนย์ข้อมูลอย่างสิ้นเชิง",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.25
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzupwb2h",
+      "id": "7",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "8",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 07",
+      "textPreview": "EN-001-019 | Week 07",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 07",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 07",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p8nqxs7",
+      "id": "9",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "1/5",
+      "textPreview": "1/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

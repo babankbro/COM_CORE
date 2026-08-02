@@ -1,0 +1,577 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/zuciij",
+    "id": "zuciij",
+    "slide": 1,
+    "layoutId": "7ae2a7e0-c117-460e-a05f-a81985f1f5fd",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "ea480849-5146-4d8c-bd0d-4d23b5145ba4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Tahoma"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "7ae2a7e0-c117-460e-a05f-a81985f1f5fd",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "ea480849-5146-4d8c-bd0d-4d23b5145ba4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ea480849-5146-4d8c-bd0d-4d23b5145ba4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kb6xkf6d",
+      "id": "1",
+      "name": "eyebrow",
+      "bbox": [
+        42,
+        42,
+        360,
+        30
+      ],
+      "geometry": "rect",
+      "text": "WEEK 15",
+      "textPreview": "WEEK 15",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "Tahoma",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 15",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Tahoma",
+            "color": "#0F766E",
+            "bold": true,
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 15",
+              "fontSize": 16,
+              "typeface": "Tahoma",
+              "color": "#0F766E",
+              "bold": true,
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "2",
+      "name": "title",
+      "bbox": [
+        42,
+        145,
+        860,
+        190
+      ],
+      "geometry": "rect",
+      "text": "การดูงานเชิงวิชาการ",
+      "textPreview": "การดูงานเชิงวิชาการ",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "Tahoma",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "การดูงานเชิงวิชาการ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "การดูงานเชิงวิชาการ",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "typeface": "Tahoma",
+            "color": "#111111",
+            "bold": true,
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "การดูงานเชิงวิชาการ",
+              "fontSize": 52,
+              "typeface": "Tahoma",
+              "color": "#111111",
+              "bold": true,
+              "lineSpacing": 1.05
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25kb6xkf",
+      "id": "3",
+      "name": "week-block",
+      "bbox": [
+        942,
+        94,
+        246,
+        412
+      ],
+      "geometry": "rect",
+      "fillColor": "#EFEFEF",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9knih4by",
+      "id": "4",
+      "name": "week-number",
+      "bbox": [
+        958,
+        148,
+        210,
+        130
+      ],
+      "geometry": "rect",
+      "text": "15",
+      "textPreview": "15",
+      "resolvedFontSize": 92,
+      "resolvedTextStyle": {
+        "fontSize": 92,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "15",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 92,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "15",
+              "fontSize": 92,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kzupwb2h",
+      "id": "5",
+      "name": "course-name",
+      "bbox": [
+        970,
+        304,
+        190,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Computer Engineering Essentials",
+      "textPreview": "Computer Engineering Essentials",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#1F2937",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Computer"
+          },
+          {
+            "index": 2,
+            "text": "Engineering"
+          },
+          {
+            "index": 3,
+            "text": "Essentials"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Computer Engineering Essentials",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#1F2937",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Computer Engineering Essentials",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#1F2937",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/re1w7mp0",
+      "id": "6",
+      "name": "subtitle",
+      "bbox": [
+        42,
+        390,
+        760,
+        130
+      ],
+      "geometry": "rect",
+      "text": "การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)",
+      "textPreview": "การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\""
+          },
+          {
+            "index": 2,
+            "text": "พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)",
+          "lineSpacingPercent": 125000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.25
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "การดูงานเชื่อม \"ทฤษฎีในห้องเรียน\" กับ \"การปฏิบัติจริงในอุตสาหกรรม\" พัฒนาทักษะการสังเกต การสื่อสาร และความรับผิดชอบเชิงวิชาชีพ (CLO6)",
+              "fontSize": 24,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.25
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t83itgf",
+      "id": "7",
+      "name": "footer-rule",
+      "bbox": [
+        42,
+        666,
+        1196,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gr2p8nq",
+      "id": "8",
+      "name": "footer-left",
+      "bbox": [
+        42,
+        675,
+        420,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EN-001-019 | Week 15",
+      "textPreview": "EN-001-019 | Week 15",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EN-001-019 | Week 15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EN-001-019 | Week 15",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EN-001-019 | Week 15",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "9",
+      "name": "footer-page",
+      "bbox": [
+        1180,
+        675,
+        58,
+        24
+      ],
+      "geometry": "rect",
+      "text": "1/5",
+      "textPreview": "1/5",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "Tahoma",
+        "color": "#555555",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1/5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1/5",
+          "lineSpacingPercent": 115000,
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Tahoma",
+            "color": "#555555",
+            "alignment": "right",
+            "lineSpacing": 1.15
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1/5",
+              "fontSize": 14,
+              "typeface": "Tahoma",
+              "color": "#555555",
+              "alignment": "right",
+              "lineSpacing": 1.15
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

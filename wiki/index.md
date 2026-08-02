@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: "2026-06-30T11:30:00"
+updated: "2026-08-03T00:14:00"
 ---
 
 # Computer Engineering Essentials (EN-001-019)
@@ -41,6 +41,9 @@ Master catalog ของทุกหน้าใน vault · รายวิช�
   - [[กิจกรรมปฏิบัติการและโครงงาน]]
   - [[_index|สารบัญใบงาน Lab (4 Modules)]]
   - [[รายงานวิชาการ-ภาพรวม]]
+
+## 🧑‍🏫 Learning Content
+- [[Learning Content Index]] — เนื้อหาเรียนรู้รายสัปดาห์ Week 01–17 พร้อมคำอธิบาย กิจกรรม คำถามทบทวน และแหล่งอ้างอิงค้นคว้า
 
 ## 🔑 Concepts (พจนานุกรมศัพท์)
 - [[Concepts Index]] — รวม 17 ศัพท์/กรอบแนวคิด (เช่น [[Vector Database]], [[Zero-Trust Architecture]], [[RISC-V]], [[Agentic AI]], [[PUE]], [[PDPA]])

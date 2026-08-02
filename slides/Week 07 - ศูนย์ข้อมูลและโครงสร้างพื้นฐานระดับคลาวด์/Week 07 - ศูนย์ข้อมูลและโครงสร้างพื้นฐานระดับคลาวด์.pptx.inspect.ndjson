@@ -1,0 +1,89 @@
+{"kind":"deck","id":"pr/pi2c25","name":"Deck"}
+{"kind":"layout","layoutId":"60c7ea12-0ba5-4fdd-9733-b9476c9e1614","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"627f9af9-d6dd-4e56-b14e-8d3eb63dddfd","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/czrigy","slide":1,"title":"WEEK 07","textShapes":7}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":1,"name":"eyebrow","text":"WEEK 07","textPreview":"WEEK 07","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":1,"name":"title","text":"ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์","textPreview":"ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์","textChars":41,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":1,"name":"week-number","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/9knih4by","slide":1,"name":"subtitle","text":"ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื่อง 24/7 การมาของ AI เปลี่ยนการออกแบบศูนย์ข้อมูลอย่างสิ้นเชิง","textPreview":"ศูนย์ข้อมูล (Data Center) คือโรงงานประมวลผลของยุคดิจิทัล รวมเซิร์ฟเวอร์/สตอเรจ/เครือข่าย/ไฟฟ้า/ระบายความร้อน ให้บริการคลาวด์และ AI ต่อเนื...","textChars":198,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":1,"name":"footer-left","text":"EN-001-019 | Week 07","textPreview":"EN-001-019 | Week 07","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/czrigy","slide":1,"text":""}
+{"kind":"slide","id":"sl/5o18ye","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/3m94fu18","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":2,"name":"bullet-0","text":"ผู้เรียนเข้าใจสถาปัตยกรรมศูนย์ข้อมูลและการจำลองเสมือน (Virtualization/Containerization) — CLO2","textPreview":"ผู้เรียนเข้าใจสถาปัตยกรรมศูนย์ข้อมูลและการจำลองเสมือน (Virtualization/Containerization) — CLO2","textChars":94,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/sji5snel","slide":2,"name":"bullet-1","text":"ผู้เรียนรู้จักแนวคิด Sovereign Cloud และอธิปไตยของข้อมูล — CLO2","textPreview":"ผู้เรียนรู้จักแนวคิด Sovereign Cloud และอธิปไตยของข้อมูล — CLO2","textChars":63,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":2,"name":"bullet-2","text":"ผู้เรียนเข้าใจการบริหารพลังงาน/ความร้อนใน Data Center ระดับ Hyperscale (PUE, Liquid Cooling) — CLO4","textPreview":"ผู้เรียนเข้าใจการบริหารพลังงาน/ความร้อนใน Data Center ระดับ Hyperscale (PUE, Liquid Cooling) — CLO4","textChars":99,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/za1gvy90","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/z61032ls","slide":2,"name":"footer-left","text":"EN-001-019 | Week 07","textPreview":"EN-001-019 | Week 07","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/5o18ye","slide":2,"text":""}
+{"kind":"slide","id":"sl/5b6ix6","slide":3,"title":"Knowledge Map","textShapes":14}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/j6tovaho","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/ulwval87","slide":3,"name":"bullet-0","text":"สถาปัตยกรรมศูนย์ข้อมูล + Virtualization/Containeriz…","textPreview":"สถาปัตยกรรมศูนย์ข้อมูล + Virtualization/Containeriz…","textChars":52,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":3,"name":"bullet-1","text":"Public vs Private Cloud; Sovereign Cloud","textPreview":"Public vs Private Cloud; Sovereign Cloud","textChars":40,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/j2t83itg","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":3,"name":"bullet-2","text":"การจัดการความร้อน/พลังงานยุค AI (Liquid Cooling, PU…","textPreview":"การจัดการความร้อน/พลังงานยุค AI (Liquid Cooling, PU…","textChars":52,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":3,"name":"dot-0","bbox":[482,295,12,12]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":3,"name":"bullet-0","text":"องค์ประกอบ: racks/servers, storage, networking, UPS…","textPreview":"องค์ประกอบ: racks/servers, storage, networking, UPS…","textChars":52,"textLines":1,"bbox":[510,286,260,86]}
+{"kind":"shape","id":"sh/svu9knih","slide":3,"name":"dot-1","bbox":[482,387,12,12]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":3,"name":"bullet-1","text":"ตัวชี้วัด: PUE = พลังงานรวม ÷ พลังงาน IT (ยิ่งใกล้…","textPreview":"ตัวชี้วัด: PUE = พลังงานรวม ÷ พลังงาน IT (ยิ่งใกล้…","textChars":51,"textLines":1,"bbox":[510,378,260,86]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":3,"name":"dot-2","bbox":[482,479,12,12]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":3,"name":"bullet-2","text":"ความสัมพันธ์กับคลาวด์: เป็นโครงสร้างพื้นฐานของ IaaS…","textPreview":"ความสัมพันธ์กับคลาวด์: เป็นโครงสร้างพื้นฐานของ IaaS…","textChars":52,"textLines":1,"bbox":[510,470,260,86]}
+{"kind":"shape","id":"sh/sji5snel","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/psfil0rq","slide":3,"name":"dot-0","bbox":[872,295,12,12]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"name":"bullet-0","text":"PUE","textPreview":"PUE","textChars":3,"textLines":1,"bbox":[900,286,260,86]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":3,"name":"dot-1","bbox":[872,387,12,12]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":3,"name":"bullet-1","text":"Liquid Cooling","textPreview":"Liquid Cooling","textChars":14,"textLines":1,"bbox":[900,378,260,86]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/wval87ed","slide":3,"name":"footer-left","text":"EN-001-019 | Week 07","textPreview":"EN-001-019 | Week 07","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/5b6ix6","slide":3,"text":""}
+{"kind":"slide","id":"sl/flsr58","slide":4,"title":"Core Content","textShapes":11}
+{"kind":"textbox","id":"sh/83itgfml","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":4,"name":"dot-0","bbox":[100,265,12,12]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":4,"name":"bullet-0","text":"องค์ประกอบ: racks/servers, storage, networking, UPS/generator, ระบบทำความเย็น, การควบคุมการเข้าถึง","textPreview":"องค์ประกอบ: racks/servers, storage, networking, UPS/generator, ระบบทำความเย็น, การควบคุมการเข้าถึง","textChars":98,"textLines":1,"bbox":[128,256,405,70]}
+{"kind":"shape","id":"sh/m94fu18j","slide":4,"name":"dot-1","bbox":[100,341,12,12]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":4,"name":"bullet-1","text":"ตัวชี้วัด: PUE = พลังงานรวม ÷ พลังงาน IT (ยิ่งใกล้ 1 ยิ่งดี); Tier I–IV; SLA","textPreview":"ตัวชี้วัด: PUE = พลังงานรวม ÷ พลังงาน IT (ยิ่งใกล้ 1 ยิ่งดี); Tier I–IV; SLA","textChars":76,"textLines":1,"bbox":[128,332,405,70]}
+{"kind":"shape","id":"sh/4r65wjud","slide":4,"name":"dot-2","bbox":[100,417,12,12]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":4,"name":"bullet-2","text":"ความสัมพันธ์กับคลาวด์: เป็นโครงสร้างพื้นฐานของ IaaS/PaaS/SaaS (เชื่อม Week 06 - Computer Networks & Internet)","textPreview":"ความสัมพันธ์กับคลาวด์: เป็นโครงสร้างพื้นฐานของ IaaS/PaaS/SaaS (เชื่อม Week 06 - Computer Networks & Internet)","textChars":109,"textLines":1,"bbox":[128,408,405,70]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/svu9knih","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":4,"name":"bullet-0","text":"ภาระงาน AI ดันความหนาแน่นพุ่ง: rack เดิม 10–20 kW ไม่พอ คลัสเตอร์ AI เกิน 100 kW มุ่งสู่ 300 kW+; ค…","textPreview":"ภาระงาน AI ดันความหนาแน่นพุ่ง: rack เดิม 10–20 kW ไม่พอ คลัสเตอร์ AI เกิน 100 kW มุ่งสู่ 300 kW+; ค…","textChars":100,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":4,"name":"bullet-1","text":"Liquid Cooling เป็นสิ่งจำเป็น: ตลาด liquid cooling สำหรับ AI โตจาก ~3.2 พันล้าน (2025) สู่ ~17.8 พั…","textPreview":"Liquid Cooling เป็นสิ่งจำเป็น: ตลาด liquid cooling สำหรับ AI โตจาก ~3.2 พันล้าน (2025) สู่ ~17.8 พั…","textChars":100,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":4,"name":"dot-2","bbox":[676,417,12,12]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":4,"name":"bullet-2","text":"พลังงานคือข้อจำกัดหลัก: การใช้ไฟของบริษัท AI ชั้นนำอาจเพิ่มจาก ~118 TWh (2024) เป็น ~295 TWh (2030)…","textPreview":"พลังงานคือข้อจำกัดหลัก: การใช้ไฟของบริษัท AI ชั้นนำอาจเพิ่มจาก ~118 TWh (2024) เป็น ~295 TWh (2030)…","textChars":100,"textLines":1,"bbox":[704,408,405,70]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":4,"name":"footer-left","text":"EN-001-019 | Week 07","textPreview":"EN-001-019 | Week 07","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/vixczed8","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/flsr58","slide":4,"text":""}
+{"kind":"slide","id":"sl/fgwkw8","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/svu9knih","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/za1gvy90","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":5,"name":"activity","text":"Lab 1 ชม. (ทดลองใช้ Cloud/Docker เบื้องต้น) + Project 1 ชม.","textPreview":"Lab 1 ชม. (ทดลองใช้ Cloud/Docker เบื้องต้น) + Project 1 ชม.","textChars":59,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":5,"name":"footer-left","text":"EN-001-019 | Week 07","textPreview":"EN-001-019 | Week 07","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/fgwkw8","slide":5,"text":""}

@@ -1,0 +1,89 @@
+{"kind":"deck","id":"pr/qn8478","name":"Deck"}
+{"kind":"layout","layoutId":"4e0210a2-2a55-4e59-8b45-7255c863f72d","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"6f4b1bd3-d5d9-44c3-9dbf-63c95962759a","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/pjj4a5","slide":1,"title":"WEEK 09","textShapes":7}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":1,"name":"eyebrow","text":"WEEK 09","textPreview":"WEEK 09","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":1,"name":"title","text":"ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง","textPreview":"ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง","textChars":37,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":1,"name":"week-number","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/wval87ed","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":1,"name":"subtitle","text":"AI คือระบบที่ทำงานซึ่งปกติต้องใช้ปัญญามนุษย์ หัวใจปัจจุบันคือ Machine Learning (ML) — เรียนรู้รูปแบบจากข้อมูล โดยเฉพาะ Deep Learning สัปดาห์นี้ปูพื้นก่อนเข้าสู่ Generative AI ในสัปดาห์ถัดไป","textPreview":"AI คือระบบที่ทำงานซึ่งปกติต้องใช้ปัญญามนุษย์ หัวใจปัจจุบันคือ Machine Learning (ML) — เรียนรู้รูปแบบจากข้อมูล โดยเฉพาะ Deep Learning สัปด...","textChars":189,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/epkzupwb","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":1,"name":"footer-left","text":"EN-001-019 | Week 09","textPreview":"EN-001-019 | Week 09","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/pjj4a5","slide":1,"text":""}
+{"kind":"slide","id":"sl/oysk23","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/90je9cvi","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":2,"name":"bullet-0","text":"ผู้เรียนอธิบายแนวคิดพื้นฐานของ AI และ Machine Learning ได้ — CLO1","textPreview":"ผู้เรียนอธิบายแนวคิดพื้นฐานของ AI และ Machine Learning ได้ — CLO1","textChars":65,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":2,"name":"bullet-1","text":"ผู้เรียนรู้จักขั้นตอนการสร้างและฝึกสอนโมเดล (Model Training) — CLO1","textPreview":"ผู้เรียนรู้จักขั้นตอนการสร้างและฝึกสอนโมเดล (Model Training) — CLO1","textChars":67,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"name":"bullet-2","text":"ผู้เรียนเข้าใจแนวคิด MLOps และความสำคัญในการนำโมเดลไปใช้งานจริง — CLO1","textPreview":"ผู้เรียนเข้าใจแนวคิด MLOps และความสำคัญในการนำโมเดลไปใช้งานจริง — CLO1","textChars":70,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":2,"name":"footer-left","text":"EN-001-019 | Week 09","textPreview":"EN-001-019 | Week 09","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/cvixczed","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/oysk23","slide":2,"text":""}
+{"kind":"slide","id":"sl/f25tgf","slide":3,"title":"Knowledge Map","textShapes":15}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/psfil0rq","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/7adsji5s","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":3,"name":"bullet-0","text":"พื้นฐาน AI และ ML (Supervised, Unsupervised, Reinfo…","textPreview":"พื้นฐาน AI และ ML (Supervised, Unsupervised, Reinfo…","textChars":52,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/wval87ed","slide":3,"name":"bullet-1","text":"Deep Learning และโครงข่ายประสาทเทียม (Neural Networ…","textPreview":"Deep Learning และโครงข่ายประสาทเทียม (Neural Networ…","textChars":52,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":3,"name":"bullet-2","text":"MLOps: พัฒนา → ทดสอบ → จัดเก็บ → นำขึ้นระบบจริง (De…","textPreview":"MLOps: พัฒนา → ทดสอบ → จัดเก็บ → นำขึ้นระบบจริง (De…","textChars":52,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/eloj2t83","slide":3,"name":"dot-0","bbox":[482,295,12,12]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":3,"name":"bullet-0","text":"ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สม…","textPreview":"ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สม…","textChars":52,"textLines":1,"bbox":[510,286,260,86]}
+{"kind":"shape","id":"sh/wfyxobm5","slide":3,"name":"dot-1","bbox":[482,387,12,12]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":3,"name":"bullet-1","text":"สาขา ML: supervised, unsupervised, reinforcement le…","textPreview":"สาขา ML: supervised, unsupervised, reinforcement le…","textChars":52,"textLines":1,"bbox":[510,378,260,86]}
+{"kind":"shape","id":"sh/ed8bat47","slide":3,"name":"dot-2","bbox":[482,479,12,12]}
+{"kind":"textbox","id":"sh/7u54zido","slide":3,"name":"bullet-2","text":"Deep Learning: neural networks, การฝึกด้วยข้อมูลปริ…","textPreview":"Deep Learning: neural networks, การฝึกด้วยข้อมูลปริ…","textChars":52,"textLines":1,"bbox":[510,470,260,86]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":3,"name":"dot-0","bbox":[872,295,12,12]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":3,"name":"bullet-0","text":"MLOps","textPreview":"MLOps","textChars":5,"textLines":1,"bbox":[900,286,260,86]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":3,"name":"dot-1","bbox":[872,387,12,12]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":3,"name":"bullet-1","text":"RAG และ LLM","textPreview":"RAG และ LLM","textChars":11,"textLines":1,"bbox":[900,378,260,86]}
+{"kind":"shape","id":"sh/9knih4by","slide":3,"name":"dot-2","bbox":[872,479,12,12]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":3,"name":"bullet-2","text":"Agentic AI","textPreview":"Agentic AI","textChars":10,"textLines":1,"bbox":[900,470,260,86]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":3,"name":"footer-left","text":"EN-001-019 | Week 09","textPreview":"EN-001-019 | Week 09","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/f25tgf","slide":3,"text":""}
+{"kind":"slide","id":"sl/qddcip","slide":4,"title":"Core Content","textShapes":10}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/nap4r65w","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"shape","id":"sh/54zidony","slide":4,"name":"dot-0","bbox":[100,265,12,12]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":4,"name":"bullet-0","text":"ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)","textPreview":"ระดับของ AI: narrow AI (เฉพาะงาน) vs general AI (สมมุติฐาน)","textChars":59,"textLines":1,"bbox":[128,256,405,70]}
+{"kind":"shape","id":"sh/nyd0z610","slide":4,"name":"dot-1","bbox":[100,341,12,12]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":4,"name":"bullet-1","text":"สาขา ML: supervised, unsupervised, reinforcement learning","textPreview":"สาขา ML: supervised, unsupervised, reinforcement learning","textChars":57,"textLines":1,"bbox":[128,332,405,70]}
+{"kind":"shape","id":"sh/1032lszq","slide":4,"name":"dot-2","bbox":[100,417,12,12]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":4,"name":"bullet-2","text":"Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…","textPreview":"Deep Learning: neural networks, การฝึกด้วยข้อมูลปริมาณมาก ใช้ GPU/NPU (เชื่อม Week 03 - Digital Logic & Moder…","textChars":110,"textLines":1,"bbox":[128,408,405,70]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":4,"name":"bullet-0","text":"โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์","textPreview":"โมเดลเฉพาะทาง (domain-specific foundation models) + on-device AI มาแทนโมเดลยักษ์อเนกประสงค์","textChars":91,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/1gvy90je","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":4,"name":"bullet-1","text":"AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง","textPreview":"AI-ready data และ MLOps เป็นปัจจัยชี้ขาดความสำเร็จของการนำ AI ไปใช้จริง","textChars":71,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/je9cvixc","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":4,"name":"footer-left","text":"EN-001-019 | Week 09","textPreview":"EN-001-019 | Week 09","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/qddcip","slide":4,"text":""}
+{"kind":"slide","id":"sl/edhyar","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":5,"name":"activity","text":"Lab 1 ชม. (ทดลองรัน ML Model ง่ายๆ) + Project 1 ชม.","textPreview":"Lab 1 ชม. (ทดลองรัน ML Model ง่ายๆ) + Project 1 ชม.","textChars":51,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/orytsvu9","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/z61032ls","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":5,"name":"footer-left","text":"EN-001-019 | Week 09","textPreview":"EN-001-019 | Week 09","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/edhyar","slide":5,"text":""}

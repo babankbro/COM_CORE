@@ -1,0 +1,85 @@
+{"kind":"deck","id":"pr/ca2b0m","name":"Deck"}
+{"kind":"layout","layoutId":"e819e907-58b4-46f2-b8be-8dbf79a8b299","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"26209792-d2a4-4c3a-b26f-a331f0566385","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/uldcnu","slide":1,"title":"WEEK 14","textShapes":7}
+{"kind":"textbox","id":"sh/psfil0rq","slide":1,"name":"eyebrow","text":"WEEK 14","textPreview":"WEEK 14","textChars":7,"textLines":1,"bbox":[42,42,360,30]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":1,"name":"title","text":"โครงงานประยุกต์และวิศวกรรมระบบ","textPreview":"โครงงานประยุกต์และวิศวกรรมระบบ","textChars":30,"textLines":1,"bbox":[42,145,860,190]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":1,"name":"week-block","bbox":[942,94,246,412]}
+{"kind":"textbox","id":"sh/wval87ed","slide":1,"name":"week-number","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[958,148,210,130]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":1,"name":"course-name","text":"Computer Engineering Essentials","textPreview":"Computer Engineering Essentials","textChars":31,"textLines":1,"bbox":[970,304,190,76]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":1,"name":"subtitle","text":"สัปดาห์บูรณาการ — นำความรู้ทุกหัวข้อมาประกอบเป็นระบบจริงผ่านวงจรการพัฒนา (SDLC), แนวคิด Agile/DevOps และ CI/CD เพื่อเตรียมความพร้อมโครงงานปลายภาค","textPreview":"สัปดาห์บูรณาการ — นำความรู้ทุกหัวข้อมาประกอบเป็นระบบจริงผ่านวงจรการพัฒนา (SDLC), แนวคิด Agile/DevOps และ CI/CD เพื่อเตรียมความพร้อมโครงงา...","textChars":145,"textLines":1,"bbox":[42,390,760,130]}
+{"kind":"shape","id":"sh/7adsji5s","slide":1,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":1,"name":"footer-left","text":"EN-001-019 | Week 14","textPreview":"EN-001-019 | Week 14","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":1,"name":"footer-page","text":"1/5","textPreview":"1/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/uldcnu","slide":1,"text":""}
+{"kind":"slide","id":"sl/3cgzpf","slide":2,"title":"Learning Objectives","textShapes":7}
+{"kind":"textbox","id":"sh/94fu18jq","slide":2,"name":"title","text":"Learning Objectives","textPreview":"Learning Objectives","textChars":19,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":2,"name":"subtitle","text":"เชื่อมโยง CLO ของรายวิชา","textPreview":"เชื่อมโยง CLO ของรายวิชา","textChars":24,"textLines":1,"bbox":[42,104,720,32]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":2,"name":"dot-0","bbox":[88,193,12,12]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":2,"name":"bullet-0","text":"ผู้เรียนเข้าใจวงจรการพัฒนาระบบซอฟต์แวร์/ฮาร์ดแวร์สมัยใหม่ — CLO6","textPreview":"ผู้เรียนเข้าใจวงจรการพัฒนาระบบซอฟต์แวร์/ฮาร์ดแวร์สมัยใหม่ — CLO6","textChars":64,"textLines":1,"bbox":[116,184,1010,76]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":2,"name":"dot-1","bbox":[88,275,12,12]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":2,"name":"bullet-1","text":"ผู้เรียนรู้จักแนวคิด DevOps และกระบวนการ CI/CD — CLO6","textPreview":"ผู้เรียนรู้จักแนวคิด DevOps และกระบวนการ CI/CD — CLO6","textChars":53,"textLines":1,"bbox":[116,266,1010,76]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":2,"name":"dot-2","bbox":[88,357,12,12]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":2,"name":"bullet-2","text":"ผู้เรียนนำความรู้ทั้งหมดมาประยุกต์ออกแบบโครงงานปลายภาคได้ — CLO3","textPreview":"ผู้เรียนนำความรู้ทั้งหมดมาประยุกต์ออกแบบโครงงานปลายภาคได้ — CLO3","textChars":64,"textLines":1,"bbox":[116,348,1010,76]}
+{"kind":"shape","id":"sh/9knih4by","slide":2,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":2,"name":"footer-left","text":"EN-001-019 | Week 14","textPreview":"EN-001-019 | Week 14","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":2,"name":"footer-page","text":"2/5","textPreview":"2/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/3cgzpf","slide":2,"text":""}
+{"kind":"slide","id":"sl/seuig7","slide":3,"title":"Knowledge Map","textShapes":13}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":3,"name":"title","text":"Knowledge Map","textPreview":"Knowledge Map","textChars":13,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/tcj6tova","slide":3,"name":"panel-0","bbox":[64,164,330,400]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":3,"name":"panel-title-0","text":"หัวข้อหลัก","textPreview":"หัวข้อหลัก","textChars":10,"textLines":1,"bbox":[88,204,282,44]}
+{"kind":"shape","id":"sh/byhgn29g","slide":3,"name":"dot-0","bbox":[92,295,12,12]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":3,"name":"bullet-0","text":"วงจรการพัฒนาระบบ (SDLC)","textPreview":"วงจรการพัฒนาระบบ (SDLC)","textChars":23,"textLines":1,"bbox":[120,286,260,86]}
+{"kind":"shape","id":"sh/t47y1kre","slide":3,"name":"dot-1","bbox":[92,387,12,12]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":3,"name":"bullet-1","text":"วิศวกรรมระบบร่วมสมัย: Agile และ DevOps","textPreview":"วิศวกรรมระบบร่วมสมัย: Agile และ DevOps","textChars":38,"textLines":1,"bbox":[120,378,260,86]}
+{"kind":"shape","id":"sh/bulwval8","slide":3,"name":"dot-2","bbox":[92,479,12,12]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":3,"name":"bullet-2","text":"Continuous Integration & Continuous Deployment (CI/…","textPreview":"Continuous Integration & Continuous Deployment (CI/…","textChars":52,"textLines":1,"bbox":[120,470,260,86]}
+{"kind":"shape","id":"sh/0fepkzup","slide":3,"name":"panel-1","bbox":[454,164,330,400]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":3,"name":"panel-title-1","text":"แก่นความรู้","textPreview":"แก่นความรู้","textChars":11,"textLines":1,"bbox":[478,204,282,44]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":3,"name":"dot-0","bbox":[482,295,12,12]}
+{"kind":"textbox","id":"sh/bulwval8","slide":3,"name":"bullet-0","text":"SDLC: วิเคราะห์ → ออกแบบ → พัฒนา → ทดสอบ → นำไปใช้…","textPreview":"SDLC: วิเคราะห์ → ออกแบบ → พัฒนา → ทดสอบ → นำไปใช้…","textChars":51,"textLines":1,"bbox":[510,286,260,86]}
+{"kind":"shape","id":"sh/032lszqt","slide":3,"name":"dot-1","bbox":[482,387,12,12]}
+{"kind":"textbox","id":"sh/tovahoza","slide":3,"name":"bullet-1","text":"Agile/DevOps: วงรอบสั้น, การทำงานร่วม dev+ops, อัตโ…","textPreview":"Agile/DevOps: วงรอบสั้น, การทำงานร่วม dev+ops, อัตโ…","textChars":52,"textLines":1,"bbox":[510,378,260,86]}
+{"kind":"shape","id":"sh/ixczed8v","slide":3,"name":"dot-2","bbox":[482,479,12,12]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":3,"name":"bullet-2","text":"CI/CD: integrate–build–test–deploy อัตโนมัติ; เชื่อ…","textPreview":"CI/CD: integrate–build–test–deploy อัตโนมัติ; เชื่อ…","textChars":52,"textLines":1,"bbox":[510,470,260,86]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":3,"name":"panel-2","bbox":[844,164,330,400]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":3,"name":"panel-title-2","text":"แนวคิดเชื่อมโยง","textPreview":"แนวคิดเชื่อมโยง","textChars":15,"textLines":1,"bbox":[868,204,282,44]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":3,"name":"dot-0","bbox":[872,295,12,12]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":3,"name":"bullet-0","text":"MLOps (ส่วนขยายของ DevOps สำหรับ ML)","textPreview":"MLOps (ส่วนขยายของ DevOps สำหรับ ML)","textChars":36,"textLines":1,"bbox":[900,286,260,86]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":3,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":3,"name":"footer-left","text":"EN-001-019 | Week 14","textPreview":"EN-001-019 | Week 14","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":3,"name":"footer-page","text":"3/5","textPreview":"3/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/seuig7","slide":3,"text":""}
+{"kind":"slide","id":"sl/u41u58","slide":4,"title":"Core Content","textShapes":10}
+{"kind":"textbox","id":"sh/knih4byh","slide":4,"name":"title","text":"Core Content","textPreview":"Core Content","textChars":12,"textLines":1,"bbox":[42,40,720,58]}
+{"kind":"shape","id":"sh/v6psfil0","slide":4,"name":"left-panel","bbox":[66,148,502,398]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":4,"name":"right-panel","bbox":[642,148,502,398]}
+{"kind":"textbox","id":"sh/d0z61032","slide":4,"name":"left-head","text":"ต้องเข้าใจ","textPreview":"ต้องเข้าใจ","textChars":10,"textLines":1,"bbox":[94,184,420,40]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":4,"name":"dot-0","bbox":[100,265,12,12]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":4,"name":"bullet-0","text":"SDLC: วิเคราะห์ → ออกแบบ → พัฒนา → ทดสอบ → นำไปใช้ → บำรุงรักษา","textPreview":"SDLC: วิเคราะห์ → ออกแบบ → พัฒนา → ทดสอบ → นำไปใช้ → บำรุงรักษา","textChars":63,"textLines":1,"bbox":[128,256,405,70]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":4,"name":"dot-1","bbox":[100,341,12,12]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":4,"name":"bullet-1","text":"Agile/DevOps: วงรอบสั้น, การทำงานร่วม dev+ops, อัตโนมัติ","textPreview":"Agile/DevOps: วงรอบสั้น, การทำงานร่วม dev+ops, อัตโนมัติ","textChars":56,"textLines":1,"bbox":[128,332,405,70]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":4,"name":"dot-2","bbox":[100,417,12,12]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":4,"name":"bullet-2","text":"CI/CD: integrate–build–test–deploy อัตโนมัติ; เชื่อมกับการจัดการเวอร์ชัน (Git)","textPreview":"CI/CD: integrate–build–test–deploy อัตโนมัติ; เชื่อมกับการจัดการเวอร์ชัน (Git)","textChars":78,"textLines":1,"bbox":[128,408,405,70]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":4,"name":"right-head","text":"แนวโน้ม/บริบทปัจจุบัน","textPreview":"แนวโน้ม/บริบทปัจจุบัน","textChars":21,"textLines":1,"bbox":[670,184,420,40]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":4,"name":"dot-0","bbox":[676,265,12,12]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":4,"name":"bullet-0","text":"DevOps ผสาน AI (AIOps) และ MLOps เพื่อ deploy โมเดล/บริการอัตโนมัติ","textPreview":"DevOps ผสาน AI (AIOps) และ MLOps เพื่อ deploy โมเดล/บริการอัตโนมัติ","textChars":67,"textLines":1,"bbox":[704,256,405,70]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":4,"name":"dot-1","bbox":[676,341,12,12]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":4,"name":"bullet-1","text":"เครื่องมือ AI ช่วยทั้งวงจร SDLC (สร้างโค้ด/เทสต์/รีวิว)","textPreview":"เครื่องมือ AI ช่วยทั้งวงจร SDLC (สร้างโค้ด/เทสต์/รีวิว)","textChars":55,"textLines":1,"bbox":[704,332,405,70]}
+{"kind":"shape","id":"sh/sneloj2t","slide":4,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":4,"name":"footer-left","text":"EN-001-019 | Week 14","textPreview":"EN-001-019 | Week 14","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":4,"name":"footer-page","text":"4/5","textPreview":"4/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/u41u58","slide":4,"text":""}
+{"kind":"slide","id":"sl/s9tpoc","slide":5,"title":"Lab & Project Activity","textShapes":7}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":5,"name":"title","text":"Lab & Project Activity","textPreview":"Lab & Project Activity","textChars":22,"textLines":1,"bbox":[42,40,800,58]}
+{"kind":"shape","id":"sh/bat47y1k","slide":5,"name":"activity-panel","bbox":[78,158,804,252]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":5,"name":"activity","text":"Lab 1 ชม. (สร้าง CI/CD Pipeline ขั้นต้น) + Project 1 ชม.","textPreview":"Lab 1 ชม. (สร้าง CI/CD Pipeline ขั้นต้น) + Project 1 ชม.","textChars":56,"textLines":1,"bbox":[114,206,728,150]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":5,"name":"action-block","bbox":[944,158,214,252]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":5,"name":"output-label","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[974,208,154,44]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":5,"name":"output-list","text":"ใบงาน\nโค้ด/แบบจำลอง\nreflection","textPreview":"ใบงาน | โค้ด/แบบจำลอง | reflection","textChars":30,"textLines":3,"bbox":[974,270,154,92]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":5,"name":"closing","text":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textPreview":"ใช้สไลด์ชุดนี้เป็นแกนบรรยายก่อนเข้าสู่กิจกรรมปฏิบัติการ","textChars":55,"textLines":1,"bbox":[78,468,980,54]}
+{"kind":"shape","id":"sh/twra5gbq","slide":5,"name":"footer-rule","bbox":[42,666,1196,1]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":5,"name":"footer-left","text":"EN-001-019 | Week 14","textPreview":"EN-001-019 | Week 14","textChars":20,"textLines":1,"bbox":[42,675,420,24]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":5,"name":"footer-page","text":"5/5","textPreview":"5/5","textChars":3,"textLines":1,"bbox":[1180,675,58,24]}
+{"kind":"notes","id":"nt/s9tpoc","slide":5,"text":""}

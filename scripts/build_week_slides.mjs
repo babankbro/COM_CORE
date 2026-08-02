@@ -32,6 +32,8 @@ function cleanText(value = "") {
     .replace(/^> \[![^\]]+\]\s*/gm, "")
     .replace(/^>\s?/gm, "")
     .replace(/\[\[([^\]|]+)\|?([^\]]*)\]\]/g, (_, a, b) => b || a)
+    .replace(/\bดู\s+(overview|index)\b.*$/gi, "")
+    .replace(/ดู\s+รายละเอียดเต็มที่.*$/gi, "")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/\*([^*]+)\*/g, "$1")
     .replace(/`([^`]+)`/g, "$1")
@@ -64,9 +66,15 @@ function parseFrontmatter(raw) {
 }
 
 function section(raw, headingText) {
-  const escaped = headingText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const re = new RegExp(`^##\\s+.*${escaped}.*\\n([\\s\\S]*?)(?=\\n##\\s+|$)`, "m");
-  return raw.match(re)?.[1]?.trim() || "";
+  const lines = raw.replace(/\r/g, "").split("\n");
+  const start = lines.findIndex((line) => line.startsWith("## ") && line.includes(headingText));
+  if (start < 0) return "";
+  const body = [];
+  for (let i = start + 1; i < lines.length; i++) {
+    if (lines[i].startsWith("## ")) break;
+    body.push(lines[i]);
+  }
+  return body.join("\n").trim();
 }
 
 function listItems(text, max = 5) {
@@ -76,6 +84,18 @@ function listItems(text, max = 5) {
     if (m) items.push(cleanText(m[1]));
   }
   return items.filter(Boolean).slice(0, max);
+}
+
+function compactItems(items, maxChars = 88) {
+  return items.map((item) => {
+    const value = cleanText(item);
+    if (value.length <= maxChars) return value;
+    return `${value.slice(0, maxChars - 1).trim()}…`;
+  });
+}
+
+function shorterItems(items, maxChars = 58, max = 3) {
+  return compactItems(items, maxChars).slice(0, max);
 }
 
 function splitThaiTitle(title) {
@@ -109,11 +129,11 @@ function extractWeek(filepath, raw) {
     fm,
     title: splitThaiTitle(title),
     abstract: firstSentences(abstract, 2),
-    objectives,
-    topics,
-    detailItems,
+    objectives: compactItems(objectives, 118),
+    topics: compactItems(topics, 90),
+    detailItems: compactItems(detailItems, 110),
     concepts,
-    trends,
+    trends: compactItems(trends, 100),
     lab,
     clo: fm.clo || "",
   };
@@ -177,9 +197,9 @@ function addBullets(slide, items, left, top, width, opts = {}) {
 function addThreeColumns(slide, columns) {
   const lefts = [64, 454, 844];
   columns.forEach((col, i) => {
-    shape(slide, { left: lefts[i], top: 184, width: 330, height: 342 }, i === 1 ? C.softAccent : C.panel, "none", `panel-${i}`);
-    text(slide, col.title, { left: lefts[i] + 24, top: 214, width: 282, height: 44 }, { fontSize: 25, bold: true, color: C.dark }, `panel-title-${i}`);
-    addBullets(slide, col.items, lefts[i] + 28, 286, 260, { fontSize: 18, gap: 58, max: 4, dot: i === 1 ? C.accent : C.dark });
+    shape(slide, { left: lefts[i], top: 164, width: 330, height: 400 }, i === 1 ? C.softAccent : C.panel, "none", `panel-${i}`);
+    text(slide, col.title, { left: lefts[i] + 24, top: 204, width: 282, height: 44 }, { fontSize: 25, bold: true, color: C.dark }, `panel-title-${i}`);
+    addBullets(slide, shorterItems(col.items, 52, 3), lefts[i] + 28, 286, 260, { fontSize: 17, gap: 92, max: 3, dot: i === 1 ? C.accent : C.dark });
   });
 }
 
@@ -202,9 +222,9 @@ function createDeck(data) {
   slide.background.fill = C.canvas;
   text(slide, "Knowledge Map", { left: 42, top: 40, width: 720, height: 58 }, { fontSize: 40, bold: true }, "title");
   addThreeColumns(slide, [
-    { title: "หัวข้อหลัก", items: data.topics.length ? data.topics : data.detailItems.slice(0, 4) },
-    { title: "แก่นความรู้", items: data.detailItems.slice(0, 4) },
-    { title: "แนวคิดเชื่อมโยง", items: (data.concepts ? data.concepts.split("·").map((x) => cleanText(x)) : data.trends).filter(Boolean).slice(0, 4) },
+    { title: "หัวข้อหลัก", items: data.topics.length ? data.topics : data.detailItems },
+    { title: "แก่นความรู้", items: data.detailItems },
+    { title: "แนวคิดเชื่อมโยง", items: (data.concepts ? data.concepts.split("·").map((x) => cleanText(x)) : data.trends).filter(Boolean) },
   ]);
   footer(slide, data.week, 3, total);
 
