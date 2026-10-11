@@ -110,6 +110,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           <SidebarLink href="/docs/course-plan" label="🎯 แผนการสอนและ CLO" isActive={pathname === "/docs/course-plan"} onClick={onClose} />
           <SidebarLink href="/docs/assessment" label="📊 การวัดและประเมินผล" isActive={pathname === "/docs/assessment"} onClick={onClose} />
           <SidebarLink href="/docs/labs-projects" label="🧪 4 Mini-Projects" isActive={pathname === "/docs/labs-projects"} onClick={onClose} />
+          <SidebarLink href="/exam-prep" label="🎓 แนวทางเตรียมสอบ" isActive={pathname === "/exam-prep"} onClick={onClose} />
           <SidebarLink href="/calc-examples" label="🧮 ตัวอย่างโจทย์คำนวณ" isActive={pathname === "/calc-examples"} onClick={onClose} />
 
           <div className="h-px bg-gray-200 dark:bg-gray-800 my-2" />

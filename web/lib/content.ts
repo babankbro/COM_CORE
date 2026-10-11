@@ -71,3 +71,7 @@ export function getSlide(id: string): SlideInfo | undefined {
 export function getCalcExamplesContent() {
   return readMarkdown("", "calc-examples.md", "# ยังไม่มีตัวอย่างโจทย์คำนวณ");
 }
+
+export function getExamPrepContent() {
+  return readMarkdown("", "exam-prep.md", "# ยังไม่มีแนวทางเตรียมสอบ");
+}

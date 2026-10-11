@@ -13,6 +13,7 @@ import {
   FlaskConical,
   CalendarDays,
   Calculator,
+  ClipboardCheck,
 } from "lucide-react";
 import { modules, colorMap, projects } from "@/lib/modules-data";
 import { course, clos, textbooks } from "@/lib/course";
@@ -103,6 +104,22 @@ export default function HomePage() {
           <ArrowRight className="w-5 h-5 text-sky-600 dark:text-sky-400" />
         </Link>
       </div>
+
+      <Link
+        href="/exam-prep"
+        className="flex items-center gap-4 p-5 -mt-8 mb-12 rounded-2xl border border-rose-200 dark:border-rose-800 bg-rose-50 dark:bg-rose-900/20 hover:shadow-md transition-all"
+      >
+        <div className="w-12 h-12 rounded-xl bg-rose-600 text-white flex items-center justify-center flex-shrink-0">
+          <ClipboardCheck className="w-6 h-6" />
+        </div>
+        <div className="flex-1">
+          <p className="font-bold text-gray-900 dark:text-white">แนวทางเตรียมสอบ (ครอบคลุมชุดที่ 1–3)</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            รูปแบบข้อสอบ กลยุทธ์ปรนัยหักคะแนน แผนอ่าน 2 สัปดาห์ โน้ต 5 แผ่น สูตรที่ต้องจำ และสิ่งที่ข้อสอบถามแยกตามข้อ
+          </p>
+        </div>
+        <ArrowRight className="w-5 h-5 text-rose-600 dark:text-rose-400" />
+      </Link>
 
       <Link
         href="/calc-examples"
