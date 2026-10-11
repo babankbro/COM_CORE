@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 05 - ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🖥️ Review Sheet สัปดาห์ที่ 05 — ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Database &amp; Data Management</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 5 · CLO3<br>
+      Lab 05: การออกแบบฐานข้อมูลเชิงสัมพันธ์
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🗄️</span> 1. คำศัพท์หลักของ Relational Database</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">DBMS</span><span class="def-val">ตัวกลางระหว่างแอปกับข้อมูล (เหมือน<span class="accent">บรรณารักษ์</span>): ตรวจกฎ จัด index คุมผู้ใช้พร้อมกัน · SQLite, MySQL, PostgreSQL</span></div>
+          <div class="def-row"><span class="def-key">Table</span><span class="def-val">relation · แถว = record (tuple) · คอลัมน์ = attribute · schema = โครงสร้างตาราง</span></div>
+          <div class="def-row"><span class="def-key">Primary Key</span><span class="def-val">ระบุแถวไม่ซ้ำ ห้าม NULL · มีได้ 1 ชุดต่อตาราง (อาจเป็น PK ผสมหลายคอลัมน์)</span></div>
+          <div class="def-row"><span class="def-key">Foreign Key</span><span class="def-val">คอลัมน์ที่อ้าง PK ของอีกตาราง → referential integrity · ซ้ำได้</span></div>
+          <div class="def-row"><span class="def-key">ER Diagram</span><span class="def-val">ออกแบบระดับแนวคิด: entity · attribute · relationship (1:1, 1:N, M:N)</span></div>
+          <div class="def-row"><span class="def-key">Index</span><span class="def-val">สารบัญ (B-tree) ค้นเร็ว O(log n) แลกกับเขียนช้าลงและใช้พื้นที่เพิ่ม</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔗</span> 2. ER → ตาราง: M:N ต้องมีตารางเชื่อม</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w05-er-diagram.svg" alt="ER Diagram Student Enrollment Course ที่แตก M:N เป็น 1:N สองเส้น">
+          <table>
+            <tr><th>ความสัมพันธ์</th><th>ตัวอย่าง</th><th>วิธีเก็บ</th></tr>
+            <tr><td>1:1</td><td>นักศึกษา–บัตรนักศึกษา</td><td>FK แบบ UNIQUE ฝั่งใดฝั่งหนึ่ง</td></tr>
+            <tr><td>1:N</td><td>Category–Asset, คณะ–นักศึกษา</td><td>FK อยู่ฝั่ง <b>N</b></td></tr>
+            <tr><td>M:N</td><td>Student–Course</td><td>ตารางเชื่อม <code>Enrollment</code> FK 2 ตัว</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧹</span> 3. Normalization (ข้อมูลแต่ละเรื่องอยู่ที่เดียว)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ระดับ</th><th>เงื่อนไข</th><th>ตัวอย่างที่ผิด</th></tr>
+            <tr><td><b>1NF</b></td><td>ทุกช่องค่าเดียว (atomic) ไม่มีกลุ่มซ้ำ</td><td><code>courses = "MA101, PG101"</code></td></tr>
+            <tr><td><b>2NF</b></td><td>1NF + ไม่มี partial dependency กับ PK ผสม</td><td><code>course_title</code> ขึ้นกับ <code>course_id</code> ส่วนเดียว</td></tr>
+            <tr><td><b>3NF</b></td><td>2NF + ไม่มี transitive (non-key → non-key)</td><td><code>major_id → major_name</code> ในตาราง Student</td></tr>
+          </table>
+          <p class="note">"the key (1NF), the whole key (2NF), and nothing but the key (3NF)" · แก้ update / insert / delete anomaly</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏦</span> 4. ACID (โอนเงิน 500 บาท A → B)</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">Atomicity</span><span class="def-val">ครบทั้งหมดหรือไม่ทำเลย: หัก A แล้วไฟดับ → rollback</span></div>
+          <div class="def-row"><span class="def-key">Consistency</span><span class="def-val">ไม่ผิดกฎ (CHECK, FK) ยอดห้ามติดลบ เงินรวมเท่าเดิม</span></div>
+          <div class="def-row"><span class="def-key">Isolation</span><span class="def-val">ธุรกรรมพร้อมกันได้ผลเหมือนทำทีละรายการ</span></div>
+          <div class="def-row"><span class="def-key">Durability</span><span class="def-val">commit แล้วไม่หาย แม้ระบบล่ม</span></div>
+          <p class="note">Python + SQLite: INSERT/UPDATE/DELETE ไม่ถาวรจนกว่าจะ <code>conn.commit()</code> · ยกเลิกด้วย <code>conn.rollback()</code></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌐</span> 5. SQL · NoSQL · Vector · Big Data</div>
+        <div class="section-body">
+          <table>
+            <tr><th></th><th>Relational</th><th>NoSQL</th><th>Vector DB</th></tr>
+            <tr><td>ข้อมูล</td><td>ตาราง schema ตายตัว</td><td>document, key-value, column, graph</td><td>embedding (เวกเตอร์)</td></tr>
+            <tr><td>เด่น</td><td>ACID, JOIN</td><td>ขยายแนวนอน ยืดหยุ่น</td><td>ค้นหาตามความหมาย (RAG)</td></tr>
+            <tr><td>ตัวอย่าง</td><td>SQLite, PostgreSQL</td><td>MongoDB, Redis, Neo4j</td><td>pgvector, Milvus</td></tr>
+          </table>
+          <div class="formula">cosine similarity = (a · b) / (‖a‖ ‖b‖) &nbsp;·&nbsp; ใกล้ 1 = ความหมายใกล้กัน</div>
+          <ul class="mini">
+            <li><b>CAP</b>: เมื่อเครือข่ายขาด (P) ต้องเลือก Consistency หรือ Availability</li>
+            <li><b>Batch</b> (ประมวลผลเป็นรอบ) vs <b>Stream</b> (ต่อเนื่องเรียลไทม์) · <b>ETL</b> แปลงก่อนโหลด vs <b>ELT</b> โหลดก่อนแปลง</li>
+            <li>Warehouse (มีโครงสร้าง) · Lake (ดิบทุกแบบ) · Lakehouse (รวมสองแบบ)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกคิด (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>ร้านค้า: ลูกค้า 1 คนสั่งได้หลาย order, 1 order มีหลายสินค้า → ต้องมีกี่ตาราง?</li>
+            <li><code>Order(order_id, customer_id, customer_name)</code> ผิดระดับใด?</li>
+            <li>gpa วิศวกรรมศาสตร์ 6 คน: 3.25, 3.80, 3.55, 2.95, 2.60, 3.35 → <code>AVG</code> = ?</li>
+          </ol>
+          <p class="note">เฉลย: (1) 4 ตาราง Customer, Order, Product + OrderItem (ตารางเชื่อม M:N) · (2) 3NF (customer_name ขึ้นกับ customer_id ไม่ใช่ PK) · (3) 19.50 / 6 = 3.25</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">⚙️</span> 6. ลำดับประมวลผล SQL (ไม่ใช่ลำดับที่เขียน)</div>
+        <div class="section-body">
+          <div class="formula">FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT</div>
+          <div class="code-block"><span class="kw">SELECT</span> faculty, <span class="fn">COUNT</span>(*) <span class="kw">AS</span> n, <span class="fn">ROUND</span>(<span class="fn">AVG</span>(gpa), <span class="num">2</span>) <span class="kw">AS</span> avg_gpa
+<span class="kw">FROM</span> students                 <span class="comment">-- 15 แถว</span>
+<span class="kw">WHERE</span> gpa &gt;= <span class="num">3.0</span>               <span class="comment">-- กรองแถว → 10 แถว</span>
+<span class="kw">GROUP BY</span> faculty              <span class="comment">-- 3 กลุ่ม</span>
+<span class="kw">HAVING</span> <span class="fn">COUNT</span>(*) &gt;= <span class="num">3</span>          <span class="comment">-- กรองกลุ่ม → 3 กลุ่ม</span>
+<span class="kw">ORDER BY</span> avg_gpa <span class="kw">DESC</span>
+<span class="kw">LIMIT</span> <span class="num">2</span>;   <span class="comment">-- วิทยาศาสตร์ 3 คน 3.68 · วิศวกรรมศาสตร์ 4 คน 3.49</span></div>
+          <table>
+            <tr><th>WHERE</th><th>HAVING</th></tr>
+            <tr><td>กรอง<b>แถว</b>ก่อนจัดกลุ่ม · ใช้ aggregate ไม่ได้</td><td>กรอง<b>กลุ่ม</b>หลัง GROUP BY · ใช้ <code>COUNT/AVG</code> ได้</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 7. คำสั่ง SQL ที่ใช้บ่อย</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">CREATE TABLE</span> Enrollment (
+  student_id <span class="kw">TEXT REFERENCES</span> Student(student_id),
+  course_id  <span class="kw">TEXT REFERENCES</span> Course(course_id),
+  grade <span class="kw">TEXT</span>, <span class="kw">PRIMARY KEY</span> (student_id, course_id));
+<span class="kw">SELECT</span> s.first_name, c.title, e.grade
+<span class="kw">FROM</span> Enrollment e <span class="kw">JOIN</span> Student s <span class="kw">ON</span> s.student_id = e.student_id
+                <span class="kw">JOIN</span> Course  c <span class="kw">ON</span> c.course_id  = e.course_id;
+<span class="kw">INSERT INTO</span> Course <span class="kw">VALUES</span> (<span class="str">'MA101'</span>, <span class="str">'แคลคูลัส 1'</span>, <span class="num">3</span>);
+<span class="kw">UPDATE</span> students <span class="kw">SET</span> gpa = <span class="num">3.10</span> <span class="kw">WHERE</span> student_id = <span class="str">'65010006'</span>;
+<span class="kw">DELETE FROM</span> students <span class="kw">WHERE</span> gpa &lt; <span class="num">2.0</span> <span class="kw">AND</span> faculty = <span class="str">'...'</span>;</div>
+          <p><code>BETWEEN 3.00 AND 3.50</code> รวมขอบ · <code>LIKE 'สม%'</code> (% = กี่ตัวก็ได้, _ = 1 ตัว) · <code>ORDER BY</code> ค่าเริ่มต้น ASC</p>
+          <p><b>DELETE</b> ลบแถว (ตารางอยู่) · <b>DROP TABLE</b> ลบทั้งตาราง · <b>TRUNCATE</b> ลบทุกแถว (SQLite ไม่มี ใช้ <code>DELETE FROM t;</code>)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🐍</span> 8. Python + SQLite (Lab 05)</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">import</span> sqlite3, pandas <span class="kw">as</span> pd
+conn = sqlite3.connect(<span class="str">"students.db"</span>)
+conn.execute(<span class="str">"PRAGMA foreign_keys = ON"</span>)     <span class="comment"># SQLite ต้องเปิดตรวจ FK เอง</span>
+df = pd.read_csv(<span class="str">"student.csv"</span>, dtype={<span class="str">"student_id"</span>: str})
+df.to_sql(<span class="str">"students"</span>, conn, if_exists=<span class="str">"replace"</span>, index=<span class="kw">False</span>)
+pd.read_sql_query(<span class="str">"SELECT * FROM students WHERE faculty = ?"</span>, conn,
+                  params=(<span class="str">"วิทยาศาสตร์"</span>,))  <span class="comment"># → DataFrame</span>
+cur = conn.cursor()
+cur.execute(<span class="str">"SELECT * FROM students WHERE gpa &gt; ?"</span>, (<span class="num">3.5</span>,))
+rows = cur.fetchall()          <span class="comment"># list ของ tuple</span>
+conn.commit()                  <span class="comment"># หลัง INSERT/UPDATE/DELETE</span></div>
+          <p class="note"><code>if_exists</code>: fail (ค่าเริ่มต้น) · replace (DROP แล้วสร้างใหม่ → PK/FK หาย) · append (รันซ้ำ = ข้อมูลซ้ำ)</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>ต่อสตริง/f-string ใส่ค่าจากผู้ใช้ → <b>SQL injection</b> (<code>x' OR '1'='1</code> ได้ทั้ง 15 แถว) ต้องใช้ <code>?</code></li>
+            <li><code>UPDATE</code>/<code>DELETE</code> ลืม <code>WHERE</code> → แก้/ลบทุกแถว</li>
+            <li>ลืม <code>conn.commit()</code> → ปิดโปรแกรมแล้วข้อมูลหาย</li>
+            <li>ใช้ <code>WHERE AVG(gpa) &gt; 3</code> → ต้องเป็น <code>HAVING</code></li>
+            <li>เก็บ M:N ด้วยคอลัมน์รายการคั่นจุลภาค (ผิด 1NF) แทนตารางเชื่อม</li>
+            <li>คิดว่า SQLite ตรวจ FK อัตโนมัติ — ต้อง <code>PRAGMA foreign_keys = ON</code></li>
+            <li>เก็บข้อมูลส่วนบุคคลเกินจำเป็น / ไม่ขอความยินยอม → ขัด <b>PDPA</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>อธิบาย PK, FK, PK ผสม และวาด ER ระบบเล็ก ๆ ที่มี M:N ได้</li>
+            <li>ระบุว่าตารางผิด 1NF/2NF/3NF ข้อใดและแยกตารางแก้ได้</li>
+            <li>อธิบาย ACID ด้วยตัวอย่างโอนเงินได้</li>
+            <li>เขียน SELECT + WHERE + GROUP BY + HAVING + ORDER BY + JOIN ได้ และบอกลำดับประมวลผล</li>
+            <li>ใช้ <code>sqlite3</code> + placeholder <code>?</code> + <code>commit()</code> ได้ถูกต้อง</li>
+            <li>เลือก SQL / NoSQL / Vector DB ให้เหมาะกับโจทย์ และอธิบาย keyword vs semantic search ได้</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

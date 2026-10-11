@@ -14,6 +14,7 @@ import {
   Presentation,
   BookMarked,
   Layers,
+  ClipboardCheck,
 } from "lucide-react";
 import { modules, projects } from "@/lib/modules-data";
 import { manifest } from "@/lib/manifest";
@@ -161,6 +162,18 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                 />
               ) : null
             )}
+          </SidebarSection>
+
+          <SidebarSection title="แบบทบทวน (Review Sheets)" icon={<ClipboardCheck className="w-4 h-4" />}>
+            {modules.map((mod) => (
+              <SidebarLink
+                key={mod.id}
+                href={`/api/content/SHEET/review_sheet_${mod.id}.html`}
+                label={`Review W${mod.id}: ${mod.titleTh}`}
+                external
+                onClick={onClose}
+              />
+            ))}
           </SidebarSection>
 
           <SidebarSection title="แบบทดสอบ (Quizzes)" icon={<PenSquare className="w-4 h-4" />}>

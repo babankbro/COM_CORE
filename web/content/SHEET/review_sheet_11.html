@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 11 - ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">📡 Review Sheet สัปดาห์ที่ 11 — ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Embedded Systems &amp; IoT · Module 3: IoT &amp; Smart Systems</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 11 · CLO2, CLO4<br>
+      Lab 11: การรับส่งข้อมูลผ่านโปรโตคอล MQTT
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔌</span> 1. Embedded System และ MCU</div>
+        <div class="section-body">
+          <p><b>Embedded system</b> = คอมพิวเตอร์ที่ฝังในอุปกรณ์เพื่อทำ<span class="accent">งานเฉพาะ</span> ทรัพยากรจำกัด (RAM ระดับ KB–MB) ต้องทำงานตามเวลา (real-time) และประหยัดพลังงาน</p>
+          <div class="def-row"><span class="def-key">Sensor</span><span class="def-val">รับรู้โลกจริง → สัญญาณไฟฟ้า (อุณหภูมิ, แสง, PIR)</span></div>
+          <div class="def-row"><span class="def-key">Actuator</span><span class="def-val">รับคำสั่ง → ลงมือทำ (รีเลย์, มอเตอร์, buzzer)</span></div>
+          <div class="def-row"><span class="def-key">RTOS</span><span class="def-val">OS ที่จัดลำดับงานคาดเดาเวลาได้ (deterministic) เช่น FreeRTOS</span></div>
+          <table>
+            <tr><th>ประเด็น</th><th>MCU (ESP32, Arduino, STM32)</th><th>MPU (Raspberry Pi, PC)</th></tr>
+            <tr><td>องค์ประกอบ</td><td>CPU+RAM+I/O ในชิปเดียว</td><td>CPU ต่อ RAM/storage ภายนอก</td></tr>
+            <tr><td>ซอฟต์แวร์</td><td>bare-metal / RTOS</td><td>Linux เต็มรูปแบบ</td></tr>
+            <tr><td>พลังงาน · บูต</td><td>mA, deep sleep µA · ms</td><td>หลายวัตต์ · หลายวินาที</td></tr>
+          </table>
+          <p class="note">ESP32 รุ่นดั้งเดิม: Xtensa dual-core 240 MHz · SRAM 520 KB · Wi-Fi 2.4 GHz + Bluetooth · ADC 12-bit (0–4095)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧷</span> 2. วิธีอ่าน sensor</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ช่องทาง</th><th>ลักษณะ</th><th>ตัวอย่าง</th></tr>
+            <tr><td>GPIO</td><td>digital 0/1</td><td>ปุ่ม, PIR</td></tr>
+            <tr><td>ADC</td><td>แรงดัน analog → ตัวเลข</td><td>LDR, potentiometer</td></tr>
+            <tr><td><b>I2C</b></td><td>2 สาย SDA+SCL พ่วงหลายตัว แยกด้วย address</td><td>BME280 (0x76/0x77)</td></tr>
+            <tr><td>SPI · UART</td><td>SPI เร็ว 4 สาย · UART สื่อสาร serial TX/RX</td><td>จอ, SD card · GPS</td></tr>
+          </table>
+          <p><b>Polling</b> = เดินไปเปิดตู้จดหมายทุก 5 นาที · <b>Interrupt</b> = ติดกริ่ง ตอบสนองทันทีและให้ MCU sleep ระหว่างรอได้</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏗️</span> 3. สถาปัตยกรรม IoT 4 ชั้น</div>
+        <div class="section-body">
+          <div class="formula">Perception → Network → Edge/Fog → Application &amp; Cloud</div>
+          <ul class="mini">
+            <li><b>Network:</b> PAN (BLE, Zigbee) · WLAN (Wi-Fi) · LPWAN (LoRaWAN, NB-IoT: ไกลหลาย กม. กินไฟต่ำ)</li>
+            <li><b>Edge/Fog:</b> กรอง/รวมข้อมูล, TinyML ตัดสินใจเร็ว, buffer เมื่อเน็ตหลุด → ลด latency และ bandwidth</li>
+            <li><b>Cloud:</b> broker, ฐานข้อมูล time-series, analytics, dashboard · ข้อมูลไหลขึ้น คำสั่งไหลลง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌐</span> 4. MQTT · CoAP · Zigbee</div>
+        <div class="section-body">
+          <table>
+            <tr><th>โปรโตคอล</th><th>รูปแบบ</th><th>ชั้น/การขนส่ง</th><th>จุดเด่น</th></tr>
+            <tr><td><b>MQTT</b></td><td>publish/subscribe ผ่าน broker</td><td>application · TCP (1883, TLS 8883)</td><td>เบา, QoS 0/1/2, retained, LWT</td></tr>
+            <tr><td>CoAP</td><td>request/response แบบ REST</td><td>application · UDP (5683)</td><td>GET/PUT/POST/DELETE บนอุปกรณ์จิ๋ว</td></tr>
+            <tr><td>HTTP</td><td>request/response</td><td>application · TCP</td><td>คุ้นเคย แต่ header ใหญ่</td></tr>
+            <tr><td>Zigbee</td><td>mesh network</td><td>IEEE 802.15.4 · 2.4 GHz</td><td>กินไฟต่ำมาก ใช้ใน smart home</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔎</span> 8. ไล่ข้อมูล 1 ค่า: sensor → dashboard</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>ESP32 อ่าน BME280 ผ่าน I2C (0x76) ได้ 27.5 °C</li>
+            <li>PUBLISH <code>building5/EN301/temperature</code> = <code>27.5</code> · QoS 1 · retain (แพ็กเก็ตเพียง 37 byte ตาม MQTT 3.1.1)</li>
+            <li>Broker ตอบ PUBACK · ถ้าไม่ได้รับ client ส่งซ้ำ (flag DUP) → อาจได้ค่าซ้ำ</li>
+            <li>Broker ส่งต่อให้ dashboard ที่ subscribe <code>building5/+/temperature</code> ด้วย QoS 0 → ขานี้ใช้ QoS 0</li>
+            <li>Dashboard แสดงค่า + เก็บลงฐานข้อมูล time-series · หน้าจอที่เพิ่งเปิดเห็น 27.5 ทันทีจาก retained</li>
+          </ol>
+          <p class="note">ความน่าเชื่อถือต้องออกแบบทั้งเส้นทาง ไม่ใช่แค่ฝั่งส่ง</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📮</span> 5. MQTT: topic, wildcard และ QoS</div>
+        <div class="section-body">
+          <p>Publisher ส่งไปที่ <code>building5/EN301/temperature</code> · broker จับคู่กับ subscription แล้วกระจายต่อ (ผู้ส่ง-ผู้รับไม่ต้องรู้ IP กัน)</p>
+          <div class="def-row"><span class="def-key"><code>+</code></span><span class="def-val">แทน <b>1 ระดับพอดี</b>: <code>building5/+/temperature</code> = ทุกห้อง</span></div>
+          <div class="def-row"><span class="def-key"><code>#</code></span><span class="def-val">ระดับนี้และทุกระดับลูก ต้องอยู่<b>ท้าย</b>: <code>building5/EN301/#</code></span></div>
+          <table>
+            <tr><th>QoS</th><th>รับประกัน</th><th>แพ็กเก็ต</th><th>ใช้กับ</th></tr>
+            <tr><td>0</td><td>at most once (อาจหาย)</td><td>PUBLISH</td><td>ค่า sensor ส่งถี่</td></tr>
+            <tr><td>1</td><td>at least once (อาจซ้ำ)</td><td>+PUBACK</td><td>แจ้งเตือน</td></tr>
+            <tr><td>2</td><td>exactly once</td><td>PUBREC/REL/COMP</td><td>คำสั่งห้ามซ้ำ</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Retained</span><span class="def-val">broker เก็บค่าล่าสุดต่อ topic ให้ subscriber ใหม่ทันที</span></div>
+          <div class="def-row"><span class="def-key">LWT</span><span class="def-val">"จดหมายสั่งเสีย" ฝากตอน CONNECT broker ประกาศเมื่อหลุดผิดปกติ</span></div>
+          <div class="def-row"><span class="def-key">Keep alive</span><span class="def-val">เงียบเกิน 1.5 × keep alive → broker ถือว่าหลุด</span></div>
+          <img class="fig" src="/images/weeks/w11-mqtt-pubsub.svg" alt="MQTT publisher ส่งผ่าน broker ไปยัง subscriber พร้อม topic tree และ wildcard">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🐍</span> 6. MicroPython: I2C → MQTT (ESP32)</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">from</span> machine <span class="kw">import</span> Pin, I2C
+<span class="kw">from</span> umqtt.simple <span class="kw">import</span> MQTTClient
+<span class="kw">import</span> time
+i2c = I2C(<span class="num">0</span>, scl=Pin(<span class="num">22</span>), sda=Pin(<span class="num">21</span>), freq=<span class="num">100000</span>)
+<span class="fn">print</span>(i2c.scan())      <span class="comment"># [118] = 0x76 คือ BME280</span>
+BASE = <span class="str">b"building5/EN301/"</span>
+c = MQTTClient(<span class="str">"esp32-en301"</span>, <span class="str">"192.168.1.10"</span>, keepalive=<span class="num">60</span>)
+c.set_last_will(BASE + <span class="str">b"status"</span>, <span class="str">b"offline"</span>, retain=<span class="kw">True</span>)
+c.connect()
+c.publish(BASE + <span class="str">b"status"</span>, <span class="str">b"online"</span>, retain=<span class="kw">True</span>)
+<span class="kw">while</span> <span class="kw">True</span>:
+    t = read_temp(i2c)   <span class="comment"># ฟังก์ชันอ่าน sensor ของเรา</span>
+    c.publish(BASE + <span class="str">b"temperature"</span>, <span class="fn">str</span>(t).encode(),
+              retain=<span class="kw">True</span>, qos=<span class="num">1</span>)
+    time.sleep(<span class="num">10</span>)</div>
+          <p class="note">ทดสอบฝั่งรับ: <code>mosquitto_sub -h 192.168.1.10 -t "building5/+/temperature" -v</code></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧠</span> 7. TinyML และ Edge AI</div>
+        <div class="section-body">
+          <p>รันโมเดลเล็กบน MCU/edge (quantization เป็น int8, pruning) → <span class="accent">latency ต่ำ</span>, ทำงานได้แม้ไม่มีเน็ต, ส่งข้อมูลดิบออกน้อยลง (privacy) · ตัวอย่าง: keyword spotting, ตรวจการสั่นของมอเตอร์ (predictive maintenance)</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>ต่อแรงดัน 5 V เข้าขา GPIO/ADC ของ ESP32 ซึ่งรับได้ 3.3 V</li>
+            <li>คิดว่า <code>building5/+</code> จับ <code>building5/EN301/temperature</code> ได้ (ไม่ได้ เพราะ + แทน 1 ระดับ)</li>
+            <li>ขึ้นต้น topic ด้วย <code>/</code> หรือสะกดตัวพิมพ์ต่างกัน (topic แยกตัวพิมพ์เล็ก-ใหญ่)</li>
+            <li>ตั้ง QoS 2 ฝั่งส่ง แต่ subscribe ด้วย QoS 0 → ได้จริงแค่ QoS 0 (ใช้ค่าที่ต่ำกว่า)</li>
+            <li>เปิด broker สาธารณะโดยไม่มี username/password, TLS และ ACL ราย topic</li>
+            <li>ใช้ <code>time.sleep</code> ยาว ๆ ใน loop ทำให้ไม่ตอบสนองคำสั่งที่ subscribe ไว้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>อธิบายความต่างของ sensor กับ actuator และ MCU กับ MPU ได้</li>
+            <li>วาดสถาปัตยกรรม IoT 4 ชั้นของโครงงานตัวเองพร้อมระบุโปรโตคอลแต่ละชั้นได้</li>
+            <li>บอกได้ว่า filter <code>+/+/humidity</code> จับ topic ใดบ้าง</li>
+            <li>เลือก QoS ให้เหมาะกับข้อมูลแต่ละชนิดและให้เหตุผลได้</li>
+            <li>เขียนโค้ด publish ค่า sensor และใช้ retained + LWT แสดงสถานะ online/offline ได้</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

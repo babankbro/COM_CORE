@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { FileEdit, PenSquare, CalendarDays, Target, Presentation, BookMarked, FlaskConical } from "lucide-react";
+import { FileEdit, PenSquare, CalendarDays, Target, Presentation, BookMarked, FlaskConical, ClipboardCheck } from "lucide-react";
 import { modules, getModuleById, colorMap, projects } from "@/lib/modules-data";
 import { getModuleContent, getTopics, getSlide } from "@/lib/content";
 import { course } from "@/lib/course";
@@ -93,6 +93,14 @@ export default async function ModulePage({ params }: PageProps) {
             <Presentation className="w-4 h-4" /> ดาวน์โหลดสไลด์ (.pptx)
           </a>
         )}
+        <a
+          href={`/api/content/SHEET/review_sheet_${mod.id}.html`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
+        >
+          <ClipboardCheck className="w-4 h-4" /> Review Sheet
+        </a>
         {mod.hasExam && (
           <Link
             href={`/exam/${mod.id}`}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 13 - จริยธรรมทางคอมพิวเตอร์และทรัพย์สินทางปัญญา</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">⚖️ Review Sheet สัปดาห์ที่ 13 — จริยธรรมทางคอมพิวเตอร์และทรัพย์สินทางปัญญา</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Computer Ethics &amp; Intellectual Property · Module 4: Computer Vision &amp; System Integration</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 13 · CLO5<br>
+      Lab 13: จริยธรรม AI และพื้นฐานวิทัศน์คอมพิวเตอร์
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🧭</span> 1. จริยธรรม vs กฎหมาย</div>
+        <div class="section-body">
+          <p><b>กฎหมาย</b> = พื้นขั้นต่ำ ("ทำได้ไหม") · <b>จริยธรรม</b> = สิ่งที่ <span class="accent">ควร</span> ทำ ("ควรทำไหม ใครได้ ใครเสี่ยง ใครรับผิดชอบ") · <b>นโยบาย</b> = กติกาองค์กรที่แปลงหลักให้ปฏิบัติได้</p>
+          <div class="def-row"><span class="def-key">PAPA</span><span class="def-val">Privacy · Accuracy · Property · Accessibility (กรอบคลาสสิก)</span></div>
+          <div class="def-row"><span class="def-key">AI ethics</span><span class="def-val">bias/fairness · transparency/explainability · accountability · human oversight</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📜</span> 2. ACM Code of Ethics (2018) ข้อที่ใช้บ่อย</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ข้อ</th><th>หลัก</th><th>ถามตัวเองว่า</th></tr>
+            <tr><td>1.1</td><td>public good</td><td>สังคมได้ประโยชน์จริงไหม</td></tr>
+            <tr><td>1.2</td><td>avoid harm</td><td>ใครอาจเสียหาย ลดได้อย่างไร</td></tr>
+            <tr><td>1.3</td><td>honest</td><td>รายงานผล/ข้อจำกัดตรงไปตรงมา</td></tr>
+            <tr><td>1.4</td><td>fair</td><td>model ทำงานต่างกันตามกลุ่มคนไหม</td></tr>
+            <tr><td>1.5</td><td>respect creative work</td><td>ให้เครดิต/เคารพ license</td></tr>
+            <tr><td>1.6</td><td>privacy</td><td>เก็บเท่าที่จำเป็นหรือไม่</td></tr>
+            <tr><td>2.5</td><td>evaluate risk</td><td>ประเมินผลกระทบก่อนใช้งาน</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">©️</span> 3. ทรัพย์สินทางปัญญา (กฎหมายไทย)</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w13-ip-types.svg" alt="ตารางเทียบลิขสิทธิ์ สิทธิบัตร เครื่องหมายการค้า และความลับทางการค้า">
+          <ul class="mini">
+            <li>ลิขสิทธิ์คุ้มครอง <b>การแสดงออก</b> (โค้ด UI คู่มือ) ไม่คุ้มครองไอเดีย/อัลกอริทึม · ได้ทันทีไม่ต้องจด · ชีวิตผู้สร้าง + 50 ปี</li>
+            <li>สิทธิบัตรการประดิษฐ์ 20 ปีนับจากวันยื่น · อนุสิทธิบัตรรวมไม่เกิน 10 ปี · โปรแกรมคอมพิวเตอร์ล้วนจดไม่ได้</li>
+            <li>งานที่ AI สร้างเองทั้งหมด: สถานะลิขสิทธิ์ไม่แน่นอน (กฎหมายคุ้มครองงานของมนุษย์) → เปิดเผยการใช้ AI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔓</span> 4. Open source license</div>
+        <div class="section-body">
+          <table>
+            <tr><th>License</th><th>ประเภท</th><th>ต้องทำเมื่อนำไปใช้/แจกจ่าย</th></tr>
+            <tr><td><code>MIT</code> / BSD</td><td>permissive</td><td>เก็บ copyright + license notice</td></tr>
+            <tr><td><code>Apache-2.0</code></td><td>permissive</td><td>NOTICE + แจ้งไฟล์ที่แก้ · มี patent grant</td></tr>
+            <tr><td><code>LGPL</code> / <code>MPL-2.0</code></td><td>weak copyleft</td><td>แก้ตัว library/ไฟล์นั้นต้องเปิด</td></tr>
+            <tr><td><code>GPL-3.0</code></td><td>strong copyleft</td><td>แจกจ่ายงานดัดแปลง → เปิด source ด้วย GPL</td></tr>
+            <tr><td><code>AGPL-3.0</code></td><td>network copyleft</td><td>ให้บริการผ่านเครือข่ายก็ต้องเปิด</td></tr>
+          </table>
+          <p class="note">repo ที่ไม่มีไฟล์ LICENSE = เจ้าของสงวนสิทธิ์ทั้งหมด · dataset: CC BY ต้องให้เครดิต, CC BY-NC ห้ามเชิงพาณิชย์</p>
+          <img class="fig" src="/images/weeks/w13-license-spectrum.svg" alt="สเปกตรัม license จาก permissive ถึง proprietary">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔐</span> 5. PDPA (พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562)</div>
+        <div class="section-body">
+          <p>บังคับใช้เต็มรูปแบบ <b>1 มิ.ย. 2565</b> · โครงสร้างคล้าย GDPR (EU, 2018) · ข้อมูลส่วนบุคคล = ข้อมูลที่ระบุตัวบุคคลได้ทางตรง/ทางอ้อม</p>
+          <div class="def-row"><span class="def-key">Data subject</span><span class="def-val">เจ้าของข้อมูล มีสิทธิ ขอเข้าถึง แก้ไข ลบ คัดค้าน ถอนความยินยอม</span></div>
+          <div class="def-row"><span class="def-key">Controller</span><span class="def-val">ผู้ตัดสินใจวัตถุประสงค์/วิธีการ (เช่น มหาวิทยาลัย เจ้าของแอป)</span></div>
+          <div class="def-row"><span class="def-key">Processor</span><span class="def-val">ประมวลผลตามคำสั่ง controller (เช่น ผู้ให้บริการ cloud)</span></div>
+          <div class="def-row"><span class="def-key">ข้อมูลอ่อนไหว</span><span class="def-val">ม.26: สุขภาพ ศาสนา ประวัติอาชญากรรม <b>ข้อมูลชีวภาพ</b> (ใบหน้า ลายนิ้วมือ) ฯลฯ → ต้องได้ความยินยอมโดยชัดแจ้ง (เว้นข้อยกเว้น)</span></div>
+          <div class="def-row"><span class="def-key">ฐานกฎหมาย</span><span class="def-val">consent · สัญญา · หน้าที่ตามกฎหมาย · ประโยชน์ต่อชีวิต · ภารกิจรัฐ · ประโยชน์โดยชอบ · วิจัย/สถิติ</span></div>
+          <div class="def-row"><span class="def-key">ข้อมูลรั่ว</span><span class="def-val">แจ้งสำนักงานฯ ภายใน <span class="accent">72 ชั่วโมง</span> นับแต่ทราบเหตุ</span></div>
+          <div class="def-row"><span class="def-key">บทลงโทษ</span><span class="def-val">ปรับทางปกครองสูงสุด 5 ล้านบาท · โทษอาญา · ค่าเสียหายเชิงลงโทษ ≤ 2 เท่า</span></div>
+          <p class="note">Privacy by Design: ไม่ติ๊ก consent ล่วงหน้า · data minimization · เข้ารหัส · เมนูขอดู/ลบข้อมูล · กำหนดระยะเวลาเก็บ</p>
+          <table>
+            <tr><th>ประเด็น</th><th>PDPA (ไทย)</th><th>GDPR (EU)</th></tr>
+            <tr><td>ใช้บังคับ</td><td>1 มิ.ย. 2565</td><td>25 พ.ค. 2018</td></tr>
+            <tr><td>แจ้งข้อมูลรั่ว</td><td>72 ชั่วโมง</td><td>72 ชั่วโมง</td></tr>
+            <tr><td>ค่าปรับสูงสุด</td><td>ปกครอง 5 ล้านบาท</td><td>€20 ล้าน หรือ 4% รายได้ทั่วโลก</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧪</span> 6. วิเคราะห์กรณี: เช็กชื่อด้วยใบหน้า</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li><b>ข้อเท็จจริง:</b> กล้องหน้าห้อง ส่งภาพขึ้น cloud เก็บภาพไม่มีกำหนด</li>
+            <li><b>ประเด็น:</b> privacy · bias ตามสีผิว/แสง · ความยินยอมที่ไม่อิสระ</li>
+            <li><b>ACM:</b> 1.2, 1.4, 1.6, 2.5 · <b>PDPA:</b> ใบหน้า = biometric (อ่อนไหว)</li>
+            <li><b>ทางเลือก:</b> A บังคับ (ไม่ควร) · B opt-in + QR สำรอง + ลบเมื่อจบภาค · C QR หมุนเวียน (intrusive น้อยสุด)</li>
+          </ol>
+          <img class="fig" src="/images/weeks/w13-ethics-decision-flow.svg" alt="ขั้นตอนตัดสินใจเชิงจริยธรรม 6 ขั้น">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🗂️</span> 7. ตรวจสิทธิในงาน Module 4 (Computer Vision)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชิ้นงาน</th><th>ต้องตรวจ / ทำ</th></tr>
+            <tr><td>source code</td><td>โค้ดที่ copy มา: ดู LICENSE + ใส่ attribution ใน README</td></tr>
+            <tr><td>dataset ภาพ</td><td>license ของ dataset · ภาพมีใบหน้าคน = ข้อมูลส่วนบุคคล</td></tr>
+            <tr><td>pre-trained model</td><td>เงื่อนไขผู้เผยแพร่ (เช่น MobileNetV2) · ห้ามอ้างว่า train เอง</td></tr>
+            <tr><td>ผลจาก GenAI</td><td>เปิดเผยการใช้ ตรวจข้อเท็จจริง อธิบายงานเองได้</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌐</span> 8. AI governance สากล</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">UNESCO</span><span class="def-val">Recommendation on the Ethics of AI (2021) รับรองโดย 193 ประเทศสมาชิก</span></div>
+          <div class="def-row"><span class="def-key">EU AI Act</span><span class="def-val">มีผลบังคับ 1 ส.ค. 2024 · กำกับตามระดับความเสี่ยง: ต้องห้าม (unacceptable) → สูง (high) → ต้องโปร่งใส (limited) → ต่ำ (minimal)</span></div>
+          <div class="def-row"><span class="def-key">NIST AI RMF</span><span class="def-val">4 ฟังก์ชัน Govern · Map · Measure · Manage (ใช้ใน W9 ด้วย)</span></div>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>"ถูกกฎหมายแล้วก็ถูกจริยธรรม" — ไม่จริง กฎหมายเป็นแค่ขั้นต่ำ</li>
+            <li>คิดว่าลิขสิทธิ์ต้องจดทะเบียนก่อน — ได้อัตโนมัติเมื่อสร้างสรรค์</li>
+            <li>สับสนลิขสิทธิ์ (การแสดงออก) กับสิทธิบัตร (การประดิษฐ์)</li>
+            <li>ภาพ/โค้ดบนอินเทอร์เน็ต "ใช้ฟรี" — ต้องดู license เสมอ</li>
+            <li>ใช้ GPL ในงานที่จะแจกจ่ายแบบปิด source</li>
+            <li>สลับ controller กับ processor · ลืมว่าใบหน้าเป็นข้อมูลอ่อนไหว</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>วิเคราะห์กรณีศึกษาด้วย 6 ขั้น + อ้างข้อ ACM Code ได้</li>
+            <li>แยก IP 4 ประเภท พร้อมตัวอย่างงานคอมพิวเตอร์และอายุคุ้มครอง</li>
+            <li>บอกได้ว่า MIT, Apache-2.0, GPL-3.0, AGPL-3.0 ต่างกันอย่างไร</li>
+            <li>ระบุ controller/processor และฐานทางกฎหมายในระบบของทีม</li>
+            <li>อธิบายว่าทำไมระบบสแกนใบหน้าต้องเข้มงวดกว่าระบบทั่วไป</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

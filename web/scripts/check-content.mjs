@@ -40,6 +40,12 @@ for (const w of EXAM_WEEKS) {
 }
 ok("exams");
 
+for (const w of WEEKS) {
+  if (!(await exists(path.join(CONTENT, "SHEET", `review_sheet_${w}.html`)))) fail(`SHEET/review_sheet_${w}.html หายไป`);
+}
+ok("review sheets");
+for (const f of ["exam-prep.md", "calc-examples.md"]) if (!(await exists(path.join(CONTENT, f)))) fail(`${f} หายไป`);
+
 const manifest = JSON.parse(await readFile(path.join(CONTENT, "manifest.json"), "utf-8"));
 for (const [w, topics] of Object.entries(manifest.topics)) {
   for (const t of topics) {

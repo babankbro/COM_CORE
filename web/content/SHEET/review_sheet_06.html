@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 06 - เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🌐 Review Sheet สัปดาห์ที่ 06 — เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Computer Networks &amp; Internet</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 6 · CLO1<br>
+      Lab 06: เครือข่ายคอมพิวเตอร์และการสร้าง API
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🧱</span> 1. OSI 7 ชั้น ↔ TCP/IP 4 ชั้น</div>
+        <div class="section-body">
+          <table>
+            <tr><th>OSI</th><th>TCP/IP</th><th>PDU</th><th>ตัวอย่าง</th></tr>
+            <tr><td>7 Application · 6 Presentation · 5 Session</td><td><b>Application</b></td><td>Data</td><td>HTTP(S), DNS, DHCP, TLS</td></tr>
+            <tr><td>4 Transport</td><td><b>Transport</b></td><td>Segment / Datagram</td><td>TCP, UDP, พอร์ต</td></tr>
+            <tr><td>3 Network</td><td><b>Internet</b></td><td>Packet</td><td>IP, ICMP, <b>router</b></td></tr>
+            <tr><td>2 Data Link · 1 Physical</td><td><b>Link</b></td><td>Frame · Bits</td><td>Ethernet, Wi-Fi, MAC, <b>switch</b></td></tr>
+          </table>
+          <p><span class="accent">Encapsulation</span> = ผู้ส่งเติม header ทีละชั้นจากบนลงล่าง · ผู้รับแกะย้อนกลับ (decapsulation)</p>
+          <p class="note">OSI = แบบอ้างอิงสำหรับอธิบาย/แก้ปัญหา · TCP/IP = ชุดโพรโทคอลที่อินเทอร์เน็ตใช้จริง</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📦</span> 2. TCP vs UDP และพอร์ตที่ต้องจำ</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ประเด็น</th><th>TCP</th><th>UDP</th></tr>
+            <tr><td>เชื่อมต่อ</td><td>3-way handshake (SYN, SYN-ACK, ACK)</td><td>ไม่ต้อง ส่งทันที</td></tr>
+            <tr><td>ความครบ/ลำดับ</td><td>รับประกัน ส่งซ้ำเมื่อหาย</td><td>ไม่รับประกัน</td></tr>
+            <tr><td>เหมาะกับ</td><td>เว็บ, อีเมล, ไฟล์, API</td><td>DNS, เกม, video call, stream</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Ports</span><span class="def-val">DNS 53 · HTTP 80 · HTTPS 443 · SSH 22 · DHCP 67/68 · HTTP/3 ใช้ QUIC บน UDP</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏷️</span> 3. IP Addressing · Private/Public · NAT · DHCP</div>
+        <div class="section-body">
+          <table>
+            <tr><th></th><th>IPv4</th><th>IPv6 (RFC 8200)</th></tr>
+            <tr><td>ขนาด</td><td>32 บิต ≈ 4.3 พันล้าน</td><td>128 บิต ≈ 3.4 × 10³⁸</td></tr>
+            <tr><td>รูปแบบ</td><td><code>192.168.1.10</code></td><td><code>2001:db8::ff00:42:8329</code> (ใช้ <code>::</code> ได้ครั้งเดียว)</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Private</span><span class="def-val">RFC 1918: <code>10.0.0.0/8</code> · <code>172.16.0.0/12</code> (172.16–172.31) · <code>192.168.0.0/16</code></span></div>
+          <div class="def-row"><span class="def-key">Public</span><span class="def-val">ไม่ซ้ำทั่วโลก เช่น <code>8.8.8.8</code>, <code>1.1.1.1</code> · <code>127.0.0.1</code> = loopback</span></div>
+          <div class="def-row"><span class="def-key">NAT/PAT</span><span class="def-val">router แปลง private หลายเครื่อง → public IP เดียว แยกด้วยพอร์ต</span></div>
+          <div class="def-row"><span class="def-key">DHCP</span><span class="def-val">แจก IP, mask, gateway, DNS อัตโนมัติ · ขั้นตอน <b>DORA</b>: Discover → Offer → Request → Ack</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧮</span> 4. Subnet</div>
+        <div class="section-body">
+          <div class="formula">ที่อยู่ = 2<sup>32 − prefix</sup> &nbsp;·&nbsp; host ที่ใช้ได้ = 2<sup>32 − prefix</sup> − 2</div>
+          <p><b>ตัวอย่าง</b> <code>192.168.10.0/26</code> → mask <b>255.255.255.192</b> · 2⁶ = 64 ที่อยู่ · host <b>62</b> เครื่อง (.1–.62) · broadcast .63 · subnet ถัดไป .64</p>
+          <table>
+            <tr><th>prefix</th><td>/24</td><td>/25</td><td>/26</td><td>/27</td><td>/28</td><td>/30</td></tr>
+            <tr><th>mask ตัวท้าย</th><td>0</td><td>128</td><td>192</td><td>224</td><td>240</td><td>252</td></tr>
+            <tr><th>host</th><td>254</td><td>126</td><td>62</td><td>30</td><td>14</td><td>2</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">☁️</span> 5. Cloud-native · Edge · API</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li><b>Microservices</b> คุยกันผ่านเครือข่าย → ต้องมี service discovery, timeout, retry, observability · service mesh, CNI/SDN</li>
+            <li>เรียกต่อกัน 4 service × 15 ms = <b>60 ms</b> ก่อนประมวลผลจริง</li>
+            <li><b>Edge</b> = ประมวลผลใกล้ผู้ใช้ ลด latency/bandwidth · 5G URLLC · รถ 120 กม./ชม. ≈ 33.3 ม./วิ → รอ 100 ms = 3.3 ม.</li>
+            <li><b>REST API</b>: GET อ่าน · POST สร้าง · PUT/PATCH แก้ · DELETE ลบ · 2xx สำเร็จ · 4xx ฝั่ง client · 5xx ฝั่ง server</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🔎</span> DNS ทำงานอย่างไร</div>
+        <div class="section-body">
+          <p>ถาม cache ในเครื่องก่อน → <b>resolver</b> (เช่น 8.8.8.8) → <b>root</b> → <b>TLD</b> (<code>.th</code>) → <b>authoritative</b> ของโดเมน → ได้ IP แล้วเก็บ cache ตาม TTL</p>
+          <div class="def-row"><span class="def-key">Records</span><span class="def-val"><code>A</code> = IPv4 · <code>AAAA</code> = IPv6 · <code>CNAME</code> = ชื่อแฝง · <code>MX</code> = เมลเซิร์ฟเวอร์</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧪</span> เชื่อมโยง Lab 06</div>
+        <div class="section-body">
+          <table class="lab-table">
+            <tr><th>ขั้น</th><th>สิ่งที่ฝึก</th></tr>
+            <tr><td>1.1</td><td><code>ipconfig /all</code> บันทึก MAC, IP, mask, gateway, DNS แล้วระบุว่า IP เป็น private หรือ public</td></tr>
+            <tr><td>1.2–1.3</td><td>ping gateway → 8.8.8.8 → ชื่อโดเมน · tracert นับ hop และหา hop ที่ช้า</td></tr>
+            <tr><td>1.4</td><td>nslookup/dig ดู IP ของโดเมน แล้วอธิบายผลด้วย TCP/IP model</td></tr>
+            <tr><td>2</td><td>Mini-Project 2: REST API ระบบครุภัณฑ์ด้วย Flask · ทดสอบด้วย curl · อ่าน status code</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🚀</span> 6. เปิด https://game.example.ac.th เกิดอะไรขึ้น</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w06-request-journey.svg" alt="ลำดับ DNS TCP TLS และ HTTP เมื่อเปิดเว็บ พร้อมเวลารวมประมาณ 70 ms">
+          <p>DNS (UDP 53) → TCP handshake (443) → TLS ตรวจ certificate → HTTP <code>GET /</code> → <code>200 OK</code> · router ส่ง packet ต่อทีละ hop ตาม IP ปลายทาง</p>
+          <p class="note">RTT DNS 10 ms + เซิร์ฟเวอร์ 3 × 20 ms ≈ 70 ms → เวลาส่วนใหญ่คือจำนวนรอบไป–กลับ ไม่ใช่ขนาดข้อมูล</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 7. คำสั่งตรวจเครือข่าย</div>
+        <div class="section-body">
+          <div class="code-block">ipconfig /all          <span class="comment"># IP, mask, gateway, DNS (Linux: ip a)</span>
+ping <span class="num">8.8.8.8</span>           <span class="comment"># ICMP: ถึงไหม เวลา (ms) TTL</span>
+ping google.com        <span class="comment"># IP ผ่าน แต่ชื่อไม่ผ่าน → สงสัย DNS</span>
+nslookup google.com    <span class="comment"># ถาม DNS ได้ IP อะไร (dig)</span>
+tracert google.com     <span class="comment"># เส้นทางทีละ hop (Linux: traceroute)</span>
+curl -v https://example.com <span class="comment"># ดู HTTP status/header</span></div>
+          <p class="note">ได้ IP <code>169.254.x.x</code> = ขอ IP จาก DHCP ไม่สำเร็จ · Linux/macOS ใช้ <code>ping -c 4</code> ไม่งั้น ping ไม่หยุด</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📶</span> 8. อุปกรณ์ · ประเภทเครือข่าย · เทรนด์</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">Switch</span><span class="def-val">ส่ง frame ภายใน LAN ด้วย MAC (L2)</span></div>
+          <div class="def-row"><span class="def-key">Router</span><span class="def-val">ส่ง packet ข้ามเครือข่ายด้วย IP (L3) · default gateway</span></div>
+          <div class="def-row"><span class="def-key">PAN&lt;LAN&lt;MAN&lt;WAN</span><span class="def-val">Bluetooth · ห้องแล็บ · เมือง · ข้ามประเทศ (อินเทอร์เน็ต)</span></div>
+          <div class="def-row"><span class="def-key">เทรนด์</span><span class="def-val">Wi-Fi 7 (802.11be) · 5G-Advanced (3GPP Rel-18) → 6G · SDN/NFV · LEO satellite</span></div>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>คิดว่า <code>172.32.0.1</code> เป็น private (ช่วงจริงคือ 172.16–172.31 เท่านั้น)</li>
+            <li>ลืมลบ 2 (network + broadcast) ตอนนับ host ของ subnet</li>
+            <li>สับสน switch (L2, MAC) กับ router (L3, IP)</li>
+            <li>บอกว่า UDP "แย่กว่า" TCP — จริง ๆ แค่เหมาะกับงานต่างกัน</li>
+            <li>คิดว่า HTTPS = พอร์ต 80 (ที่ถูกคือ 443 และเข้ารหัสด้วย TLS)</li>
+            <li>ping ไม่ตอบ = เครื่องปลายทางล่มเสมอ — บางระบบบล็อก ICMP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>วาด OSI ↔ TCP/IP พร้อม PDU ของแต่ละชั้นได้</li>
+            <li>อธิบายลำดับ DNS → TCP → TLS → HTTP เมื่อเปิดเว็บได้</li>
+            <li>เลือก TCP/UDP ให้แอปพร้อมเหตุผลได้</li>
+            <li>แยก private/public IP และอธิบาย NAT, DHCP ได้</li>
+            <li>คำนวณ mask, จำนวน host, ช่วงที่อยู่ของ /26 หรือ /27 ได้</li>
+            <li>ใช้ ping, nslookup, tracert แยกได้ว่าปัญหาอยู่ชั้นใด</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกทำ (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li><code>10.0.0.0/28</code> มี host ใช้ได้กี่เครื่อง และ broadcast address คืออะไร</li>
+            <li>จำแนก: <code>172.20.1.1</code>, <code>172.32.0.1</code>, <code>192.168.50.7</code>, <code>127.0.0.1</code></li>
+            <li>แอป video call ควรใช้ TCP หรือ UDP เพราะอะไร</li>
+            <li>ping 8.8.8.8 ผ่าน แต่เปิด google.com ไม่ได้ ควรตรวจอะไรต่อ</li>
+          </ol>
+          <p class="note">เฉลย: (1) 2⁴ − 2 = 14 เครื่อง, 10.0.0.15 · (2) private, public, private, loopback · (3) UDP — หน่วงต่ำ เฟรมหายบ้างยอมได้ · (4) DNS → <code>nslookup google.com</code></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

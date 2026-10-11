@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 04 - อัลกอริทึมและการเขียนโปรแกรม</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🖥️ Review Sheet สัปดาห์ที่ 04 — อัลกอริทึมและการเขียนโปรแกรม</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Algorithms &amp; Programming Paradigms</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 4 · CLO3<br>
+      Lab 04: อัลกอริทึมและสรุป Mini-Project 1
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 1. อัลกอริทึมและการคิดเชิงคำนวณ</div>
+        <div class="section-body">
+          <p><b>Algorithm</b> = ลำดับขั้นตอนที่ชัดเจน จบได้ แก้ปัญหาได้ (เหมือน<span class="accent">สูตรอาหาร</span>) · <b>Program</b> = อัลกอริทึมที่เขียนด้วยภาษาที่เครื่องเข้าใจ</p>
+          <p>คุณสมบัติ 5 ข้อ: <b>Input · Output · Definiteness</b> (ชัด ตีความทางเดียว) · <b>Finiteness</b> (จบได้) · <b>Effectiveness</b> (ทำได้จริง)</p>
+          <div class="def-row"><span class="def-key">Decomposition</span><span class="def-val">แบ่งปัญหาใหญ่เป็นปัญหาย่อย (รับข้อมูล → ประมวลผล → แสดงผล)</span></div>
+          <div class="def-row"><span class="def-key">Pattern</span><span class="def-val">หาส่วนที่ซ้ำกัน → ใช้ลูป/ฟังก์ชันเดียวกัน</span></div>
+          <div class="def-row"><span class="def-key">Abstraction</span><span class="def-val">ตัดรายละเอียดที่ไม่จำเป็น เก็บเฉพาะที่ใช้ตัดสินใจ</span></div>
+          <div class="def-row"><span class="def-key">Algorithm</span><span class="def-val">เขียนขั้นตอนเป็น pseudocode / flowchart ก่อนเขียนโค้ด</span></div>
+          <p class="note">โครงสร้างควบคุม 3 แบบ: ลำดับ (sequence) · เงื่อนไข (if/else) · วนซ้ำ (for/while)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔷</span> 2. สัญลักษณ์ Flowchart</div>
+        <div class="section-body">
+          <table>
+            <tr><th>รูป</th><th>ความหมาย</th><th>รูป</th><th>ความหมาย</th></tr>
+            <tr><td>วงรี</td><td>เริ่ม / จบ</td><td>สี่เหลี่ยมผืนผ้า</td><td>ประมวลผล <code>hp = hp - dmg</code></td></tr>
+            <tr><td>ด้านขนาน</td><td>รับเข้า / แสดงผล</td><td>ข้าวหลามตัด</td><td>ตัดสินใจ <code>hp &lt;= 0?</code></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📈</span> 3. Big-O: ข้อมูลโตขึ้นแล้วช้าลงแค่ไหน</div>
+        <div class="section-body">
+          <table>
+            <tr><th>Big-O</th><th>ตัวอย่าง</th><th>n = 1,000</th><th>n = 10⁶</th></tr>
+            <tr><td>O(1)</td><td><code>lst[i]</code>, <code>d[key]</code>, <code>x in set</code> (เฉลี่ย)</td><td>1</td><td>1</td></tr>
+            <tr><td>O(log n)</td><td>binary search</td><td>10</td><td>~20</td></tr>
+            <tr><td>O(n)</td><td>linear search, หา max, <code>sum()</code></td><td>1,000</td><td>10⁶</td></tr>
+            <tr><td>O(n log n)</td><td><code>sorted()</code>, merge sort</td><td>9,966</td><td>~2×10⁷</td></tr>
+            <tr><td>O(n²)</td><td>ลูปซ้อน 2 ชั้นเทียบทุกคู่</td><td>10⁶</td><td>10¹²</td></tr>
+          </table>
+          <img class="fig" src="/images/weeks/w04-bigo-growth.svg" alt="กราฟการเติบโตของ Big-O และจำนวนขั้นเมื่อ n เท่ากับหนึ่งล้าน">
+          <ul class="mini">
+            <li><b>ต่อกัน → บวก แล้วเก็บตัวใหญ่สุด</b>: O(n) + O(n²) = O(n²) · <b>ซ้อนกัน → คูณ</b>: n × n = O(n²)</li>
+            <li><b>ตัดค่าคงที่</b>: 3n + 5 = O(n) · ลูปที่ i ถูกหาร 2 ทุกรอบ = O(log n)</li>
+            <li>Best / Average / <b>Worst case</b> (Big-O มักหมายถึง worst) · วัดเป็น "จำนวนขั้น" ไม่ใช่เวลา</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> โค้ด Lab 04: Linear vs Binary search</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">def</span> <span class="fn">linear_search</span>(data, target):       <span class="comment"># O(n)</span>
+    <span class="kw">for</span> i, value <span class="kw">in</span> <span class="fn">enumerate</span>(data):
+        <span class="kw">if</span> value == target: <span class="kw">return</span> i
+    <span class="kw">return</span> -<span class="num">1</span>
+
+<span class="kw">def</span> <span class="fn">binary_search</span>(data, target):       <span class="comment"># O(log n) data ต้องเรียงแล้ว</span>
+    low, high = <span class="num">0</span>, <span class="fn">len</span>(data) - <span class="num">1</span>
+    <span class="kw">while</span> low &lt;= high:
+        mid = (low + high) // <span class="num">2</span>
+        <span class="kw">if</span> data[mid] == target: <span class="kw">return</span> mid
+        <span class="kw">elif</span> data[mid] &lt; target: low = mid + <span class="num">1</span>   <span class="comment"># ครึ่งขวา</span>
+        <span class="kw">else</span>: high = mid - <span class="num">1</span>                      <span class="comment"># ครึ่งซ้าย</span>
+    <span class="kw">return</span> -<span class="num">1</span></div>
+          <p class="note">scores = [12, 25, 31, 47, 58, 63, 77, 84, 90, 99] หา 77: linear ดู 7 ตัว · binary 4 รอบ (mid = 4 → 7 → 5 → 6)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧪</span> เชื่อมโยง Lab 04 + Mini-Project 1</div>
+        <div class="section-body">
+          <table class="lab-table">
+            <tr><th>ส่วน</th><th>สิ่งที่ฝึก / ส่ง</th></tr>
+            <tr><td>Flowchart</td><td>game loop (load → แสดงสถานะ → รับคำสั่ง → ตัดสินใจ → check_game_over) ใน <code>docs/</code> ให้ตรงโค้ด</td></tr>
+            <tr><td>search.py</td><td>นับ steps เมื่อ n = 10 … 10⁶: linear = n · binary ≈ log₂ n (n = 10⁶ → 20)</td></tr>
+            <tr><td>README</td><td>ตาราง Big-O ฟังก์ชันหลัก ≥ 3 ตัว (n คืออะไร + เหตุผล)</td></tr>
+            <tr><td>นำเสนอ</td><td>5–7 นาที + demo สด + วิดีโอสำรอง · <code>git tag v1.0</code></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔍</span> 4. เลือกวิธีค้นหาให้เหมาะ</div>
+        <div class="section-body">
+          <table>
+            <tr><th>สถานการณ์</th><th>เลือก</th><th>เหตุผล</th></tr>
+            <tr><td>ค้นครั้งเดียว ข้อมูลไม่เรียง</td><td>linear</td><td>sort ก่อน O(n log n) แพงกว่า O(n)</td></tr>
+            <tr><td>ค้นซ้ำหลายพันครั้ง</td><td>sort 1 ครั้ง + binary</td><td>ครั้งละ ~log₂ n ขั้น</td></tr>
+            <tr><td>ถามแค่ "มีไหม" ซ้ำ ๆ</td><td><code>set</code> / <code>dict</code></td><td>เฉลี่ย O(1)</td></tr>
+          </table>
+          <div class="formula">binary search worst case = ⌊log₂ n⌋ + 1 ครั้ง &nbsp;·&nbsp; n = 10⁶ → 20 ครั้ง</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧱</span> 5. Programming Paradigms</div>
+        <div class="section-body">
+          <table>
+            <tr><th>แบบ</th><th>แนวคิด</th><th>เหมาะกับ</th></tr>
+            <tr><td><b>Procedural</b></td><td>คำสั่งเรียงลำดับ + ฟังก์ชัน</td><td>สคริปต์สั้น งานอัตโนมัติ</td></tr>
+            <tr><td><b>OOP</b></td><td>class/object รวม attribute + method · encapsulation, inheritance, polymorphism</td><td>เกม (Player, Monster) ระบบใหญ่</td></tr>
+            <tr><td><b>Functional</b></td><td>pure function ไม่แก้ข้อมูลเดิม (immutable) · <code>map</code>, <code>filter</code>, <code>lambda</code></td><td>แปลงข้อมูลเป็นชุด งานขนาน</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🤖</span> 6. ใช้ AI Coding Assistant อย่างรับผิดชอบ</div>
+        <div class="section-body">
+          <p>AI = <span class="accent">นักบินผู้ช่วย</span> (next-token prediction) ไม่ใช่นักบินอัตโนมัติ · ผู้เรียนรับผิดชอบโค้ดที่ส่ง</p>
+          <ol class="mini">
+            <li>เขียน prompt ชัด: โจทย์ อินพุต เอาต์พุต กรณีขอบ ภาษา/ข้อจำกัด</li>
+            <li>อ่านและอธิบายโค้ดได้ทุกบรรทัด → ขอให้ AI อธิบาย Big-O</li>
+            <li>เขียน test เอง (ลิสต์ว่าง ค่าติดลบ ตัวเดียว) แล้ว<b>รันจริง</b></li>
+            <li>ไม่ผ่าน → ส่ง error เต็มกลับไปถาม · ผ่าน → commit</li>
+            <li>บันทึกการใช้ AI ใน <code>docs/progress-log.md</code> (academic integrity)</li>
+          </ol>
+          <p class="note">ความเสี่ยง: hallucination (API ที่ไม่มีจริง) · bug เชิงตรรกะ · ช่องโหว่ความปลอดภัย · ข้อมูลลับรั่ว · ลิขสิทธิ์</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌿</span> 7. Git และ Concurrency</div>
+        <div class="section-body">
+          <div class="code-block">git add . &amp;&amp; git commit -m <span class="str">"เพิ่มระบบ save"</span>   <span class="comment"># บันทึกจุดย้อนกลับ</span>
+git switch -c hard-mode                       <span class="comment"># แยก branch</span>
+git merge hard-mode                           <span class="comment"># รวม → อาจเกิด conflict</span>
+git tag v1.0 &amp;&amp; git push origin v1.0         <span class="comment"># ปิด Mini-Project 1</span></div>
+          <p><b>Conflict</b> = สอง branch แก้บรรทัดเดียวกัน → แก้ไฟล์ด้วยมือ ลบ <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> <code>=======</code> <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> แล้ว commit</p>
+          <p><b>Concurrency</b> = สลับทำหลายงาน · <b>Parallelism</b> = ทำพร้อมกันจริงหลาย core · <b>Race condition</b>: <code>count += 1</code> ไม่ atomic → ป้องกันด้วย <code>threading.Lock()</code></p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>เริ่ม <code>best = 0</code> ตอนหาค่าสูงสุด → ผิดเมื่อคะแนนติดลบทั้งหมด ต้องเริ่มจาก <code>scores[0]</code></li>
+            <li>ใช้ binary search กับข้อมูลที่<b>ยังไม่เรียง</b> → ได้คำตอบผิดโดยไม่มี error</li>
+            <li>วัดอัลกอริทึมด้วยเวลา (ms) ครั้งเดียว — เวลาขึ้นกับเครื่อง ให้ดูจำนวนขั้น/แนวโน้ม</li>
+            <li>คิดว่า O(n²) "แค่ช้ากว่านิดหน่อย" — n = 10⁶ ต่างจาก O(n) ระดับมิลลิวินาทีกับชั่วโมง</li>
+            <li>"รันได้ = ถูก" — โค้ดจาก AI ต้องผ่าน test กรณีขอบก่อน</li>
+            <li>flowchart ไม่ตรงกับโค้ดจริง · ลืม <code>git pull</code> ก่อน demo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>บอกคุณสมบัติ 5 ข้อของอัลกอริทึม และ CT 4 ขั้นพร้อมตัวอย่างได้</li>
+            <li>เขียน pseudocode/flowchart หาค่าสูงสุด และบอกว่าเป็น O(n) เพราะอะไร</li>
+            <li>อ่าน Big-O จากโค้ดลูปเดี่ยว ลูปซ้อน และลูปที่หาร 2 ได้</li>
+            <li>ตามรอย binary search ทีละรอบ (low, high, mid) ได้</li>
+            <li>อธิบายความต่าง OOP กับ Functional และเลือกใช้ในเกมได้</li>
+            <li>บอกขั้นตอนตรวจโค้ดจาก AI และแก้ merge conflict ได้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกคิด (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>ลูปซ้อน 2 ชั้น <code>range(n)</code> ทั้งคู่ n = 100 → ทำกี่รอบ? Big-O?</li>
+            <li>binary search ข้อมูล 1,024 ตัว worst case เปรียบเทียบกี่ครั้ง?</li>
+            <li><code>for i in range(n): for j in range(i)</code> n = 10 → กี่รอบ?</li>
+            <li>trace หาค่าสูงสุดของ [67, 82, 74, 91, 88] → best เปลี่ยนกี่ครั้ง?</li>
+          </ol>
+          <p class="note">เฉลย: (1) 10,000 → O(n²) · (2) ⌊log₂ 1024⌋ + 1 = 11 · (3) 45 = n(n−1)/2 → O(n²) · (4) 2 ครั้ง (67 → 82 → 91) เทียบ 4 ครั้ง = n − 1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

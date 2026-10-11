@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 16 - นำเสนอโครงงานประยุกต์</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🎤 Review Sheet สัปดาห์ที่ 16 — นำเสนอโครงงานประยุกต์</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Final Project Presentation · รวมผลงาน 4 โมดูล (Game · Web · IoT · Computer Vision)</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 16 · CLO3, CLO6<br>
+      นำเสนอโครงงาน
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 1. นำเสนอ = พิสูจน์ด้วยหลักฐาน 4 แบบ</div>
+        <div class="section-body">
+          <table>
+            <tr><th>หลักฐาน</th><th>ตอบคำถาม</th><th>สิ่งที่โชว์</th></tr>
+            <tr><td><b>Requirement</b></td><td>ปัญหาคืออะไร ใครใช้ วัดสำเร็จอย่างไร</td><td>ตัวเลขปัญหาจริง, user story, acceptance criteria</td></tr>
+            <tr><td><b>Architecture</b></td><td>ระบบประกอบกันอย่างไร</td><td>diagram HW · SW · data · network · security</td></tr>
+            <tr><td><b>Implementation</b></td><td>ทำงานจริงไหม ใครทำอะไร</td><td>โค้ดสำคัญ, commit/PR, CI ผ่าน, demo</td></tr>
+            <tr><td><b>Evaluation</b></td><td>ดีแค่ไหน มีข้อจำกัดอะไร</td><td>ตาราง test, accuracy, latency, limitation</td></tr>
+          </table>
+          <p class="note">กรรมการไม่ได้ต้องการฟังว่าระบบ "ดีมาก" แต่ต้องการเห็นหลักฐานจนสรุปเองได้ (เหมือนทนายเรียงหลักฐานในศาล)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⏱️</span> 2. Storyline 10 นาที</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w16-storyline.svg" alt="แบ่งเวลานำเสนอ 10 นาทีเป็น 8 ช่วงพร้อมหลักฐานของแต่ละช่วง">
+          <div class="formula">problem → users → architecture → implementation → demo → result → limitation → next step</div>
+          <table>
+            <tr><th>ช่วง</th><th>นาที</th><th>ตัวอย่าง (AI Object Detection + IoT)</th></tr>
+            <tr><td>Problem</td><td>1</td><td>"3 ใน 10 คาบ ห้องว่างเกิน 30 นาทีแต่แอร์ยังเปิด"</td></tr>
+            <tr><td>Architecture</td><td>1.5</td><td>กล้อง → model → API → DB → MQTT → dashboard</td></tr>
+            <tr><td>Demo</td><td>2</td><td>script ที่ซ้อมแล้ว + วิดีโอสำรอง 1 คลิก</td></tr>
+            <tr><td>Result</td><td>1.5</td><td>test set แยกจาก train · จำนวนภาพ · latency</td></tr>
+            <tr><td>Limitation</td><td>0.75</td><td>แสงน้อยนับผิด · ไม่เก็บภาพใบหน้า (PDPA)</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🖼️</span> 3. สไลด์: ควรทำ vs ควรเลี่ยง</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ประเด็น</th><th>ควรทำ</th><th>ควรเลี่ยง</th></tr>
+            <tr><td>ข้อความ</td><td>1 ข้อความหลัก/สไลด์ + diagram</td><td>ย่อหน้ายาว อ่านตามสไลด์</td></tr>
+            <tr><td>ตัวเลข</td><td>ผลทดสอบจริงพร้อมเงื่อนไข</td><td>"แม่นยำสูงมาก" ไม่มีตัวเลข</td></tr>
+            <tr><td>Demo</td><td>script + fallback (วิดีโอ/screenshot/log)</td><td>เปิดโปรแกรมครั้งแรกบนเวที</td></tr>
+            <tr><td>บทพูด</td><td>ทุกคนพูดส่วนที่ตนทำจริง</td><td>คนเดียวพูดทั้งหมด</td></tr>
+            <tr><td>อ้างอิง</td><td>ระบุ dataset, model, library, การใช้ AI</td><td>ใช้ภาพ/โค้ดคนอื่นไม่ให้เครดิต</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚖️</span> 4. Trade-off ที่ควรพูดได้</div>
+        <div class="section-body">
+          <table>
+            <tr><th>Trade-off</th><th>ตัวอย่างการตัดสินใจของทีม</th><th>เชื่อม</th></tr>
+            <tr><td>accuracy vs privacy</td><td>นับคนที่ edge ส่งเฉพาะ "จำนวน" ไม่ส่งภาพ</td><td>W9, W13</td></tr>
+            <tr><td>cloud vs edge</td><td>edge: latency ต่ำ ประหยัด bandwidth แต่ดูแลอุปกรณ์มากขึ้น</td><td>W7, W11</td></tr>
+            <tr><td>performance vs cost</td><td>MobileNetV2 เล็ก เร็ว แม่นน้อยกว่า model ใหญ่</td><td>W9, W10</td></tr>
+            <tr><td>manual vs CI/CD</td><td>ลงทุนเขียน workflow ครั้งเดียว ลดความผิดพลาดทุกครั้งที่ deploy</td><td>W14</td></tr>
+            <tr><td>ความสะดวก vs ความปลอดภัย</td><td>MQTT over TLS + รหัสผ่านต่ออุปกรณ์ แม้ตั้งค่ายากขึ้น</td><td>W11, W12</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏗️</span> 5. Architecture diagram ภาพเดียวต้องมี</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li><b>Hardware:</b> กล้อง บอร์ด ESP32 เซนเซอร์/actuator เครื่อง server</li>
+            <li><b>Software:</b> model, API, database, dashboard พร้อมภาษา/framework</li>
+            <li><b>Data:</b> ลูกศรทิศทางข้อมูล + จุดที่มีข้อมูลส่วนบุคคล (ทำเครื่องหมาย)</li>
+            <li><b>Network:</b> protocol บนลูกศร (HTTP, MQTT, Wi-Fi)</li>
+            <li><b>Security:</b> จุดยืนยันตัวตน การเข้ารหัส และสิทธิ์การเข้าถึง</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📏</span> 6. Rubric การนำเสนอ (5 เกณฑ์ × 3 ระดับ)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>เกณฑ์</th><th>ดีมาก (3)</th><th>พอใช้ (1)</th></tr>
+            <tr><td>ความถูกต้องเชิงเทคนิค</td><td>หลักการถูก เชื่อมเนื้อหา</td><td>มีข้อผิดพลาดสำคัญ</td></tr>
+            <tr><td>การประยุกต์/สร้างสรรค์</td><td>แก้ปัญหาจริง มีมุมใหม่</td><td>ลอกแบบตรง ๆ</td></tr>
+            <tr><td>การสื่อสาร/นำเสนอ</td><td>ชัดเจน ตรงเวลา สื่อดี</td><td>ติดขัด/ไม่ตรงเวลา</td></tr>
+            <tr><td>การทำงานเป็นทีม</td><td>แบ่งงานชัด ทุกคนมีส่วนร่วม</td><td>พึ่งบางคน</td></tr>
+            <tr><td>การตอบคำถาม</td><td>ตอบลึก เข้าใจจริง</td><td>ตอบไม่ได้</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💬</span> 7. ตอบคำถามแบบมืออาชีพ</div>
+        <div class="section-body">
+          <div class="formula">ฟังให้จบ → ทวนคำถาม → ตอบตรง 1 ประโยค → ยกหลักฐาน → ข้อจำกัด + ทางต่อ</div>
+          <table>
+            <tr><th>คำถามที่พบบ่อย</th><th>แนวตอบ</th></tr>
+            <tr><td>ทำไมเลือก MQTT แทน HTTP?</td><td>pub/sub overhead ต่ำ เหมาะบอร์ดส่งถี่ · trade-off: งาน request/response ใช้ HTTP</td></tr>
+            <tr><td>model แม่นแค่ไหน?</td><td>ตัวเลขจาก test set + ขนาด test set (ไม่ใช่ train accuracy)</td></tr>
+            <tr><td>มีประเด็น PDPA ไหม?</td><td>ข้อมูลใดเป็นข้อมูลส่วนบุคคล เก็บที่ไหน นานเท่าใด ใครเข้าถึง</td></tr>
+            <tr><td>ขยายเป็น 50 ห้องต้องเปลี่ยนอะไร?</td><td>broker, database, container, monitoring (W7, W14)</td></tr>
+            <tr><td>ใครทำส่วนนี้?</td><td>เจ้าของส่วนตอบเอง ชี้ commit/PR ได้</td></tr>
+          </table>
+          <p class="note">ไม่รู้คำตอบ: ยอมรับ → บอกวิธีหาคำตอบ → เสนอส่งภายหลัง (ACM 1.3 ซื่อสัตย์) · ห้ามเดา</p>
+          <img class="fig" src="/images/weeks/w16-qa-framework.svg" alt="สูตรตอบคำถาม 5 ขั้นและวิธีรับมือเมื่อไม่รู้คำตอบ">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧰</span> 8. Checklist ก่อนขึ้นเวที</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>rehearsal จับเวลา 7–10 นาที ≥ 2 รอบ + peer feedback ตาม rubric</li>
+            <li>ทดสอบโปรเจกเตอร์ อินเทอร์เน็ต broker ก่อนเวลา + hotspot สำรอง</li>
+            <li>วิดีโอ demo สำรอง + สไลด์ backup (diagram ละเอียด ตารางผลเต็ม)</li>
+            <li>repo เปิดได้ README บอกวิธีรัน CI ล่าสุดผ่าน</li>
+            <li>แบ่งบทพูดตามงานจริง ทุกคนพร้อมตอบ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧱</span> 9. พูด limitation ให้เป็นมืออาชีพ</div>
+        <div class="section-body">
+          <div class="formula">ข้อจำกัด (มีหลักฐาน) → ผลกระทบ → สาเหตุ → แนวทางแก้/แผนต่อ</div>
+          <p>"เมื่อแสงน้อยกว่าในห้องปกติ ระบบนับคนผิดบ่อยขึ้น (ทดสอบ 10 ภาพ ผิด 3 ภาพ) เพราะ dataset มีภาพกลางคืนน้อย รอบต่อไปจะเพิ่มภาพแสงน้อยและทำ data augmentation"</p>
+          <div class="def-row"><span class="def-key">Presenter</span><span class="def-val">คุมเวลา + เปิด/ปิดเรื่อง · <b>Demo driver</b> คุมเครื่อง + fallback · <b>Q&amp;A lead</b> รับคำถามแล้วส่งต่อเจ้าของส่วน</span></div>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>เล่าแต่ฟีเจอร์ ไม่บอกปัญหา/trade-off/หลักฐาน</li>
+            <li>รายงาน accuracy จาก training set</li>
+            <li>demo สดล้มแล้วไม่มี fallback</li>
+            <li>ซ่อน limitation จนกรรมการพบเอง</li>
+            <li>เกินเวลา เพราะใช้เวลากับ intro มากเกิน</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>บอกได้ว่าสไลด์ใดเป็นหลักฐานแต่ละแบบ</li>
+            <li>เรียง storyline 8 ช่วงและจัดเวลา 10 นาทีได้</li>
+            <li>พูด limitation อย่างมืออาชีพพร้อมแนวทางแก้</li>
+            <li>ตอบคำถามด้วยสูตร 5 ขั้น และรับมือเมื่อไม่รู้คำตอบ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

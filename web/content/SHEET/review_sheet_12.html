@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 12 - ความปลอดภัยไซเบอร์และสถาปัตยกรรม Zero Trust</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🛡️ Review Sheet สัปดาห์ที่ 12 — ความปลอดภัยไซเบอร์และสถาปัตยกรรม Zero Trust</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Cybersecurity &amp; Trust Architecture · Module 3: IoT &amp; Smart Systems</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 12 · CLO1, CLO4<br>
+      Lab 12: ความปลอดภัยไซเบอร์และนำเสนอ IoT
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔺</span> 1. CIA Triad</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ด้าน</th><th>ความหมาย / เปรียบเทียบ</th><th>ถูกละเมิดเมื่อ</th><th>control</th></tr>
+            <tr><td><b>C</b>onfidentiality</td><td>เฉพาะผู้มีสิทธิ์อ่านได้ · ซองปิดผนึก</td><td>data breach, ดักฟัง/MITM</td><td>encryption, IAM, MFA</td></tr>
+            <tr><td><b>I</b>ntegrity</td><td>ไม่ถูกแก้โดยไม่ได้รับอนุญาต · ตราประทับครั่ง</td><td>แก้ค่า sensor, ปลอมไฟล์</td><td>hash, HMAC, signature</td></tr>
+            <tr><td><b>A</b>vailability</td><td>ใช้ได้เมื่อต้องการ · ร้าน 24 ชม.</td><td>DDoS, ransomware</td><td>redundancy, backup</td></tr>
+          </table>
+          <img class="fig" src="/images/weeks/w12-cia-triad.svg" alt="CIA triad พร้อมตัวอย่างภัยคุกคามและมาตรการป้องกันของแต่ละด้าน">
+          <div class="def-row"><span class="def-key">Least privilege</span><span class="def-val">ให้สิทธิ์น้อยที่สุดเท่าที่ต้องใช้งานจริง</span></div>
+          <div class="def-row"><span class="def-key">Defense-in-depth</span><span class="def-val">ซ้อนหลายชั้น (Swiss cheese) เพราะทุกชั้นมีรู: identity → app → data → network → monitoring → backup</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔐</span> 2. Cryptography</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชนิด</th><th>กุญแจ</th><th>ตัวอย่าง</th><th>ใช้ทำอะไร</th></tr>
+            <tr><td><b>Symmetric</b></td><td>ดอกเดียวกัน ล็อก+เปิด</td><td>AES (DES เลิกใช้)</td><td>เข้ารหัสข้อมูลปริมาณมาก เร็ว</td></tr>
+            <tr><td><b>Asymmetric</b></td><td>public ล็อก · private เปิด</td><td>RSA, ECC</td><td>แลกกุญแจ, ลายเซ็นดิจิทัล, certificate</td></tr>
+            <tr><td><b>Hash</b></td><td>ไม่มีกุญแจ ทางเดียว</td><td>SHA-256, SHA-3 (MD5 ไม่ปลอดภัย)</td><td>ตรวจ integrity, เก็บรหัสผ่าน (แบบ slow+salt)</td></tr>
+          </table>
+          <p><b>Digital signature:</b> sign ด้วย <span class="accent">private</span> → ใครก็ verify ด้วย public → ยืนยันผู้ส่ง + integrity</p>
+          <p><b>TLS/HTTPS = hybrid:</b> asymmetric ยืนยัน certificate และตกลง session key → AES เข้ารหัสข้อมูลจริง</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 3. ภัยคุกคามที่พบบ่อย</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ภัย</th><th>ลักษณะ</th><th>ป้องกัน</th></tr>
+            <tr><td>Phishing / social engineering</td><td>หลอกให้กรอกรหัส/คลิกลิงก์</td><td>อบรม, MFA, ตรวจโดเมน</td></tr>
+            <tr><td>Ransomware</td><td>เข้ารหัสไฟล์เรียกค่าไถ่ (double extortion: ขโมยด้วย)</td><td>backup offline, patch, EDR</td></tr>
+            <tr><td>DDoS</td><td>ยิงทราฟฟิกจนบริการล่ม</td><td>rate limit, CDN, scrubbing</td></tr>
+            <tr><td>MITM</td><td>ดักกลางทาง อ่าน/แก้ข้อมูล</td><td>TLS, ตรวจ certificate</td></tr>
+            <tr><td>SQL injection</td><td>input กลายเป็นคำสั่ง SQL</td><td>parameterized query</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">📡</span> 4. Security สำหรับ IoT (เชื่อม W11)</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>เปลี่ยน default password และใช้ credential/certificate แยกรายอุปกรณ์</li>
+            <li>MQTT over TLS (พอร์ต 8883) + authentication + ACL ราย topic</li>
+            <li>secure boot และ OTA update ที่ตรวจลายเซ็นเฟิร์มแวร์ก่อนติดตั้ง</li>
+            <li>แยกเครือข่าย IoT (VLAN/segment) ออกจากเครื่องผู้ใช้ · ตรวจช่วงค่าที่สมเหตุสมผลก่อนสั่ง actuator</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🐍</span> 5. Secure coding: query และรหัสผ่าน</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">import</span> sqlite3, bcrypt, hashlib
+<span class="comment"># ❌ ต่อ string: กรอก ' OR '1'='1 แล้วเงื่อนไขเป็นจริงเสมอ</span>
+sql = <span class="str">f"SELECT * FROM users WHERE name='{name}'"</span>
+<span class="comment"># ✅ parameterized: input ถูกถือเป็น "ข้อมูล" ไม่ใช่ "คำสั่ง"</span>
+cur.execute(<span class="str">"SELECT hash FROM users WHERE name = ?"</span>, (name,))
+
+<span class="comment"># เก็บรหัสผ่าน: slow hash + salt (ห้าม plaintext / MD5)</span>
+h = bcrypt.hashpw(pw.encode(), bcrypt.gensalt())   <span class="comment"># salt ฝังใน h</span>
+ok = bcrypt.checkpw(pw.encode(), h)              <span class="comment"># True / False</span>
+
+<span class="comment"># ตรวจ integrity ไฟล์เฟิร์มแวร์</span>
+digest = hashlib.sha256(data).hexdigest()  <span class="comment"># 64 ตัวอักษร hex</span></div>
+          <p class="note">OWASP แนะนำ Argon2id เป็นอันดับแรก (รองลงมา scrypt, bcrypt, PBKDF2) · SHA-256 เปล่า ๆ เร็วเกินไปสำหรับรหัสผ่าน</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧭</span> 6. Zero Trust (NIST SP 800-207)</div>
+        <div class="section-body">
+          <div class="formula">Never trust, always verify · ตรวจทุก request ทุก session</div>
+          <table>
+            <tr><th>ประเด็น</th><th>Perimeter (ปราสาท+คูน้ำ)</th><th>Zero Trust (คีย์การ์ดโรงแรม)</th></tr>
+            <tr><td>สมมติฐาน</td><td>อยู่ใน LAN = เชื่อใจ</td><td>ไม่เชื่อใจโดยปริยาย</td></tr>
+            <tr><td>จุดตรวจ</td><td>firewall/VPN ที่ขอบครั้งเดียว</td><td>PEP หน้าทุก resource</td></tr>
+            <tr><td>หลักฐาน</td><td>IP / ตำแหน่งเครือข่าย</td><td>identity + MFA, อุปกรณ์, บริบท</td></tr>
+            <tr><td>ถูกเจาะ 1 เครื่อง</td><td>lateral movement ลามทั่ว</td><td>จำกัดด้วย micro-segmentation</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">PDP</span><span class="def-val">Policy Engine (ตัดสิน) + Policy Administrator (สั่งเปิด/ปิดช่องทาง)</span></div>
+          <div class="def-row"><span class="def-key">PEP</span><span class="def-val">Policy Enforcement Point ด่านที่บังคับใช้ผลการตัดสิน</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📚</span> 7. กรอบมาตรฐาน · AI · Provenance</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li><b>NIST CSF 2.0:</b> Govern · Identify · Protect · Detect · Respond · Recover · <b>ISO/IEC 27001</b> = ระบบบริหารความมั่นคงสารสนเทศ (ISMS)</li>
+            <li><b>OWASP Top 10:</b> awareness ความเสี่ยงเว็บ เช่น Broken Access Control, Injection · <b>OWASP LLM Top 10:</b> prompt injection</li>
+            <li><b>Digital provenance:</b> ระบุที่มาของสื่อด้วย metadata ที่ลงลายเซ็น (เช่น C2PA) + watermark เพื่อรับมือ deepfake</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔎</span> 8. ตัวอย่างวิเคราะห์ incident: IoT dashboard</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ขั้นของการโจมตี</th><th>CIA</th><th>control ที่ควรหยุดได้</th></tr>
+            <tr><td>SQL injection ที่หน้า login ดึงตาราง users</td><td>C</td><td>parameterized query, สิทธิ์ DB ต่ำสุด</td></tr>
+            <tr><td>crack hash MD5 ไม่มี salt</td><td>C</td><td>Argon2id / bcrypt + salt</td></tr>
+            <tr><td>ใช้รหัสเดิมเข้า broker แล้ว publish ค่าปลอม</td><td>I</td><td>MFA, credential รายอุปกรณ์, ACL ราย topic, TLS</td></tr>
+            <tr><td>flood ข้อความจน broker ล่ม</td><td>A</td><td>rate limit, monitoring/alert, backup + แผนกู้คืน</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>สับสน hash กับ encryption: hash ย้อนกลับไม่ได้ ไม่มีกุญแจ</li>
+            <li>"เข้ารหัส" รหัสผ่านด้วย AES หรือเก็บเป็น MD5/SHA-256 ไม่มี salt</li>
+            <li>คิดว่าเข้ารหัสแล้วครบ CIA (encryption ช่วย C แต่ไม่ช่วย A)</li>
+            <li>แก้ SQL injection ด้วยการลบเครื่องหมาย <code>'</code> เองแทน parameterized query</li>
+            <li>มองว่า Zero Trust คือผลิตภัณฑ์ที่ซื้อได้ ทั้งที่เป็นสถาปัตยกรรม/แนวคิด</li>
+            <li>ใช้ username/password เดียวกันทั้ง dashboard และ MQTT broker</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>วิเคราะห์ incident ว่า C, I หรือ A เสีย และเสนอ control ให้ตรงด้านได้</li>
+            <li>อธิบายว่าทำไม TLS ใช้ทั้ง asymmetric และ symmetric</li>
+            <li>เขียน parameterized query และเก็บรหัสผ่านด้วย bcrypt/Argon2id ได้</li>
+            <li>เปรียบเทียบ perimeter กับ Zero Trust และบอกบทบาท PDP/PEP ได้</li>
+            <li>ทำ threat model ของ IoT dashboard พร้อม control อย่างน้อย 5 รายการ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

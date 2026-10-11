@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 08 - ทบทวนและสอบกลางภาค</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">📝 Review Sheet สัปดาห์ที่ 08 — ทบทวนและสอบกลางภาค (สัปดาห์ 1–7)</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Midterm Examination</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 8 · CLO1, CLO2, CLO3<br>
+      สอบกลางภาค
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🗺️</span> ภาพรวม: 7 สัปดาห์ = ชั้นของระบบเดียว</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w08-concept-map.svg" alt="ผังเชื่อมสัปดาห์ 1 ถึง 7 รอบระบบเกมหรือเว็บแอปของโครงงาน">
+          <p class="note">กติกาเกม = อัลกอริทึม (W4) · save/load = ฐานข้อมูล (W5) · เรียก API = เครือข่าย (W6) · deploy = คลาวด์ (W7)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧭</span> W1–W2 ภาพรวม CE · Hardware/Software (CLO1)</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">CE</span><span class="def-val">ออกแบบจุดที่ hardware พบ software · CS = ทฤษฎี/อัลกอริทึม · SE = กระบวนการพัฒนา · IT = ดูแลบริการ · IS = ข้อมูล+ธุรกิจ</span></div>
+          <div class="def-row"><span class="def-key">CE2016</span><span class="def-val">12 knowledge areas · 420 core hours (+ คณิตศาสตร์ 120 ชม. แยกต่างหาก)</span></div>
+          <div class="def-row"><span class="def-key">CPU/GPU/NPU</span><span class="def-val">งานลำดับ/เงื่อนไข · งานขนานจำนวนมาก · อนุมาน AI ประหยัดไฟ</span></div>
+          <div class="def-row"><span class="def-key">Memory</span><span class="def-val">register → cache → RAM → SSD → HDD (เร็ว/เล็ก/แพง → ช้า/ใหญ่/ถูก)</span></div>
+          <div class="def-row"><span class="def-key">Edge/Cloud</span><span class="def-val">edge ใกล้ผู้ใช้ หน่วงต่ำ · cloud ทรัพยากรมาก — ทำงานเสริมกัน ไม่ได้แทนกัน</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔌</span> W3 Digital Logic · Processor (CLO2)</div>
+        <div class="section-body">
+          <p><b>ฐาน 10 → 2:</b> หารด้วย 2 อ่านเศษ<span class="accent">ล่างขึ้นบน</span> · 45 = 101101₂ = 2D₁₆ · 4 บิต = 1 หลักฐาน 16</p>
+          <p><b>Two's complement (8 บิต):</b> −5 → 00000101 → กลับบิต 11111010 → <b>+1</b> = 11111011</p>
+          <table>
+            <tr><th>A B</th><th>AND</th><th>OR</th><th>XOR</th><th>NAND</th></tr>
+            <tr><td>0 0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+            <tr><td>0 1 / 1 0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>1 1</td><td>1</td><td>1</td><td><b>0</b></td><td>0</td></tr>
+          </table>
+          <p><b>Half adder:</b> Sum = A ⊕ B · Carry = A · B &nbsp;|&nbsp; Absorption: A + A·B = A</p>
+          <div class="formula">CPU time = Instruction count × CPI ÷ Clock rate</div>
+          <p class="note">2×10⁹ คำสั่ง, CPI 1.5, 3 GHz → 1.0 วินาที · CPI 1.2 → 0.8 วินาที (เร็วขึ้น 1.25 เท่า) · RISC-V = ISA ไม่ใช่ยี่ห้อชิป</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧠</span> W4 Algorithm · Programming (CLO3)</div>
+        <div class="section-body">
+          <p><b>Computational thinking:</b> decomposition · pattern recognition · abstraction · algorithm</p>
+          <table>
+            <tr><th>Big-O</th><th>ตัวอย่าง</th></tr>
+            <tr><td>O(1) · O(log n)</td><td>อ่าน array ตาม index · binary search (ต้องเรียงก่อน)</td></tr>
+            <tr><td>O(n) · O(n log n)</td><td>linear search / loop เดียว · merge sort</td></tr>
+            <tr><td>O(n²)</td><td>loop ซ้อน 2 ชั้นที่วิ่งตาม n ทั้งคู่</td></tr>
+          </table>
+          <div class="formula">Binary search กรณีแย่สุด = ⌊log₂ n⌋ + 1 ครั้ง &nbsp;(n = 1,000 → 10)</div>
+          <p class="note">ตัดค่าคงที่และพจน์เล็ก: O(2n) → O(n), O(n² + n) → O(n²) · OOP = object + state · Functional = pure function, immutable</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> โจทย์ฝึก 1 ข้อต่อสัปดาห์ (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>W1 ออกแบบ firmware + วงจรควบคุมมอเตอร์หุ่นยนต์ ตรงกับสาขาใด</li>
+            <li>W2 เรียงจากเร็วสุด: RAM, SSD, register, L1 cache</li>
+            <li>W3 แปลง 45₁₀ เป็นฐาน 2 และฐาน 16</li>
+            <li>W4 ข้อมูลเรียงแล้ว 1,000 ตัว binary search เทียบอย่างมากกี่ครั้ง</li>
+            <li>W5 SQL: ชื่อและ GPA ของนักศึกษาที่ GPA &gt; 3.00 เรียงมากไปน้อย</li>
+            <li>W6 <code>10.0.0.0/28</code> มี host กี่เครื่อง broadcast คืออะไร</li>
+            <li>W7 ไฟรวม 2,400 kW, IT 2,000 kW → PUE, DCiE</li>
+          </ol>
+          <p class="note">เฉลย: (1) CE · (2) register → L1 → RAM → SSD · (3) 101101₂ = 2D₁₆ · (4) 10 · (5) <code>SELECT name, gpa FROM students WHERE gpa &gt; 3.00 ORDER BY gpa DESC;</code> · (6) 14, 10.0.0.15 · (7) 1.2, ≈ 83.3%</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🗃️</span> W5 Database (CLO3)</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">ER</span><span class="def-val">1:N → FK อยู่ฝั่ง N · M:N → ต้องมีตารางเชื่อม (เช่น enrollments)</span></div>
+          <div class="def-row"><span class="def-key">Normal form</span><span class="def-val">1NF ค่าเดี่ยว · 2NF ไม่มี partial dependency · 3NF ไม่มี transitive dependency</span></div>
+          <div class="def-row"><span class="def-key">ACID</span><span class="def-val">Atomicity · Consistency · Isolation · Durability (โอนเงินต้องสำเร็จทั้งหมดหรือไม่เลย)</span></div>
+          <div class="code-block"><span class="kw">SELECT</span> c.name, <span class="fn">COUNT</span>(*) <span class="kw">AS</span> n
+<span class="kw">FROM</span> enrollments e <span class="kw">JOIN</span> courses c <span class="kw">ON</span> e.course_id = c.id
+<span class="kw">GROUP BY</span> c.name
+<span class="kw">HAVING</span> <span class="fn">COUNT</span>(*) &gt; <span class="num">30</span>      <span class="comment">-- ฟังก์ชันรวมกรองด้วย HAVING</span>
+<span class="kw">ORDER BY</span> n <span class="kw">DESC</span>;</div>
+          <p class="note">SQL = schema ชัด + JOIN + ACID · NoSQL = schema ยืดหยุ่น scale แนวนอน · CAP: เมื่อเกิด partition ต้องเลือก C หรือ A · vector DB ค้นด้วยความหมาย (embedding)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌐</span> W6 Network (CLO1)</div>
+        <div class="section-body">
+          <p>TCP/IP: <b>Application</b> (Data) · <b>Transport</b> (Segment) · <b>Internet</b> (Packet, router) · <b>Link</b> (Frame, switch)</p>
+          <p>เปิดเว็บ: DNS → TCP handshake → TLS → HTTP · TCP = ครบ/เรียง · UDP = เร็ว/เบา · DNS แปลชื่อ ≠ DHCP แจก IP</p>
+          <div class="formula">host ที่ใช้ได้ = 2<sup>32 − prefix</sup> − 2 &nbsp;·&nbsp; /26 → 255.255.255.192, 62 host</div>
+          <p class="note">Private: 10/8 · 172.16/12 · 192.168/16 · IPv4 32 บิต vs IPv6 128 บิต · พอร์ต 53/80/443</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🗄️</span> W7 Data Center · Cloud (CLO2, CLO4)</div>
+        <div class="section-body">
+          <p>VM มี Guest OS · container แชร์ kernel · image (แม่แบบ) → container (กำลังรัน) · Kubernetes = orchestration</p>
+          <p>ผู้ใช้ดูแล: on-prem 7 ชั้น &gt; <b>IaaS</b> (OS ขึ้นไป) &gt; <b>PaaS</b> (แอป+ข้อมูล) &gt; <b>SaaS</b> (ข้อมูล/สิทธิ์เท่านั้น)</p>
+          <div class="flex-row">
+            <div class="formula">PUE = Total ÷ IT (≥ 1)</div>
+            <div class="formula">Non-IT = (PUE − 1) × IT</div>
+          </div>
+          <p class="note">IT 1,000 kW, รวม 1,500 kW → PUE 1.5 · ลดเป็น 1.05 → ประหยัด 450 kW (30%) · ค่าไฟ = kW × ชม. × บาท/kWh</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> ตอบข้อสอบกรณีศึกษา 4 ขั้น</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li><b>จับความต้องการ/ข้อจำกัด</b> (ผู้ใช้กี่คน, ข้อมูลห้ามหาย?, latency, งบ)</li>
+            <li><b>map ลงชั้นของระบบ</b>: hardware · algorithm · data · network · cloud</li>
+            <li><b>เลือก + เหตุผล + สิ่งที่แลก</b> (trade-off)</li>
+            <li><b>ยืนยันด้วยตัวเลข</b>: Big-O, จำนวน host, PUE, ค่าไฟ</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚖️</span> คู่แนวคิดที่ข้อสอบชอบให้เปรียบเทียบ</div>
+        <div class="section-body">
+          <table>
+            <tr><th>คู่</th><th>ถามตัวเองว่า…</th></tr>
+            <tr><td>Combinational vs Sequential (W3)</td><td>ต้องจำสถานะก่อนหน้า (flip-flop) ไหม</td></tr>
+            <tr><td>von Neumann vs Harvard (W3)</td><td>คำสั่งกับข้อมูลใช้หน่วยความจำ/บัสร่วมกันไหม</td></tr>
+            <tr><td>Linear vs Binary (W4)</td><td>ข้อมูลเรียงแล้วหรือยัง ค้นบ่อยไหม</td></tr>
+            <tr><td>SQL vs NoSQL (W5)</td><td>โครงสร้างตายตัว + ต้องการ ACID ไหม</td></tr>
+            <tr><td>TCP vs UDP (W6)</td><td>ข้อมูลหายได้บ้างไหม ต้องหน่วงต่ำแค่ไหน</td></tr>
+            <tr><td>VM vs Container (W2, W7)</td><td>ต้องรัน OS ต่างชนิด / แยกขาดไหม</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>อ่านเศษจากบนลงล่าง · ลืม +1 ใน two's complement · สับสน XOR กับ OR</li>
+            <li>ใช้ binary search กับข้อมูลไม่เรียง · คิดว่า Big-O คือเวลาเป็นวินาที</li>
+            <li>FK ผิดฝั่ง · M:N ไม่มีตารางเชื่อม · ใช้ <code>WHERE COUNT()</code> แทน <code>HAVING</code></li>
+            <li>switch/router ผิดชั้น · ลืมลบ 2 ใน subnet · คิดว่า DNS แจก IP</li>
+            <li>container = VM เล็ก · PUE &lt; 1 (สลับเศษ/ส่วน) · sovereign = private</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>แปลง 77₁₀ เป็นฐานสอง และ −12 เป็น two's complement 8 บิต</li>
+            <li>loop ซ้อน 2 ชั้นที่วิ่ง n และ 10 รอบ เป็น Big-O ใด</li>
+            <li>นักศึกษา–รายวิชา (M:N) ต้องมีกี่ตาราง</li>
+            <li><code>192.168.5.0/27</code> มี mask และ host เท่าใด</li>
+            <li>IT 800 kW, PUE 1.25 → Total, Non-IT</li>
+          </ul>
+          <p class="note">เฉลย: 1001101₂ · 11110100 · O(n) · 3 ตาราง (students, courses, enrollments) · 255.255.255.224, 30 host · 1,000 kW, 200 kW</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

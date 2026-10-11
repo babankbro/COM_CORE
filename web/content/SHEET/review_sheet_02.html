@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 02 - ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🖥️ Review Sheet สัปดาห์ที่ 02 — ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Hardware &amp; Software Ecosystems</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 2 · CLO1<br>
+      Lab 02: สำรวจสเปกฮาร์ดแวร์และเขียนโค้ดดึงข้อมูลระบบ
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🧱</span> 1. ชั้นของระบบ</div>
+        <div class="section-body">
+          <div class="formula">ผู้ใช้ → Application → Library/Runtime → OS kernel → Driver → Firmware → Hardware</div>
+          <div class="def-row"><span class="def-key">Hardware</span><span class="def-val">CPU, GPU/NPU, RAM, storage (SSD/HDD), I/O, bus — ทรัพยากรกายภาพ</span></div>
+          <div class="def-row"><span class="def-key">Firmware</span><span class="def-val">โปรแกรมฝังในอุปกรณ์ เช่น UEFI/BIOS, firmware ใน SSD</span></div>
+          <div class="def-row"><span class="def-key">OS</span><span class="def-val">ตัวกลางจัดการ <b>process · memory · file · device</b> และความปลอดภัย</span></div>
+          <div class="def-row"><span class="def-key">Driver</span><span class="def-val">ซอฟต์แวร์ที่ "แปลภาษา" ให้ OS สั่งอุปกรณ์แต่ละรุ่นได้</span></div>
+          <div class="def-row"><span class="def-key">System call</span><span class="def-val">ช่องทางที่โปรแกรมขอบริการจาก OS (user mode → kernel mode) เช่น <code>open</code>, <code>write</code></span></div>
+          <img class="fig" src="/images/weeks/w02-layers.svg" alt="ชั้นของระบบและเส้นทางคำสั่ง Save ในเกมจาก application ลงไปถึง SSD แล้วย้อนกลับ">
+          <p class="note">ซอฟต์แวร์ระบบ (OS, driver, utility) vs ซอฟต์แวร์ประยุกต์ (เกม เบราว์เซอร์) · open source vs proprietary ต่างกันที่สัญญาอนุญาต</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🗄️</span> 2. Memory hierarchy (เร็ว–แพง–เล็ก → ช้า–ถูก–ใหญ่)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชั้น</th><th>latency โดยประมาณ</th><th>ขนาดทั่วไป</th><th>ไฟดับ</th></tr>
+            <tr><td>Register</td><td>~0.3 ns</td><td>ไม่กี่ร้อยไบต์</td><td rowspan="3">หาย (volatile)</td></tr>
+            <tr><td>Cache L1/L2/L3</td><td>~1 / 4 / 15 ns</td><td>KB – สิบ MB</td></tr>
+            <tr><td>RAM (DRAM)</td><td>~100 ns</td><td>8–64 GB</td></tr>
+            <tr><td>SSD (NVMe)</td><td>~100 µs</td><td>0.5–4 TB</td><td rowspan="2">อยู่ (non-volatile)</td></tr>
+            <tr><td>HDD</td><td>~10 ms</td><td>1–20 TB</td></tr>
+          </table>
+          <div class="formula">1 ms = 1,000 µs = 1,000,000 ns · RAM ≈ 100× ช้ากว่า L1 · SSD ≈ 1,000× ช้ากว่า RAM</div>
+          <ul class="mini">
+            <li><b>Locality:</b> temporal (เพิ่งใช้ จะใช้อีก) · spatial (อยู่ติดกัน จะใช้ต่อ) → cache ดึงเป็น cache line</li>
+            <li><b>RAM ไม่พอ</b> → OS ย้ายหน้าไป swap/page file บน SSD → เครื่องช้าลงชัดเจน</li>
+            <li><b>Virtual memory + MMU:</b> แต่ละ process เห็นพื้นที่ของตัวเอง แปลงที่อยู่เสมือนเป็นที่อยู่จริง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚙️</span> 3. CPU · GPU · NPU (Heterogeneous computing)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>หน่วย</th><th>โครงสร้าง</th><th>เหมาะกับ</th></tr>
+            <tr><td><b>CPU</b></td><td>คอร์ใหญ่ไม่กี่คอร์ + cache ใหญ่</td><td>งานทั่วไป ลำดับซับซ้อน OS ลอจิกเกม</td></tr>
+            <tr><td><b>GPU</b></td><td>คอร์เล็กหลายพันคอร์</td><td>งานขนาน กราฟิก train โมเดล</td></tr>
+            <tr><td><b>NPU</b></td><td>อาร์เรย์คูณ-บวก (MAC)</td><td>AI inference บนอุปกรณ์ ประหยัดไฟ</td></tr>
+          </table>
+          <p class="note">เปรียบ: CPU = เชฟมือหนึ่งไม่กี่คน · GPU = พนักงานหั่นผักหลายพันคน · NPU = เครื่องจักรสายพานที่ทำงานเดียว · SoC = รวม CPU+GPU+NPU+ตัวควบคุมหน่วยความจำไว้บนชิปเดียว (มือถือ, Apple M-series) · logical CPU อาจ = 2 × คอร์จริงเมื่อมี SMT</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🚶</span> 4. ตามรอยการทำงาน: กด Save / เปิดโปรแกรม</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li><b>App</b> แปลงสถานะเกมเป็น JSON แล้วเรียก <code>open()</code>/<code>write()</code> → <b>runtime</b> พักข้อมูลใน buffer</li>
+            <li><b>System call</b> (<code>write</code> บน Linux, <code>WriteFile</code> บน Windows) → CPU สลับเข้า kernel mode</li>
+            <li><b>OS</b> ระบบไฟล์หาบล็อกบนดิสก์ อาจพักใน page cache บน RAM → <b>driver</b> ส่งคำสั่ง NVMe</li>
+            <li><b>Firmware SSD</b> เลือกเซลล์ flash แล้วเขียน (non-volatile) → ผลสำเร็จ/ผิดพลาดย้อนกลับขึ้นไปที่ app</li>
+          </ol>
+          <p class="note">เปิดโปรแกรม: OS โหลดไฟล์โปรแกรมจาก storage → RAM สร้าง process (PID, พื้นที่หน่วยความจำ) → scheduler แบ่งเวลา CPU → คำสั่ง/ข้อมูลที่ใช้บ่อยขึ้นไปอยู่ใน cache</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📡</span> 5. Edge vs Cloud · Container</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ประเด็น</th><th>Cloud</th><th>Edge</th></tr>
+            <tr><td>ที่ประมวลผล</td><td>data center ระยะไกล</td><td>ใกล้แหล่งข้อมูล (กล้อง เกตเวย์ มือถือ)</td></tr>
+            <tr><td>Latency</td><td>สูงกว่า (ไป-กลับเครือข่าย)</td><td>ต่ำ ตอบสนองทันที</td></tr>
+            <tr><td>พลังประมวลผล</td><td>สูง ขยายได้</td><td>จำกัดด้วยพลังงาน/ความร้อน</td></tr>
+            <tr><td>ความเป็นส่วนตัว</td><td>ข้อมูลดิบออกจากเครื่อง</td><td>ส่งเฉพาะผลสรุปได้</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Container</span><span class="def-val">แพ็กแอป + library ใช้ kernel ร่วมกับ host (namespaces + cgroups) เบาและเริ่มเร็วกว่า VM</span></div>
+          <div class="def-row"><span class="def-key">VM</span><span class="def-val">จำลองเครื่องทั้งเครื่องผ่าน hypervisor มี OS ของตัวเอง แยกขาดกว่าแต่หนักกว่า</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌱</span> 6. Green computing</div>
+        <div class="section-body">
+          <div class="formula">PUE = พลังงานรวมของ data center ÷ พลังงานที่อุปกรณ์ IT ใช้ &nbsp;(ค่าดีสุด = 1.0)</div>
+          <p>ตัวอย่าง: ใช้รวม 1,500 kW, IT ใช้ 1,000 kW → PUE = <b>1.5</b> (อีก 500 kW ไปกับระบบทำความเย็น/ไฟฟ้า)</p>
+          <p class="note">ออกแบบประหยัดพลังงานตั้งแต่ต้น: เลือก HW ให้พอดีงาน, sleep mode, ลดการส่งข้อมูล, liquid cooling</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 7. Lab 02: อ่านสเปกและวัดเวลา</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">import</span> os, platform, psutil
+<span class="fn">print</span>(platform.system(), platform.machine())  <span class="comment"># OS และ ISA (AMD64/arm64)</span>
+<span class="fn">print</span>(os.cpu_count())                      <span class="comment"># logical CPU</span>
+<span class="fn">print</span>(psutil.cpu_count(logical=<span class="kw">False</span>))  <span class="comment"># คอร์จริง</span>
+vm = psutil.virtual_memory()
+<span class="fn">print</span>(<span class="fn">round</span>(vm.total / <span class="num">1024</span>**<span class="num">3</span>, <span class="num">1</span>), <span class="str">"GiB"</span>, vm.percent, <span class="str">"%"</span>)
+<span class="fn">print</span>(psutil.cpu_percent(interval=<span class="num">1</span>))      <span class="comment"># % การใช้ CPU ใน 1 วินาที</span></div>
+          <div class="code-block"><span class="kw">import</span> json
+<span class="kw">def</span> <span class="fn">save_game</span>(state, path=<span class="str">"save.json"</span>):
+    <span class="kw">with</span> <span class="fn">open</span>(path, <span class="str">"w"</span>, encoding=<span class="str">"utf-8"</span>) <span class="kw">as</span> f:  <span class="comment"># ปิดไฟล์ให้เสมอ</span>
+        json.dump(state, f, ensure_ascii=<span class="kw">False</span>)</div>
+          <p class="note">ทดลอง: <code>sum()</code> จาก list ใน RAM เร็วกว่าอ่านไฟล์แล้ว <code>int()</code> ทีละบรรทัดหลายเท่า → เห็น memory hierarchy จริง</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>สับสน RAM (หน่วยความจำหลัก ลบเลือน) กับ storage (เก็บถาวร) — "ความจุ 512 GB" มักหมายถึง SSD</li>
+            <li>คิดว่า GPU/NPU มาแทน CPU — จริง ๆ เป็น<b>ตัวเร่ง</b>งานเฉพาะ CPU ยังคุมลำดับงานและ OS</li>
+            <li>นับ <code>os.cpu_count()</code> เป็นจำนวนคอร์จริง (คือ logical CPU)</li>
+            <li>สับสน GB (10⁹) กับ GiB (2³⁰ = 1,073,741,824 bytes) ทำให้ตัวเลขดิสก์ "หาย"</li>
+            <li>เปิดไฟล์โดยไม่ปิด/ไม่ใช้ <code>with</code> → ข้อมูลค้างใน buffer ไฟล์ save ไม่ครบ</li>
+            <li>คิดว่า edge ดีกว่า cloud เสมอ — edge แลกกับการอัปเดตและดูแลความปลอดภัยอุปกรณ์จำนวนมาก</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>เรียงชั้น application → hardware และอธิบายหน้าที่ของ OS 4 อย่างได้</li>
+            <li>ตามรอยคำสั่ง Save ผ่าน system call, driver, firmware ได้</li>
+            <li>เรียง memory hierarchy จากเร็วไปช้า พร้อมเหตุผลเรื่องราคา/ขนาด/locality ได้</li>
+            <li>เลือก CPU/GPU/NPU ให้เหมาะกับงานตัวอย่างได้</li>
+            <li>อธิบายว่า edge ลด latency อย่างไร และคำนวณ PUE ได้</li>
+            <li>เขียนสคริปต์รายงานสเปกเครื่องด้วย <code>platform</code>/<code>psutil</code> ได้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกคิด (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>Data center ใช้ไฟรวม 2,400 kW อุปกรณ์ IT ใช้ 1,600 kW → PUE = ?</li>
+            <li>ถ้า 1 ns = 1 วินาที การอ่าน RAM (~100 ns) และ SSD (~100 µs) นานเท่าใด?</li>
+            <li>กล้องในโรงงานต้องหยุดสายพานภายใน 20 ms เมื่อพบคนเข้าเขตอันตราย ควรประมวลผลที่ edge หรือ cloud?</li>
+            <li>งานแปลงวิดีโอ 4K เป็นเฟรม ๆ พร้อมกันจำนวนมาก ควรใช้ CPU, GPU หรือ NPU?</li>
+          </ol>
+          <p class="note">เฉลย: (1) 2,400 ÷ 1,600 = 1.5 · (2) ~100 วินาที (≈ 1.7 นาที) และ 100,000 วินาที (≈ 1.2 วัน) · (3) edge — ไม่ต้องรอเครือข่ายไป-กลับ · (4) GPU — งานขนานแบบเดียวกันจำนวนมาก</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

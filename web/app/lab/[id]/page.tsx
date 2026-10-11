@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BookOpen, PenSquare, FlaskConical, Presentation } from "lucide-react";
+import { BookOpen, PenSquare, FlaskConical, Presentation, ClipboardCheck } from "lucide-react";
 import { modules, getModuleById, projects } from "@/lib/modules-data";
 import { getLabContent, getLab, getSlide } from "@/lib/content";
 import { course } from "@/lib/course";
@@ -77,6 +77,14 @@ export default async function LabPage({ params }: PageProps) {
             <Presentation className="w-4 h-4" /> สไลด์
           </a>
         )}
+        <a
+          href={`/api/content/SHEET/review_sheet_${mod.id}.html`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
+        >
+          <ClipboardCheck className="w-4 h-4" /> Review Sheet
+        </a>
         {mod.hasExam && (
           <Link
             href={`/exam/${mod.id}`}

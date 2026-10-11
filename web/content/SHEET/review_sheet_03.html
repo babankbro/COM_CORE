@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 03 - วงจรตรรกะและหน่วยประมวลผล</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🖥️ Review Sheet สัปดาห์ที่ 03 — วงจรตรรกะและหน่วยประมวลผล</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Digital Logic &amp; Modern Processors</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 3 · CLO2<br>
+      Lab 03: วงจรตรรกะและการประมวลผลข้อมูล
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔢</span> 1. ระบบเลข</div>
+        <div class="section-body">
+          <div class="formula">1101₂ = 8 + 4 + 0 + 1 = 13 &nbsp;·&nbsp; 0x2F = 2×16 + 15 = 47 &nbsp;·&nbsp; 0x2F = 0010 1111₂</div>
+          <ul class="mini">
+            <li>ฐาน 10 → 2: หารด้วย 2 ซ้ำ ๆ อ่านเศษจาก<b>ล่างขึ้นบน</b> · ฐาน 2 ↔ 16: จับกลุ่มทีละ 4 บิตจากขวา</li>
+            <li><b>Two's complement</b> (ค่าลบ): กลับบิตทั้งหมดแล้ว +1 เช่น −5 ใน 8 บิต = 1111 1011₂ · ช่วง n บิต = −2ⁿ⁻¹ … 2ⁿ⁻¹−1</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔌</span> 2. Logic gates (A, B → Y)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>A B</th><th>AND</th><th>OR</th><th>XOR</th><th>NAND</th><th>NOR</th><th>XNOR</th></tr>
+            <tr><td>0 0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>0 1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1 0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1 1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+          </table>
+          <ul class="mini">
+            <li><b>NOT</b> กลับค่า · <b>XOR</b> = 1 เมื่อต่างกัน · NAND/NOR เป็น <span class="accent">universal gate</span> สร้างเกตอื่นได้ทั้งหมด</li>
+            <li>ลำดับคำนวณ: <b>วงเล็บ → NOT → AND → OR</b> · De Morgan: (A·B)' = A' + B' · (A+B)' = A'·B'</li>
+            <li>K-map ช่วยลดรูปสมการ → ใช้เกตน้อยลง ชิปเล็กลง ประหยัดไฟ</li>
+          </ul>
+          <p><b>หาค่าทีละขั้น</b> Y = (A AND B) OR (NOT C)</p>
+          <table>
+            <tr><th>A B C</th><th>000</th><th>001</th><th>010</th><th>011</th><th>100</th><th>101</th><th>110</th><th>111</th></tr>
+            <tr><td>A·B</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>NOT C</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td><b>Y</b></td><td><b>1</b></td><td>0</td><td><b>1</b></td><td>0</td><td><b>1</b></td><td>0</td><td><b>1</b></td><td><b>1</b></td></tr>
+          </table>
+          <p class="note">3 อินพุต → 2³ = 8 แถว · n อินพุต → 2ⁿ แถว · เขียนผลย่อยทุกคอลัมน์ไว้ จะตรวจคำตอบง่าย</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">➕</span> 3. Half Adder · Full Adder · Ripple-carry</div>
+        <div class="section-body">
+          <div class="flex-row">
+            <div class="formula">Half: S = A ⊕ B · C = A·B</div>
+            <div class="formula">Full: S = A ⊕ B ⊕ Cin · Cout = AB + Cin(A ⊕ B)</div>
+          </div>
+          <img class="fig" src="/images/weeks/w03-ripple-carry.svg" alt="4-bit ripple-carry adder บวก 6 กับ 7 ได้ 1101 เท่ากับ 13 โดย carry ส่งต่อจากบิตขวาไปซ้าย">
+          <p>Full Adder = Half Adder 2 ตัว + OR · ต่อ 4 ตัวเป็น 4-bit adder carry วิ่งจาก LSB → MSB · <span class="accent">Cout = 1 → overflow</span> เช่น 9 + 8 = 17 = 1 0001₂</p>
+          <p class="note">ripple-carry ช้าเมื่อบิตมาก เพราะต้องรอ carry ผ่านทุกบิต → CPU จริงใช้ carry-lookahead</p>
+          <table>
+            <tr><th></th><th>วงจรเชิงผสม (combinational)</th><th>วงจรเชิงลำดับ (sequential)</th></tr>
+            <tr><td>เอาต์พุตขึ้นกับ</td><td>อินพุตปัจจุบันเท่านั้น</td><td>อินพุต + สถานะเดิมที่จำไว้</td></tr>
+            <tr><td>ตัวอย่าง</td><td>adder, MUX, decoder, ALU</td><td>flip-flop, register, counter</td></tr>
+            <tr><td>clock</td><td>ไม่ต้องใช้</td><td>เปลี่ยนสถานะตามจังหวะ clock</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 4. Lab 03: จำลองเกตด้วย Python</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">def</span> <span class="fn">XOR</span>(a, b): <span class="kw">return</span> a ^ b
+<span class="kw">def</span> <span class="fn">half_adder</span>(a, b): <span class="kw">return</span> XOR(a, b), a &amp; b   <span class="comment"># (S, C)</span>
+<span class="kw">def</span> <span class="fn">full_adder</span>(a, b, cin):
+    s1, c1 = half_adder(a, b)
+    s, c2 = half_adder(s1, cin)
+    <span class="kw">return</span> s, c1 | c2                         <span class="comment"># (S, Cout)</span>
+bits = [(n &gt;&gt; i) &amp; <span class="num">1</span> <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">4</span>)]      <span class="comment"># อ่านบิตที่ i (LSB ก่อน)</span>
+<span class="fn">bin</span>(<span class="num">13</span>), <span class="fn">hex</span>(<span class="num">47</span>), <span class="fn">int</span>(<span class="str">"1101"</span>, <span class="num">2</span>)       <span class="comment"># '0b1101', '0x2f', 13</span>
+<span class="kw">def</span> <span class="fn">can_open_door</span>(has_key, is_night, hp):  <span class="comment"># game logic</span>
+    <span class="kw">return</span> has_key <span class="kw">and</span> (<span class="kw">not</span> is_night <span class="kw">or</span> hp &gt; <span class="num">50</span>)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔁</span> 5. CPU และวงรอบ Fetch–Decode–Execute</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">ALU</span><span class="def-val">คำนวณเลขและตรรกะ (ภายในคือ adder + เกต)</span></div>
+          <div class="def-row"><span class="def-key">Control Unit</span><span class="def-val">ถอดรหัสคำสั่งและส่งสัญญาณควบคุม</span></div>
+          <div class="def-row"><span class="def-key">PC / IR</span><span class="def-val">PC = ที่อยู่คำสั่งถัดไป · IR = คำสั่งที่กำลังทำ</span></div>
+          <div class="def-row"><span class="def-key">Register</span><span class="def-val">หน่วยความจำเร็วสุดใน CPU เช่น x0–x31 ของ RISC-V</span></div>
+          <table>
+            <tr><th>ขั้น</th><th>ตัวอย่าง <code>add x3, x1, x2</code> (x1 = 6, x2 = 7)</th></tr>
+            <tr><td>1 Fetch</td><td>อ่านคำสั่งที่ PC = 0x100 จาก memory → IR</td></tr>
+            <tr><td>2 Decode</td><td>CU แปล: บวก x1 กับ x2 เก็บ x3</td></tr>
+            <tr><td>3 Execute</td><td>ALU: 6 + 7 = 13</td></tr>
+            <tr><td>4 Write back</td><td>x3 ← 13 · PC ← PC + 4 (คำสั่งยาว 32 บิต = 4 ไบต์)</td></tr>
+          </table>
+          <p class="note">pipeline = ทำหลายคำสั่งซ้อนกันคนละขั้น เหมือนสายพานซักผ้า-อบ-พับ · cache ลดเวลารอ memory</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏛️</span> 6. von Neumann vs Harvard</div>
+        <div class="section-body">
+          <table>
+            <tr><th></th><th>von Neumann</th><th>Harvard</th></tr>
+            <tr><td>Memory</td><td>คำสั่ง + ข้อมูลรวมกัน</td><td>แยกคำสั่ง/ข้อมูล</td></tr>
+            <tr><td>Bus</td><td>ชุดเดียว → <span class="accent">bottleneck</span></td><td>2 ชุด อ่านพร้อมกันได้</td></tr>
+            <tr><td>พบใน</td><td>แนวคิดคอมพิวเตอร์ทั่วไป</td><td>MCU, DSP</td></tr>
+          </table>
+          <p class="note">Modified Harvard (CPU ปัจจุบัน): memory หลักรวม แต่แยก L1 instruction cache / data cache</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🚀</span> 7. ISA · RISC-V · ตัวเร่ง AI · Chiplet</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">ISA</span><span class="def-val">สัญญาระหว่างซอฟต์แวร์กับฮาร์ดแวร์ (ชุดคำสั่ง register รูปแบบคำสั่ง) เช่น x86-64, ARM, RISC-V</span></div>
+          <div class="def-row"><span class="def-key">RISC-V</span><span class="def-val">ISA แบบเปิด ไม่มีค่าสิทธิ์ แบบ modular: ฐาน RV32I/RV64I + ส่วนขยาย M, A, F, D, C, V</span></div>
+          <table>
+            <tr><th>หน่วย</th><th>จุดเด่น</th><th>เหมาะกับ</th></tr>
+            <tr><td>CPU</td><td>ยืดหยุ่น</td><td>OS, ลอจิก, งานทั่วไป</td></tr>
+            <tr><td>GPU</td><td>คอร์ขนานจำนวนมาก</td><td>กราฟิก, train โมเดล</td></tr>
+            <tr><td>NPU/TPU</td><td>systolic array คูณเมทริกซ์</td><td>AI อย่างประหยัดไฟ</td></tr>
+            <tr><td>ASIC</td><td>ออกแบบเพื่องานเดียว</td><td>งานเฉพาะ เร็ว/ประหยัดสุด</td></tr>
+          </table>
+          <p class="note">กฎของมัวร์ชะลอตัว (ย่อทรานซิสเตอร์แพงขึ้น) → <b>Chiplet</b>: แยกชิปเล็กเฉพาะทางแล้วต่อด้วย advanced packaging · ตัวเร่ง AI เฉพาะทาง</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>อ่านเศษการหารจากบนลงล่าง (ได้เลขกลับด้าน) · ลืมว่า A–F = 10–15 · จับกลุ่ม 4 บิตจากซ้าย</li>
+            <li>สับสน OR กับ XOR ที่แถว 1 1 (OR = 1, XOR = 0) · คิด AND ก่อน NOT ผิดลำดับ</li>
+            <li>ลืม carry จากบิตก่อนหน้า (ใช้ half adder ทุกบิต) · ลืมว่า Cout = 1 คือ overflow</li>
+            <li>คิดว่า PC เก็บ "คำสั่ง" — PC เก็บ<b>ที่อยู่</b> ส่วน IR เก็บคำสั่ง</li>
+            <li>คิดว่า RISC-V คือชิปรุ่นหนึ่ง — RISC-V คือ <b>ISA</b> ผู้ผลิตหลายรายนำไปสร้างชิปเอง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>แปลง 1101₂, 0x2F เป็นฐานสิบ และ 13 เป็นฐานสองได้</li>
+            <li>เขียนตารางความจริงของ AND/OR/NOT/XOR/NAND และหาค่านิพจน์ทีละขั้นได้</li>
+            <li>อธิบายว่าทำไม XOR + AND = half adder และบวก 4 บิตแบบ ripple-carry ได้</li>
+            <li>อธิบาย fetch–decode–execute และบทบาทของ PC, IR, ALU, CU ได้</li>
+            <li>เปรียบเทียบ von Neumann กับ Harvard และ CPU/GPU/NPU ได้</li>
+            <li>สร้าง half/full adder ใน Logisim ให้ตรงกับผลจาก Python ทุกแถวได้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกคิด (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>แปลง 25 และ 0xB4 เป็นฐานสอง</li>
+            <li>Full adder: A = 1, B = 1, Cin = 1 → S, Cout = ?</li>
+            <li>บวก 4 บิต 1011₂ + 0110₂ → S และ Cout = ? เกิด overflow ไหม</li>
+            <li>Y = NOT(A OR B) AND C เมื่อ A = 0, B = 0, C = 1 → Y = ?</li>
+          </ol>
+          <p class="note">เฉลย: (1) 11001₂ · 1011 0100₂ · (2) S = 1, Cout = 1 (1+1+1 = 11₂) · (3) 11 + 6 = 17 → S = 0001₂, Cout = 1 → overflow · (4) NOT(0) AND 1 = 1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 15 - การดูงานเชิงวิชาการและอุตสาหกรรมคอมพิวเตอร์</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🏭 Review Sheet สัปดาห์ที่ 15 — การดูงานเชิงวิชาการและอุตสาหกรรมคอมพิวเตอร์</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Academic Visits &amp; Computer Industry Tour · Module 4: Computer Vision &amp; System Integration</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 15 · CLO4, CLO6<br>
+      Lab 15: การเตรียมนำเสนอโครงงานประยุกต์รวม
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔗</span> 1. ห่วงโซ่คุณค่าอุตสาหกรรม (value chain)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชั้น</th><th>กิจกรรม</th><th>งานของ CE</th><th>สัปดาห์</th></tr>
+            <tr><td>Semiconductor</td><td>ออกแบบชิป ผลิตเวเฟอร์ ทดสอบ</td><td>chip design, verification</td><td>W3</td></tr>
+            <tr><td>Hardware/Electronics</td><td>PCB, PCBA, server, IoT</td><td>embedded, hardware</td><td>W2, W11</td></tr>
+            <tr><td>Cloud/Data center</td><td>ไฟฟ้า ระบบเย็น compute</td><td>DC ops, network/cloud</td><td>W6, W7</td></tr>
+            <tr><td>Software/Platform</td><td>OS, database, AI model</td><td>software, data, ML</td><td>W4, W5, W9</td></tr>
+            <tr><td>Services/Apps</td><td>fintech, gov-tech, smart farm</td><td>DevOps/SRE, security</td><td>W12, W14</td></tr>
+          </table>
+          <img class="fig" src="/images/weeks/w15-value-chain.svg" alt="ห่วงโซ่คุณค่าอุตสาหกรรมคอมพิวเตอร์ 5 ชั้น">
+          <p class="note">ไทยเด่นชั้น Hardware/Electronics (PCBA) และกำลังขยายชั้น Data Center/Cloud · ถามก่อนเสมอ: "หน่วยงานนี้อยู่ชั้นไหน ส่งคุณค่าให้ใคร"</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏢</span> 2. ศูนย์ข้อมูล: สิ่งที่ต้องสังเกต</div>
+        <div class="section-body">
+          <div class="formula">PUE = พลังงานรวมของศูนย์ข้อมูล ÷ พลังงานอุปกรณ์ IT &nbsp;(ดีที่สุด = 1.0)</div>
+          <p class="note">PUE 1.5 → ทุก 1 kW ของ IT ใช้เพิ่มอีก 0.5 kW กับระบบเย็น/ไฟส่องสว่าง/การสูญเสีย</p>
+          <div class="def-row"><span class="def-key">Tier I–IV</span><span class="def-val">Uptime Institute: ระดับ redundancy/ความพร้อมใช้ (Tier IV ทนความผิดพลาดสูงสุด)</span></div>
+          <div class="def-row"><span class="def-key">Redundancy</span><span class="def-val">N+1, 2N ของไฟฟ้า/ระบบเย็น · UPS + generator</span></div>
+          <div class="def-row"><span class="def-key">Cooling</span><span class="def-val">hot/cold aisle containment · liquid cooling สำหรับ GPU</span></div>
+          <div class="def-row"><span class="def-key">ประเภท</span><span class="def-val">Hyperscale (ผู้ให้บริการ cloud) · Colocation (เช่าพื้นที่) · Edge (ใกล้ผู้ใช้)</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔍</span> 3. กรอบสังเกต 6 มุม</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w15-observation-lenses.svg" alt="กรอบสังเกต 6 มุม hardware software data network security people/process พร้อมคำถามและหลักฐาน">
+          <p class="note">ก่อนไป: checklist 6 มุม + คำถาม 5 ข้อ · ระหว่าง: จด evidence + เวลา/ผู้พูด · หลังไป: เชื่อม ≥ 3 สัปดาห์ + CLO</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧾</span> 4. Evidence vs Interpretation vs Opinion</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชนิด</th><th>ตัวอย่าง</th></tr>
+            <tr><td><b>Evidence</b></td><td>"rack มีป้าย hot aisle / cold aisle" · "ประตูมีบัตร + biometric 2 ชั้น"</td></tr>
+            <tr><td><b>Interpretation</b></td><td>"แยกลมร้อน/เย็นช่วยลดพลังงานระบบเย็น → PUE ต่ำลง (W7)"</td></tr>
+            <tr><td><b>Opinion</b></td><td>"ประทับใจความเป็นระเบียบ" (ใส่ได้ แต่ไม่แทน evidence)</td></tr>
+          </table>
+          <p class="note">ตัวเลขที่ได้ยินให้ระบุแหล่ง ("ตามที่วิทยากรกล่าว") ห้ามแต่งตัวเลขเพิ่ม</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🎒</span> 9. ความพร้อมสู่การทำงาน</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">NACE</span><span class="def-val">8 สมรรถนะ: career &amp; self-development · communication · critical thinking · equity &amp; inclusion · leadership · professionalism · teamwork · technology</span></div>
+          <div class="def-row"><span class="def-key">Portfolio</span><span class="def-val">GitHub ที่มี README ดี + โครงงาน 4 โมดูลของรายวิชา + resume 1 หน้า</span></div>
+          <div class="def-row"><span class="def-key">เส้นทาง</span><span class="def-val">ฝึกงาน / สหกิจศึกษา → เลือก 1 บทบาท ระบุทักษะที่ยังขาด 2 ข้อเป็นแผนพัฒนา</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🗺️</span> 5. Mapping หลักฐาน → รายวิชา (ตัวอย่าง)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>หลักฐาน</th><th>มุม</th><th>เชื่อม</th><th>CLO</th></tr>
+            <tr><td>ไซต์รายงาน PUE ราว 1.1</td><td>Hardware</td><td>W7 PUE</td><td>CLO4</td></tr>
+            <tr><td>ทางเข้าบัตร + biometric + รปภ.</td><td>Security</td><td>W12 defense-in-depth</td><td>CLO4</td></tr>
+            <tr><td>ทำลายดิสก์เก่าในพื้นที่</td><td>Data</td><td>W12 CIA · W13 PDPA</td><td>CLO5</td></tr>
+            <tr><td>สำเนาข้อมูลข้ามหลายโซน</td><td>Data/Network</td><td>W5 · W6 · W7</td><td>CLO4</td></tr>
+            <tr><td>ทีม ops 24/7 + change process</td><td>People</td><td>W14 DevOps/SRE</td><td>CLO6</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📝</span> 6. โครงร่างรายงานการดูงาน (10%)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>ข้อมูลทั่วไป: หน่วยงาน วันเวลา ผู้บรรยาย</li>
+            <li>สิ่งที่สังเกต/เรียนรู้: เทคโนโลยี กระบวนการ การจัดองค์กร</li>
+            <li>เชื่อมโยงเนื้อหารายวิชา <b>≥ 3 หัวข้อ</b> (ระบุสัปดาห์)</li>
+            <li>บทบาทอาชีพที่พบ + ทักษะที่ต้องการ</li>
+            <li>ข้อคิด / คำถามที่ยังสงสัย</li>
+            <li>ภาพประกอบ <span class="accent">ตามที่หน่วยงานอนุญาต</span> (CIA + PDPA)</li>
+          </ol>
+          <p class="note">ใช้ AI ช่วยเรียบเรียง → เปิดเผยการใช้ และตรวจข้อเท็จจริงเอง (W13)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🤝</span> 7. จรรยาบรรณระหว่างดูงาน + คำถามวิทยากร</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>ถามก่อนถ่ายภาพ: rack, dashboard, แผนผังอาคาร อาจเป็นข้อมูลลับ (Confidentiality)</li>
+            <li>เบลอใบหน้า/ชื่อบนบัตรพนักงาน = ข้อมูลส่วนบุคคล</li>
+          </ul>
+          <table>
+            <tr><th>ควรถาม</th><th>ไม่ควรถาม</th></tr>
+            <tr><td>ทักษะใดที่นักศึกษาปี 1 ควรเริ่มฝึก</td><td>เงินเดือนของพนักงานแต่ละคน</td></tr>
+            <tr><td>วัดความน่าเชื่อถือของระบบด้วย metric ใด</td><td>ระบบเคยถูกเจาะผ่านช่องโหว่ไหน</td></tr>
+            <tr><td>ลดพลังงานระบบเย็นอย่างไร</td><td>ลูกค้ารายใหญ่/ราคาสัญญา</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">👩‍💻</span> 8. บทบาทอาชีพ + T-shaped skills</div>
+        <div class="section-body">
+          <p>Embedded · IoT · Chip design · Network · Cloud · DC Ops · <b>DevOps/SRE</b> · Data · ML · Security engineer — ดู "หน้าที่" มากกว่าชื่อตำแหน่ง · <b>T-shaped</b> = รู้กว้างหลายด้าน (แกนนอน) + ลึก 1 ด้าน (แกนตั้ง) + lifelong learning</p>
+          <img class="fig" src="/images/weeks/w15-career-roles.svg" alt="บทบาทอาชีพวิศวกรคอมพิวเตอร์กับสัปดาห์ที่ใช้ความรู้">
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>จดแต่ความรู้สึก ("น่าทึ่งมาก") ไม่มี evidence</li>
+            <li>เชื่อมรายวิชาไม่ถึง 3 หัวข้อ หรือไม่ระบุสัปดาห์</li>
+            <li>ถ่าย/โพสต์ภาพโดยไม่ขออนุญาต · ไม่เบลอข้อมูลส่วนบุคคล</li>
+            <li>สับสน PUE: ค่ายิ่ง<b>ต่ำ</b> (ใกล้ 1.0) ยิ่งดี</li>
+            <li>คัดลอกข้อมูลจากเว็บบริษัทโดยไม่อ้างอิง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>ระบุชั้นใน value chain ของหน่วยงานที่ไปดูงานได้</li>
+            <li>ใช้ 6 มุมสังเกตจดหลักฐานและโยงสัปดาห์/CLO</li>
+            <li>แยก evidence / interpretation / opinion ได้</li>
+            <li>คำนวณและตีความค่า PUE ได้</li>
+            <li>เขียนรายงานครบ 6 ส่วนโดยเคารพความลับและ PDPA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

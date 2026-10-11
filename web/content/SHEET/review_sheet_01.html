@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 01 - ภาพรวมวิศวกรรมคอมพิวเตอร์</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🖥️ Review Sheet สัปดาห์ที่ 01 — ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Introduction to Computer Engineering, IS &amp; IT</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 1 · CLO1, CLO4<br>
+      Lab 01: ตั้งค่า IDE (Python) และวางแผนพัฒนาเกม
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📌</span> 1. นิยาม 5 สาขาคอมพิวเตอร์</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">CE</span><span class="def-val"><b>Computer Engineering</b> บูรณาการวิศวกรรมไฟฟ้า + วิทยาการคอมพิวเตอร์ ออกแบบตั้งแต่วงจร ฮาร์ดแวร์ ระบบฝังตัว จนถึงซอฟต์แวร์ระบบ</span></div>
+          <div class="def-row"><span class="def-key">CS</span><span class="def-val"><b>Computer Science</b> ทฤษฎีการคำนวณ อัลกอริทึม โครงสร้างข้อมูล AI</span></div>
+          <div class="def-row"><span class="def-key">SE</span><span class="def-val"><b>Software Engineering</b> กระบวนการสร้างซอฟต์แวร์ขนาดใหญ่: requirement → design → test → maintain</span></div>
+          <div class="def-row"><span class="def-key">IT</span><span class="def-val"><b>Information Technology</b> ติดตั้ง ดูแล ให้บริการโครงสร้างพื้นฐาน (เครือข่าย เซิร์ฟเวอร์ คลาวด์ ผู้ใช้)</span></div>
+          <div class="def-row"><span class="def-key">IS</span><span class="def-val"><b>Information Systems</b> เชื่อมเทคโนโลยีกับองค์กร: คน–กระบวนการ–ข้อมูล เพื่อการตัดสินใจ</span></div>
+          <img class="fig" src="/images/weeks/w01-disciplines.svg" alt="ตารางแสดงว่าแต่ละสาขาเป็นแกนหลักในชั้นใดของระบบ ตั้งแต่วงจรจนถึงองค์กร">
+          <p class="note">จำง่าย: CE ใกล้ "ฟิสิกส์/ฮาร์ดแวร์" มากที่สุด · IS ใกล้ "คน/องค์กร" มากที่สุด · ทุกสาขาต้องรู้ชั้นข้างเคียง</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚖️</span> 2. เทียบด้วยคำถามหลัก</div>
+        <div class="section-body">
+          <table>
+            <tr><th>สาขา</th><th>คำถามหลัก</th><th>ตัวอย่างงาน</th></tr>
+            <tr><td><b>CE</b></td><td>HW + SW ทำงานร่วมกันให้เร็ว ประหยัด ปลอดภัย?</td><td>บอร์ด IoT, firmware, Edge AI</td></tr>
+            <tr><td><b>CS</b></td><td>คำนวณได้ไหม คำนวณอย่างไรให้ดีที่สุด?</td><td>อัลกอริทึม, วิจัยโมเดล ML</td></tr>
+            <tr><td><b>SE</b></td><td>สร้างซอฟต์แวร์ใหญ่ให้ถูกต้อง ดูแลได้?</td><td>architecture, testing, DevOps</td></tr>
+            <tr><td><b>IT</b></td><td>ระบบพร้อมใช้และปลอดภัยทุกวัน?</td><td>network admin, cloud ops, help desk</td></tr>
+            <tr><td><b>IS</b></td><td>เทคโนโลยีสร้างคุณค่าให้องค์กร?</td><td>ERP, BI dashboard, วิเคราะห์ธุรกิจ</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🗺️</span> 3. System map: แอปสั่งอาหาร</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li><b>IS</b> เมนูไหนขายดี วางกลยุทธ์ร้าน · <b>IT</b> เซิร์ฟเวอร์ 24 ชม. สำรองข้อมูล บัญชีผู้ใช้</li>
+            <li><b>SE</b> แอปมือถือ + API + ระบบจ่ายเงิน มีเวอร์ชันและ test · <b>CS</b> จับคู่ไรเดอร์ใกล้สุด หาเส้นทาง</li>
+            <li><b>CE</b> GPS/แบตเตอรี่มือถือ, เครือข่ายสัญญาณอ่อน, เลือก CPU/RAM ของเซิร์ฟเวอร์</li>
+            <li><b>AI</b> ทำนายเวลาส่ง แชตบอต · ปัญหาจริงมักเกิด<b>ระหว่างชั้น</b> เช่น เรียก API ถี่จนแบตหมด</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🕰️</span> 4. วิวัฒนาการ (จำปีหลัก)</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ปี</th><th>เหตุการณ์</th><th>ปี</th><th>เหตุการณ์</th></tr>
+            <tr><td>1946</td><td>ENIAC หลอดสุญญากาศ</td><td>2007</td><td>สมาร์ตโฟน (SoC)</td></tr>
+            <tr><td>1947</td><td>ทรานซิสเตอร์ (Bell Labs)</td><td>2016</td><td>Google TPU เร่ง AI</td></tr>
+            <tr><td>1958</td><td>วงจรรวม (IC)</td><td>2017</td><td>NPU ในมือถือ</td></tr>
+            <tr><td>1971</td><td>Intel 4004 (2,300 ทรานซิสเตอร์)</td><td>2022</td><td>ChatGPT / LLM</td></tr>
+            <tr><td>1981</td><td>IBM PC</td><td>2025</td><td>Agentic AI</td></tr>
+          </table>
+          <ul class="mini">
+            <li><b>กฎของมัวร์</b> (Gordon Moore): จำนวนทรานซิสเตอร์บนชิปเพิ่มราว 2 เท่าทุก ~2 ปี — ปัจจุบันชะลอตัว</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧠</span> 5. ทักษะหลักของวิศวกรยุค AI</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ทักษะ</th><th>ทำอะไรได้</th></tr>
+            <tr><td>Prompt engineering / fine-tuning</td><td>สั่งงานโมเดลให้ชัด ปรับโมเดลให้เข้ากับงานเฉพาะ</td></tr>
+            <tr><td>LLM fundamentals</td><td>เข้าใจ token, context window, transformer → รู้ข้อจำกัดและต้นทุน</td></tr>
+            <tr><td>Bias detection / alignment</td><td>ตรวจผลลัพธ์ที่ลำเอียงหรือผิด ทดสอบก่อนใช้จริง</td></tr>
+            <tr><td>Systems thinking</td><td>มองทั้งระบบ HW–SW–ข้อมูล–คน เห็นผลกระทบข้ามชั้น</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📚</span> 6. มาตรฐาน ACM/IEEE</div>
+        <div class="section-body">
+          <div class="formula">CE2016 = 12 knowledge areas · 420 core hours (ชั่วโมงแกนขั้นต่ำ)</div>
+          <table>
+            <tr><th>KA</th><th>ชม.</th><th>KA</th><th>ชม.</th></tr>
+            <tr><td>CAO สถาปัตยกรรมคอมพิวเตอร์</td><td>60</td><td>SPE วิศวกรรมระบบ/โครงงาน</td><td>35</td></tr>
+            <tr><td>CAE วงจร/อิเล็กทรอนิกส์</td><td>50</td><td>CAL · SGP อัลกอริทึม · สัญญาณ</td><td>30 · 30</td></tr>
+            <tr><td>DIG การออกแบบดิจิทัล</td><td>50</td><td>NWK · PPP เครือข่าย · วิชาชีพ</td><td>20 · 20</td></tr>
+            <tr><td>SWD · ESY ซอฟต์แวร์ · ฝังตัว</td><td>45 · 40</td><td>SEC · SRM ความมั่นคง · ทรัพยากร</td><td>20 · 20</td></tr>
+          </table>
+          <ul class="mini">
+            <li><b>Body of Knowledge (BoK)</b> = แผนที่ว่าบัณฑิตต้องรู้อะไร แบ่ง core (ทุกคน) กับ elective (เฉพาะทาง)</li>
+            <li><b>CS2023</b> (ACM/IEEE-CS/AAAI) ยก AI, security, data และ professional practice เป็นพื้นฐาน</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🤖</span> 7. ยุค AI-driven architecture</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">Agentic AI</span><span class="def-val">AI ที่วางแผน เรียกใช้เครื่องมือ และลงมือทำหลายขั้นได้เอง (เขียนโค้ด สั่งอุปกรณ์ deploy)</span></div>
+          <p>AI ทำงานแทนได้มาก แต่วิศวกรยังต้องรับผิดชอบ <span class="accent">4 เรื่อง</span></p>
+          <ul class="mini">
+            <li><b>สถาปัตยกรรม</b> ส่วนไหนรันบนอุปกรณ์/คลาวด์ เชื่อมกันอย่างไร</li>
+            <li><b>ข้อจำกัด</b> หน่วยความจำ พลังงาน latency ต้นทุน</li>
+            <li><b>ความปลอดภัย</b> ตรวจโค้ดจาก AI ให้สิทธิ์ agent เท่าที่จำเป็น</li>
+            <li><b>ความรับผิดชอบ</b> ผู้ใช้ ความเป็นส่วนตัว ลิขสิทธิ์</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 8. Lab 01: เครื่องมือเริ่มต้น</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">import</span> platform
+name = <span class="str">"Computer Engineering"</span>
+<span class="fn">print</span>(<span class="str">f"สวัสดี {name}!"</span>)          <span class="comment"># f-string แทรกตัวแปร</span>
+<span class="fn">print</span>(platform.python_version())  <span class="comment"># ตรวจเวอร์ชัน Python</span>
+x = <span class="num">2</span> ** <span class="num">10</span>
+<span class="fn">print</span>(x, <span class="str">"="</span>, <span class="fn">bin</span>(x))             <span class="comment"># 1024 = 0b10000000000</span></div>
+          <div class="code-block">git init                      <span class="comment"># สร้าง repository</span>
+git add main.py               <span class="comment"># working dir → staging</span>
+git commit -m <span class="str">"Add game skeleton"</span> <span class="comment"># staging → repository</span>
+git push -u origin main       <span class="comment"># ส่งขึ้น GitHub</span></div>
+          <p class="note">Mini-Project 1: เขียนกติกาเกม → วาด flowchart ของ game loop → โครง <code>main.py</code> → README + แบ่งงานทีม</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>คิดว่า CE = "ซ่อมคอม" หรือ "เขียนโปรแกรมอย่างเดียว" — CE ออกแบบระบบที่ HW และ SW ทำงานร่วมกัน</li>
+            <li>สลับ IT กับ IS: IT ดูแล<b>ระบบ/บริการ</b> · IS ใช้เทคโนโลยีเพื่อ<b>กระบวนการธุรกิจ</b></li>
+            <li>สับสน CS กับ SE: CS เน้น<b>อัลกอริทึม/ทฤษฎี</b> · SE เน้น<b>กระบวนการ</b>สร้างซอฟต์แวร์</li>
+            <li>เชื่อโค้ดจาก AI โดยไม่ตรวจ ข้อจำกัดของระบบและความปลอดภัยยังเป็นหน้าที่ของวิศวกร</li>
+            <li>ลืม <code>git add</code> ก่อน commit หรือ commit โดยไม่ตั้ง <code>user.name</code>/<code>user.email</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>อธิบายขอบเขตของ CE และสิ่งที่ CS อย่างเดียวไม่ครอบคลุมได้</li>
+            <li>แยก CE/CS/SE/IT/IS ด้วยคำถามหลักและตัวอย่างงานได้</li>
+            <li>ทำ system map ของบริการดิจิทัล 1 อย่าง และชี้จุดที่ AI เกี่ยวข้องได้</li>
+            <li>บอกได้ว่า CE2016 มี 12 KA / 420 core hours และ KA ใดมีชั่วโมงมากที่สุด</li>
+            <li>เรียงเหตุการณ์ หลอดสุญญากาศ → ทรานซิสเตอร์ → IC → ไมโครโปรเซสเซอร์ → AI accelerator ได้</li>
+            <li>ติดตั้ง Python + VS Code + Git และ push repository แรกขึ้น GitHub ได้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกคิด (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>ออกแบบ firmware ของสมาร์ตวอทช์ให้แบตอยู่ได้ 7 วัน เป็นงานสาขาใดเด่นที่สุด?</li>
+            <li>ดูแลเครือข่าย Wi-Fi ของมหาวิทยาลัยและรีเซ็ตรหัสผ่านให้นักศึกษา คือสาขาใด?</li>
+            <li>บริษัทต้องการ dashboard ยอดขายรายสาขาเพื่อตัดสินใจเปิดร้านใหม่ คือสาขาใด?</li>
+            <li>ใน CE2016 KA ใดมีชั่วโมงแกนมากที่สุด และกลุ่มฮาร์ดแวร์/สัญญาณ (CAO, CAE, DIG, ESY, SGP) รวมกี่ชั่วโมง?</li>
+          </ol>
+          <p class="note">เฉลย: (1) CE (HW+SW+พลังงาน) · (2) IT · (3) IS · (4) CAO 60 ชม. · 60+50+50+40+30 = 230 ชม. ≈ 55% ของ 420</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

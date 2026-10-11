@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 10 - Generative AI และวิทยาการหุ่นยนต์</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🤖 Review Sheet สัปดาห์ที่ 10 — Generative AI และวิทยาการหุ่นยนต์</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Generative AI &amp; Modern Robotics</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 10 · CLO1, CLO4<br>
+      Lab 10: GenAI และฮาร์ดแวร์ไมโครคอนโทรลเลอร์
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">✨</span> 1. Generative AI และ LLM</div>
+        <div class="section-body">
+          <p><b>Discriminative</b> = "กรรมการ" แยก/จำแนก (สแปมไหม?) · <b>Generative</b> = "จิตรกร" <span class="accent">สร้าง</span>ข้อมูลใหม่ (ข้อความ ภาพ โค้ด เสียง)</p>
+          <div class="def-row"><span class="def-key">Token</span><span class="def-val">หน่วยย่อยที่โมเดลเห็น (คำ/ส่วนของคำ/ตัวอักษร) · คิดค่าบริการและจำกัดความยาวเป็น token</span></div>
+          <div class="def-row"><span class="def-key">Embedding</span><span class="def-val">เวกเตอร์ "พิกัดความหมาย" คำที่ความหมายใกล้กันอยู่ใกล้กัน</span></div>
+          <div class="def-row"><span class="def-key">Transformer</span><span class="def-val">สถาปัตยกรรมหลักของ LLM ใช้ <b>self-attention</b> ให้แต่ละ token มอง token อื่นในบริบท</span></div>
+          <div class="def-row"><span class="def-key">Prompt</span><span class="def-val">ข้อความนำเข้า (system + user + context) ที่กำหนดงานและรูปแบบคำตอบ</span></div>
+          <div class="def-row"><span class="def-key">Context window</span><span class="def-val">จำนวน token สูงสุดที่โมเดลรับได้ต่อครั้ง ("ความจำระยะสั้น")</span></div>
+          <p class="note">สร้าง LLM: pre-training (ทำนาย token ถัดไปจากข้อความมหาศาล) → fine-tuning / RLHF (ให้ทำตามคำสั่งและปลอดภัยขึ้น) · ภาพใช้ diffusion model</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🎲</span> 2. ทำนาย Token ถัดไป + Temperature</div>
+        <div class="section-body">
+          <div class="formula">pᵢ = e<sup>zᵢ/T</sup> / Σⱼ e<sup>zⱼ/T</sup> &nbsp;(softmax ของ logits z, รวม = 1)</div>
+          <p>"ไฟในห้องแล็บดับ ฉันจึงเปิด ..." logits ไฟฉาย 2.5 · สวิตช์ 1.8 · หน้าต่าง 1.0 · ตู้เย็น −0.5</p>
+          <table>
+            <tr><th>T</th><th>ไฟฉาย</th><th>สวิตช์</th><th>หน้าต่าง</th><th>ตู้เย็น</th></tr>
+            <tr><td>0.5</td><td><b>0.77</b></td><td>0.19</td><td>0.04</td><td>0.00</td></tr>
+            <tr><td>1.0</td><td><b>0.57</b></td><td>0.28</td><td>0.13</td><td>0.03</td></tr>
+            <tr><td>1.5</td><td><b>0.47</b></td><td>0.29</td><td>0.17</td><td>0.06</td></tr>
+          </table>
+          <p class="note">T ต่ำ → แน่นอน ซ้ำได้ (งานข้อเท็จจริง/โค้ด) · T สูง → หลากหลาย สร้างสรรค์ แต่เพี้ยนง่าย · greedy = เลือก p สูงสุดเสมอ</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📚</span> 3. RAG: Retrieval-Augmented Generation</div>
+        <div class="section-body">
+          <p><b>Indexing:</b> เอกสาร → แบ่ง chunk → embedding → vector DB (เช่น pgvector) · <b>Query:</b> embed คำถาม → ค้น top-k → ประกอบ prompt (คำสั่ง + context + คำถาม) → LLM ตอบพร้อมอ้างอิง</p>
+          <img class="fig" src="/images/weeks/w10-rag-pipeline.svg" alt="แผนภาพ RAG แถว indexing และแถว query พร้อมคะแนน cosine similarity ของสาม chunk">
+          <div class="formula">cos θ = (A · B) / (‖A‖ × ‖B‖) &nbsp;·&nbsp; 1 = ทิศเดียวกัน, 0 = ไม่เกี่ยวกัน</div>
+          <p><b>ตัวอย่าง</b> q = [0.9, 0.1, 0.2], A = [0.8, 0.2, 0.1] → q·A = 0.76, ‖q‖ = 0.927, ‖A‖ = 0.831 → cos = <b>0.987</b> (top-1)</p>
+          <table>
+            <tr><th>RAG</th><th>Fine-tuning</th></tr>
+            <tr><td>เพิ่ม<b>ความรู้</b>ใหม่/อัปเดตบ่อย · อ้างอิงแหล่งได้ · ไม่ต้องฝึกโมเดลใหม่</td><td>ปรับ<b>พฤติกรรม/สไตล์</b>/รูปแบบคำตอบ · ต้องมีข้อมูลฝึก · อัปเดตความรู้ยาก</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🛡️</span> 6. ข้อจำกัด ความเสี่ยง และแนวทางลด</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ความเสี่ยง</th><th>ตัวอย่าง</th><th>แนวทางลด</th></tr>
+            <tr><td>Hallucination</td><td>แต่งตัวเลข/แหล่งอ้างอิงที่ไม่มีจริง</td><td>RAG + อ้างอิง, ตรวจกับข้อมูลจริง</td></tr>
+            <tr><td>Bias</td><td>คำตอบเอียงตามข้อมูลฝึก</td><td>ทดสอบหลายกลุ่ม, คนตรวจทาน</td></tr>
+            <tr><td>Privacy / Leakage</td><td>ข้อมูลลับหลุดผ่าน prompt</td><td>ลบข้อมูลส่วนตัว, นโยบายการใช้</td></tr>
+            <tr><td>Prompt injection</td><td>คำสั่งแฝงในเว็บ/เอกสาร</td><td>แยกข้อมูลกับคำสั่ง, จำกัดสิทธิ์ tool</td></tr>
+            <tr><td>ลิขสิทธิ์ / พลังงาน</td><td>เนื้อหาคล้ายงานต้นฉบับ · data center ใช้ไฟสูง</td><td>ตรวจสิทธิ์, เลือกโมเดลขนาดพอดีงาน</td></tr>
+          </table>
+          <p class="note">กรอบอ้างอิง: NIST AI RMF Generative AI Profile · OWASP Top 10 for LLM Applications</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🛠️</span> 4. Agentic AI</div>
+        <div class="section-body">
+          <p>Chatbot <b>ตอบ</b> · Agent <span class="accent">ลงมือทำ</span>หลายขั้นเอง: เป้าหมาย → คิด/วางแผน (LLM) → เรียก tool → สังเกตผล → วนซ้ำ (ReAct = Reason + Act)</p>
+          <div class="def-row"><span class="def-key">Tool use</span><span class="def-val">LLM ส่งคำขอเรียกฟังก์ชัน (ชื่อ + อาร์กิวเมนต์ JSON) โปรแกรมของเราเป็นผู้รันจริง</span></div>
+          <div class="def-row"><span class="def-key">MCP</span><span class="def-val">Model Context Protocol มาตรฐานเชื่อมแอป AI กับเครื่องมือ/ข้อมูล ("USB-C ของ AI")</span></div>
+          <div class="def-row"><span class="def-key">Guardrails</span><span class="def-val">least privilege · จำกัดจำนวนรอบ · audit log · sandbox · <b>human approval</b> ก่อนงานเสี่ยง</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🦾</span> 5. Physical AI และหุ่นยนต์</div>
+        <div class="section-body">
+          <div class="formula">Sense (กล้อง LiDAR IMU) → Perceive → Plan → Act (มอเตอร์ แขนกล) → วนซ้ำ</div>
+          <ul class="mini">
+            <li><b>ROS 2</b> = middleware สื่อสารระหว่าง node ของหุ่นยนต์ (topic publish/subscribe)</li>
+            <li><b>Sim-to-Real:</b> ฝึก/ทดสอบใน simulation ก่อน แล้วย้ายสู่หุ่นจริง (ระวัง reality gap)</li>
+            <li><b>VLA</b> (Vision-Language-Action): โมเดลรับภาพ + คำสั่งภาษา → ส่งคำสั่งการเคลื่อนไหว</li>
+            <li>Humanoid: ใช้ได้กับสภาพแวดล้อมที่ออกแบบมาสำหรับคน (บันได ประตู เครื่องมือ)</li>
+          </ul>
+          <p class="note">ผิดพลาดในแชต = ข้อความผิด · ผิดพลาดในหุ่นยนต์ = แรง/การชนจริง → ต้องมี e-stop, จำกัดความเร็ว/แรง, safety zone</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> เรียก LLM API อย่างปลอดภัย (Lab 10)</div>
+        <div class="section-body">
+          <div class="code-block"><span class="comment"># PC/Server: อ่าน key จาก environment ไม่เขียนในโค้ด</span>
+<span class="kw">import</span> os, requests
+API_KEY = os.environ[<span class="str">"LLM_API_KEY"</span>]
+resp = requests.post(<span class="str">"https://api.example-llm.com/v1/chat"</span>,
+    headers={<span class="str">"Authorization"</span>: <span class="str">"Bearer "</span> + API_KEY},
+    json={<span class="str">"model"</span>: <span class="str">"&lt;model-name&gt;"</span>, <span class="str">"messages"</span>: [...]},
+    timeout=<span class="num">30</span>)
+<span class="fn">print</span>(resp.status_code)  <span class="comment"># 200 ok · 401 key ผิด · 429 เกินโควตา</span>
+
+<span class="comment"># ESP32 (MicroPython): ส่งข้อมูลไป proxy ของเรา</span>
+r = urequests.post(<span class="str">"http://&lt;proxy-server&gt;/summarize"</span>,
+    json={<span class="str">"device"</span>: <span class="str">"esp32-01"</span>, <span class="str">"temp"</span>: <span class="num">33.0</span>, <span class="str">"hum"</span>: <span class="num">72</span>})
+<span class="fn">print</span>(r.json()[<span class="str">"summary"</span>])
+r.close()               <span class="comment"># คืน socket/RAM บน MCU</span></div>
+          <p class="note">ห้ามฝัง API key ในบอร์ด (อ่าน flash ได้) → ใช้ proxy: ESP32 → server ของเรา → LLM · URL/รูปแบบ body ตรวจกับเอกสารผู้ให้บริการ</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>เชื่อคำตอบ LLM ทันทีเพราะภาษาลื่นไหล → <b>hallucination</b> ต้องตรวจกับแหล่งจริง</li>
+            <li>คิดว่า RAG = ฝึกโมเดลใหม่ (จริง ๆ แค่แนบเอกสารเข้า prompt)</li>
+            <li>ใส่ข้อมูลส่วนตัว/ความลับลง prompt หรือ push API key ขึ้น GitHub</li>
+            <li>ปล่อยให้ agent มีสิทธิ์เกินจำเป็น (ลบไฟล์/ส่งอีเมล) โดยไม่มีคนอนุมัติ</li>
+            <li>ลืมว่าเอกสารที่ค้นมาอาจมี <b>prompt injection</b> แฝงคำสั่ง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>อธิบาย token, embedding, prompt, context window ได้</li>
+            <li>บอกผลของ temperature ต่อความน่าจะเป็นของ token ได้</li>
+            <li>คำนวณ cosine similarity และเรียงขั้นตอน RAG ได้</li>
+            <li>แยก chatbot กับ agent และระบุ guardrails ≥ 3 ข้อ</li>
+            <li>อธิบาย sense-plan-act และความเสี่ยงทางกายภาพของหุ่นยนต์</li>
+          </ul>
+          <ol class="mini">
+            <li>A = [1, 0], B = [1, 1] → cos θ = ?</li>
+            <li>context window 8,000 token: system 300 + คำถาม 50 + top-3 chunk × 400 + กันไว้ตอบ 1,000 → ใช้ไปกี่ token เหลือเท่าไร</li>
+            <li>ลด temperature จาก 1.0 เป็น 0.5 ความน่าจะเป็นของ token อันดับ 1 เพิ่มหรือลด</li>
+          </ol>
+          <p class="note">เฉลย: (1) 1 / (1 × √2) ≈ 0.707 · (2) 300 + 50 + 1,200 + 1,000 = 2,550 เหลือ 5,450 · (3) เพิ่ม (เช่น 0.57 → 0.77)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

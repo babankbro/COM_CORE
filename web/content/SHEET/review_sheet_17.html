@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 17 - ทบทวนและสอบปลายภาค</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🎓 Review Sheet สัปดาห์ที่ 17 — ทบทวนและสอบปลายภาค</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Final Examination · ทบทวนสัปดาห์ 9–15 (AI · GenAI · IoT · Security · Ethics · DevOps · Industry)</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 17 · CLO1, CLO2, CLO4, CLO5<br>
+      สอบปลายภาค (25%)
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🗺️</span> 1. แผนที่การอ่านสอบรายสัปดาห์</div>
+        <div class="section-body">
+          <table>
+            <tr><th>สัปดาห์</th><th>ต้องอธิบายได้</th></tr>
+            <tr><td><b>W9</b> AI/ML</td><td>AI ⊃ ML ⊃ DL · supervised/unsupervised/reinforcement · feature/label · overfitting · NIST AI RMF (Govern, Map, Measure, Manage)</td></tr>
+            <tr><td><b>W10</b> GenAI</td><td>token · embedding · prompt · LLM · <b>RAG</b> · Agentic AI · hallucination · sense-plan-act</td></tr>
+            <tr><td><b>W11</b> IoT</td><td>MCU vs MPU · sensor/actuator · device–edge–cloud · <b>MQTT</b> (broker, topic, pub/sub, QoS) · CoAP · Zigbee · TinyML</td></tr>
+            <tr><td><b>W12</b> Security</td><td><b>CIA</b> · symmetric/asymmetric · hash · MFA · defense-in-depth · <b>Zero Trust</b> · OWASP Top 10 · deepfake</td></tr>
+            <tr><td><b>W13</b> Ethics/IP</td><td>ACM Code · bias · IP 4 ประเภท · permissive vs copyleft · <b>PDPA</b> (controller/processor, ข้อมูลอ่อนไหว, 72 ชม.)</td></tr>
+            <tr><td><b>W14</b> DevOps</td><td>SDLC 6 ขั้น · Waterfall vs Agile · DevOps loop · CI / Delivery / Deployment · Git workflow · MLOps</td></tr>
+            <tr><td><b>W15</b> Industry</td><td>value chain 5 ชั้น · Tier · <b>PUE</b> · 6 มุมสังเกต · evidence vs opinion · บทบาทอาชีพ</td></tr>
+          </table>
+          <img class="fig" src="/images/weeks/w17-concept-map.svg" alt="แผนผังความคิดสัปดาห์ 9 ถึง 15 รอบกรณีศึกษา smart classroom">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔀</span> 2. คู่คำที่มักสับสน</div>
+        <div class="section-body">
+          <table>
+            <tr><th>คู่คำ</th><th>ต่างกันที่</th></tr>
+            <tr><td>ML vs DL</td><td>DL = ML ที่ใช้ neural network หลายชั้น เรียน feature เอง</td></tr>
+            <tr><td>Fine-tuning vs RAG</td><td>ปรับน้ำหนัก model vs ดึงเอกสารภายนอกมาใส่ prompt ตอนตอบ</td></tr>
+            <tr><td>MQTT vs HTTP</td><td>pub/sub ผ่าน broker เบา vs request/response</td></tr>
+            <tr><td>Encryption vs Hashing</td><td>ถอดกลับได้ด้วย key vs ทางเดียว (ตรวจ integrity/เก็บรหัสผ่าน)</td></tr>
+            <tr><td>Symmetric vs Asymmetric</td><td>key เดียวกัน (AES) vs public/private key (RSA)</td></tr>
+            <tr><td>Copyright vs Patent</td><td>อัตโนมัติ คุ้มครองการแสดงออก vs ต้องจด คุ้มครองการประดิษฐ์</td></tr>
+            <tr><td>Controller vs Processor</td><td>กำหนดวัตถุประสงค์ vs ประมวลผลตามคำสั่ง</td></tr>
+            <tr><td>C. Delivery vs Deployment</td><td>รอคนอนุมัติขึ้น prod vs ขึ้นอัตโนมัติ</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧮</span> 3. สูตร/รูปแบบที่ต้องเขียนได้</div>
+        <div class="section-body">
+          <div class="formula">PUE = พลังงานรวมศูนย์ข้อมูล ÷ พลังงานอุปกรณ์ IT &nbsp;(1,500 kW ÷ 1,000 kW = 1.5)</div>
+          <div class="code-block"><span class="comment"># MQTT topic แบบลำดับชั้น · + = ระดับเดียว, # = ทุกระดับที่เหลือ</span>
+ksu/eng/room301/temperature   <span class="comment"># publisher: ESP32</span>
+ksu/eng/+/temperature         <span class="comment"># subscriber: dashboard ทุกห้อง</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">📅</span> 7. แผนทบทวน 5 วัน</div>
+        <div class="section-body">
+          <table>
+            <tr><th>วัน</th><th>ทบทวน</th><th>งานที่ต้องได้</th></tr>
+            <tr><td>1</td><td>W9–W10</td><td>ตารางประเภท learning + แผนภาพ RAG</td></tr>
+            <tr><td>2</td><td>W11</td><td>วาด device–edge–cloud + ออกแบบ topic MQTT</td></tr>
+            <tr><td>3</td><td>W12–W13</td><td>CIA × ภัยคุกคาม · ตาราง IP 4 ประเภท · PDPA</td></tr>
+            <tr><td>4</td><td>W14–W15</td><td>CI/CD pipeline · DevOps loop · PUE</td></tr>
+            <tr><td>5</td><td>รวม</td><td>กรณีศึกษาจับเวลา 1 ข้อ ด้วยโครง 5 ขั้น</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Zero Trust</span><span class="def-val">never trust, always verify · ตรวจทุก request ไม่เชื่อเพราะอยู่ใน LAN</span></div>
+          <div class="def-row"><span class="def-key">Agentic AI</span><span class="def-val">AI ที่วางแผนและเรียกใช้เครื่องมือทำงานหลายขั้นเอง</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📋</span> 4. รูปแบบข้อสอบและการวัด CLO</div>
+        <div class="section-body">
+          <p><b>ปรนัย</b> (หลักการ/นิยาม) + <b>กรณีศึกษา</b> (วิเคราะห์ AI/ความปลอดภัย/จริยธรรม) · เน้นเนื้อหาหลังกลางภาค</p>
+          <img class="fig" src="/images/weeks/w17-clo-matrix.svg" alt="ตารางสัปดาห์ 9 ถึง 15 กับ CLO ที่วัดในข้อสอบปลายภาค">
+          <p class="note">CLO1 ความรู้พื้นฐาน · CLO2 สถาปัตยกรรม HW–SW · CLO4 เทคโนโลยีทันสมัย · CLO5 จริยธรรม/กฎหมาย/IP · (CLO3, CLO6 วัดจากโครงงาน/รายงาน)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧠</span> 5. โครงคำตอบกรณีศึกษา 5 ขั้น</div>
+        <div class="section-body">
+          <p><i>โจทย์: smart classroom นับคนด้วยกล้อง + AI แล้วปรับแอร์ผ่าน IoT</i></p>
+          <ol class="mini">
+            <li><b>Architecture:</b> กล้อง/ESP32 → edge model → MQTT → server + DB → dashboard → actuator</li>
+            <li><b>Data flow:</b> ภาพใบหน้า = ข้อมูลส่วนบุคคล → ลดเหลือ "จำนวนคน" ที่ edge</li>
+            <li><b>Risk:</b> นับผิดเมื่อแสงน้อย (W9) · รหัสผ่านเริ่มต้นของอุปกรณ์ (W11–12) · เก็บภาพเกินจำเป็น (W13)</li>
+            <li><b>Mitigation:</b> ทดสอบหลายสภาพแสง · MQTT over TLS + auth ต่ออุปกรณ์ · ไม่ส่งภาพขึ้น cloud · ป้ายแจ้ง + ระยะเวลาเก็บ</li>
+            <li><b>Trade-off + operation:</b> edge เป็นส่วนตัวกว่าแต่ดูแลอุปกรณ์มาก → CI/CD + monitoring (W14)</li>
+          </ol>
+          <p class="note">ได้คะแนนดี = หลักการ + ตัวอย่างจากโจทย์ + trade-off (ไม่ใช่ท่องนิยามอย่างเดียว)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> 6. ข้อฝึกก่อนสอบ</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>train accuracy 99% แต่ test 70% เกิดอะไรขึ้น แก้ได้อย่างไร (W9)</li>
+            <li>chatbot ตอบระเบียบมหาวิทยาลัยผิด ใช้ RAG + vector database ช่วยอย่างไร (W10)</li>
+            <li>เมื่อใดควรประมวลผลที่ edge แทน cloud (W11)</li>
+            <li>ransomware เข้ารหัสฐานข้อมูล กระทบ CIA ข้อใด เสนอ mitigation 3 ข้อ (W12)</li>
+            <li>ใช้ library GPL-3.0 ในแอปที่จะขายแบบปิด source ได้หรือไม่ (W13)</li>
+            <li>ระบบสแกนใบหน้าเข้าหอพักมีประเด็น PDPA อะไร (W13)</li>
+            <li>เรียง issue → PR → CI → deploy และบอกว่าแต่ละขั้นตรวจอะไร (W14)</li>
+            <li>PUE ลดจาก 1.6 เป็น 1.3 หมายความว่าอย่างไร (W7, W15)</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>ตอบกรณีศึกษาด้วยนิยามล้วน ไม่ผูกกับโจทย์ ไม่มี trade-off</li>
+            <li>คิดว่า RAG = train model ใหม่ · คิดว่า hashing ถอดกลับได้</li>
+            <li>สับสน MQTT broker กับ publisher/subscriber</li>
+            <li>ลืมประเด็น PDPA/bias ในระบบที่ใช้กล้องหรือข้อมูลนักศึกษา</li>
+            <li>PUE ยิ่งสูงยิ่งดี (ผิด: ยิ่งใกล้ 1.0 ยิ่งดี)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>อธิบายคำสำคัญของ W9–W15 ได้สัปดาห์ละ ≥ 3 คำ</li>
+            <li>แยกคู่คำในข้อ 2 ได้ทุกคู่</li>
+            <li>ตอบกรณีศึกษา 1 ข้อด้วยโครง 5 ขั้นภายใน 20 นาที</li>
+            <li>อ่าน <a href="/exam-prep">แนวทางเตรียมสอบ</a> และทำข้อสอบชุดฝึก</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

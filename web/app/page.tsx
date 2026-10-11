@@ -26,7 +26,7 @@ const examCount = modules.filter((m) => m.hasExam).length;
 const stats = [
   { icon: BookOpen, label: `${modules.length} สัปดาห์`, sub: `${topicCount} หัวข้อเชิงลึก`, color: "text-blue-600 dark:text-blue-400" },
   { icon: FileEdit, label: `${manifest.labs.length} ใบงาน`, sub: "4 Mini-Projects", color: "text-green-600 dark:text-green-400" },
-  { icon: Presentation, label: `${Object.keys(manifest.slides).length} ชุดสไลด์`, sub: "PowerPoint ทุกสัปดาห์", color: "text-orange-600 dark:text-orange-400" },
+  { icon: Presentation, label: `${Object.keys(manifest.slides).length} ชุดสไลด์`, sub: "+ Review Sheet ทุกสัปดาห์", color: "text-orange-600 dark:text-orange-400" },
   { icon: PenSquare, label: `${examCount} แบบทดสอบ`, sub: "Quiz ออนไลน์พร้อมเฉลย", color: "text-purple-600 dark:text-purple-400" },
 ];
 
@@ -216,6 +216,14 @@ export default function HomePage() {
                       <Presentation className="w-3 h-3" /> Slides
                     </a>
                   )}
+                  <a
+                    href={`/api/content/SHEET/review_sheet_${mod.id}.html`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-2 py-1 text-[11px] font-medium rounded-md bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
+                  >
+                    <ClipboardCheck className="w-3 h-3" /> Review
+                  </a>
                   {mod.hasExam && (
                     <Link
                       href={`/exam/${mod.id}`}

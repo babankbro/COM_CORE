@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 07 - ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🗄️ Review Sheet สัปดาห์ที่ 07 — ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Data Center &amp; Cloud Infrastructure</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 7 · CLO2, CLO4<br>
+      Lab 07: สถาปัตยกรรมคลาวด์และการ Deploy
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🏢</span> 1. องค์ประกอบ Data Center</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">Compute</span><span class="def-val">เซิร์ฟเวอร์ CPU/GPU ใน rack · งาน AI ใช้ GPU 700–1,000 W/ชิป → rack 40–100 kW</span></div>
+          <div class="def-row"><span class="def-key">Storage</span><span class="def-val">SAN/NAS, object storage · สำรองข้อมูลหลายชุด</span></div>
+          <div class="def-row"><span class="def-key">Network</span><span class="def-val"><b>spine-leaf</b> (Clos) ทุกเซิร์ฟเวอร์ห่างกันจำนวน hop เท่ากัน รองรับ east-west traffic</span></div>
+          <div class="def-row"><span class="def-key">Power</span><span class="def-val">ไฟหลัก + UPS + generator · redundancy เช่น N+1</span></div>
+          <div class="def-row"><span class="def-key">Cooling</span><span class="def-val">air (hot/cold aisle) → <b>liquid</b>: direct-to-chip, immersion</span></div>
+          <div class="def-row"><span class="def-key">Security</span><span class="def-val">physical access control, CCTV, monitoring 24/7</span></div>
+          <div class="formula">Downtime/ปี = (1 − availability) × 8,760 ชม.</div>
+          <p>99.9% → <b>8.76 ชม.</b> · 99.99% → <b>52.6 นาที</b> · เพิ่ม "9" หนึ่งตัว = หยุดน้อยลง 10 เท่า แต่แพงขึ้น</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧩</span> 2. Virtualization: VM vs Container</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w07-vm-vs-container.svg" alt="ชั้นซอฟต์แวร์ของ VM ที่มี guest OS เทียบ container ที่แชร์ kernel ของ host OS">
+          <table>
+            <tr><th>ประเด็น</th><th>VM</th><th>Container</th></tr>
+            <tr><td>จำลอง</td><td>ทั้งเครื่อง ผ่าน <b>hypervisor</b></td><td>สภาพแวดล้อมของ process</td></tr>
+            <tr><td>OS</td><td>Guest OS ทุกเครื่อง</td><td><span class="accent">แชร์ kernel</span> ของ host</td></tr>
+            <tr><td>ขนาด / เริ่ม</td><td>GB / นาที</td><td>MB / วินาที</td></tr>
+            <tr><td>แยกขาด</td><td>สูงกว่า</td><td>ระดับ process</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Type 1</span><span class="def-val">bare-metal hypervisor (ESXi, KVM) · <b>Type 2</b> รันบน OS (VirtualBox)</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🐳</span> 3. Docker · Kubernetes</div>
+        <div class="section-body">
+          <p><b>Dockerfile</b> (สูตร) → <code>build</code> → <b>image</b> (อ่านอย่างเดียว, เป็นชั้น layer) → <code>run</code> → <b>container</b> (กำลังทำงาน)</p>
+          <div class="code-block"><span class="kw">FROM</span> python:<span class="num">3.12</span>-slim
+<span class="kw">WORKDIR</span> /app
+<span class="kw">COPY</span> requirements.txt .
+<span class="kw">RUN</span> pip install -r requirements.txt  <span class="comment"># แยกชั้น → ใช้ cache</span>
+<span class="kw">COPY</span> . .
+<span class="kw">EXPOSE</span> <span class="num">5000</span>                          <span class="comment"># เอกสาร ไม่ได้เปิดพอร์ตเอง</span>
+<span class="kw">CMD</span> [<span class="str">"python"</span>, <span class="str">"app.py"</span>]</div>
+          <div class="code-block">docker build -t asset-app .
+docker run -d -p <span class="num">8080</span>:<span class="num">5000</span> asset-app   <span class="comment"># host:container</span>
+docker ps · docker logs &lt;id&gt; · docker stop &lt;id&gt;
+docker compose up -d                <span class="comment"># หลายบริการพร้อมกัน</span></div>
+          <p><b>Kubernetes</b> = orchestration: Pod (หน่วยเล็กสุด) · Deployment (<code>replicas: 3</code>) · Service · <b>self-healing</b>, auto-scaling, rolling update แบบ declarative (YAML)</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">📄</span> Kubernetes Deployment (YAML ย่อ)</div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">apiVersion</span>: apps/v1
+<span class="kw">kind</span>: Deployment
+<span class="kw">metadata</span>: { name: asset-app }
+<span class="kw">spec</span>:
+  <span class="kw">replicas</span>: <span class="num">3</span>                 <span class="comment"># ต้องมี 3 pod เสมอ ล่มแล้วสร้างใหม่</span>
+  <span class="kw">selector</span>: { matchLabels: { app: asset } }
+  <span class="kw">template</span>:
+    metadata: { labels: { app: asset } }
+    spec:
+      containers:
+      - name: web
+        image: asset-app:<span class="num">1.0</span>
+        ports: [{ containerPort: <span class="num">5000</span> }]</div>
+          <p class="note">declarative = บอก "สภาพที่ต้องการ" แล้ว K8s คอยปรับของจริงให้ตรงเอง (<code>kubectl apply -f app.yaml</code>)</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">☁️</span> 4. Service Models: ใครดูแลอะไร</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ชั้น</th><th>On-prem</th><th>IaaS</th><th>PaaS</th><th>SaaS</th></tr>
+            <tr><td>Data · สิทธิ์ผู้ใช้</td><td>ผู้ใช้</td><td>ผู้ใช้</td><td>ผู้ใช้</td><td><span class="accent">ผู้ใช้</span></td></tr>
+            <tr><td>Application</td><td>ผู้ใช้</td><td>ผู้ใช้</td><td>ผู้ใช้</td><td>provider</td></tr>
+            <tr><td>Runtime · OS</td><td>ผู้ใช้</td><td>ผู้ใช้</td><td>provider</td><td>provider</td></tr>
+            <tr><td>Virtualization · Server · อาคาร</td><td>ผู้ใช้</td><td>provider</td><td>provider</td><td>provider</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">IaaS</span><span class="def-val">ได้ "เครื่องเปล่า" ลง OS เอง: Amazon EC2, Azure VM</span></div>
+          <div class="def-row"><span class="def-key">PaaS</span><span class="def-val">ได้ "ที่วางโค้ด" <code>git push</code> ก็ออนไลน์: Vercel, Google App Engine</span></div>
+          <div class="def-row"><span class="def-key">SaaS</span><span class="def-val">ได้ "โปรแกรมพร้อมใช้": Google Docs, Canva</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏛️</span> 5. Deployment Models</div>
+        <div class="section-body">
+          <table>
+            <tr><th></th><th>Public</th><th>Private</th><th>Sovereign</th></tr>
+            <tr><td>เจ้าของ</td><td>ผู้ให้บริการระดับโลก</td><td>องค์กร</td><td>หน่วยงานในประเทศ</td></tr>
+            <tr><td>ต้นทุนเริ่ม</td><td>ต่ำ (จ่ายตามใช้)</td><td>สูง (ซื้อ hardware)</td><td>ปานกลาง–สูง</td></tr>
+            <tr><td>เด่น</td><td>scale สูงสุด</td><td>ควบคุมสูง</td><td>ข้อมูลอยู่ใต้กฎหมายในประเทศ</td></tr>
+          </table>
+          <p class="note">Hybrid = ผสม private + public · hyperscale = data center ขนาดมหึมา automation ทุกขั้น (AWS, Azure, Google)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚡</span> 6. PUE · DCiE (The Green Grid)</div>
+        <div class="section-body">
+          <div class="formula">PUE = พลังงานรวมของ data center ÷ พลังงาน IT &nbsp;(≥ 1, ยิ่งต่ำยิ่งดี)</div>
+          <div class="flex-row">
+            <div class="formula">Non-IT = (PUE − 1) × IT</div>
+            <div class="formula">DCiE = IT ÷ Total × 100%</div>
+          </div>
+          <p><b>ตัวอย่าง</b> IT 400 kW, รวม 560 kW → PUE <b>1.4</b> · DCiE ≈ <b>71.4%</b> · Non-IT 160 kW → 160 × 8,760 × 4 บาท = <b>5,606,400 บาท/ปี</b></p>
+          <p>ลดเป็น PUE 1.1 → Total 440 kW · ประหยัด 120 kW × 8,760 × 4 = <b>4,204,800 บาท/ปี</b></p>
+          <p class="note">kW = กำลัง (อัตรา) · kWh = พลังงาน (kW × ชั่วโมง) → ค่าไฟคิดจาก kWh</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧪</span> เชื่อมโยง Lab 07</div>
+        <div class="section-body">
+          <table class="lab-table">
+            <tr><th>ส่วน</th><th>สิ่งที่ฝึก</th></tr>
+            <tr><td>1</td><td>เขียน Dockerfile ของ asset-app (Flask) → <code>docker build</code> → <code>docker run -p 5000:5000</code> → ดู log / stop</td></tr>
+            <tr><td>1+</td><td>รัน container ที่สองจาก image เดิม (<code>-p 5001:5000</code>) → image เดียวสร้างได้หลาย container</td></tr>
+            <tr><td>2A</td><td>Docker Compose รันหลายบริการด้วยคำสั่งเดียว</td></tr>
+            <tr><td>2B</td><td>(ทางเลือก) deploy บน PaaS แล้วระบุว่าทีมรับผิดชอบชั้นใด</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>คิดว่า container มี OS เต็มชุดเหมือน VM (จริง ๆ แชร์ kernel)</li>
+            <li>สับสน image (แม่แบบ) กับ container (ตัวที่กำลังรัน)</li>
+            <li>สลับ <code>-p 8080:5000</code> — ตัวหน้าคือพอร์ตของ host</li>
+            <li>คิดว่าใช้ SaaS แล้วไม่ต้องดูแลข้อมูล/สิทธิ์ผู้ใช้</li>
+            <li>หาร PUE กลับด้าน (IT ÷ Total คือ DCiE) หรือได้ PUE &lt; 1</li>
+            <li>คูณค่าไฟด้วย kW โดยไม่คูณจำนวนชั่วโมง</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>บอกองค์ประกอบ 6 ส่วนของ data center และเหตุผลของ redundancy ได้</li>
+            <li>วาดชั้น VM vs container และเลือกใช้ได้ตามสถานการณ์</li>
+            <li>เขียน Dockerfile, build, run และอธิบาย port mapping ได้</li>
+            <li>บอกหน้าที่ Kubernetes (replica, self-healing, scaling) ได้</li>
+            <li>จำแนกบริการเป็น IaaS/PaaS/SaaS และ public/private/sovereign ได้</li>
+            <li>คำนวณ PUE, DCiE, Non-IT และค่าไฟต่อปีได้</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✍️</span> ฝึกทำ (เฉลยท้ายกล่อง)</div>
+        <div class="section-body">
+          <ol class="mini">
+            <li>IT 800 kW, PUE 1.25 → Total, Non-IT, DCiE = ?</li>
+            <li>ไฟรวม 2,400 kW, IT 2,000 kW → PUE, DCiE = ?</li>
+            <li>ไฟรวม 1,000 kW ตลอด 30 วัน ค่าไฟ 4 บาท/kWh → ค่าไฟต่อเดือน?</li>
+            <li>ทีมส่งโค้ด Next.js ขึ้น Vercel ได้ URL ทันที เป็นบริการแบบใด</li>
+          </ol>
+          <p class="note">เฉลย: (1) 1,000 kW, 200 kW, 80% · (2) 1.2, ≈ 83.3% · (3) 1,000 × 24 × 30 = 720,000 kWh × 4 = 2,880,000 บาท · (4) PaaS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

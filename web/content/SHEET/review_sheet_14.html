@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 14 - โครงงานประยุกต์และวิศวกรรมระบบ DevOps</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🔁 Review Sheet สัปดาห์ที่ 14 — โครงงานประยุกต์และวิศวกรรมระบบ DevOps</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · Applied System Engineering &amp; DevOps · Module 4: Computer Vision &amp; System Integration</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 14 · CLO3, CLO6<br>
+      Lab 14: การบูรณาการระบบและ DevOps
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">🔄</span> 1. SDLC 6 ขั้น</div>
+        <div class="section-body">
+          <div class="formula">วิเคราะห์ requirement → ออกแบบ → พัฒนา → ทดสอบ → นำไปใช้ → บำรุงรักษา</div>
+          <p><b>SDLC</b> = ขั้นตอนที่ทุกระบบต้องผ่าน · <b>Waterfall / Agile</b> = <span class="accent">วิธีจัดลำดับ</span>ขั้นตอนเหล่านั้น · <b>Systems engineering</b> = มองระบบแบบองค์รวม (requirement, architecture, integration, security, maintenance)</p>
+          <div class="def-row"><span class="def-key">V-Model</span><span class="def-val">ทุกขั้นออกแบบจับคู่ขั้นทดสอบ (requirement ↔ acceptance test, design ↔ integration test)</span></div>
+          <div class="def-row"><span class="def-key">Spiral</span><span class="def-val">วนรอบพร้อมวิเคราะห์ความเสี่ยงทุกรอบ เหมาะโครงการใหญ่/เสี่ยงสูง</span></div>
+          <div class="def-row"><span class="def-key">Incremental</span><span class="def-val">ส่งมอบทีละส่วนที่ใช้งานได้ เป็นฐานของ Agile</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">⚖️</span> 2. Waterfall vs Agile vs DevOps</div>
+        <div class="section-body">
+          <table>
+            <tr><th>มิติ</th><th>Waterfall</th><th>Agile (Scrum)</th><th>DevOps</th></tr>
+            <tr><td>หน่วยงาน</td><td>phase ทั้งโครงการ</td><td>sprint 1–4 สัปดาห์</td><td>การเปลี่ยนเล็ก ๆ ต่อเนื่อง</td></tr>
+            <tr><td>ส่งมอบ</td><td>ครั้งเดียวตอนท้าย</td><td>ทุกสิ้น sprint</td><td>ได้หลายครั้งต่อวัน</td></tr>
+            <tr><td>requirement เปลี่ยน</td><td>ยาก ต้องย้อน phase</td><td>ปรับ backlog</td><td>feedback จาก monitor</td></tr>
+            <tr><td>เหมาะกับ</td><td>งานมีมาตรฐานกำกับ</td><td>ผลิตภัณฑ์ที่ต้องทดลอง</td><td>บริการที่รันตลอด</td></tr>
+          </table>
+          <img class="fig" src="/images/weeks/w14-sdlc-vs-agile.svg" alt="Waterfall แบบขั้นบันได เทียบกับวงรอบ sprint ของ Agile">
+          <div class="def-row"><span class="def-key">Scrum</span><span class="def-val">product backlog → sprint planning → build/test → review/demo → retrospective</span></div>
+          <div class="def-row"><span class="def-key">DevOps</span><span class="def-val">culture + automation + feedback + ownership ร่วม (ไม่ใช่แค่เครื่องมือ)</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🚦</span> 3. CI / CD</div>
+        <div class="section-body">
+          <img class="fig" src="/images/weeks/w14-cicd-pipeline.svg" alt="CI/CD pipeline จาก git push ถึง deploy production และ monitor">
+          <div class="def-row"><span class="def-key">CI</span><span class="def-val">merge บ่อย + build/test อัตโนมัติทุก push/PR · ล้ม = บล็อก merge</span></div>
+          <div class="def-row"><span class="def-key">C. Delivery</span><span class="def-val">ทุกเวอร์ชันที่ผ่าน CI <b>พร้อม</b> deploy · คนกดอนุมัติขึ้น production</span></div>
+          <div class="def-row"><span class="def-key">C. Deployment</span><span class="def-val">ผ่านทุกด่าน → ขึ้น production <span class="accent">อัตโนมัติ</span></span></div>
+          <p class="note">ขั้นต่ำ: version control · automated build · automated test · artifact (เช่น Docker image) · deploy · rollback plan</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧠</span> 4. MLOps / AIOps</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">MLOps</span><span class="def-val">DevOps + version ของ <b>data และ model</b> · retrain · เฝ้าดู data drift/model drift</span></div>
+          <div class="def-row"><span class="def-key">AIOps</span><span class="def-val">ใช้ AI วิเคราะห์ log/metric ตรวจจับความผิดปกติในงาน IT operations</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧪</span> 5. ระดับการทดสอบ + cloud-native</div>
+        <div class="section-body">
+          <table>
+            <tr><th>ระดับ</th><th>ทดสอบอะไร</th><th>ตัวอย่างในโครงงาน CV</th></tr>
+            <tr><td>Unit</td><td>ฟังก์ชันเดี่ยว</td><td>preprocess คืน shape (1, 224, 224, 3) ค่า 0–1</td></tr>
+            <tr><td>Integration</td><td>ส่วนประกอบคุยกัน</td><td>API <code>POST /predict</code> → บันทึกลง database</td></tr>
+            <tr><td>System</td><td>ทั้งระบบ end-to-end</td><td>กล้อง → model → MQTT → dashboard</td></tr>
+            <tr><td>Acceptance</td><td>ตรง acceptance criteria</td><td>ผู้ใช้ยืนยันว่านับคนถูกตามเกณฑ์</td></tr>
+          </table>
+          <div class="def-row"><span class="def-key">Container</span><span class="def-val">Docker image = environment ที่ส่งมอบซ้ำได้ ("รันเครื่องฉันได้" → รันทุกที่ได้)</span></div>
+          <div class="def-row"><span class="def-key">Security</span><span class="def-val">secret management · image scanning · least privilege ใน pipeline</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> 6. GitHub Actions: <code>.github/workflows/ci.yml</code></div>
+        <div class="section-body">
+          <div class="code-block"><span class="kw">name:</span> CI
+<span class="kw">on:</span> [push, pull_request]          <span class="comment"># ทริกเกอร์ทุก push และ PR</span>
+<span class="kw">jobs:</span>
+  <span class="fn">test:</span>
+    <span class="kw">runs-on:</span> ubuntu-latest          <span class="comment"># runner ของ GitHub</span>
+    <span class="kw">steps:</span>
+      - <span class="kw">uses:</span> actions/checkout@v4     <span class="comment"># ดึงโค้ดจาก repo</span>
+      - <span class="kw">uses:</span> actions/setup-python@v5
+        <span class="kw">with:</span>
+          <span class="kw">python-version:</span> <span class="str">"3.11"</span>
+      - <span class="kw">run:</span> pip install -r requirements.txt
+      - <span class="kw">run:</span> flake8 .                  <span class="comment"># lint</span>
+      - <span class="kw">run:</span> pytest -q                 <span class="comment"># unit test ล้ม = ❌</span></div>
+          <p class="note">workflow → jobs → steps · <code>uses</code> = action สำเร็จรูป · <code>run</code> = คำสั่ง shell · ไม่ใส่ model ไฟล์ใหญ่และ secret ลงใน repo (ใช้ GitHub Secrets)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🌿</span> 7. Git workflow ของหนึ่งฟีเจอร์</div>
+        <div class="section-body">
+          <div class="code-block">git switch -c feature/42-show-confidence   <span class="comment"># แยก branch</span>
+git add . &amp;&amp; git commit -m <span class="str">"feat: return confidence (#42)"</span>
+git push -u origin feature/42-show-confidence <span class="comment"># แล้วเปิด PR</span>
+git tag v1.2.0 &amp;&amp; git push --tags           <span class="comment"># release</span></div>
+          <div class="formula">issue → branch → commit → PR → CI ✓ → review → merge → deploy → monitor</div>
+          <img class="fig" src="/images/weeks/w14-devops-loop.svg" alt="DevOps loop: plan code build test release deploy operate monitor">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🎯</span> 8. เตรียม Capstone</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">User story</span><span class="def-val">"ในฐานะ [ผู้ใช้] ฉันต้องการ [สิ่งที่ทำได้] เพื่อ [ประโยชน์]"</span></div>
+          <div class="def-row"><span class="def-key">Acceptance</span><span class="def-val">เงื่อนไขที่<b>ตรวจได้</b> เช่น อัปเดต ≤ 5 วินาที ผิดพลาด ≤ 1 คน ใน 20 ภาพ</span></div>
+          <div class="def-row"><span class="def-key">Done</span><span class="def-val">ผ่าน CI + มี test + มีคนรีวิว + อัปเดต README</span></div>
+          <p class="note">architecture ตัวอย่าง: กล้อง/ESP32 → MQTT → API + model → database → dashboard (เชื่อม W5, W6, W11)</p>
+          <div class="def-row"><span class="def-key">SemVer</span><span class="def-val">MAJOR.MINOR.PATCH เช่น v1.2.0 → v1.2.1 แก้บั๊ก · v1.3.0 เพิ่มฟีเจอร์ · v2.0.0 เปลี่ยนแบบไม่เข้ากันเดิม</span></div>
+          <div class="def-row"><span class="def-key">README</span><span class="def-val">วิธีติดตั้ง/รัน · architecture · สมาชิกและหน้าที่ · license · แหล่งอ้างอิง</span></div>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>คิดว่า DevOps = เครื่องมือ deploy อย่างเดียว (ลืมวัฒนธรรม/feedback)</li>
+            <li>สับสน Continuous Delivery (รออนุมัติ) กับ Continuous Deployment (อัตโนมัติ)</li>
+            <li>ทำงานบน <code>main</code> ตรง ๆ ไม่ผ่าน PR/review</li>
+            <li>merge ทั้งที่ CI แดง · ไม่มี rollback plan</li>
+            <li>acceptance criteria วัดไม่ได้ เช่น "ใช้งานง่าย"</li>
+            <li>commit secret/API key หรือไฟล์ model ขนาดใหญ่เข้า repo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>เรียง SDLC 6 ขั้นและเปรียบ Waterfall กับ Agile ได้</li>
+            <li>อธิบาย CI, Continuous Delivery, Continuous Deployment</li>
+            <li>อ่าน/เขียน workflow YAML ที่รัน lint + test ได้</li>
+            <li>เล่าเส้นทาง issue → PR → CI → deploy ของหนึ่งฟีเจอร์</li>
+            <li>เขียน user story + acceptance criteria ที่ตรวจได้</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

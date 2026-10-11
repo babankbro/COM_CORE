@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Sheet Week 09 - ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง</title>
+<link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">🖨️ พิมพ์ / บันทึก PDF</button></div>
+<div class="page">
+
+  <div class="sheet-header">
+    <div>
+      <div class="title">🧠 Review Sheet สัปดาห์ที่ 09 — ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง</div>
+      <div class="sub">EN-001-019 Computer Engineering Essentials · AI &amp; Machine Learning Foundations</div>
+    </div>
+    <div class="meta">
+      สัปดาห์ที่ 9 · CLO1<br>
+      Lab 09: พื้นฐาน ML และสถาปัตยกรรม IoT
+    </div>
+  </div>
+
+  <div class="columns">
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">⭕</span> 1. AI ⊃ ML ⊃ DL ⊃ GenAI</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">AI</span><span class="def-val">ระบบที่ทำงานซึ่งปกติต้องใช้ปัญญามนุษย์ (รวม rule-based ที่เขียนกฎเอง)</span></div>
+          <div class="def-row"><span class="def-key">ML</span><span class="def-val">เรียนรู้ pattern จาก<b>ข้อมูล</b> แทนการเขียนกฎทุกข้อ (Linear Regression, Decision Tree, k-means)</span></div>
+          <div class="def-row"><span class="def-key">Deep Learning</span><span class="def-val">neural network <b>หลายชั้น</b> เรียน feature เอง ใช้ข้อมูลมาก + GPU/NPU (CNN, Transformer)</span></div>
+          <div class="def-row"><span class="def-key">GenAI</span><span class="def-val"><span class="accent">สร้าง</span>ข้อมูลใหม่ (LLM, diffusion) → สัปดาห์ที่ 10</span></div>
+          <p class="note">ทุก DL เป็น ML แต่ไม่ใช่ทุก ML เป็น DL · Narrow AI (เฉพาะงาน) มีจริงแล้ว ส่วน General AI ยังเป็นสมมุติฐาน</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🏷️</span> 2. Feature · Label · Model · Training vs Inference</div>
+        <div class="section-body">
+          <div class="def-row"><span class="def-key">Feature (X)</span><span class="def-val">ข้อมูลขาเข้า เช่น น้ำหนัก สีผลไม้ อุณหภูมิ ความชื้น</span></div>
+          <div class="def-row"><span class="def-key">Label (y)</span><span class="def-val">คำตอบที่ถูก (มีเฉพาะ supervised)</span></div>
+          <div class="def-row"><span class="def-key">Training</span><span class="def-val">ปรับ parameter (w, b) จาก train set ให้ loss ต่ำ</span></div>
+          <div class="def-row"><span class="def-key">Inference</span><span class="def-val">ใช้โมเดลที่ฝึกแล้วทำนายข้อมูลใหม่ (prediction)</span></div>
+          <p>แบ่ง <b>train/test</b> (เช่น 80/20) วัดผลบนข้อมูลที่โมเดล<span class="accent">ไม่เคยเห็น</span> · train ดีมาก test แย่ = <b>overfitting</b> · แย่ทั้งคู่ = underfitting</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔀</span> 3. สามรูปแบบการเรียนรู้</div>
+        <div class="section-body">
+          <table>
+            <tr><th>แบบ</th><th>ข้อมูล</th><th>ตัวอย่างงาน / อัลกอริทึม</th></tr>
+            <tr><td><b>Supervised</b></td><td>X + label</td><td>Classification (สแปม/ไม่สแปม), Regression (ทำนายอุณหภูมิ) · Logistic/Linear Regression, Tree</td></tr>
+            <tr><td><b>Unsupervised</b></td><td>X อย่างเดียว</td><td>Clustering ลูกค้า, หา anomaly เซนเซอร์ · k-means, PCA, Isolation Forest</td></tr>
+            <tr><td><b>Reinforcement</b></td><td>state, action, <b>reward</b></td><td>เกม, หุ่นยนต์เดิน, ควบคุมแอร์ · ลองผิดลองถูกให้ reward สะสมสูงสุด</td></tr>
+          </table>
+          <p class="note">Classification ตอบ "แบบไหน?" (หมวดหมู่) · Regression ตอบ "เท่าไร?" (ค่าต่อเนื่อง)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🧮</span> 4. นิวรอนเทียม: Weighted Sum + Activation</div>
+        <div class="section-body">
+          <div class="formula">z = Σ wᵢxᵢ + b &nbsp;&nbsp;→&nbsp;&nbsp; ŷ = σ(z) = 1 / (1 + e<sup>−z</sup>)</div>
+          <div class="flex-row">
+            <div class="formula">Step: z ≥ 0 → 1</div>
+            <div class="formula">ReLU = max(0, z)</div>
+            <div class="formula">σ(0) = 0.5</div>
+          </div>
+          <p><b>ตัวอย่าง</b> x = [0.8, 0.6], w = [1.5, 0.5], b = −1.0 → z = 1.2 + 0.3 − 1.0 = <b>0.5</b> → σ(0.5) = <b>0.622</b> · y = 1 → loss (y − ŷ)² = 0.143</p>
+          <p>gradient descent 1 รอบ (lr = 1): w → [1.642, 0.606], b → −0.823 → ŷ = 0.702, loss = <b>0.089</b> (ลดลง)</p>
+          <img class="fig" src="/images/weeks/w09-neuron.svg" alt="นิวรอนหนึ่งตัว weighted sum เท่ากับ 0.5 ผ่าน sigmoid ได้ 0.622 และผลหลังปรับ weight หนึ่งรอบ">
+          <p class="note">MLP = หลายนิวรอนหลายชั้น · ฝึกด้วย loss → gradient → backpropagation (chain rule) → ปรับ w</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header"><span class="icon">🧱</span> 5. Deep Learning และคุณภาพข้อมูล</div>
+        <div class="section-body">
+          <table>
+            <tr><th></th><th>ML ดั้งเดิม</th><th>Deep Learning</th></tr>
+            <tr><td>Feature</td><td>คนออกแบบเอง (feature engineering)</td><td>โมเดลเรียนเองจากข้อมูลดิบ</td></tr>
+            <tr><td>ข้อมูล / ฮาร์ดแวร์</td><td>น้อย–ปานกลาง · CPU พอ</td><td>มาก · GPU/NPU (คูณเมทริกซ์ขนาน)</td></tr>
+            <tr><td>เหมาะกับ</td><td>ข้อมูลตาราง อธิบายได้ง่าย</td><td>ภาพ เสียง ข้อความ (CNN, RNN, Transformer)</td></tr>
+          </table>
+          <p><b>Garbage in, garbage out:</b> คุณภาพข้อมูล = ความถูกต้อง · ครบถ้วน · สม่ำเสมอ · ทันสมัย · เป็นตัวแทนประชากร</p>
+          <p class="note">Bias เกิดได้ทุกขั้น: เก็บข้อมูล (sampling bias) · ติด label · เลือก feature · ใช้งานผิดบริบท · แก้ด้วย datasheet และตรวจผลแยกกลุ่ม</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+      <div class="section">
+        <div class="section-header"><span class="icon">📏</span> 6. วัดผล Regression: MAE · MSE · RMSE (Lab 09)</div>
+        <div class="section-body">
+          <div class="flex-row">
+            <div class="formula">ŷ = mx + c</div>
+            <div class="formula">e = y − ŷ</div>
+          </div>
+          <div class="flex-row">
+            <div class="formula">MAE = (1/N)Σ|eᵢ|</div>
+            <div class="formula">MSE = (1/N)Σeᵢ²</div>
+            <div class="formula">RMSE = √MSE</div>
+          </div>
+          <p><b>ตัวอย่าง</b> y = [30, 32, 31, 35], ŷ = [31, 31, 33, 34] → e = [−1, 1, −2, 1] → MAE = <b>1.25</b> · MSE = 7/4 = <b>1.75</b> · RMSE = <b>1.32</b> °C</p>
+          <p class="note">ห้ามบวก error ตรง ๆ (บวก/ลบหักล้างกัน) · MSE ลงโทษ error ใหญ่หนัก หน่วยเป็นกำลังสอง · RMSE/MAE หน่วยเดียวกับ y</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">💻</span> Gradient Descent 1 รอบ (จาก Lab 09)</div>
+        <div class="section-body">
+          <div class="formula">∂L/∂m = (2/N)Σ eᵢxᵢ &nbsp;·&nbsp; ∂L/∂c = (2/N)Σ eᵢ &nbsp;(e = ŷ − y) &nbsp;·&nbsp; m ← m − lr·∂L/∂m</div>
+          <div class="code-block">xs = [<span class="num">0</span>, <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>]
+ys = [<span class="num">1</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">8</span>]
+m, c, lr = <span class="num">2</span>, <span class="num">1</span>, <span class="num">0.05</span>
+N = <span class="fn">len</span>(xs)
+e = [(m * x + c) - y <span class="kw">for</span> x, y <span class="kw">in</span> <span class="fn">zip</span>(xs, ys)]  <span class="comment"># e = y_hat - y</span>
+grad_m = (<span class="num">2</span> / N) * <span class="fn">sum</span>(ei * xi <span class="kw">for</span> ei, xi <span class="kw">in</span> <span class="fn">zip</span>(e, xs))
+grad_c = (<span class="num">2</span> / N) * <span class="fn">sum</span>(e)
+m = m - lr * grad_m        <span class="comment"># เดินลงเขา: ลบ gradient</span>
+c = c - lr * grad_c
+<span class="fn">print</span>(e, grad_m, grad_c, <span class="fn">round</span>(m, <span class="num">4</span>), c)
+<span class="comment"># [0, 0, 1, -1] -0.5 0.0 2.025 1.0</span></div>
+          <p class="note">gradient เป็นลบ → m เพิ่มขึ้น · lr ใหญ่เกิน loss แกว่ง/ระเบิด · lr เล็กเกิน เรียนช้า · ฝึก 1,000 epoch ได้ m = 2.2, c = 0.7</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">🔁</span> 7. ML Lifecycle · MLOps · NIST AI RMF</div>
+        <div class="section-body">
+          <p><b>ข้อมูล → เตรียม/ทำความสะอาด → ฝึก → ประเมิน → deploy → monitor → retrain</b> (วนซ้ำ)</p>
+          <table>
+            <tr><th>แนวคิด</th><th>ความหมาย</th></tr>
+            <tr><td>Versioning / Registry</td><td>เก็บเวอร์ชันข้อมูล + โมเดล ย้อนกลับ (rollback) ได้</td></tr>
+            <tr><td>CI / CD / CT</td><td>ทดสอบ · deploy · <b>ฝึกใหม่อัตโนมัติ</b> (continuous training)</td></tr>
+            <tr><td>Data drift</td><td>ข้อมูลจริงเปลี่ยนไปจากตอนฝึก → ความแม่นยำลดเงียบ ๆ</td></tr>
+            <tr><td>Data leakage</td><td>ข้อมูล test/อนาคตรั่วเข้าการฝึก → ผลดีเกินจริง</td></tr>
+          </table>
+          <p>NIST AI RMF: <span class="blue">Govern · Map · Measure · Manage</span> — ดูมากกว่า accuracy: validity, safety, security, fairness, accountability</p>
+        </div>
+      </div>
+
+      <div class="section warn">
+        <div class="section-header"><span class="icon">⚠️</span> ข้อผิดพลาดที่พบบ่อย</div>
+        <div class="section-body">
+          <ul class="mini">
+            <li>คิดว่า AI = ML = DL เป็นคำเดียวกัน (จริง ๆ ซ้อนกันเป็นชั้น)</li>
+            <li>วัดผลบน train set แล้วสรุปว่าโมเดลดี → ต้องใช้ test set ที่แยกไว้</li>
+            <li>สับสน training (ปรับ w) กับ inference (ใช้ w ที่ได้ทำนาย)</li>
+            <li>ผสม sign convention e = y − ŷ กับ e = ŷ − y ในโค้ดเดียวกัน</li>
+            <li>ตั้งชื่อตัวแปร <code>mse</code> แต่คำนวณ |e| (นั่นคือ MAE)</li>
+            <li>deploy แล้วไม่ monitor → ไม่รู้ว่าเกิด data drift / bias</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><span class="icon">✅</span> เช็กความเข้าใจ</div>
+        <div class="section-body">
+          <ul class="mini check">
+            <li>แยก AI / ML / DL / GenAI พร้อมตัวอย่างได้</li>
+            <li>บอกได้ว่าโจทย์เป็น supervised / unsupervised / reinforcement</li>
+            <li>คำนวณ z และ σ(z) ของนิวรอนด้วยมือได้ (เช่น z = 0 → 0.5)</li>
+            <li>คำนวณ MAE, MSE, RMSE และอธิบายความต่างได้</li>
+            <li>อธิบายว่าทำไมต้อง monitor โมเดลหลัง deploy และ bias เกิดได้ที่ขั้นใด</li>
+          </ul>
+          <ol class="mini">
+            <li>w = [2, −1], x = [1, 1], b = 1 → z = ? σ(z) = ?</li>
+            <li>y = [10, 12, 14], ŷ = [11, 12, 12] → MAE, MSE, RMSE = ?</li>
+            <li>ข้อมูลลูกค้าไม่มี label ต้องการแบ่งกลุ่ม ควรใช้การเรียนรู้แบบใด</li>
+          </ol>
+          <p class="note">เฉลย: (1) z = 2, σ(2) ≈ 0.881 · (2) e = [−1, 0, 2] → MAE = 1.0, MSE = 5/3 ≈ 1.67, RMSE ≈ 1.29 · (3) unsupervised (เช่น k-means)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">EN-001-019 แก่นวิศวกรรมคอมพิวเตอร์ · ผศ.ดร. สรายุทธ กรวิรัตน์ · สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยกาฬสินธุ์ · ปีการศึกษา 2569</div>
+</div>
+</body>
+</html>

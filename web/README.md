@@ -6,6 +6,18 @@
 พร้อมเนื้อหาเชิงลึกรายหัวข้อ ใบงาน 4 Mini-Projects สไลด์ PowerPoint และแบบทดสอบออนไลน์พร้อมเฉลย
 เนื้อหา **สร้างอัตโนมัติ** จากคลังความรู้ Obsidian ใน `../wiki/` และ `../slides/` ด้วย `npm run content`
 
+## 🔗 ลิงก์สำคัญ
+
+| หน้า | ลิงก์ |
+|---|---|
+| 🌐 เว็บไซต์ (Vercel) | https://en-001-019-ce.vercel.app |
+| 🎓 **แนวทางเตรียมสอบ (ครอบคลุมข้อสอบชุดที่ 1–3)** | https://en-001-019-ce.vercel.app/exam-prep |
+| 🧮 ตัวอย่างโจทย์คำนวณพร้อมวิธีทำ (ชุดที่ 2–3) | https://en-001-019-ce.vercel.app/calc-examples |
+| 📋 แบบทบทวน 1 หน้า A4 (Review Sheet) สัปดาห์ที่ 1 | https://en-001-019-ce.vercel.app/api/content/SHEET/review_sheet_01.html |
+| 🗂️ สไลด์ทุกสัปดาห์ | https://en-001-019-ce.vercel.app/slides |
+
+> push ขึ้น `main` แล้ว Vercel จะ deploy ให้อัตโนมัติ (Root Directory = `web`)
+
 ## บทเรียน
 
 | W | ชื่อสัปดาห์ | CLO | Mini-Project | Lab | Quiz |
@@ -68,11 +80,19 @@ web/
 │   ├── docs/<slug>.md              ← เอกสารรายวิชา/ธีม
 │   ├── slides/week-XX.pptx         ← สไลด์
 │   ├── exams/exam-XX.json          ← แบบทดสอบ 10 ข้อ/สัปดาห์ (เขียนเอง ไม่ถูก generate ทับ)
+│   ├── SHEET/review_sheet_XX.html  ← แบบทบทวน 1 หน้า A4 ทุกสัปดาห์ (+ sheet.css, _template.html)
+│   ├── exam-prep.md                ← แนวทางเตรียมสอบ ครอบคลุมข้อสอบชุดที่ 1–3
+│   ├── calc-examples.md            ← ตัวอย่างโจทย์คำนวณชุดที่ 2–3 (10 หมวด)
 │   └── manifest.json               ← ดัชนีทั้งหมด
 ├── public/images/slides/           ← ภาพ preview สไลด์
+├── public/images/calc/             ← infographic หน้าโจทย์คำนวณ (scripts/make_calc_figures.py)
+├── public/images/weeks/            ← infographic รายสัปดาห์ (scripts/figures/wXX.py)
 └── scripts/
     ├── build-content.mjs           ← แปลง wiki (wikilink → ลิงก์เว็บ, callout, frontmatter)
-    └── check-content.mjs           ← ตรวจความครบถ้วน
+    ├── check-content.mjs           ← ตรวจความครบถ้วน
+    ├── make_calc_figures.py        ← สร้างภาพหน้าโจทย์คำนวณ (ต้องมีฟอนต์ Prompt)
+    ├── make_week_figures.py        ← สร้างภาพรายสัปดาห์ทั้งหมด: python scripts/make_week_figures.py [01 02 ...]
+    └── figures/                    ← _style.py (สไตล์กลาง) + wXX.py (ภาพของแต่ละสัปดาห์)
 ```
 
 ## การแก้ไขเนื้อหา
@@ -91,6 +111,10 @@ web/
 - **Wikilink → ลิงก์เว็บ** — `[[Week 07 - ...]]`, `[[PUE]]`, `[[Lab 05 - ...]]` กลายเป็นลิงก์ภายในอัตโนมัติ
 - **แบบทดสอบออนไลน์** — จับเวลา ตรวจอัตโนมัติ เฉลยพร้อมคำอธิบาย พิมพ์ผลได้ (เกณฑ์ผ่าน 50%)
 - **สไลด์** — ดาวน์โหลด .pptx + ภาพ preview ทุกสัปดาห์
+- **แบบทบทวน (Review Sheet)** — สรุป 1 หน้า A4 ทุกสัปดาห์ พิมพ์หรือบันทึกเป็น PDF ได้
+- **แนวทางเตรียมสอบ** — รูปแบบข้อสอบ กลยุทธ์ปรนัย แผนอ่าน 2 สัปดาห์ โน้ต 5 แผ่น และสิ่งที่ข้อสอบถามแยกตามข้อ (ชุดที่ 1–3)
+- **ตัวอย่างโจทย์คำนวณ** — โจทย์ชุดที่ 2–3 จัด 10 หมวด พร้อม infographic และสรุปคำตอบ
+- **Infographic รายสัปดาห์** — ภาพอธิบายแนวคิดในเนื้อหาแต่ละสัปดาห์
 - **Dark / Light Mode**, **ค้นหา (Ctrl+K)** ครอบคลุมบทเรียน หัวข้อ ใบงาน ศัพท์, **Responsive**
 
 ## เทคโนโลยี
