@@ -1,0 +1,128 @@
+{
+  "moduleId": "02",
+  "title": "Hardware & Software Ecosystems",
+  "titleTh": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "ลำดับชั้นการทำงานของคอมพิวเตอร์จากล่างขึ้นบนข้อใดถูกต้อง",
+      "choices": [
+        { "key": "ก", "text": "Application → OS → Firmware → Hardware" },
+        { "key": "ข", "text": "Hardware → Firmware → OS → Application" },
+        { "key": "ค", "text": "OS → Hardware → Application → Firmware" },
+        { "key": "ง", "text": "Firmware → Application → Hardware → OS" }
+      ],
+      "answer": "ข",
+      "explanation": "hardware ให้ทรัพยากร, firmware ควบคุมระดับต่ำ, OS จัดการทรัพยากร และ application แก้ปัญหาของผู้ใช้"
+    },
+    {
+      "id": 2,
+      "question": "ในลำดับชั้นหน่วยความจำ (memory hierarchy) หน่วยความจำใดเร็วที่สุดแต่มีขนาดเล็กที่สุด",
+      "choices": [
+        { "key": "ก", "text": "RAM" },
+        { "key": "ข", "text": "SSD" },
+        { "key": "ค", "text": "Register" },
+        { "key": "ง", "text": "Hard disk" }
+      ],
+      "answer": "ค",
+      "explanation": "ลำดับจากเร็ว/เล็ก/แพง ไปช้า/ใหญ่/ถูก คือ register → cache → RAM → storage"
+    },
+    {
+      "id": 3,
+      "question": "หน่วยประมวลผลใดเหมาะกับงานแบบขนานจำนวนมาก เช่น การประมวลผลกราฟิกและการฝึกโมเดล AI",
+      "choices": [
+        { "key": "ก", "text": "CPU" },
+        { "key": "ข", "text": "GPU" },
+        { "key": "ค", "text": "BIOS" },
+        { "key": "ง", "text": "DMA controller" }
+      ],
+      "answer": "ข",
+      "explanation": "CPU เหมาะงานทั่วไปและควบคุมลำดับ, GPU เหมาะงานขนาน, NPU เหมาะ inference ของ AI บนอุปกรณ์"
+    },
+    {
+      "id": 4,
+      "question": "NPU (Neural Processing Unit) ถูกออกแบบมาเพื่องานใดเป็นหลัก",
+      "choices": [
+        { "key": "ก", "text": "ควบคุมลำดับคำสั่งของระบบปฏิบัติการ" },
+        { "key": "ข", "text": "จัดเก็บข้อมูลถาวร" },
+        { "key": "ค", "text": "inference ของโมเดล AI บนอุปกรณ์อย่างประหยัดพลังงาน" },
+        { "key": "ง", "text": "แปลงสัญญาณเครือข่าย" }
+      ],
+      "answer": "ค",
+      "explanation": "NPU เร่งงาน inference ของ neural network บนอุปกรณ์ปลายทาง (on-device) โดยใช้พลังงานต่ำ"
+    },
+    {
+      "id": 5,
+      "question": "เมื่อแอปพลิเคชันต้องการเปิดไฟล์ กลไกใดที่แอปใช้ร้องขอบริการจากระบบปฏิบัติการ",
+      "choices": [
+        { "key": "ก", "text": "System call" },
+        { "key": "ข", "text": "Compiler" },
+        { "key": "ค", "text": "Firmware update" },
+        { "key": "ง", "text": "Cache miss" }
+      ],
+      "answer": "ก",
+      "explanation": "application เรียก system call → OS → driver → storage/CPU เป็นเส้นทางที่คำสั่งเดินทางผ่านชั้นต่าง ๆ"
+    },
+    {
+      "id": 6,
+      "question": "ข้อใดอธิบายความแตกต่างระหว่าง container กับ virtual machine (VM) ได้ถูกต้อง",
+      "choices": [
+        { "key": "ก", "text": "container จำลองฮาร์ดแวร์ทั้งเครื่อง ส่วน VM แชร์ kernel" },
+        { "key": "ข", "text": "container เป็น process ที่แยกสภาพแวดล้อมและแชร์ kernel ของโฮสต์ จึงเบากว่า VM" },
+        { "key": "ค", "text": "ทั้งสองอย่างเหมือนกันทุกประการ" },
+        { "key": "ง", "text": "VM ไม่ต้องการระบบปฏิบัติการ" }
+      ],
+      "answer": "ข",
+      "explanation": "container แพ็กแอปกับ dependencies และแยก process โดยแชร์ kernel ของโฮสต์ จึงเบาและเริ่มเร็วกว่า VM ที่จำลองทั้งเครื่อง"
+    },
+    {
+      "id": 7,
+      "question": "Edge Computing หมายถึงแนวคิดใด",
+      "choices": [
+        { "key": "ก", "text": "ย้ายการประมวลผลทั้งหมดไปไว้ที่ cloud ส่วนกลาง" },
+        { "key": "ข", "text": "ย้ายการประมวลผลเข้าใกล้แหล่งกำเนิดข้อมูล/อุปกรณ์ปลายทาง" },
+        { "key": "ค", "text": "การใช้การ์ดจอหลายตัวในเครื่องเดียว" },
+        { "key": "ง", "text": "การเขียนโปรแกรมด้วยภาษาระดับต่ำ" }
+      ],
+      "answer": "ข",
+      "explanation": "edge computing ประมวลผลใกล้แหล่งข้อมูลเพื่อลด latency และลดปริมาณข้อมูลที่ต้องส่งขึ้น cloud"
+    },
+    {
+      "id": 8,
+      "question": "ประโยชน์หลักของการประมวลผล AI บน edge (เช่น บนอุปกรณ์เอง) คือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "ลด latency และลดการส่งข้อมูลบางส่วนขึ้น cloud" },
+        { "key": "ข", "text": "ไม่ต้องคำนึงถึงพลังงานและความร้อนอีกต่อไป" },
+        { "key": "ค", "text": "ทำให้โมเดลมีขนาดใหญ่ขึ้นได้ไม่จำกัด" },
+        { "key": "ง", "text": "ไม่ต้องอัปเดตซอฟต์แวร์" }
+      ],
+      "answer": "ก",
+      "explanation": "edge AI ลด latency และข้อมูลที่ส่งออก แต่ต้องคุมพลังงาน ความร้อน และการอัปเดตซอฟต์แวร์ให้ดี"
+    },
+    {
+      "id": 9,
+      "question": "Green Computing เกี่ยวข้องกับเรื่องใดมากที่สุด",
+      "choices": [
+        { "key": "ก", "text": "การใช้สีเขียวในหน้าจอเพื่อถนอมสายตา" },
+        { "key": "ข", "text": "การออกแบบระบบโดยคำนึงถึงพลังงานและผลกระทบสิ่งแวดล้อมตั้งแต่ต้น" },
+        { "key": "ค", "text": "การปลูกต้นไม้รอบศูนย์ข้อมูล" },
+        { "key": "ง", "text": "การใช้ภาษาโปรแกรมที่มีไอคอนสีเขียว" }
+      ],
+      "answer": "ข",
+      "explanation": "green computing ทำให้การออกแบบฮาร์ดแวร์/ซอฟต์แวร์ต้องคิดเรื่องประสิทธิภาพพลังงานและความยั่งยืนตั้งแต่ขั้นออกแบบ"
+    },
+    {
+      "id": 10,
+      "question": "Heterogeneous Computing หมายถึงข้อใด",
+      "choices": [
+        { "key": "ก", "text": "การใช้ CPU หลายตัวที่เหมือนกันทุกประการ" },
+        { "key": "ข", "text": "การใช้หน่วยประมวลผลต่างชนิด (CPU + GPU + NPU) ร่วมกันตามความเหมาะสมของงาน" },
+        { "key": "ค", "text": "การเขียนโปรแกรมหลายภาษาในไฟล์เดียว" },
+        { "key": "ง", "text": "การใช้ระบบปฏิบัติการหลายตัวพร้อมกัน" }
+      ],
+      "answer": "ข",
+      "explanation": "heterogeneous computing กระจายงานให้หน่วยประมวลผลที่เหมาะสมที่สุด เช่น CPU ควบคุมลำดับ, GPU งานขนาน, NPU งาน inference"
+    }
+  ]
+}

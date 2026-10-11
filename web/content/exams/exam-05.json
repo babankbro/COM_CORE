@@ -1,0 +1,128 @@
+{
+  "moduleId": "05",
+  "title": "Database & Data Management",
+  "titleTh": "ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "ในฐานข้อมูลเชิงสัมพันธ์ คีย์ที่ใช้ระบุแถวในตารางได้อย่างไม่ซ้ำกันเรียกว่าอะไร",
+      "choices": [
+        { "key": "ก", "text": "Foreign key" },
+        { "key": "ข", "text": "Primary key" },
+        { "key": "ค", "text": "Index key" },
+        { "key": "ง", "text": "Vector key" }
+      ],
+      "answer": "ข",
+      "explanation": "primary key ระบุแถวอย่างไม่ซ้ำ ส่วน foreign key อ้างอิง primary key ของอีกตารางเพื่อสร้างความสัมพันธ์"
+    },
+    {
+      "id": 2,
+      "question": "ตาราง Enrollment ที่เก็บ student_id และ course_id เพื่อเชื่อมตาราง Student กับ Course ใช้คีย์ชนิดใดในการอ้างอิง",
+      "choices": [
+        { "key": "ก", "text": "Foreign key" },
+        { "key": "ข", "text": "Unique constraint" },
+        { "key": "ค", "text": "Checksum" },
+        { "key": "ง", "text": "Hash key" }
+      ],
+      "answer": "ก",
+      "explanation": "student_id และ course_id ใน Enrollment เป็น foreign key ที่ชี้ไปยัง primary key ของ Student และ Course"
+    },
+    {
+      "id": 3,
+      "question": "คำสั่ง SQL ใดใช้ดึงข้อมูลจากตาราง",
+      "choices": [
+        { "key": "ก", "text": "INSERT" },
+        { "key": "ข", "text": "SELECT" },
+        { "key": "ค", "text": "DROP" },
+        { "key": "ง", "text": "COMMIT" }
+      ],
+      "answer": "ข",
+      "explanation": "SELECT ใช้ query ข้อมูล โดยมักใช้ร่วมกับ WHERE, JOIN และ GROUP BY"
+    },
+    {
+      "id": 4,
+      "question": "คำสั่ง SQL ใดใช้รวมข้อมูลจากสองตารางที่มีความสัมพันธ์กัน",
+      "choices": [
+        { "key": "ก", "text": "GROUP BY" },
+        { "key": "ข", "text": "ORDER BY" },
+        { "key": "ค", "text": "JOIN" },
+        { "key": "ง", "text": "LIMIT" }
+      ],
+      "answer": "ค",
+      "explanation": "JOIN เชื่อมแถวจากตารางต่าง ๆ ตามเงื่อนไขของคีย์ที่สัมพันธ์กัน"
+    },
+    {
+      "id": 5,
+      "question": "ตัว \"A\" ใน ACID หมายถึงคุณสมบัติใดของธุรกรรม (transaction)",
+      "choices": [
+        { "key": "ก", "text": "Availability — พร้อมใช้งานตลอดเวลา" },
+        { "key": "ข", "text": "Atomicity — ธุรกรรมต้องสำเร็จทั้งหมดหรือไม่เกิดขึ้นเลย" },
+        { "key": "ค", "text": "Accuracy — ข้อมูลต้องถูกต้อง 100%" },
+        { "key": "ง", "text": "Asynchronous — ทำงานแบบไม่รอผล" }
+      ],
+      "answer": "ข",
+      "explanation": "ACID = Atomicity, Consistency, Isolation, Durability — ทำให้ธุรกรรมเช่นการโอนเงินเชื่อถือได้"
+    },
+    {
+      "id": 6,
+      "question": "คุณสมบัติ Durability ใน ACID หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "ข้อมูลที่ commit แล้วจะไม่สูญหายแม้ระบบล่ม" },
+        { "key": "ข", "text": "ธุรกรรมแต่ละรายการไม่รบกวนกัน" },
+        { "key": "ค", "text": "ฐานข้อมูลทำงานได้บนทุกระบบปฏิบัติการ" },
+        { "key": "ง", "text": "ข้อมูลถูกบีบอัดให้มีขนาดเล็ก" }
+      ],
+      "answer": "ก",
+      "explanation": "durability รับประกันว่าผลของธุรกรรมที่ยืนยันแล้วคงอยู่ถาวร ส่วนข้อ ข คือ isolation"
+    },
+    {
+      "id": 7,
+      "question": "Normalization ในการออกแบบฐานข้อมูลมีจุดประสงค์หลักเพื่ออะไร",
+      "choices": [
+        { "key": "ก", "text": "ทำให้ฐานข้อมูลมีขนาดไฟล์ใหญ่ขึ้น" },
+        { "key": "ข", "text": "ลดความซ้ำซ้อนของข้อมูลและป้องกันความไม่สอดคล้อง" },
+        { "key": "ค", "text": "เข้ารหัสข้อมูลทั้งหมด" },
+        { "key": "ง", "text": "แปลงข้อมูลเป็นเวกเตอร์" }
+      ],
+      "answer": "ข",
+      "explanation": "normalization จัดโครงสร้างตารางเพื่อลด redundancy และ anomaly ในการเพิ่ม/ลบ/แก้ไขข้อมูล"
+    },
+    {
+      "id": 8,
+      "question": "Vector database เหมาะกับงานใดมากที่สุด",
+      "choices": [
+        { "key": "ก", "text": "เก็บยอดเงินในบัญชีธนาคาร" },
+        { "key": "ข", "text": "ค้นหาเอกสารตาม \"ความหมาย\" ด้วย embedding และ similarity search สำหรับ RAG" },
+        { "key": "ค", "text": "เก็บไฟล์วิดีโอขนาดใหญ่" },
+        { "key": "ง", "text": "จัดการสิทธิ์ผู้ใช้ในระบบปฏิบัติการ" }
+      ],
+      "answer": "ข",
+      "explanation": "vector database เก็บ embedding เพื่อค้นหาความหมายใกล้เคียง (เช่น cosine similarity) ไม่ใช่แค่คำตรงตัว จึงสำคัญกับ RAG และ LLM"
+    },
+    {
+      "id": 9,
+      "question": "Embedding ในบริบทของ AI/ฐานข้อมูลหมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "การฝังรูปภาพลงในเอกสาร" },
+        { "key": "ข", "text": "การแปลงข้อความ/ข้อมูลให้เป็นเวกเตอร์ตัวเลขที่แทนความหมาย" },
+        { "key": "ค", "text": "การบีบอัดไฟล์ฐานข้อมูล" },
+        { "key": "ง", "text": "การเขียน SQL ไว้ในโค้ดโปรแกรม" }
+      ],
+      "answer": "ข",
+      "explanation": "embedding แทนความหมายของข้อมูลในเชิงเวกเตอร์ ทำให้ข้อมูลที่ความหมายใกล้กันอยู่ใกล้กันในปริภูมิเวกเตอร์"
+    },
+    {
+      "id": 10,
+      "question": "ฐานข้อมูล NoSQL มีจุดเด่นอย่างไรเมื่อเทียบกับ RDBMS",
+      "choices": [
+        { "key": "ก", "text": "บังคับ schema ตายตัวเสมอ" },
+        { "key": "ข", "text": "ยืดหยุ่นด้าน schema และขยายแนวนอน (scale out) ได้ง่าย เหมาะกับข้อมูลขนาดใหญ่/หลากหลาย" },
+        { "key": "ค", "text": "ใช้ได้เฉพาะกับข้อมูลตัวเลข" },
+        { "key": "ง", "text": "ไม่สามารถทำงานบน cloud ได้" }
+      ],
+      "answer": "ข",
+      "explanation": "NoSQL (document, key-value, column, graph) ออกแบบเพื่อ scale และความยืดหยุ่น โดยแลกกับความเข้มงวดของ schema และ transaction บางส่วน"
+    }
+  ]
+}

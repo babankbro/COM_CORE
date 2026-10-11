@@ -1,0 +1,128 @@
+{
+  "moduleId": "14",
+  "title": "Applied System Engineering & DevOps",
+  "titleTh": "โครงงานประยุกต์และวิศวกรรมระบบ DevOps",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "SDLC (Software Development Life Cycle) ครอบคลุมขั้นตอนใดบ้าง",
+      "choices": [
+        { "key": "ก", "text": "เฉพาะการเขียนโค้ด" },
+        { "key": "ข", "text": "requirement → design → implementation → testing → deployment → maintenance" },
+        { "key": "ค", "text": "เฉพาะการทดสอบและ deploy" },
+        { "key": "ง", "text": "เฉพาะการออกแบบ UI" }
+      ],
+      "answer": "ข",
+      "explanation": "SDLC ทำให้การพัฒนาระบบมีขั้นตอนตั้งแต่เก็บความต้องการจนถึงบำรุงรักษา"
+    },
+    {
+      "id": 2,
+      "question": "แนวคิด Agile แตกต่างจาก Waterfall อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "Agile ส่งมอบเป็นรอบสั้น ๆ (iteration) และปรับตามฟีดแบ็ก ส่วน Waterfall ทำทีละขั้นตอนจนจบ" },
+        { "key": "ข", "text": "Agile ไม่มีการทดสอบ" },
+        { "key": "ค", "text": "Waterfall เร็วกว่าเสมอ" },
+        { "key": "ง", "text": "ทั้งสองเหมือนกัน" }
+      ],
+      "answer": "ก",
+      "explanation": "Agile เน้นความคล่องตัว ส่งมอบคุณค่าเร็วและปรับตามการเปลี่ยนแปลง"
+    },
+    {
+      "id": 3,
+      "question": "DevOps มีเป้าหมายหลักอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "ลดช่องว่างระหว่างทีมพัฒนาและทีมปฏิบัติการด้วย automation, feedback และ ownership ร่วม" },
+        { "key": "ข", "text": "แยกทีม Dev และ Ops ให้ห่างกันมากขึ้น" },
+        { "key": "ค", "text": "ยกเลิกการทดสอบซอฟต์แวร์" },
+        { "key": "ง", "text": "ใช้เฉพาะกับฮาร์ดแวร์" }
+      ],
+      "answer": "ก",
+      "explanation": "DevOps เป็นวัฒนธรรมและแนวปฏิบัติที่ทลายกำแพง silo ด้วย collaboration, automation, CI/CD และ monitoring"
+    },
+    {
+      "id": 4,
+      "question": "CI (Continuous Integration) หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "รวมโค้ดเข้า repository บ่อย ๆ และให้ระบบ build/test อัตโนมัติทุก commit" },
+        { "key": "ข", "text": "รวมโค้ดปีละครั้ง" },
+        { "key": "ค", "text": "ติดตั้งโปรแกรมบนเครื่องผู้ใช้" },
+        { "key": "ง", "text": "ตรวจสอบสเปกฮาร์ดแวร์" }
+      ],
+      "answer": "ก",
+      "explanation": "CI ทำให้พบข้อผิดพลาดเร็ว ส่วน CD (Continuous Delivery/Deployment) ส่งมอบซอฟต์แวร์ที่ผ่าน test ไปยัง production อย่างอัตโนมัติ"
+    },
+    {
+      "id": 5,
+      "question": "ประโยชน์ของ CI/CD pipeline เมื่อเทียบกับการ deploy แบบ manual คือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "ทำให้ build-test-deploy ทำซ้ำได้และลดความเสี่ยงจากความผิดพลาดของมนุษย์" },
+        { "key": "ข", "text": "ไม่ต้องเขียน test" },
+        { "key": "ค", "text": "ทำให้โค้ดไม่มีบั๊กเลย" },
+        { "key": "ง", "text": "ไม่ต้องใช้ version control" }
+      ],
+      "answer": "ก",
+      "explanation": "pipeline ทำให้ทุก commit ผ่าน test ก่อน deploy และกระบวนการส่งมอบเป็นมาตรฐานเดียวกัน"
+    },
+    {
+      "id": 6,
+      "question": "Git workflow ขั้นต่ำสำหรับการทำงานเป็นทีมควรมีขั้นตอนใด",
+      "choices": [
+        { "key": "ก", "text": "issue/task → branch → commit → pull request/review → release tag" },
+        { "key": "ข", "text": "ทุกคน commit ตรงเข้า main โดยไม่ review" },
+        { "key": "ค", "text": "ส่งโค้ดทางอีเมลให้กัน" },
+        { "key": "ง", "text": "เก็บโค้ดใน USB แล้วส่งต่อ" }
+      ],
+      "answer": "ก",
+      "explanation": "การใช้ branch และ pull request ทำให้ review โค้ดได้ก่อนรวมและติดตามงานผ่าน issue"
+    },
+    {
+      "id": 7,
+      "question": "เหตุใด container จึงช่วยงาน DevOps",
+      "choices": [
+        { "key": "ก", "text": "ทำให้ส่งมอบ environment ได้ชัดเจน รันเหมือนกันทั้งเครื่อง dev, test และ production" },
+        { "key": "ข", "text": "ทำให้ไม่ต้องใช้เซิร์ฟเวอร์" },
+        { "key": "ค", "text": "ทำให้โค้ดเขียนเองได้" },
+        { "key": "ง", "text": "ทำให้ไม่ต้องมี pipeline" }
+      ],
+      "answer": "ก",
+      "explanation": "container แพ็กแอปกับ dependencies แก้ปัญหา \"มันรันได้บนเครื่องผม\" และทำงานร่วมกับ pipeline ได้ดี"
+    },
+    {
+      "id": 8,
+      "question": "MLOps แตกต่างจาก AIOps อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "MLOps คือการนำแนวคิด DevOps มาใช้กับวงจรชีวิตโมเดล ML ส่วน AIOps คือการใช้ AI ช่วยงานปฏิบัติการ IT (เช่น ตรวจจับความผิดปกติ)" },
+        { "key": "ข", "text": "ทั้งสองคือสิ่งเดียวกัน" },
+        { "key": "ค", "text": "AIOps ใช้ฝึกโมเดล ส่วน MLOps ใช้ดูแลเซิร์ฟเวอร์" },
+        { "key": "ง", "text": "MLOps ใช้เฉพาะกับหุ่นยนต์" }
+      ],
+      "answer": "ก",
+      "explanation": "MLOps = operations สำหรับ ML, AIOps = AI สำหรับ IT operations"
+    },
+    {
+      "id": 9,
+      "question": "ในการวางแผน capstone project ขั้นตอนใดช่วยเปลี่ยน \"ไอเดีย\" ให้เป็น \"แผนงาน\" ที่ทำได้จริง",
+      "choices": [
+        { "key": "ก", "text": "แตกเป็น requirement, architecture, backlog, task และ acceptance criteria" },
+        { "key": "ข", "text": "เริ่มเขียนโค้ดทันทีโดยไม่วางแผน" },
+        { "key": "ค", "text": "รอให้ AI ทำให้ทั้งหมด" },
+        { "key": "ง", "text": "ซื้อฮาร์ดแวร์ให้ครบก่อน" }
+      ],
+      "answer": "ก",
+      "explanation": "การกำหนด acceptance criteria ทำให้รู้ว่างานแต่ละชิ้น \"เสร็จ\" เมื่อใด และวางแผน sprint ได้"
+    },
+    {
+      "id": 10,
+      "question": "Monitoring & feedback loop ใน DevOps มีความสำคัญอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "เฝ้าระวังประสิทธิภาพระบบแบบเรียลไทม์และนำข้อมูลกลับมาพัฒนาต่อ" },
+        { "key": "ข", "text": "ใช้เฉพาะตอนระบบล่มแล้ว" },
+        { "key": "ค", "text": "ไม่จำเป็นหากมี CI/CD" },
+        { "key": "ง", "text": "ใช้เพื่อลงโทษนักพัฒนา" }
+      ],
+      "answer": "ก",
+      "explanation": "monitoring ปิดวงจร DevOps ทำให้ทีมเห็นผลของการเปลี่ยนแปลงและปรับปรุงอย่างต่อเนื่อง"
+    }
+  ]
+}

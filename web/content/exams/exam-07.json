@@ -1,0 +1,128 @@
+{
+  "moduleId": "07",
+  "title": "Data Center & Cloud Infrastructure",
+  "titleTh": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "องค์ประกอบของ data center ข้อใดครบถ้วนที่สุด",
+      "choices": [
+        { "key": "ก", "text": "compute และ storage เท่านั้น" },
+        { "key": "ข", "text": "compute, storage, network, power, cooling และ physical security" },
+        { "key": "ค", "text": "เฉพาะเซิร์ฟเวอร์และสายแลน" },
+        { "key": "ง", "text": "เฉพาะซอฟต์แวร์ virtualization" }
+      ],
+      "answer": "ข",
+      "explanation": "data center ต้องรวมทุกองค์ประกอบเพื่อให้บริการต่อเนื่อง รวมถึง redundancy, monitoring และ automation"
+    },
+    {
+      "id": 2,
+      "question": "PUE (Power Usage Effectiveness) คำนวณอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "พลังงาน IT ÷ พลังงานรวมของ data center" },
+        { "key": "ข", "text": "พลังงานรวมของ data center ÷ พลังงานที่อุปกรณ์ IT ใช้" },
+        { "key": "ค", "text": "จำนวนเซิร์ฟเวอร์ ÷ จำนวน rack" },
+        { "key": "ง", "text": "พลังงานระบายความร้อน × จำนวนชั้น" }
+      ],
+      "answer": "ข",
+      "explanation": "PUE = Total facility energy / IT equipment energy ยิ่งใกล้ 1.0 ยิ่งมีประสิทธิภาพ"
+    },
+    {
+      "id": 3,
+      "question": "data center ใช้พลังงานรวม 1,500 kW โดยอุปกรณ์ IT ใช้ 1,000 kW ค่า PUE เท่าใด",
+      "choices": [
+        { "key": "ก", "text": "0.67" },
+        { "key": "ข", "text": "1.0" },
+        { "key": "ค", "text": "1.5" },
+        { "key": "ง", "text": "2.5" }
+      ],
+      "answer": "ค",
+      "explanation": "PUE = 1500 / 1000 = 1.5 หมายความว่าทุก 1 หน่วยพลังงาน IT ต้องใช้พลังงานเพิ่มอีก 0.5 สำหรับ cooling และอื่น ๆ"
+    },
+    {
+      "id": 4,
+      "question": "Docker image แตกต่างจาก container อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "image คือ template แบบอ่านอย่างเดียว ส่วน container คือ instance ที่กำลังทำงานจาก image" },
+        { "key": "ข", "text": "container คือ template ส่วน image คือ instance" },
+        { "key": "ค", "text": "ทั้งสองคือสิ่งเดียวกัน" },
+        { "key": "ง", "text": "image ใช้ได้เฉพาะบน Windows" }
+      ],
+      "answer": "ก",
+      "explanation": "image ถูกสร้างจาก Dockerfile เป็นชั้น (layer) และ container คือ runtime instance ของ image"
+    },
+    {
+      "id": 5,
+      "question": "Kubernetes มีบทบาทอะไรในระบบ container",
+      "choices": [
+        { "key": "ก", "text": "เป็นภาษาโปรแกรมสำหรับเขียน container" },
+        { "key": "ข", "text": "เป็นระบบ orchestration จัดการ deploy, scale และ recover container จำนวนมาก" },
+        { "key": "ค", "text": "เป็นฐานข้อมูลสำหรับเก็บ image" },
+        { "key": "ง", "text": "เป็นระบบระบายความร้อนของเซิร์ฟเวอร์" }
+      ],
+      "answer": "ข",
+      "explanation": "Kubernetes จัดการ workload แบบ container ข้ามหลายเครื่อง ทั้ง scheduling, scaling, self-healing และ service discovery"
+    },
+    {
+      "id": 6,
+      "question": "Virtualization ช่วยให้เกิดประโยชน์ใดกับ data center",
+      "choices": [
+        { "key": "ก", "text": "รันหลายระบบปฏิบัติการ/เซิร์ฟเวอร์เสมือนบนฮาร์ดแวร์เครื่องเดียว เพิ่มการใช้ทรัพยากร" },
+        { "key": "ข", "text": "ทำให้ไม่ต้องใช้ไฟฟ้า" },
+        { "key": "ค", "text": "ลดจำนวนผู้ใช้ที่เข้าถึงได้" },
+        { "key": "ง", "text": "ทำให้เครือข่ายช้าลงโดยตั้งใจ" }
+      ],
+      "answer": "ก",
+      "explanation": "hypervisor สร้าง VM หลายตัวบนเครื่องเดียว ลดต้นทุนและเพิ่ม utilization ของฮาร์ดแวร์"
+    },
+    {
+      "id": 7,
+      "question": "Sovereign cloud หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "cloud ที่ไม่มีค่าใช้จ่าย" },
+        { "key": "ข", "text": "cloud ที่ข้อมูลและการดำเนินงานอยู่ภายใต้เขตอำนาจกฎหมาย/การควบคุมของประเทศนั้น ๆ" },
+        { "key": "ค", "text": "cloud ที่ใช้ได้เฉพาะเกม" },
+        { "key": "ง", "text": "cloud ที่ติดตั้งในอวกาศ" }
+      ],
+      "answer": "ข",
+      "explanation": "sovereign cloud ตอบโจทย์ data residency และกฎหมายคุ้มครองข้อมูล เช่น PDPA/GDPR แตกต่างจาก public cloud ทั่วไป"
+    },
+    {
+      "id": 8,
+      "question": "เหตุใด workload AI ที่ใช้ GPU จำนวนมากจึงทำให้ liquid cooling กลายเป็นประเด็นวิศวกรรมสำคัญ",
+      "choices": [
+        { "key": "ก", "text": "เพราะ GPU ไม่ร้อน" },
+        { "key": "ข", "text": "เพราะ rack density และความร้อนสูงขึ้นจน air cooling ไม่เพียงพอ" },
+        { "key": "ค", "text": "เพราะน้ำราคาถูกกว่าอากาศ" },
+        { "key": "ง", "text": "เพราะกฎหมายบังคับให้ใช้น้ำ" }
+      ],
+      "answer": "ข",
+      "explanation": "rack สำหรับ AI อาจใช้พลังงานหลายสิบ kW ต่อ rack ทำให้ต้องระบายความร้อนด้วยของเหลวที่มีประสิทธิภาพสูงกว่าอากาศ"
+    },
+    {
+      "id": 9,
+      "question": "รูปแบบบริการ cloud ที่ผู้ให้บริการดูแลโครงสร้างพื้นฐานและ runtime ให้ ผู้ใช้เพียง deploy โค้ดของตน คือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "IaaS" },
+        { "key": "ข", "text": "PaaS" },
+        { "key": "ค", "text": "SaaS" },
+        { "key": "ง", "text": "On-premise" }
+      ],
+      "answer": "ข",
+      "explanation": "IaaS ให้ VM/เครือข่าย, PaaS ให้แพลตฟอร์มรันโค้ด, SaaS ให้ซอฟต์แวร์สำเร็จรูปใช้งานผ่านเว็บ"
+    },
+    {
+      "id": 10,
+      "question": "Hyperscale data center มีลักษณะเด่นอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "มีเซิร์ฟเวอร์ไม่เกิน 10 เครื่อง" },
+        { "key": "ข", "text": "ขยายได้ระดับหลายหมื่นถึงแสนเซิร์ฟเวอร์ ด้วยการออกแบบมาตรฐานและ automation สูง" },
+        { "key": "ค", "text": "ใช้เฉพาะในมหาวิทยาลัย" },
+        { "key": "ง", "text": "ไม่ต้องมีระบบระบายความร้อน" }
+      ],
+      "answer": "ข",
+      "explanation": "hyperscale (เช่นของผู้ให้บริการ cloud รายใหญ่) เน้น scale มหาศาล ความซ้ำซ้อน และการจัดการอัตโนมัติ"
+    }
+  ]
+}

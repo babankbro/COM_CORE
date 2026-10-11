@@ -35,3 +35,10 @@ vault/
 - Query: ask any question: Claude reads index first, then drills in
 - Lint: say "lint the wiki" to run a health check
 - Archive: move cold sources to .archive/ to keep .raw/ clean
+
+## Website (web/)
+
+- `web/` is a Next.js 14 e-learning site (same style as EN-012-314-AI) generated from this vault
+- `cd web && npm run content` rebuilds `web/content/` from `wiki/` and `slides/`; `npm run check` validates
+- Quizzes live in `web/content/exams/exam-XX.json` and are hand-written (not regenerated)
+- Week metadata (titles, CLO, icons) in `web/lib/modules-data.ts`; see `web/README.md`

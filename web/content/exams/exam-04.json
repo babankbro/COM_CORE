@@ -1,0 +1,128 @@
+{
+  "moduleId": "04",
+  "title": "Algorithms & Programming Paradigms",
+  "titleTh": "อัลกอริทึมและการเขียนโปรแกรม",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "ข้อใดคือคุณสมบัติที่ \"อัลกอริทึม\" ต้องมี",
+      "choices": [
+        { "key": "ก", "text": "ต้องเขียนด้วยภาษา Python เท่านั้น" },
+        { "key": "ข", "text": "เป็นขั้นตอนชัดเจน มีอินพุต เอาต์พุต และต้องจบได้" },
+        { "key": "ค", "text": "ต้องทำงานได้เร็วกว่า 1 วินาที" },
+        { "key": "ง", "text": "ต้องสร้างโดย AI" }
+      ],
+      "answer": "ข",
+      "explanation": "อัลกอริทึมคือขั้นตอนที่ชัดเจน มีอินพุต/เอาต์พุต และสิ้นสุดได้ ไม่ผูกกับภาษาใดภาษาหนึ่ง"
+    },
+    {
+      "id": 2,
+      "question": "การแตกปัญหาใหญ่ออกเป็นปัญหาย่อยที่จัดการได้ เป็นองค์ประกอบใดของ Computational Thinking",
+      "choices": [
+        { "key": "ก", "text": "Abstraction" },
+        { "key": "ข", "text": "Pattern recognition" },
+        { "key": "ค", "text": "Decomposition" },
+        { "key": "ง", "text": "Debugging" }
+      ],
+      "answer": "ค",
+      "explanation": "decomposition คือการแยกปัญหาเป็นส่วนย่อย ส่วน abstraction คือการตัดรายละเอียดที่ไม่จำเป็นออก"
+    },
+    {
+      "id": 3,
+      "question": "Big-O Notation ใช้บอกอะไร",
+      "choices": [
+        { "key": "ก", "text": "ขนาดของไฟล์โปรแกรม" },
+        { "key": "ข", "text": "อัตราการเติบโตของเวลา/ทรัพยากรที่ใช้เมื่อขนาดอินพุตเพิ่มขึ้น" },
+        { "key": "ค", "text": "จำนวนบรรทัดของโค้ด" },
+        { "key": "ง", "text": "เวอร์ชันของภาษาโปรแกรม" }
+      ],
+      "answer": "ข",
+      "explanation": "Big-O ช่วยคิดว่าเมื่อข้อมูลใหญ่ขึ้น โปรแกรมจะช้าลงอย่างไร โดยไม่ขึ้นกับเครื่องหรือภาษา"
+    },
+    {
+      "id": 4,
+      "question": "Binary search บนข้อมูลที่เรียงลำดับแล้ว n ตัว มีความซับซ้อนเชิงเวลาเท่าใด",
+      "choices": [
+        { "key": "ก", "text": "O(1)" },
+        { "key": "ข", "text": "O(log n)" },
+        { "key": "ค", "text": "O(n)" },
+        { "key": "ง", "text": "O(n²)" }
+      ],
+      "answer": "ข",
+      "explanation": "binary search ตัดช่วงค้นหาครึ่งหนึ่งทุกรอบจึงเป็น O(log n) ส่วน linear search เป็น O(n)"
+    },
+    {
+      "id": 5,
+      "question": "อัลกอริทึมใดต่อไปนี้มีความซับซ้อนสูงที่สุดเมื่อ n มีค่ามาก",
+      "choices": [
+        { "key": "ก", "text": "O(n log n)" },
+        { "key": "ข", "text": "O(n)" },
+        { "key": "ค", "text": "O(n²)" },
+        { "key": "ง", "text": "O(log n)" }
+      ],
+      "answer": "ค",
+      "explanation": "ลำดับจากน้อยไปมาก: O(1) < O(log n) < O(n) < O(n log n) < O(n²)"
+    },
+    {
+      "id": 6,
+      "question": "หาค่ามากที่สุดในรายการ n ตัวโดยอ่านทีละตัวครั้งเดียว มีความซับซ้อนเท่าใด",
+      "choices": [
+        { "key": "ก", "text": "O(1)" },
+        { "key": "ข", "text": "O(log n)" },
+        { "key": "ค", "text": "O(n)" },
+        { "key": "ง", "text": "O(n²)" }
+      ],
+      "answer": "ค",
+      "explanation": "ต้องตรวจทุกตัวอย่างน้อยหนึ่งครั้ง จึงเป็นเชิงเส้น O(n)"
+    },
+    {
+      "id": 7,
+      "question": "กระบวนทัศน์การเขียนโปรแกรมใดจัดระเบียบโค้ดเป็นวัตถุที่รวมข้อมูล (attribute) และพฤติกรรม (method) ไว้ด้วยกัน",
+      "choices": [
+        { "key": "ก", "text": "Object-Oriented Programming (OOP)" },
+        { "key": "ข", "text": "Functional Programming" },
+        { "key": "ค", "text": "Assembly" },
+        { "key": "ง", "text": "Markup" }
+      ],
+      "answer": "ก",
+      "explanation": "OOP จัดกลุ่มข้อมูลและพฤติกรรมเป็น class/object ส่วน functional เน้นฟังก์ชันบริสุทธิ์และหลีกเลี่ยง state ที่เปลี่ยนแปลง"
+    },
+    {
+      "id": 8,
+      "question": "วิธีใช้ AI coding assistant อย่างรับผิดชอบคือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "คัดลอกโค้ดจาก AI ไปส่งทันทีโดยไม่ต้องรัน" },
+        { "key": "ข", "text": "เขียนโจทย์ให้ชัด ขอ test cases และคำอธิบาย complexity แล้วรันและตรวจสอบเอง" },
+        { "key": "ค", "text": "ให้ AI ตัดสินใจแทนทุกอย่างเพราะถูกเสมอ" },
+        { "key": "ง", "text": "ห้ามใช้ AI ในทุกกรณี" }
+      ],
+      "answer": "ข",
+      "explanation": "AI ช่วยเร่งงานได้ แต่ผู้เรียนยังต้องตรวจตรรกะ ทดสอบ และรับผิดชอบผลลัพธ์"
+    },
+    {
+      "id": 9,
+      "question": "เครื่องมือใดใช้ติดตามประวัติการเปลี่ยนแปลงของโค้ดและทำงานร่วมกันเป็นทีม",
+      "choices": [
+        { "key": "ก", "text": "Git (Version Control)" },
+        { "key": "ข", "text": "Logisim" },
+        { "key": "ค", "text": "Excel" },
+        { "key": "ง", "text": "Wireshark" }
+      ],
+      "answer": "ก",
+      "explanation": "Git เป็นระบบ version control ที่ใช้ commit, branch และ merge เพื่อจัดการประวัติโค้ดและการทำงานร่วมกัน"
+    },
+    {
+      "id": 10,
+      "question": "Flowchart ใช้สัญลักษณ์รูปใดแทนการตัดสินใจ (decision)",
+      "choices": [
+        { "key": "ก", "text": "สี่เหลี่ยมผืนผ้า" },
+        { "key": "ข", "text": "สี่เหลี่ยมข้าวหลามตัด" },
+        { "key": "ค", "text": "วงรี" },
+        { "key": "ง", "text": "สี่เหลี่ยมด้านขนาน" }
+      ],
+      "answer": "ข",
+      "explanation": "ข้าวหลามตัด = decision, สี่เหลี่ยมผืนผ้า = process, วงรี = start/end, สี่เหลี่ยมด้านขนาน = input/output"
+    }
+  ]
+}

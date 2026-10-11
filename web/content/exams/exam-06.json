@@ -1,0 +1,128 @@
+{
+  "moduleId": "06",
+  "title": "Computer Networks & Internet",
+  "titleTh": "เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "TCP/IP model แบ่งการทำงานของเครือข่ายเป็นชั้นใดบ้าง (เรียงจากล่างขึ้นบน)",
+      "choices": [
+        { "key": "ก", "text": "Link → Internet → Transport → Application" },
+        { "key": "ข", "text": "Application → Transport → Internet → Link" },
+        { "key": "ค", "text": "Physical → Session → Presentation → Application" },
+        { "key": "ง", "text": "Internet → Link → Application → Transport" }
+      ],
+      "answer": "ก",
+      "explanation": "TCP/IP มี 4 ชั้น: link, internet, transport, application ส่วน OSI มี 7 ชั้น"
+    },
+    {
+      "id": 2,
+      "question": "DNS ทำหน้าที่อะไร",
+      "choices": [
+        { "key": "ก", "text": "เข้ารหัสข้อมูลระหว่างทาง" },
+        { "key": "ข", "text": "แปลงชื่อโดเมน (เช่น ksu.ac.th) เป็น IP address" },
+        { "key": "ค", "text": "กำหนดเส้นทางของ packet ผ่าน router" },
+        { "key": "ง", "text": "ตรวจสอบความสมบูรณ์ของไฟล์" }
+      ],
+      "answer": "ข",
+      "explanation": "DNS คือสมุดโทรศัพท์ของอินเทอร์เน็ต แปลงชื่อที่มนุษย์อ่านได้ให้เป็นที่อยู่ IP"
+    },
+    {
+      "id": 3,
+      "question": "ข้อใดคือความแตกต่างระหว่าง TCP กับ UDP",
+      "choices": [
+        { "key": "ก", "text": "TCP ไม่รับประกันลำดับข้อมูล ส่วน UDP รับประกัน" },
+        { "key": "ข", "text": "TCP เน้นความครบถ้วนและลำดับข้อมูล ส่วน UDP ลด overhead เหมาะกับงาน real-time" },
+        { "key": "ค", "text": "UDP ใช้เฉพาะกับอีเมล" },
+        { "key": "ง", "text": "ทั้งสองอย่างเหมือนกันทุกประการ" }
+      ],
+      "answer": "ข",
+      "explanation": "TCP เป็น connection-oriented มีการยืนยันและเรียงลำดับ ส่วน UDP ไม่มี จึงเร็วกว่าและเหมาะกับ streaming/เกมออนไลน์"
+    },
+    {
+      "id": 4,
+      "question": "IPv6 (RFC 8200) แก้ข้อจำกัดสำคัญใดของ IPv4",
+      "choices": [
+        { "key": "ก", "text": "ความเร็วของสาย LAN" },
+        { "key": "ข", "text": "จำนวน address ที่ไม่เพียงพอ (IPv4 มี 32 บิต ส่วน IPv6 มี 128 บิต)" },
+        { "key": "ค", "text": "การเข้ารหัส Wi-Fi" },
+        { "key": "ง", "text": "ขนาดของไฟล์ HTML" }
+      ],
+      "answer": "ข",
+      "explanation": "IPv6 ใช้ address 128 บิต ทำให้มีพื้นที่ address มหาศาลรองรับการเติบโตของอินเทอร์เน็ตและ IoT"
+    },
+    {
+      "id": 5,
+      "question": "เมื่อเปิดเว็บหนึ่งหน้า ลำดับเหตุการณ์ข้อใดถูกต้อง",
+      "choices": [
+        { "key": "ก", "text": "HTTP request → DNS lookup → TCP connection" },
+        { "key": "ข", "text": "DNS lookup → TCP/TLS connection → HTTP request/response" },
+        { "key": "ค", "text": "TCP connection → HTTP response → DNS lookup" },
+        { "key": "ง", "text": "HTTP response → DNS lookup → TCP connection" }
+      ],
+      "answer": "ข",
+      "explanation": "ต้องรู้ IP ก่อน (DNS) จึงสร้างการเชื่อมต่อ (TCP/TLS) แล้วส่ง HTTP request และรับ response"
+    },
+    {
+      "id": 6,
+      "question": "HTTPS แตกต่างจาก HTTP อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "HTTPS เร็วกว่าเสมอเพราะไม่เข้ารหัส" },
+        { "key": "ข", "text": "HTTPS เข้ารหัสการสื่อสารด้วย TLS เพื่อความลับและความถูกต้องของข้อมูล" },
+        { "key": "ค", "text": "HTTPS ใช้ได้เฉพาะในเครือข่ายภายใน" },
+        { "key": "ง", "text": "HTTPS ไม่ต้องใช้ DNS" }
+      ],
+      "answer": "ข",
+      "explanation": "HTTPS = HTTP over TLS ป้องกันการดักฟังและปลอมแปลงข้อมูลระหว่างทาง"
+    },
+    {
+      "id": 7,
+      "question": "เครื่องมือใดใช้ตรวจเส้นทางที่ packet เดินทางผ่าน router ต่าง ๆ ไปยังปลายทาง",
+      "choices": [
+        { "key": "ก", "text": "ping" },
+        { "key": "ข", "text": "nslookup" },
+        { "key": "ค", "text": "tracert / traceroute" },
+        { "key": "ง", "text": "ipconfig" }
+      ],
+      "answer": "ค",
+      "explanation": "traceroute แสดง hop แต่ละจุด ส่วน ping ทดสอบการเข้าถึงและ latency และ nslookup ใช้สอบถาม DNS"
+    },
+    {
+      "id": 8,
+      "question": "ในสถาปัตยกรรม microservices บน Kubernetes เหตุใดหัวข้อเช่น latency, retry, timeout และ observability จึงสำคัญ",
+      "choices": [
+        { "key": "ก", "text": "เพราะ service จำนวนมากต้องสื่อสารกันผ่านเครือข่ายภายใน cluster" },
+        { "key": "ข", "text": "เพราะ microservices ไม่ใช้เครือข่าย" },
+        { "key": "ค", "text": "เพราะ Kubernetes ห้ามใช้ TCP" },
+        { "key": "ง", "text": "เพราะทุก service อยู่ใน process เดียวกัน" }
+      ],
+      "answer": "ก",
+      "explanation": "cloud-native networking ทำให้การสื่อสารระหว่าง service กลายเป็นประเด็นวิศวกรรมหลัก ต้องออกแบบ retry/timeout และมีการสังเกตการณ์"
+    },
+    {
+      "id": 9,
+      "question": "มาตรฐาน IEEE 802.11be-2024 รู้จักในชื่อใด",
+      "choices": [
+        { "key": "ก", "text": "Bluetooth 5" },
+        { "key": "ข", "text": "Wi-Fi 7" },
+        { "key": "ค", "text": "5G NR" },
+        { "key": "ง", "text": "Ethernet 10G" }
+      ],
+      "answer": "ข",
+      "explanation": "Wi-Fi 7 (802.11be) เพิ่ม throughput และปรับ PHY/MAC เพื่อรองรับงาน latency ต่ำและ edge applications"
+    },
+    {
+      "id": 10,
+      "question": "REST API ที่ส่งคำขอ GET ไปยัง /api/status เพื่อดึงสถานะของอุปกรณ์ ทำงานที่ชั้นใดของ TCP/IP model",
+      "choices": [
+        { "key": "ก", "text": "Link" },
+        { "key": "ข", "text": "Internet" },
+        { "key": "ค", "text": "Transport" },
+        { "key": "ง", "text": "Application" }
+      ],
+      "answer": "ง",
+      "explanation": "HTTP/REST อยู่ในชั้น application โดยอาศัย TCP (transport) และ IP (internet) ด้านล่าง"
+    }
+  ]
+}

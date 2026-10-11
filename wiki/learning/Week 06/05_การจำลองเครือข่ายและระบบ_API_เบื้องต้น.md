@@ -1,0 +1,51 @@
+---
+type: learning_content
+week: 06
+title: "การจำลองเครือข่ายและระบบ API เบื้องต้น"
+---
+
+# การจำลองเครือข่ายและระบบ API เบื้องต้น
+
+ในโลกความเป็นจริง การออกแบบ ปรับปรุง หรือทดสอบระบบเครือข่ายโดยใช้ฮาร์ดแวร์จริงทั้งหมดนั้นมีค่าใช้จ่ายสูงและมีความเสี่ยง หากเกิดข้อผิดพลาดอาจทำให้ระบบจริงดาวน์ได้ ด้วยเหตุนี้ ทักษะในการใช้ **"โปรแกรมจำลองเครือข่าย"** (Network Simulation) ผนวกกับการทำงานกับ **API** (Application Programming Interface) จึงเป็นเครื่องมือสำคัญของวิศวกรคอมพิวเตอร์และนักพัฒนาซอฟต์แวร์ทุกคน
+
+## 1. การจำลองเครือข่าย (Network Simulation/Emulation)
+
+Network Simulation เป็นกระบวนการสร้างแบบจำลองทางคณิตศาสตร์หรือซอฟต์แวร์ เพื่อจำลองพฤติกรรมของเครือข่าย อุปกรณ์ (เช่น Router, Switch) และลิงก์การเชื่อมต่อ ประโยชน์หลักคือทำให้เราสามารถทดสอบการออกแบบ ประเมินประสิทธิภาพ และแก้ไขปัญหาก่อนนำไปปรับใช้จริง
+
+เครื่องมือที่นิยมใช้แบ่งออกเป็นสองประเภทหลัก:
+*   **Network Simulators (เช่น Cisco Packet Tracer, NS-3):** ทำงานโดยใช้ซอฟต์แวร์จำลองพฤติกรรมทั้งหมดในสภาพแวดล้อมปิด เหมาะอย่างยิ่งสำหรับการเรียนการสอนพื้นฐาน การทำความเข้าใจ Routing Protocol เช่น OSPF หรือ BGP และเห็นภาพการไหลของ Packet
+*   **Network Emulators (เช่น GNS3, EVE-NG, Mininet):** มีความสมจริงกว่ามาก โดยใช้อิมเมจระบบปฏิบัติการจริงของอุปกรณ์เครือข่าย (OS Images) มารันบน Virtual Machine ทำให้ซอฟต์แวร์สามารถสื่อสารกับเครือข่ายโลกภายนอก (Real World Network) ได้จริง นิยมใช้ทดสอบโซลูชันที่มีความซับซ้อน
+
+## 2. ระบบ API ในบริบทของเครือข่าย (Network Programmability & API)
+
+ยุคของการตั้งค่า Router ทีละตัวด้วยคำสั่ง CLI (Command Line Interface) ผ่านสาย Console กำลังจะหมดไป เราก้าวเข้าสู่ยุค **Network Automation** โดยใช้ API เป็นสื่อกลาง
+
+API เป็นช่องทางที่อนุญาตให้ซอฟต์แวร์หนึ่งสามารถสื่อสารและสั่งการอีกระบบหนึ่งได้ ในทางเครือข่าย เราใช้ **RESTful APIs** หรือ **NETCONF/RESTCONF** เพื่อจัดการอุปกรณ์อย่างเป็นระบบ:
+
+```python
+# ตัวอย่างจำลองการใช้ Python ส่งคำสั่งผ่าน REST API ไปยัง Router เพื่อดึงข้อมูลสถานะ
+import requests
+import json
+
+# URL ของ API สำหรับดึงข้อมูลสถานะ Interface ของอุปกรณ์ (ตัวอย่าง)
+url = "https://192.168.1.254/restconf/data/interfaces/interface=GigabitEthernet1"
+headers = {
+    "Accept": "application/yang-data+json",
+    "Content-Type": "application/yang-data+json"
+}
+
+# ทำการยืนยันตัวตนและดึงข้อมูลผ่าน API
+response = requests.get(url, auth=('admin', 'password'), headers=headers, verify=False)
+
+if response.status_code == 200:
+    data = json.loads(response.text)
+    print(f"Interface Status: {data['interface']['oper-status']}")
+else:
+    print("Failed to retrieve data")
+```
+
+### การรวมพลัง: Simulation + API
+
+การทำงานที่ทรงพลังที่สุดคือการรวมสองสิ่งนี้เข้าด้วยกัน วิศวกรสามารถสร้างโครงข่ายเสมือนบน GNS3 หรือ EVE-NG จากนั้นเขียนสคริปต์ Python ที่เรียกใช้งาน API เพื่อทำ Provisioning ระบบเครือข่ายแบบอัตโนมัติ (เช่น สร้าง VLANs หรือตั้งค่า Firewall Rules ได้หลายร้อยตัวภายในพริบตา) หากผลการทดสอบบนระบบจำลองทำงานได้อย่างสมบูรณ์แบบ ก็สามารถนำโค้ดเดียวกันนี้ไปใช้กับอุปกรณ์จริงในโปรดักชันได้อย่างมั่นใจ
+
+การผสมผสานทักษะด้าน Software Development เข้ากับ Network Engineering นี้เองที่ให้กำเนิดสาขาวิชาชีพใหม่ที่ทรงคุณค่าที่เรียกว่า **DevNet (Developer Network)** ซึ่งเป็นทักษะที่ภาคอุตสาหกรรมกำลังต้องการตัวอย่างมากครับ

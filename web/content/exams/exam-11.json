@@ -1,0 +1,128 @@
+{
+  "moduleId": "11",
+  "title": "Embedded Systems & IoT",
+  "titleTh": "ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Embedded system คืออะไร",
+      "choices": [
+        { "key": "ก", "text": "คอมพิวเตอร์ที่ฝังอยู่ในอุปกรณ์เพื่อทำงานเฉพาะ เช่น อ่าน sensor และควบคุม actuator" },
+        { "key": "ข", "text": "เซิร์ฟเวอร์ขนาดใหญ่ใน data center" },
+        { "key": "ค", "text": "โปรแกรมแก้ไขข้อความ" },
+        { "key": "ง", "text": "ระบบฐานข้อมูลเชิงสัมพันธ์" }
+      ],
+      "answer": "ก",
+      "explanation": "embedded system มีทรัพยากรจำกัดและออกแบบเพื่องานเฉพาะ ต่างจากคอมพิวเตอร์อเนกประสงค์"
+    },
+    {
+      "id": 2,
+      "question": "อุปกรณ์ใดทำหน้าที่ \"รับรู้\" สภาพแวดล้อม (เช่น อุณหภูมิ ความชื้น) ให้ไมโครคอนโทรลเลอร์",
+      "choices": [
+        { "key": "ก", "text": "Actuator" },
+        { "key": "ข", "text": "Sensor" },
+        { "key": "ค", "text": "Broker" },
+        { "key": "ง", "text": "Dashboard" }
+      ],
+      "answer": "ข",
+      "explanation": "sensor รับอินพุตจากโลกจริง ส่วน actuator (มอเตอร์ รีเลย์) ลงมือกระทำ"
+    },
+    {
+      "id": 3,
+      "question": "สถาปัตยกรรม IoT แบบ device–edge–cloud ส่วน \"edge\" ทำหน้าที่อะไร",
+      "choices": [
+        { "key": "ก", "text": "ประมวลผลเบื้องต้นใกล้อุปกรณ์เพื่อลด latency และข้อมูลที่ส่งขึ้น cloud" },
+        { "key": "ข", "text": "เก็บข้อมูลระยะยาวทั้งหมด" },
+        { "key": "ค", "text": "แสดงผลให้ผู้ใช้เท่านั้น" },
+        { "key": "ง", "text": "ผลิตไฟฟ้าให้อุปกรณ์" }
+      ],
+      "answer": "ก",
+      "explanation": "edge (gateway/local server) กรองและประมวลผลข้อมูลก่อนส่งขึ้น cloud สำหรับเก็บและวิเคราะห์ระยะยาว"
+    },
+    {
+      "id": 4,
+      "question": "MQTT ใช้รูปแบบการสื่อสารแบบใด",
+      "choices": [
+        { "key": "ก", "text": "Request/Response เหมือน HTTP" },
+        { "key": "ข", "text": "Publish/Subscribe ผ่าน broker" },
+        { "key": "ค", "text": "Peer-to-peer โดยไม่มีตัวกลาง" },
+        { "key": "ง", "text": "Broadcast ทาง Bluetooth เท่านั้น" }
+      ],
+      "answer": "ข",
+      "explanation": "publisher ส่งข้อความไปยัง topic ที่ broker และ subscriber ที่สนใจ topic นั้นจะได้รับ เหมาะกับอุปกรณ์และเครือข่ายจำกัด"
+    },
+    {
+      "id": 5,
+      "question": "ในระบบ MQTT องค์ประกอบใดเป็นตัวกลางที่รับข้อความจาก publisher แล้วกระจายให้ subscriber",
+      "choices": [
+        { "key": "ก", "text": "Router" },
+        { "key": "ข", "text": "Broker" },
+        { "key": "ค", "text": "DNS" },
+        { "key": "ง", "text": "Firewall" }
+      ],
+      "answer": "ข",
+      "explanation": "broker (เช่น Mosquitto) จัดการ topic และการส่งต่อข้อความ พร้อมระดับ QoS 0/1/2"
+    },
+    {
+      "id": 6,
+      "question": "ESP32 เซนเซอร์อุณหภูมิส่งค่าไปยัง topic \"home/room1/temp\" ส่วน dashboard ต้องทำอะไรเพื่อรับค่า",
+      "choices": [
+        { "key": "ก", "text": "Subscribe topic \"home/room1/temp\" ที่ broker" },
+        { "key": "ข", "text": "Publish ค่าไปยัง ESP32" },
+        { "key": "ค", "text": "ส่ง HTTP GET ไปยัง ESP32 ทุกวินาที" },
+        { "key": "ง", "text": "เชื่อมต่อสาย USB กับ ESP32" }
+      ],
+      "answer": "ก",
+      "explanation": "subscriber สมัครรับ topic ที่ broker แล้ว broker จะส่งข้อความใหม่ให้โดยอัตโนมัติ"
+    },
+    {
+      "id": 7,
+      "question": "MQTT QoS 1 หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "ส่งอย่างมากหนึ่งครั้ง อาจสูญหาย" },
+        { "key": "ข", "text": "ส่งอย่างน้อยหนึ่งครั้ง อาจซ้ำ" },
+        { "key": "ค", "text": "ส่งครั้งเดียวพอดีเสมอ" },
+        { "key": "ง", "text": "ไม่ส่งเลย" }
+      ],
+      "answer": "ข",
+      "explanation": "QoS 0 = at most once, QoS 1 = at least once, QoS 2 = exactly once"
+    },
+    {
+      "id": 8,
+      "question": "โปรโตคอลใดออกแบบเป็น REST-like สำหรับอุปกรณ์ทรัพยากรจำกัดโดยทำงานบน UDP",
+      "choices": [
+        { "key": "ก", "text": "CoAP" },
+        { "key": "ข", "text": "FTP" },
+        { "key": "ค", "text": "SMTP" },
+        { "key": "ง", "text": "SSH" }
+      ],
+      "answer": "ก",
+      "explanation": "CoAP (Constrained Application Protocol) ใช้ UDP และโมเดล request/response คล้าย HTTP แต่เบากว่า ส่วน Zigbee เป็นเครือข่าย mesh พลังงานต่ำ"
+    },
+    {
+      "id": 9,
+      "question": "TinyML หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "การรันโมเดล ML ขนาดเล็กบนไมโครคอนโทรลเลอร์ที่มีทรัพยากรจำกัด" },
+        { "key": "ข", "text": "การฝึกโมเดลภาษาขนาดใหญ่บน GPU หลายพันตัว" },
+        { "key": "ค", "text": "ภาษาโปรแกรมสำหรับเด็ก" },
+        { "key": "ง", "text": "ฐานข้อมูลขนาดเล็ก" }
+      ],
+      "answer": "ก",
+      "explanation": "TinyML/edge AI ทำให้งานเช่นตรวจจับเสียงหรือภาพเบื้องต้นทำได้บนอุปกรณ์ ลด latency และข้อมูลที่ส่งออก"
+    },
+    {
+      "id": 10,
+      "question": "ในระบบ smart factory เหตุใดจึงมักต้องแยกเครือข่าย OT (ระบบควบคุม) ออกจากเครือข่าย IT",
+      "choices": [
+        { "key": "ก", "text": "เพื่อลดความเสี่ยงที่ภัยคุกคามจากฝั่ง IT จะกระทบระบบควบคุมเครื่องจักรที่ต้องการ reliability และ safety สูง" },
+        { "key": "ข", "text": "เพราะกฎหมายห้ามใช้ Wi-Fi ในโรงงาน" },
+        { "key": "ค", "text": "เพราะเครื่องจักรไม่ใช้ไฟฟ้า" },
+        { "key": "ง", "text": "เพราะ OT ไม่มีข้อมูล" }
+      ],
+      "answer": "ก",
+      "explanation": "network segmentation ระหว่าง OT/IT เป็นแนวปฏิบัติด้านความปลอดภัยที่สำคัญของระบบอุตสาหกรรม"
+    }
+  ]
+}

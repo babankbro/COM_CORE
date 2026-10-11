@@ -1,0 +1,128 @@
+{
+  "moduleId": "03",
+  "title": "Digital Logic & Modern Processors",
+  "titleTh": "วงจรตรรกะและหน่วยประมวลผล",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "เกต (gate) ใดให้เอาต์พุตเป็น 1 ก็ต่อเมื่ออินพุตทั้งสองเป็น 1",
+      "choices": [
+        { "key": "ก", "text": "OR" },
+        { "key": "ข", "text": "AND" },
+        { "key": "ค", "text": "XOR" },
+        { "key": "ง", "text": "NOT" }
+      ],
+      "answer": "ข",
+      "explanation": "AND ให้ 1 เฉพาะเมื่ออินพุตทุกตัวเป็น 1 ส่วน OR ให้ 1 เมื่อมีอินพุตใดเป็น 1 และ XOR ให้ 1 เมื่ออินพุตต่างกัน"
+    },
+    {
+      "id": 2,
+      "question": "Half-adder ที่บวกบิต A และ B ใช้เกตใดสร้างผลบวก (Sum) และตัวทด (Carry) ตามลำดับ",
+      "choices": [
+        { "key": "ก", "text": "Sum = AND, Carry = OR" },
+        { "key": "ข", "text": "Sum = OR, Carry = XOR" },
+        { "key": "ค", "text": "Sum = XOR, Carry = AND" },
+        { "key": "ง", "text": "Sum = NOT, Carry = NAND" }
+      ],
+      "answer": "ค",
+      "explanation": "Sum = A XOR B และ Carry = A AND B — แสดงว่าการบวกเลขเริ่มจากตรรกะพื้นฐาน"
+    },
+    {
+      "id": 3,
+      "question": "วงจรพื้นฐานของหน่วยประมวลผลที่ดึงคำสั่ง แปลคำสั่ง แล้วดำเนินการ เรียกว่าอะไร",
+      "choices": [
+        { "key": "ก", "text": "Fetch–Decode–Execute cycle" },
+        { "key": "ข", "text": "Read–Write cycle" },
+        { "key": "ค", "text": "Compile–Link–Run" },
+        { "key": "ง", "text": "Request–Response" }
+      ],
+      "answer": "ก",
+      "explanation": "fetch-decode-execute คือวงจรการทำงานพื้นฐานของ processor"
+    },
+    {
+      "id": 4,
+      "question": "ตามสถาปัตยกรรม von Neumann ส่วนประกอบใดของ CPU ทำหน้าที่คำนวณทางคณิตศาสตร์และตรรกะ",
+      "choices": [
+        { "key": "ก", "text": "Control Unit" },
+        { "key": "ข", "text": "ALU (Arithmetic Logic Unit)" },
+        { "key": "ค", "text": "Bus" },
+        { "key": "ง", "text": "Main memory" }
+      ],
+      "answer": "ข",
+      "explanation": "CPU ประกอบด้วย ALU (คำนวณ), Control Unit (ควบคุม) และ Register (เก็บข้อมูลชั่วคราว) โดยสื่อสารกับ memory ผ่าน bus"
+    },
+    {
+      "id": 5,
+      "question": "ข้อใดคือความแตกต่างหลักระหว่างสถาปัตยกรรม von Neumann กับ Harvard",
+      "choices": [
+        { "key": "ก", "text": "Harvard ไม่มี CPU" },
+        { "key": "ข", "text": "von Neumann เก็บคำสั่งและข้อมูลในหน่วยความจำเดียวกัน ส่วน Harvard แยกหน่วยความจำคำสั่งและข้อมูล" },
+        { "key": "ค", "text": "von Neumann ใช้เฉพาะกับ GPU" },
+        { "key": "ง", "text": "Harvard ไม่ใช้ bus" }
+      ],
+      "answer": "ข",
+      "explanation": "von Neumann ใช้หน่วยความจำและ bus ร่วมกันสำหรับคำสั่งและข้อมูล (เกิด von Neumann bottleneck) ส่วน Harvard แยกออกจากกัน พบมากในไมโครคอนโทรลเลอร์"
+    },
+    {
+      "id": 6,
+      "question": "RISC-V มีลักษณะเด่นอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "เป็น ISA แบบปิดที่ต้องจ่ายค่าลิขสิทธิ์" },
+        { "key": "ข", "text": "เป็นชุดคำสั่ง (ISA) แบบเปิดและไม่มีค่าลิขสิทธิ์" },
+        { "key": "ค", "text": "เป็นภาษาโปรแกรมระดับสูง" },
+        { "key": "ง", "text": "เป็นระบบปฏิบัติการสำหรับเซิร์ฟเวอร์" }
+      ],
+      "answer": "ข",
+      "explanation": "RISC-V เป็น open ISA ทำให้นักออกแบบสร้างหน่วยประมวลผลได้ยืดหยุ่น ควบคุมต้นทุน และมีอธิปไตยด้านฮาร์ดแวร์"
+    },
+    {
+      "id": 7,
+      "question": "ISA (Instruction Set Architecture) ทำหน้าที่เป็นอะไรในระบบคอมพิวเตอร์",
+      "choices": [
+        { "key": "ก", "text": "สัญญา (interface) ระหว่างซอฟต์แวร์กับฮาร์ดแวร์" },
+        { "key": "ข", "text": "ระบบระบายความร้อนของชิป" },
+        { "key": "ค", "text": "โปรโตคอลเครือข่าย" },
+        { "key": "ง", "text": "รูปแบบไฟล์ข้อมูล" }
+      ],
+      "answer": "ก",
+      "explanation": "ISA กำหนดชุดคำสั่งที่ซอฟต์แวร์ใช้สั่งฮาร์ดแวร์ จึงเป็นสัญญาระหว่างสองฝั่ง"
+    },
+    {
+      "id": 8,
+      "question": "บทบาทของ GPU/NPU ในระบบคอมพิวเตอร์ยุค AI คือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "แทนที่ CPU ทั้งหมด" },
+        { "key": "ข", "text": "เร่งงานเฉพาะ เช่น matrix multiplication และ inference โดยทำงานร่วมกับ CPU" },
+        { "key": "ค", "text": "เก็บข้อมูลถาวรแทนฮาร์ดดิสก์" },
+        { "key": "ง", "text": "จัดการ system call ของระบบปฏิบัติการ" }
+      ],
+      "answer": "ข",
+      "explanation": "GPU/NPU ไม่ได้แทน CPU แต่เป็นตัวเร่ง (accelerator) สำหรับงานเฉพาะที่ขนานได้สูง"
+    },
+    {
+      "id": 9,
+      "question": "เทคโนโลยี Chiplet คืออะไร",
+      "choices": [
+        { "key": "ก", "text": "การผลิตชิปขนาดใหญ่ชิ้นเดียวให้ครบทุกฟังก์ชัน" },
+        { "key": "ข", "text": "การประกอบชิปจากชิ้นส่วนซิลิคอนขนาดเล็กหลายชิ้น (die) เข้าด้วยกันในแพ็กเกจเดียว" },
+        { "key": "ค", "text": "ชิปที่ใช้เฉพาะในสมาร์ตวอตช์" },
+        { "key": "ง", "text": "ชื่อของไมโครโปรเซสเซอร์รุ่นแรก" }
+      ],
+      "answer": "ข",
+      "explanation": "chiplet แบ่งชิปเป็นหลาย die แล้วเชื่อมกันในแพ็กเกจเดียว ช่วยเพิ่ม yield และผสมเทคโนโลยีการผลิตต่างกันได้ในยุคหลัง Moore's Law"
+    },
+    {
+      "id": 10,
+      "question": "เลขฐานสอง 1011 มีค่าเท่าใดในเลขฐานสิบ",
+      "choices": [
+        { "key": "ก", "text": "9" },
+        { "key": "ข", "text": "10" },
+        { "key": "ค", "text": "11" },
+        { "key": "ง", "text": "13" }
+      ],
+      "answer": "ค",
+      "explanation": "1×8 + 0×4 + 1×2 + 1×1 = 11"
+    }
+  ]
+}

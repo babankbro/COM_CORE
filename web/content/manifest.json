@@ -1,0 +1,850 @@
+{
+  "generated": "2026-10-11T17:45:48.855Z",
+  "modules": {
+    "10": {
+      "timelineTitle": "Generative AI & Modern Robotics"
+    },
+    "11": {
+      "timelineTitle": "Embedded Systems & IoT"
+    },
+    "12": {
+      "timelineTitle": "Cybersecurity & Trust Architecture"
+    },
+    "13": {
+      "timelineTitle": "Computer Ethics & Intellectual Property"
+    },
+    "14": {
+      "timelineTitle": "Applied System Engineering & DevOps"
+    },
+    "15": {
+      "timelineTitle": "Academic Visits & Computer Industry Tour"
+    },
+    "16": {
+      "timelineTitle": "Final Project Presentation"
+    },
+    "17": {
+      "timelineTitle": "Final Examination"
+    },
+    "01": {
+      "timelineTitle": "Introduction to CE & IT"
+    },
+    "02": {
+      "timelineTitle": "Hardware & Software Ecosystems"
+    },
+    "03": {
+      "timelineTitle": "Digital Logic & Modern Processors"
+    },
+    "04": {
+      "timelineTitle": "Algorithms & Programming Paradigms"
+    },
+    "05": {
+      "timelineTitle": "Database & Data Management"
+    },
+    "06": {
+      "timelineTitle": "Computer Networks & Internet"
+    },
+    "07": {
+      "timelineTitle": "Data Center & Cloud Infrastructure"
+    },
+    "08": {
+      "timelineTitle": "Midterm Examination"
+    },
+    "09": {
+      "timelineTitle": "AI & Machine Learning Foundations"
+    }
+  },
+  "topics": {
+    "10": [
+      {
+        "n": "01",
+        "title": "หลักการทำงานของ Generative AI และ LLM (Generative AI & Large Language Models)",
+        "file": "01_หลักการทำงานของ_Generative_AI_และ_LLM.md"
+      },
+      {
+        "n": "02",
+        "title": "การประยุกต์ใช้ RAG (Retrieval-Augmented Generation)",
+        "file": "02_การประยุกต์ใช้_RAG_Retrieval_Augmented_Generation.md"
+      },
+      {
+        "n": "03",
+        "title": "Agentic AI: ตัวแทนที่ทำงานอัตโนมัติ (AI Agents)",
+        "file": "03_Agentic_AI_ตัวแทนที่ทำงานอัตโนมัติ.md"
+      },
+      {
+        "n": "04",
+        "title": "Physical AI และหุ่นยนต์ฮิวแมนนอยด์ (Physical AI & Humanoid Robots)",
+        "file": "04_Physical_AI_และหุ่นยนต์ฮิวแมนนอยด์.md"
+      },
+      {
+        "n": "05",
+        "title": "ข้อจำกัดและความท้าทายของการใช้ Generative AI (Limitations & Risks of Generative AI)",
+        "file": "05_ข้อจำกัดและความท้าทายของการใช้_Generative_AI.md"
+      }
+    ],
+    "11": [
+      {
+        "n": "01",
+        "title": "สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์",
+        "file": "01_สถาปัตยกรรมและการเขียนโปรแกรมไมโครคอนโทรลเลอร์.md"
+      },
+      {
+        "n": "02",
+        "title": "โครงสร้าง IoT และเครือข่าย (IoT Architecture and Networking)",
+        "file": "02_โครงสร้าง_IoT_และเครือข่าย.md"
+      },
+      {
+        "n": "03",
+        "title": "โปรโตคอล IoT: MQTT, CoAP และ Zigbee",
+        "file": "03_โปรโตคอล_IoT_MQTT_CoAP_Zigbee.md"
+      },
+      {
+        "n": "04",
+        "title": "TinyML และ Edge AI เบื้องต้น (Introduction to TinyML and Edge AI)",
+        "file": "04_TinyML_และ_Edge_AI_เบื้องต้น.md"
+      },
+      {
+        "n": "05",
+        "title": "กรณีศึกษาเชิงเปรียบเทียบ: สมาร์ทโฮม (Smart Home) และ โรงงานอัจฉริยะ (Smart Factory)",
+        "file": "05_กรณีศึกษา_สมาร์ทโฮมและโรงงานอัจฉริยะ.md"
+      }
+    ],
+    "12": [
+      {
+        "n": "01",
+        "title": "หลักความปลอดภัยและ CIA Triad",
+        "file": "01_หลักความปลอดภัยและ_CIA_Triad.md"
+      },
+      {
+        "n": "02",
+        "title": "วิทยาการรหัสลับเบื้องต้น Cryptography",
+        "file": "02_วิทยาการรหัสลับเบื้องต้น_Cryptography.md"
+      },
+      {
+        "n": "03",
+        "title": "ภัยคุกคามทางไซเบอร์และการป้องกัน",
+        "file": "03_ภัยคุกคามทางไซเบอร์และการป้องกัน.md"
+      },
+      {
+        "n": "04",
+        "title": "สถาปัตยกรรม Zero Trust",
+        "file": "04_สถาปัตยกรรม_Zero_Trust.md"
+      },
+      {
+        "n": "05",
+        "title": "Digital Provenance และ AI Deepfakes",
+        "file": "05_Digital_Provenance_และ_AI_Deepfakes.md"
+      }
+    ],
+    "13": [
+      {
+        "n": "01",
+        "title": "จริยธรรมยุคดิจิทัลและ AI Ethics",
+        "file": "01_จริยธรรมยุคดิจิทัลและ_AI_Ethics.md"
+      },
+      {
+        "n": "02",
+        "title": "จรรยาบรรณวิชาชีพคอมพิวเตอร์",
+        "file": "02_จรรยาบรรณวิชาชีพคอมพิวเตอร์.md"
+      },
+      {
+        "n": "03",
+        "title": "ทรัพย์สินทางปัญญา ลิขสิทธิ์ สิทธิบัตร",
+        "file": "03_ทรัพย์สินทางปัญญา_ลิขสิทธิ์_สิทธิบัตร.md"
+      },
+      {
+        "n": "04",
+        "title": "ใบอนุญาตซอฟต์แวร์ Open Source vs Proprietary",
+        "file": "04_ใบอนุญาตซอฟต์แวร์_Open_Source_vs_Proprietary.md"
+      },
+      {
+        "n": "05",
+        "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคล PDPA และ GDPR",
+        "file": "05_กฎหมายคุ้มครองข้อมูลส่วนบุคคล_PDPA_และ_GDPR.md"
+      }
+    ],
+    "14": [
+      {
+        "n": "01",
+        "title": "วงจรการพัฒนาระบบ SDLC (Software Development Life Cycle)",
+        "file": "01_วงจรการพัฒนาระบบ_SDLC.md"
+      },
+      {
+        "n": "02",
+        "title": "แนวคิด Agile และ DevOps: วิวัฒนาการสู่การส่งมอบซอฟต์แวร์ยุคใหม่",
+        "file": "02_แนวคิด_Agile_และ_DevOps.md"
+      },
+      {
+        "n": "03",
+        "title": "กระบวนการ CI/CD: หัวใจหลักของระบบอัตโนมัติ",
+        "file": "03_กระบวนการ_CI_CD.md"
+      },
+      {
+        "n": "04",
+        "title": "MLOps และ AIOps: เมื่อปัญญาประดิษฐ์มาบรรจบกับปฏิบัติการ",
+        "file": "04_MLOps_และ_AIOps.md"
+      },
+      {
+        "n": "05",
+        "title": "การเตรียมโครงงานประยุกต์ (Capstone Project)",
+        "file": "05_การเตรียมโครงงานประยุกต์_Capstone.md"
+      }
+    ],
+    "15": [
+      {
+        "n": "01",
+        "title": "ภาพรวมอุตสาหกรรมคอมพิวเตอร์และศูนย์ข้อมูล (Computer Industry & Data Center Landscape)",
+        "file": "01_ภาพรวมอุตสาหกรรมคอมพิวเตอร์และศูนย์ข้อมูล.md"
+      },
+      {
+        "n": "02",
+        "title": "การเตรียมความพร้อมสู่การทำงานจริง (Work Readiness & Professional Skills)",
+        "file": "02_การเตรียมความพร้อมสู่การทำงานจริง.md"
+      },
+      {
+        "n": "03",
+        "title": "การทัศนศึกษาเสมือนจริงบริษัทเทคโนโลยีชั้นนำ (Virtual Field Trip)",
+        "file": "03_การทัศนศึกษาเสมือนจริงบริษัทเทคโนโลยีชั้นนำ.md"
+      },
+      {
+        "n": "04",
+        "title": "บทบาทอาชีพและทักษะวิศวกรคอมพิวเตอร์ยุคใหม่ (Career Roles & T-shaped Skills)",
+        "file": "04_บทบาทอาชีพและทักษะวิศวกรคอมพิวเตอร์ยุคใหม่.md"
+      },
+      {
+        "n": "05",
+        "title": "การจัดทำรายงานและการประยุกต์ใช้ความรู้ (Writing the Site-Visit Report)",
+        "file": "05_การจัดทำรายงานและการประยุกต์ใช้ความรู้.md"
+      }
+    ],
+    "01": [
+      {
+        "n": "01",
+        "title": "วิวัฒนาการและประวัติศาสตร์ของวิศวกรรมคอมพิวเตอร์ (Evolution of CE)",
+        "file": "01_วิวัฒนาการและประวัติศาสตร์ของวิศวกรรมคอมพิวเตอร์.md"
+      },
+      {
+        "n": "02",
+        "title": "ความแตกต่างระหว่าง CE, CS, SE, IT, IS",
+        "file": "02_เจาะลึกความแตกต่างระหว่างศาสตร์คอมพิวเตอร์.md"
+      },
+      {
+        "n": "03",
+        "title": "ทักษะหลักที่จำเป็นในยุค AI-driven Architecture",
+        "file": "03_ทักษะหลักที่จำเป็นในยุค_AI-driven_Architecture.md"
+      },
+      {
+        "n": "04",
+        "title": "ภาพรวมกรอบองค์ความรู้มาตรฐาน ACM/IEEE",
+        "file": "04_มาตรฐานหลักสูตร_ACM_IEEE.md"
+      },
+      {
+        "n": "05",
+        "title": "การประยุกต์ใช้ Agentic AI ในการทำงาน",
+        "file": "05_การประยุกต์ใช้ปัญญาประดิษฐ์ในฐานะวิศวกร.md"
+      }
+    ],
+    "02": [
+      {
+        "n": "01",
+        "title": "สถาปัตยกรรมฮาร์ดแวร์สมัยใหม่ (Deep Dive)",
+        "file": "01_สถาปัตยกรรมระดับฮาร์ดแวร์เชิงลึก.md"
+      },
+      {
+        "n": "02",
+        "title": "ระบบปฏิบัติการและ Containers",
+        "file": "02_ระบบปฏิบัติการสมัยใหม่และคอนเทนเนอร์.md"
+      },
+      {
+        "n": "03",
+        "title": "สถาปัตยกรรม Edge Computing",
+        "file": "03_สถาปัตยกรรม_Edge_Computing.md"
+      },
+      {
+        "n": "04",
+        "title": "การปฏิบัติเพื่อ Green Computing",
+        "file": "04_Green_Computing.md"
+      },
+      {
+        "n": "05",
+        "title": "Heterogeneous Computing (CPU + GPU + NPU)",
+        "file": "05_Heterogeneous_Computing.md"
+      }
+    ],
+    "03": [
+      {
+        "n": "01",
+        "title": "จาก Logic Gates สู่ Chip Design",
+        "file": "01_พื้นฐานวงจรตรรกะสู่การออกแบบชิป.md"
+      },
+      {
+        "n": "02",
+        "title": "สถาปัตยกรรม von Neumann vs Harvard",
+        "file": "02_สถาปัตยกรรม_von_Neumann_และ_Harvard.md"
+      },
+      {
+        "n": "03",
+        "title": "เจาะลึกสถาปัตยกรรม RISC-V",
+        "file": "03_เจาะลึกสถาปัตยกรรม_RISC-V.md"
+      },
+      {
+        "n": "04",
+        "title": "หน่วยเร่งประมวลผล AI (NPU และ TPU)",
+        "file": "04_AI_Accelerators.md"
+      },
+      {
+        "n": "05",
+        "title": "เทคโนโลยี Chiplet และยุค Post-Moore's Law",
+        "file": "05_Chiplet_และยุคหลังกฎของมัวร์.md"
+      }
+    ],
+    "04": [
+      {
+        "n": "01",
+        "title": "การคิดเชิงคำนวณแบบเจาะลึก (Computational Thinking)",
+        "file": "01_การคิดเชิงคำนวณแบบเจาะลึก.md"
+      },
+      {
+        "n": "02",
+        "title": "การวิเคราะห์ความซับซ้อนของอัลกอริทึม (Big-O Notation)",
+        "file": "02_การวิเคราะห์ความซับซ้อน_Big_O.md"
+      },
+      {
+        "n": "03",
+        "title": "การเขียนโปรแกรมเชิงวัตถุกับเชิงฟังก์ชัน (OOP vs Functional Programming)",
+        "file": "03_OOP_vs_Functional.md"
+      },
+      {
+        "n": "04",
+        "title": "ทำงานคู่กับผู้ช่วยเขียนโค้ด AI (AI Coding Assistants)",
+        "file": "04_AI_Coding_Assistants.md"
+      },
+      {
+        "n": "05",
+        "title": "ระบบควบคุมเวอร์ชันและการทำงานพร้อมกัน (Version Control และ Concurrency)",
+        "file": "05_Version_Control_และ_Concurrency.md"
+      }
+    ],
+    "05": [
+      {
+        "n": "01",
+        "title": "กลไกเบื้องหลังระบบจัดการฐานข้อมูลเชิงสัมพันธ์ (RDBMS Internals)",
+        "file": "01_กลไกเบื้องหลัง_RDBMS.md"
+      },
+      {
+        "n": "02",
+        "title": "การขยายระบบด้วยฐานข้อมูล NoSQL (Scaling with NoSQL)",
+        "file": "02_การขยายระบบด้วย_NoSQL.md"
+      },
+      {
+        "n": "03",
+        "title": "แนวคิดเบื้องหลังฐานข้อมูลเวกเตอร์ (Vector Database)",
+        "file": "03_แนวคิดของ_Vector_Database.md"
+      },
+      {
+        "n": "04",
+        "title": "สถาปัตยกรรมข้อมูลขนาดใหญ่และ Data Pipeline (Big Data Architecture)",
+        "file": "04_สถาปัตยกรรม_Big_Data.md"
+      },
+      {
+        "n": "05",
+        "title": "ความปลอดภัยของข้อมูลและความเป็นส่วนตัว (Data Privacy and Security)",
+        "file": "05_Data_Privacy_and_Security.md"
+      }
+    ],
+    "06": [
+      {
+        "n": "01",
+        "title": "สถาปัตยกรรมเครือข่ายพื้นฐาน OSI และ TCP IP Model",
+        "file": "01_สถาปัตยกรรมเครือข่ายพื้นฐาน_OSI_และ_TCP_IP_Model.md"
+      },
+      {
+        "n": "02",
+        "title": "โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่",
+        "file": "02_โปรโตคอลอินเทอร์เน็ตและการสื่อสารสมัยใหม่.md"
+      },
+      {
+        "n": "03",
+        "title": "เครือข่ายสำหรับ Cloud native และ Microservices",
+        "file": "03_เครือข่ายสำหรับ_Cloud_native_และ_Microservices.md"
+      },
+      {
+        "n": "04",
+        "title": "Edge Networks สำหรับระบบตอบสนองไว",
+        "file": "04_Edge_Networks_สำหรับระบบตอบสนองไว.md"
+      },
+      {
+        "n": "05",
+        "title": "การจำลองเครือข่ายและระบบ API เบื้องต้น",
+        "file": "05_การจำลองเครือข่ายและระบบ_API_เบื้องต้น.md"
+      }
+    ],
+    "07": [
+      {
+        "n": "01",
+        "title": "สถาปัตยกรรมศูนย์ข้อมูลและการจำลองเสมือน (Data Center Architecture and Virtualization)",
+        "file": "01_สถาปัตยกรรมศูนย์ข้อมูลและการจำลองเสมือน.md"
+      },
+      {
+        "n": "02",
+        "title": "เทคโนโลยีคอนเทนเนอร์ Docker และ Kubernetes (Container Technology)",
+        "file": "02_เทคโนโลยีคอนเทนเนอร์_Docker_และ_Kubernetes.md"
+      },
+      {
+        "n": "03",
+        "title": "รูปแบบการให้บริการคลาวด์ (Cloud Service Models): Public, Private, และ Sovereign",
+        "file": "03_รูปแบบการให้บริการคลาวด์_Public_Private_Sovereign.md"
+      },
+      {
+        "n": "04",
+        "title": "การจัดการความร้อนและพลังงานในศูนย์ข้อมูลยุค AI",
+        "file": "04_การจัดการความร้อนและพลังงานในศูนย์ข้อมูลยุค_AI.md"
+      },
+      {
+        "n": "05",
+        "title": "การประมวลผลระดับ Hyperscale (Hyperscale Computing)",
+        "file": "05_การประมวลผลระดับ_Hyperscale.md"
+      }
+    ],
+    "08": [
+      {
+        "n": "01",
+        "title": "ทบทวนภาพรวมวิศวกรรมคอมพิวเตอร์และระบบนิเวศ",
+        "file": "01_ทบทวนภาพรวมวิศวกรรมคอมพิวเตอร์และระบบนิเวศ.md"
+      },
+      {
+        "n": "02",
+        "title": "ทบทวนสถาปัตยกรรมฮาร์ดแวร์และหน่วยประมวลผล",
+        "file": "02_ทบทวนสถาปัตยกรรมฮาร์ดแวร์และหน่วยประมวลผล.md"
+      },
+      {
+        "n": "03",
+        "title": "ทบทวนอัลกอริทึมและกระบวนทัศน์การเขียนโปรแกรม",
+        "file": "03_ทบทวนอัลกอริทึมและกระบวนทัศน์การเขียนโปรแกรม.md"
+      },
+      {
+        "n": "04",
+        "title": "ทบทวนระบบฐานข้อมูลและการจัดการข้อมูล",
+        "file": "04_ทบทวนระบบฐานข้อมูลและการจัดการข้อมูล.md"
+      },
+      {
+        "n": "05",
+        "title": "ทบทวนเครือข่ายคอมพิวเตอร์และศูนย์ข้อมูล",
+        "file": "05_ทบทวนเครือข่ายคอมพิวเตอร์และศูนย์ข้อมูล.md"
+      }
+    ],
+    "09": [
+      {
+        "n": "01",
+        "title": "แนวคิดพื้นฐานของ AI และ Machine Learning (AI & Machine Learning Fundamentals)",
+        "file": "01_แนวคิดพื้นฐานของ_AI_และ_Machine_Learning.md"
+      },
+      {
+        "n": "02",
+        "title": "โครงข่ายประสาทเทียม (Artificial Neural Networks)",
+        "file": "02_โครงข่ายประสาทเทียม_Neural_Networks.md"
+      },
+      {
+        "n": "03",
+        "title": "การเรียนรู้เชิงลึกเบื้องต้น (Introduction to Deep Learning)",
+        "file": "03_การเรียนรู้เชิงลึก_Deep_Learning_เบื้องต้น.md"
+      },
+      {
+        "n": "04",
+        "title": "วงจรชีวิตของข้อมูลในระบบ AI (Data Lifecycle in AI Systems)",
+        "file": "04_วงจรชีวิตของข้อมูลในระบบ_AI.md"
+      },
+      {
+        "n": "05",
+        "title": "หลักการของ MLOps และการนำโมเดลไปใช้งานจริง (MLOps & Model Deployment)",
+        "file": "05_หลักการของ_MLOps_และการนำโมเดลไปใช้งานจริง.md"
+      }
+    ]
+  },
+  "labs": [
+    {
+      "id": "01",
+      "title": "การตั้งค่าเครื่องมือ IDE (Python) และวางแผนพัฒนาเกม",
+      "module": "1"
+    },
+    {
+      "id": "02",
+      "title": "สำรวจสเปกฮาร์ดแวร์และเขียนโค้ดดึงข้อมูลระบบ",
+      "module": "1"
+    },
+    {
+      "id": "03",
+      "title": "วงจรตรรกะและการประมวลผลข้อมูล",
+      "module": "1"
+    },
+    {
+      "id": "04",
+      "title": "อัลกอริทึมและสรุป Mini-Project 1",
+      "module": "1"
+    },
+    {
+      "id": "05",
+      "title": "การออกแบบฐานข้อมูลเชิงสัมพันธ์",
+      "module": "2"
+    },
+    {
+      "id": "06",
+      "title": "เครือข่ายคอมพิวเตอร์และการสร้าง API",
+      "module": "2"
+    },
+    {
+      "id": "07",
+      "title": "สถาปัตยกรรมคลาวด์และการ Deploy",
+      "module": "2"
+    },
+    {
+      "id": "09",
+      "title": "พื้นฐาน ML และสถาปัตยกรรม IoT",
+      "module": "3"
+    },
+    {
+      "id": "10",
+      "title": "GenAI และฮาร์ดแวร์ไมโครคอนโทรลเลอร์",
+      "module": "3"
+    },
+    {
+      "id": "11",
+      "title": "การรับส่งข้อมูลผ่านโปรโตคอล MQTT",
+      "module": "3"
+    },
+    {
+      "id": "12",
+      "title": "ความปลอดภัยไซเบอร์และนำเสนอ IoT",
+      "module": "3"
+    },
+    {
+      "id": "13",
+      "title": "จริยธรรม AI และพื้นฐานวิทัศน์คอมพิวเตอร์",
+      "module": "4"
+    },
+    {
+      "id": "14",
+      "title": "การบูรณาการระบบและ DevOps",
+      "module": "4"
+    },
+    {
+      "id": "15",
+      "title": "การเตรียมนำเสนอโครงงานประยุกต์รวม",
+      "module": "4"
+    }
+  ],
+  "concepts": [
+    {
+      "slug": "agentic-ai",
+      "name": "Agentic AI",
+      "title": "Agentic AI (เอไอเชิงตัวแทน)",
+      "definition": "ระบบ AI ที่ไม่เพียง \"ตอบคำถาม\" แต่ วางแผนและลงมือทำงานหลายขั้นตอนได้เอง (autonomous goal-directed agents) มักต่อยอดจากโมเดลภาษาขนาดใหญ่ (RAG และ LLM) ผนวกกับเครื่องมือ/หน่วยความจำ/การวนซ้ำ",
+      "weeks": [
+        "01",
+        "04",
+        "10"
+      ]
+    },
+    {
+      "slug": "big-o-notation",
+      "name": "Big-O Notation",
+      "title": "Big-O Notation (สัญกรณ์บิ๊กโอ)",
+      "definition": "สัญกรณ์ที่อธิบาย อัตราการเติบโตของเวลา/หน่วยความจำที่อัลกอริทึมใช้ เมื่อขนาดอินพุต (n) ใหญ่ขึ้น เช่น O(1) คงที่, O(n) เชิงเส้น, O(log n), O(n²) เป็นเครื่องมือเปรียบเทียบประสิทธิภาพอัลกอริทึมโดยไม่ขึ้นกับฮาร์ดแวร์",
+      "weeks": [
+        "04"
+      ]
+    },
+    {
+      "slug": "boolean-algebra-logic-gates",
+      "name": "Boolean Algebra และ Logic Gates",
+      "title": "Boolean Algebra และ Logic Gates",
+      "definition": "พีชคณิตบูลีน คือคณิตศาสตร์ของค่าตรรก 0/1 ด้วยตัวดำเนินการ AND, OR, NOT ส่วน เกตตรรก (logic gates) คือวงจรอิเล็กทรอนิกส์ที่ทำหน้าที่ตามตัวดำเนินการเหล่านั้น (รวม NAND, NOR, XOR) เป็นหน่วยพื้นฐานที่ประกอบขึ้นเป็นวงจรดิจิทั",
+      "weeks": [
+        "03"
+      ]
+    },
+    {
+      "slug": "chiplet",
+      "name": "Chiplet",
+      "title": "Chiplet (ชิปเล็ต)",
+      "definition": "แนวทางออกแบบชิปที่ใช้ ไดย่อยเฉพาะทางหลายชิ้น (compute/memory/IO) มาประกอบกันด้วยเทคนิคแพ็กเกจขั้นสูง แทนการทำชิปก้อนเดียว (monolithic) เพื่อความยืดหยุ่นและลดต้นทุนเมื่อ Moore's Law ชะลอตัว",
+      "weeks": [
+        "03",
+        "07"
+      ]
+    },
+    {
+      "slug": "cia-triad",
+      "name": "CIA Triad",
+      "title": "CIA Triad",
+      "definition": "หลักการพื้นฐาน 3 เสาของความปลอดภัยสารสนเทศ: - Confidentiality (ความลับ): ข้อมูลเข้าถึงได้เฉพาะผู้มีสิทธิ์ - Integrity (ความถูกต้อง): ข้อมูลไม่ถูกแก้ไขโดยไม่ได้รับอนุญาต - Availability (ความพร้อมใช้งาน): ระบบ/ข้อมูลพร้อมใ",
+      "weeks": [
+        "12"
+      ]
+    },
+    {
+      "slug": "edge-computing",
+      "name": "Edge Computing",
+      "title": "Edge Computing (การประมวลผลที่ขอบเครือข่าย)",
+      "definition": "การประมวลผลข้อมูล ใกล้แหล่งกำเนิดข้อมูล/ผู้ใช้ แทนที่จะส่งทุกอย่างขึ้นคลาวด์ ลดความหน่วง (latency) ประหยัดแบนด์วิดท์ และเพิ่มความเป็นส่วนตัว/ความพร้อมใช้งานแบบออฟไลน์",
+      "weeks": [
+        "02",
+        "06",
+        "11"
+      ]
+    },
+    {
+      "slug": "i2c-bus",
+      "name": "I2C Bus",
+      "title": "I2C Bus (Inter-Integrated Circuit)",
+      "definition": "บัสสื่อสารอนุกรมแบบ synchronous ที่ใช้สายเพียง 2 เส้น คือ SDA (ข้อมูล) และ SCL (สัญญาณนาฬิกา) โดย controller (เช่น ESP32) เป็นผู้สร้าง clock และเริ่มการสื่อสาร ส่วน target (เช่น เซนเซอร์) ตอบเมื่อถูกเรียกด้วย address 7 บ",
+      "weeks": [
+        "11"
+      ]
+    },
+    {
+      "slug": "liquid-cooling",
+      "name": "Liquid Cooling",
+      "title": "Liquid Cooling (การระบายความร้อนด้วยของเหลว)",
+      "definition": "เทคนิคระบายความร้อนในศูนย์ข้อมูลโดยใช้ ของเหลว (direct-to-chip cold plate หรือ immersion จุ่มทั้งเซิร์ฟเวอร์) ซึ่งนำความร้อนได้ดีกว่าอากาศมาก จำเป็นเมื่อความหนาแน่นพลังงานของแร็คสูงเกินกว่าการระบายด้วยอากาศจะรับไหว",
+      "weeks": [
+        "07"
+      ]
+    },
+    {
+      "slug": "mlops",
+      "name": "MLOps",
+      "title": "MLOps (Machine Learning Operations)",
+      "definition": "แนวปฏิบัติที่นำหลัก DevOps มาใช้กับวงจรชีวิตของโมเดล ML — ครอบคลุมการจัดการข้อมูล, ฝึกสอน, ทดสอบ, นำขึ้นระบบจริง (deployment), ติดตามผล (monitoring) และฝึกซ้ำ (retraining) อย่างเป็นระบบและทำซ้ำได้",
+      "weeks": [
+        "09",
+        "14"
+      ]
+    },
+    {
+      "slug": "pdpa",
+      "name": "PDPA",
+      "title": "PDPA (พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล)",
+      "definition": "Personal Data Protection Act — กฎหมายคุ้มครองข้อมูลส่วนบุคคลของไทย (เทียบเคียง GDPR ของยุโรป) กำหนดให้ผู้ควบคุมข้อมูลต้องมี ฐานทางกฎหมาย (lawful basis) ในการเก็บ/ใช้/เปิดเผยข้อมูลส่วนบุคคล และให้สิทธิแก่เจ้าของข้อมูล บัง",
+      "weeks": [
+        "13",
+        "15"
+      ]
+    },
+    {
+      "slug": "pue",
+      "name": "PUE",
+      "title": "PUE (Power Usage Effectiveness)",
+      "definition": "ตัวชี้วัดประสิทธิภาพพลังงานของศูนย์ข้อมูล = พลังงานรวมทั้งศูนย์ ÷ พลังงานที่อุปกรณ์ IT ใช้จริง ค่าในอุดมคติคือ 1.0 (ยิ่งใกล้ 1 ยิ่งมีประสิทธิภาพ ส่วนเกินคือพลังงานที่เสียไปกับการระบายความร้อน/ไฟฟ้า)",
+      "weeks": [
+        "07"
+      ]
+    },
+    {
+      "slug": "rag-llm",
+      "name": "RAG และ LLM",
+      "title": "RAG และ LLM",
+      "definition": "LLM (Large Language Model) คือโมเดลภาษาขนาดใหญ่ที่ฝึกจากข้อความมหาศาล ทำนาย/สร้างข้อความได้ ส่วน RAG (Retrieval-Augmented Generation) คือเทคนิคที่ให้ LLM ดึงข้อมูลจากแหล่งภายนอก (มัก เก็บใน Vector Database) มาประกอบคำตอบ",
+      "weeks": [
+        "05",
+        "09",
+        "10"
+      ]
+    },
+    {
+      "slug": "risc-v",
+      "name": "RISC-V",
+      "title": "RISC-V",
+      "definition": "สถาปัตยกรรมชุดคำสั่ง (Instruction Set Architecture — ISA) แบบ เปิดและไม่มีค่าลิขสิทธิ์ ทำให้นักออกแบบสร้างหน่วยประมวลผลได้อย่างยืดหยุ่น ควบคุมต้นทุน และมีอธิปไตยด้านฮาร์ดแวร์",
+      "weeks": [
+        "03",
+        "11"
+      ]
+    },
+    {
+      "slug": "tcp-ip-model",
+      "name": "TCP-IP Model",
+      "title": "TCP/IP Model",
+      "definition": "แบบจำลองการสื่อสารเครือข่าย 4 ชั้น (Link, Internet, Transport, Application) ที่เป็นรากฐานของอินเทอร์เน็ต — IP จัดการที่อยู่/เส้นทาง, TCP รับประกันการส่งครบถ้วน, UDP ส่งเร็วแต่ไม่รับประกัน",
+      "weeks": [
+        "06"
+      ]
+    },
+    {
+      "slug": "tinyml-edge-ai",
+      "name": "TinyML และ Edge AI",
+      "title": "TinyML และ Edge AI",
+      "definition": "Edge AI คือการรันโมเดล AI บนอุปกรณ์ที่ขอบเครือข่าย (Edge Computing) ส่วน TinyML คือการรันโมเดล ML ที่ย่อขนาด/บีบอัดให้ทำงานบน ไมโครคอนโทรลเลอร์พลังงานต่ำ ได้ ตัดสินใจเรียลไทม์ ทำงานออฟไลน์ และรักษาความเป็นส่วนตัว",
+      "weeks": [
+        "11"
+      ]
+    },
+    {
+      "slug": "vector-database",
+      "name": "Vector Database",
+      "title": "Vector Database (ฐานข้อมูลเวกเตอร์)",
+      "definition": "ฐานข้อมูลที่ออกแบบมาเก็บและค้นหา เวกเตอร์ฝังตัว (embeddings) มิติสูง ด้วยการค้นความคล้าย (similarity search) รองรับงาน AI เช่น semantic search, ระบบแนะนำ และ RAG",
+      "weeks": [
+        "05",
+        "10"
+      ]
+    },
+    {
+      "slug": "von-neumann-architecture",
+      "name": "von Neumann Architecture",
+      "title": "von Neumann Architecture (สถาปัตยกรรมฟอน นอยมันน์)",
+      "definition": "แบบจำลองพื้นฐานของคอมพิวเตอร์ที่เก็บ ทั้งคำสั่งและข้อมูลไว้ในหน่วยความจำเดียวกัน ประกอบด้วยหน่วยควบคุม (Control Unit), หน่วยคำนวณตรรก (ALU), หน่วยความจำ และ I/O ทำงานตามวงรอบ fetch–decode–execute",
+      "weeks": [
+        "03"
+      ]
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "name": "Zero-Trust Architecture",
+      "title": "Zero-Trust Architecture (สถาปัตยกรรมไร้ความเชื่อใจโดยปริยาย)",
+      "definition": "แนวทางความปลอดภัยที่ยึดหลัก \"ไม่เชื่อใจใครโดยปริยาย ตรวจสอบทุกครั้ง\" (never trust, always verify) — ไม่ว่าผู้ใช้/อุปกรณ์จะอยู่ในหรือนอกเครือข่ายองค์กร ต้องยืนยันตัวตนและสิทธิ์อย่างต่อเนื่อง ต่างจากโมเดลเดิมที่ไว้ใจทุกอย่",
+      "weeks": [
+        "11",
+        "12"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "slug": "clo-plo-mapping",
+      "title": "ดัชนีตารางความสอดคล้อง CLO ↔ PLO ↔ KSA — EN-001-019",
+      "group": "course"
+    },
+    {
+      "slug": "assessment",
+      "title": "การวัดและประเมินผล (Assessment & Evaluation)",
+      "group": "course"
+    },
+    {
+      "slug": "labs-projects",
+      "title": "กิจกรรมปฏิบัติการ (Labs) และโครงงาน (Mini-Projects)",
+      "group": "course"
+    },
+    {
+      "slug": "course-report",
+      "title": "รายงานวิชาการ (ภาพรวมเชิงบูรณาการ) — แก่นวิศวกรรมคอมพิวเตอร์",
+      "group": "course"
+    },
+    {
+      "slug": "course-plan",
+      "title": "แผนการสอนและผลลัพธ์การเรียนรู้ (CLO) — EN-001-019",
+      "group": "course"
+    },
+    {
+      "slug": "theme-edge",
+      "title": "Edge Computing และระบบกระจาย",
+      "group": "theme"
+    },
+    {
+      "slug": "theme-green",
+      "title": "Green Computing และความยั่งยืน",
+      "group": "theme"
+    },
+    {
+      "slug": "theme-governance",
+      "title": "การกำกับดูแล จริยธรรม และกฎหมาย",
+      "group": "theme"
+    },
+    {
+      "slug": "theme-security",
+      "title": "ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ",
+      "group": "theme"
+    },
+    {
+      "slug": "theme-ai",
+      "title": "ปัญญาประดิษฐ์เป็นแรงขับเคลื่อนข้ามศาสตร์",
+      "group": "theme"
+    }
+  ],
+  "slides": {
+    "10": {
+      "pptx": "week-10.pptx",
+      "preview": "/images/slides/week-10.webp",
+      "title": "AI แบบรู้สร้างและวิทยาการหุ่นยนต์"
+    },
+    "11": {
+      "pptx": "week-11.pptx",
+      "preview": "/images/slides/week-11.webp",
+      "title": "ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง"
+    },
+    "12": {
+      "pptx": "week-12.pptx",
+      "preview": "/images/slides/week-12.webp",
+      "title": "ความปลอดภัยและสถาปัตยกรรมความน่าเชื่อถือ"
+    },
+    "13": {
+      "pptx": "week-13.pptx",
+      "preview": "/images/slides/week-13.webp",
+      "title": "จริยธรรมทางคอมพิวเตอร์และทรัพย์สินทางปัญญา"
+    },
+    "14": {
+      "pptx": "week-14.pptx",
+      "preview": "/images/slides/week-14.webp",
+      "title": "โครงงานประยุกต์และวิศวกรรมระบบ"
+    },
+    "15": {
+      "pptx": "week-15.pptx",
+      "preview": "/images/slides/week-15.webp",
+      "title": "การดูงานเชิงวิชาการ"
+    },
+    "16": {
+      "pptx": "week-16.pptx",
+      "preview": "/images/slides/week-16.webp",
+      "title": "นำเสนอโครงงานประยุกต์"
+    },
+    "17": {
+      "pptx": "week-17.pptx",
+      "preview": "/images/slides/week-17.webp",
+      "title": "สอบปลายภาค (Final Examination)"
+    },
+    "01": {
+      "pptx": "week-01.pptx",
+      "preview": "/images/slides/week-01.webp",
+      "title": "ภาพรวมวิศวกรรมคอมพิวเตอร์และระบบสารสนเทศในยุค AI"
+    },
+    "02": {
+      "pptx": "week-02.pptx",
+      "preview": "/images/slides/week-02.webp",
+      "title": "ฮาร์ดแวร์ ซอฟต์แวร์ และระบบนิเวศสมัยใหม่"
+    },
+    "03": {
+      "pptx": "week-03.pptx",
+      "preview": "/images/slides/week-03.webp",
+      "title": "วงจรตรรกะและหน่วยประมวลผล"
+    },
+    "04": {
+      "pptx": "week-04.pptx",
+      "preview": "/images/slides/week-04.webp",
+      "title": "อัลกอริทึมและการเขียนโปรแกรม"
+    },
+    "05": {
+      "pptx": "week-05.pptx",
+      "preview": "/images/slides/week-05.webp",
+      "title": "ฐานข้อมูลและการจัดการข้อมูลขนาดใหญ่"
+    },
+    "06": {
+      "pptx": "week-06.pptx",
+      "preview": "/images/slides/week-06.webp",
+      "title": "เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต"
+    },
+    "07": {
+      "pptx": "week-07.pptx",
+      "preview": "/images/slides/week-07.webp",
+      "title": "ศูนย์ข้อมูลและโครงสร้างพื้นฐานระดับคลาวด์"
+    },
+    "08": {
+      "pptx": "week-08.pptx",
+      "preview": "/images/slides/week-08.webp",
+      "title": "สอบกลางภาค (Midterm Examination)"
+    },
+    "09": {
+      "pptx": "week-09.pptx",
+      "preview": "/images/slides/week-09.webp",
+      "title": "ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง"
+    }
+  }
+}

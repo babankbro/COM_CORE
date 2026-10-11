@@ -1,0 +1,8 @@
+## Definition
+เทคนิคระบายความร้อนในศูนย์ข้อมูลโดยใช้ **ของเหลว** (direct-to-chip cold plate หรือ immersion จุ่มทั้งเซิร์ฟเวอร์) ซึ่งนำความร้อนได้ดีกว่าอากาศมาก จำเป็นเมื่อความหนาแน่นพลังงานของแร็คสูงเกินกว่าการระบายด้วยอากาศจะรับไหว
+
+## Course Context
+แนวโน้มหลักของศูนย์ข้อมูลยุค AI ([สัปดาห์ที่ 7: Data Center & Cloud Infrastructure](/module/07)) — แร็ค AI มุ่งสู่ 300 kW+ ทำให้ liquid cooling กลายเป็นสิ่งจำเป็น; ตลาดโตจาก ~3.2 พันล้าน (2025) สู่ ~17.8 พันล้านดอลลาร์ (2036) และช่วยลด [PUE](/concept/pue)
+
+## อ้างอิง
+- Tom's Hardware. *The data center cooling state of play (2025).* [tomshardware.com](https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise-thermal-density-demands-skyrocket-in-ai-data-centers-and-tsmc-leads-with-direct-to-silicon-solutions)

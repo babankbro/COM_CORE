@@ -1,0 +1,128 @@
+{
+  "moduleId": "09",
+  "title": "AI & Machine Learning Foundations",
+  "titleTh": "ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "ความสัมพันธ์ระหว่าง AI, Machine Learning และ Deep Learning ข้อใดถูกต้อง",
+      "choices": [
+        { "key": "ก", "text": "AI ⊂ ML ⊂ DL" },
+        { "key": "ข", "text": "DL ⊂ ML ⊂ AI" },
+        { "key": "ค", "text": "ML และ AI ไม่เกี่ยวข้องกัน" },
+        { "key": "ง", "text": "DL คือชื่อเรียกอีกอย่างของ AI" }
+      ],
+      "answer": "ข",
+      "explanation": "AI เป็นร่มใหญ่, ML เป็นส่วนย่อยที่เรียนรู้จากข้อมูล, DL เป็น ML ที่ใช้ neural network หลายชั้น"
+    },
+    {
+      "id": 2,
+      "question": "Machine Learning แตกต่างจากการเขียนโปรแกรมแบบดั้งเดิมอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "ML สร้างโมเดลจากข้อมูลเพื่อทำนาย/จัดกลุ่ม โดยไม่ต้องเขียนกฎทุกข้อด้วยมือ" },
+        { "key": "ข", "text": "ML ไม่ต้องใช้ข้อมูลเลย" },
+        { "key": "ค", "text": "ML ใช้ได้เฉพาะกับตัวเลข" },
+        { "key": "ง", "text": "ML เขียนกฎ IF-THEN มากกว่าโปรแกรมปกติ" }
+      ],
+      "answer": "ก",
+      "explanation": "ML ป้อนข้อมูลพร้อมคำตอบตัวอย่างให้อัลกอริทึมหา pattern เอง แทนการเขียนกฎทุกข้อ"
+    },
+    {
+      "id": 3,
+      "question": "ในโจทย์จำแนกผลไม้ด้วยน้ำหนักและสี \"น้ำหนัก\" และ \"สี\" เรียกว่าอะไร",
+      "choices": [
+        { "key": "ก", "text": "Label" },
+        { "key": "ข", "text": "Feature" },
+        { "key": "ค", "text": "Model" },
+        { "key": "ง", "text": "Prediction" }
+      ],
+      "answer": "ข",
+      "explanation": "feature คือคุณลักษณะอินพุต ส่วน label คือคำตอบ (ชนิดผลไม้) ที่โมเดลต้องทำนาย"
+    },
+    {
+      "id": 4,
+      "question": "Supervised learning แตกต่างจาก unsupervised learning อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "supervised มี label ให้เรียน ส่วน unsupervised หาโครงสร้าง/กลุ่มในข้อมูลที่ไม่มี label" },
+        { "key": "ข", "text": "supervised ไม่ใช้ข้อมูล" },
+        { "key": "ค", "text": "unsupervised ต้องมีมนุษย์กำกับตลอดเวลา" },
+        { "key": "ง", "text": "ทั้งสองแบบเหมือนกัน" }
+      ],
+      "answer": "ก",
+      "explanation": "supervised เรียนจากคู่ (อินพุต, คำตอบ) ส่วน unsupervised เช่น clustering หาโครงสร้างในข้อมูลเอง"
+    },
+    {
+      "id": 5,
+      "question": "การเรียนรู้แบบที่ agent ได้รับรางวัล (reward) จากการกระทำในสภาพแวดล้อม เรียกว่าอะไร",
+      "choices": [
+        { "key": "ก", "text": "Supervised learning" },
+        { "key": "ข", "text": "Unsupervised learning" },
+        { "key": "ค", "text": "Reinforcement learning" },
+        { "key": "ง", "text": "Transfer learning" }
+      ],
+      "answer": "ค",
+      "explanation": "reinforcement learning เรียนรู้นโยบายจากการลองผิดลองถูกและ reward ใช้ในเกม หุ่นยนต์ และการควบคุม"
+    },
+    {
+      "id": 6,
+      "question": "เหตุใด \"คุณภาพข้อมูล\" จึงส่งผลต่อคุณภาพโมเดลโดยตรง",
+      "choices": [
+        { "key": "ก", "text": "เพราะโมเดลเรียนรู้ pattern รวมถึง bias ที่อยู่ในข้อมูล" },
+        { "key": "ข", "text": "เพราะโมเดลไม่ได้ใช้ข้อมูลในการเรียน" },
+        { "key": "ค", "text": "เพราะข้อมูลมากขึ้นทำให้โมเดลแย่ลงเสมอ" },
+        { "key": "ง", "text": "เพราะข้อมูลมีผลเฉพาะกับความเร็ว" }
+      ],
+      "answer": "ก",
+      "explanation": "garbage in, garbage out — ข้อมูลที่ไม่เป็นตัวแทนหรือมีอคติจะทำให้โมเดลสืบทอดอคตินั้น"
+    },
+    {
+      "id": 7,
+      "question": "Neural network ประกอบด้วยหน่วยพื้นฐานใดที่รับอินพุตถ่วงน้ำหนักแล้วส่งผ่าน activation function",
+      "choices": [
+        { "key": "ก", "text": "Transistor" },
+        { "key": "ข", "text": "Neuron (perceptron)" },
+        { "key": "ค", "text": "Packet" },
+        { "key": "ง", "text": "Primary key" }
+      ],
+      "answer": "ข",
+      "explanation": "neuron เทียม (perceptron) คำนวณผลรวมถ่วงน้ำหนักของอินพุตแล้วใช้ activation function ให้เอาต์พุต"
+    },
+    {
+      "id": 8,
+      "question": "MLOps มีจุดประสงค์หลักอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "ทำให้การฝึก ประเมิน deploy และ monitor โมเดลเป็นกระบวนการที่ตรวจสอบซ้ำได้" },
+        { "key": "ข", "text": "ทำให้โมเดลไม่ต้องทดสอบ" },
+        { "key": "ค", "text": "แทนที่ data scientist ทั้งหมด" },
+        { "key": "ง", "text": "ใช้เฉพาะกับโมเดลภาพ" }
+      ],
+      "answer": "ก",
+      "explanation": "MLOps นำแนวคิด DevOps มาใช้กับวงจรชีวิตโมเดล ตั้งแต่ข้อมูล ฝึก deploy จนถึง monitor drift"
+    },
+    {
+      "id": 9,
+      "question": "NIST AI Risk Management Framework ชี้ว่า AI ที่น่าเชื่อถือควรพิจารณาเรื่องใดนอกเหนือจากความแม่นยำ",
+      "choices": [
+        { "key": "ก", "text": "ความเร็วของ GPU เท่านั้น" },
+        { "key": "ข", "text": "validity, safety, security, fairness, accountability และ governance" },
+        { "key": "ค", "text": "จำนวนบรรทัดโค้ด" },
+        { "key": "ง", "text": "ราคาของ cloud" }
+      ],
+      "answer": "ข",
+      "explanation": "NIST AI RMF มอง AI แบบองค์รวม ครอบคลุมความปลอดภัย ความเป็นธรรม ความรับผิดชอบ และธรรมาภิบาล"
+    },
+    {
+      "id": 10,
+      "question": "ขั้นตอนใดของวงจรชีวิตข้อมูลในระบบ AI ที่ตรวจว่าโมเดลยังทำงานดีอยู่หลังนำไปใช้จริง",
+      "choices": [
+        { "key": "ก", "text": "Data collection" },
+        { "key": "ข", "text": "Training" },
+        { "key": "ค", "text": "Monitoring" },
+        { "key": "ง", "text": "Labeling" }
+      ],
+      "answer": "ค",
+      "explanation": "monitoring ติดตามประสิทธิภาพและ data drift ใน production เพื่อตัดสินใจฝึกใหม่"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "moduleId": "12",
+  "title": "Cybersecurity & Trust Architecture",
+  "titleTh": "ความปลอดภัยไซเบอร์และสถาปัตยกรรม Zero Trust",
+  "timeMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "CIA Triad ประกอบด้วยอะไรบ้าง",
+      "choices": [
+        { "key": "ก", "text": "Confidentiality, Integrity, Availability" },
+        { "key": "ข", "text": "Control, Identity, Access" },
+        { "key": "ค", "text": "Cloud, Internet, Application" },
+        { "key": "ง", "text": "Cipher, Index, Audit" }
+      ],
+      "answer": "ก",
+      "explanation": "ความลับ ความถูกต้องสมบูรณ์ และความพร้อมใช้งาน เป็นกรอบแรกในการคิดเรื่องความปลอดภัย"
+    },
+    {
+      "id": 2,
+      "question": "การโจมตี DDoS ที่ทำให้เว็บไซต์ล่มใช้งานไม่ได้ กระทบ CIA ด้านใดโดยตรง",
+      "choices": [
+        { "key": "ก", "text": "Confidentiality" },
+        { "key": "ข", "text": "Integrity" },
+        { "key": "ค", "text": "Availability" },
+        { "key": "ง", "text": "Authenticity" }
+      ],
+      "answer": "ค",
+      "explanation": "DDoS ทำให้บริการไม่พร้อมใช้งาน ส่วนการขโมยข้อมูลกระทบ confidentiality และการแก้ไขข้อมูลกระทบ integrity"
+    },
+    {
+      "id": 3,
+      "question": "SQL injection ที่ทำให้ผู้โจมตีอ่านข้อมูลลูกค้าทั้งตารางได้ กระทบ CIA ด้านใดเป็นหลัก และควรป้องกันอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "Availability — เพิ่ม RAM ให้เซิร์ฟเวอร์" },
+        { "key": "ข", "text": "Confidentiality — ใช้ parameterized query/ORM และตรวจสอบอินพุต" },
+        { "key": "ค", "text": "Integrity — เปลี่ยนสีของเว็บไซต์" },
+        { "key": "ง", "text": "ไม่กระทบด้านใดเลย" }
+      ],
+      "answer": "ข",
+      "explanation": "SQL injection อยู่ใน OWASP Top 10 (Injection) ป้องกันที่ชั้นแอปด้วย prepared statement และ input validation"
+    },
+    {
+      "id": 4,
+      "question": "การเข้ารหัสแบบสมมาตร (symmetric) แตกต่างจากแบบอสมมาตร (asymmetric) อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "symmetric ใช้กุญแจเดียวกันทั้งเข้ารหัสและถอดรหัส ส่วน asymmetric ใช้คู่กุญแจสาธารณะ/ส่วนตัว" },
+        { "key": "ข", "text": "symmetric ไม่ใช้กุญแจ" },
+        { "key": "ค", "text": "asymmetric ใช้ได้เฉพาะกับรูปภาพ" },
+        { "key": "ง", "text": "ทั้งสองแบบเหมือนกัน" }
+      ],
+      "answer": "ก",
+      "explanation": "AES เป็นตัวอย่าง symmetric (เร็ว เหมาะกับข้อมูลปริมาณมาก) ส่วน RSA/ECC เป็น asymmetric (ใช้แลกกุญแจและลายเซ็นดิจิทัล)"
+    },
+    {
+      "id": 5,
+      "question": "หลักการสำคัญของ Zero Trust Architecture (NIST SP 800-207) คือข้อใด",
+      "choices": [
+        { "key": "ก", "text": "เชื่อใจทุกอุปกรณ์ที่อยู่ในเครือข่ายภายใน" },
+        { "key": "ข", "text": "Never trust, always verify — ตรวจสอบ identity, device, context และ policy ทุกครั้งก่อนให้เข้าถึง" },
+        { "key": "ค", "text": "ไม่ต้องใช้รหัสผ่าน" },
+        { "key": "ง", "text": "ติดตั้ง firewall ตัวเดียวที่ขอบเครือข่ายก็เพียงพอ" }
+      ],
+      "answer": "ข",
+      "explanation": "Zero Trust เป็นสถาปัตยกรรม ไม่ใช่ผลิตภัณฑ์ — ทุก request ต้องประเมินความเสี่ยงตาม policy ก่อนให้เข้าถึง resource"
+    },
+    {
+      "id": 6,
+      "question": "Defense-in-depth หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "ใช้มาตรการเดียวที่แข็งแกร่งที่สุด" },
+        { "key": "ข", "text": "ใช้หลายชั้นป้องกันร่วมกัน เช่น authentication, authorization, encryption, logging, backup และ patching" },
+        { "key": "ค", "text": "ซ่อนเซิร์ฟเวอร์ไว้ใต้ดิน" },
+        { "key": "ง", "text": "ปิดอินเทอร์เน็ตทั้งหมด" }
+      ],
+      "answer": "ข",
+      "explanation": "ไม่มีมาตรการเดียวที่พอ การป้องกันหลายชั้นทำให้เมื่อชั้นหนึ่งล้มเหลว ชั้นอื่นยังปกป้องได้"
+    },
+    {
+      "id": 7,
+      "question": "MFA (Multi-Factor Authentication) ช่วยเพิ่มความปลอดภัยอย่างไร",
+      "choices": [
+        { "key": "ก", "text": "ต้องใช้หลักฐานยืนยันตัวตนมากกว่าหนึ่งประเภท เช่น รหัสผ่าน + OTP/อุปกรณ์" },
+        { "key": "ข", "text": "ใช้รหัสผ่านยาวขึ้นเพียงอย่างเดียว" },
+        { "key": "ค", "text": "ไม่ต้องยืนยันตัวตน" },
+        { "key": "ง", "text": "ใช้ได้เฉพาะผู้ดูแลระบบ" }
+      ],
+      "answer": "ก",
+      "explanation": "แม้รหัสผ่านรั่ว ผู้โจมตีก็ยังต้องมีปัจจัยที่สอง จึงลดความเสี่ยงจาก credential theft"
+    },
+    {
+      "id": 8,
+      "question": "Principle of least privilege หมายถึงอะไร",
+      "choices": [
+        { "key": "ก", "text": "ให้สิทธิ์ผู้ใช้/ระบบเท่าที่จำเป็นต่อการทำงานเท่านั้น" },
+        { "key": "ข", "text": "ให้สิทธิ์ admin แก่ทุกคนเพื่อความสะดวก" },
+        { "key": "ค", "text": "ไม่ให้สิทธิ์ใครเลย" },
+        { "key": "ง", "text": "ให้สิทธิ์ตามอายุงาน" }
+      ],
+      "answer": "ก",
+      "explanation": "least privilege จำกัดความเสียหายเมื่อบัญชีหรือบริการถูกยึด และเป็นหลักสำคัญของ Zero Trust"
+    },
+    {
+      "id": 9,
+      "question": "OWASP Top 10 คืออะไร",
+      "choices": [
+        { "key": "ก", "text": "เอกสาร awareness ความเสี่ยงด้านความปลอดภัยของเว็บแอปที่พบบ่อยที่สุด" },
+        { "key": "ข", "text": "รายชื่อ 10 ภาษาโปรแกรมยอดนิยม" },
+        { "key": "ค", "text": "มาตรฐาน Wi-Fi" },
+        { "key": "ง", "text": "รายชื่อ GPU ที่เร็วที่สุด" }
+      ],
+      "answer": "ก",
+      "explanation": "OWASP Top 10 รวมความเสี่ยงเช่น Injection, Broken Access Control, Cryptographic Failures ที่นักพัฒนาเว็บควรรู้"
+    },
+    {
+      "id": 10,
+      "question": "Digital provenance (เช่น มาตรฐาน C2PA) ช่วยรับมือกับ deepfake อย่างไร",
+      "choices": [
+        { "key": "ก", "text": "ลบไฟล์ deepfake ทั้งหมดจากอินเทอร์เน็ต" },
+        { "key": "ข", "text": "บันทึกและรับรองแหล่งที่มา/ประวัติการแก้ไขของสื่อดิจิทัลอย่างตรวจสอบได้" },
+        { "key": "ค", "text": "ทำให้ AI สร้างภาพไม่ได้" },
+        { "key": "ง", "text": "เข้ารหัสรหัสผ่านของผู้ใช้" }
+      ],
+      "answer": "ข",
+      "explanation": "provenance metadata ที่ลงนามดิจิทัลช่วยให้ผู้รับสื่อตรวจสอบได้ว่าสื่อมาจากไหนและถูกดัดแปลงหรือไม่"
+    }
+  ]
+}
