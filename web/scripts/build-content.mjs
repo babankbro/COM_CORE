@@ -251,7 +251,16 @@ async function buildDocs(manifest) {
 }
 
 async function buildSlides(manifest) {
-  if (!(await exists(SLIDES))) return;
+  if (!(await exists(SLIDES))) {
+    // ../slides ไม่อยู่ใน git (เช่น ตอน build บน Vercel) → ใช้รายการสไลด์จาก manifest เดิมที่ commit ไว้
+    try {
+      const prev = JSON.parse(await readFile(path.join(OUT, "manifest.json"), "utf-8"));
+      manifest.slides = prev.slides ?? {};
+    } catch {
+      /* ไม่มี manifest เดิม */
+    }
+    return;
+  }
   await mkdir(path.join(OUT, "slides"), { recursive: true });
   await mkdir(PUBLIC_SLIDES, { recursive: true });
   const dirs = await listFiles(SLIDES, /^Week \d{2} - /);
