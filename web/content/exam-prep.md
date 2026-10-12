@@ -100,7 +100,9 @@ pie showData
 | ปรนัย 9–13 | เลขฐาน เกต สถาปัตยกรรม CPU | 3 | [สัปดาห์ 3](/module/03) |
 | ปรนัย 14–22 | อัลกอริทึม Big-O OOP/FP, SQL ACID NoSQL Vector DB | 4–5 | [สัปดาห์ 4](/module/04) · [สัปดาห์ 5](/module/05) |
 | ปรนัย 23–32 | เครือข่าย คลาวด์ ศูนย์ข้อมูล Docker/Kubernetes | 6–7 | [สัปดาห์ 6](/module/06) · [สัปดาห์ 7](/module/07) |
-| ปรนัย 33–45 | ML, GenAI/หุ่นยนต์, IoT/MQTT/TinyML | 9–11 | [สัปดาห์ 9](/module/09) · [สัปดาห์ 10](/module/10) · [สัปดาห์ 11](/module/11) |
+| ปรนัย 33–36 | ML, Supervised/Unsupervised/Reinforcement, Overfitting, MLOps (ชุดที่ 3 ข้อ 37 เรื่อง MLOps ก็เป็นของสัปดาห์ 9) | 9 | [สัปดาห์ 9](/module/09) |
+| ปรนัย 37–41 | Transformer, LLM, RAG, Agentic AI, หุ่นยนต์/Physical AI | 10 | [สัปดาห์ 10](/module/10) |
+| ปรนัย 42–45 | MCU, Sensor/Actuator, MQTT, TinyML | 11 | [สัปดาห์ 11](/module/11) |
 | ปรนัย 46–50 | CIA, ภัยคุกคาม, MFA, Zero Trust, Prompt Injection | 12 | [สัปดาห์ 12](/module/12) |
 | 21 | SQLite + Python บน Google Colab | 5 | [Lab 05](/lab/05) |
 | 22 | ESP32 MicroPython บน Wokwi: LED | 10–11 | [Lab 10](/lab/10) · [ตัวอย่างคำนวณ หมวด 5](/calc-examples) |
@@ -201,7 +203,7 @@ $$E = p \times 1 - (1-p) \times 0.2 = 1.2p - 0.2$$
 | 5 | ฐานข้อมูล ACID, NoSQL, Vector DB, Big Data, SQL | [สัปดาห์ 5](/module/05) · [Lab 05](/lab/05) | [แบบทดสอบ 05](/exam/05) · ข้อ 10–11, **21** · ปรนัย 18–22 | แผ่น 2 |
 | 6 | เครือข่าย OSI/TCP-IP, TCP/UDP, DNS/DHCP, IPv4/IPv6 | [สัปดาห์ 6](/module/06) · [Lab 06](/lab/06) | [แบบทดสอบ 06](/exam/06) · ข้อ 12 · ปรนัย 23–27 | แผ่น 3 |
 | 7 | คลาวด์, Docker/Kubernetes, ศูนย์ข้อมูล PUE | [สัปดาห์ 7](/module/07) · [Lab 07](/lab/07) | [แบบทดสอบ 07](/exam/07) · ข้อ 13–14, 19.2 · ปรนัย 28–32 · [หมวด 4](/calc-examples) | แผ่น 3 |
-| 8 | AI/ML, Neural Network, Data Lifecycle, MLOps, Linear Regression | [สัปดาห์ 9](/module/09) · [Lab 09](/lab/09) | [แบบทดสอบ 09](/exam/09) · ข้อ 15, **26** · ปรนัย 33–37 · [หมวด 8](/calc-examples) | แผ่น 4, 5 |
+| 8 | AI/ML, Neural Network, Data Lifecycle, MLOps, Linear Regression | [สัปดาห์ 9](/module/09) · [Lab 09](/lab/09) | [แบบทดสอบ 09](/exam/09) · ข้อ 15, **26** · ปรนัย 33–36 · [หมวด 8](/calc-examples) | แผ่น 4, 5 |
 | 9 | Generative AI, LLM, RAG, Agentic AI, Physical AI | [สัปดาห์ 10](/module/10) | [แบบทดสอบ 10](/exam/10) · ข้อ 16 · ปรนัย 37–41 | แผ่น 4 |
 | 10 | ระบบฝังตัว, IoT, MQTT, TinyML + ESP32 LED และ Wi-Fi | [สัปดาห์ 11](/module/11) · [Lab 10](/lab/10) | [แบบทดสอบ 11](/exam/11) · ข้อ 17, **22–23** · ปรนัย 42–45 · [หมวด 5–6](/calc-examples) | แผ่น 4, 5 |
 | 11 | I2C/DHT22 และ Google Sheets + Dashboard | [Lab 11](/lab/11) · [Lab 12](/lab/12) | ข้อ **24–25** · [หมวด 7](/calc-examples) | แผ่น 5 |
