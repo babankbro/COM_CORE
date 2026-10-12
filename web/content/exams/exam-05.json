@@ -296,27 +296,27 @@
     },
     {
       "id": 13,
-      "question": "ข้อใดอธิบายความต่างระหว่าง WHERE กับ HAVING ได้ถูกต้อง",
+      "question": "ข้อใดอธิบายหน้าที่ของ GROUP BY, WHERE และ HAVING ได้ถูกต้อง",
       "choices": [
         {
           "key": "ก",
-          "text": "WHERE กรองทีละแถวก่อนรวมกลุ่ม ส่วน HAVING กรองทีละกลุ่มหลัง GROUP BY และใช้ aggregate function ได้"
+          "text": "GROUP BY จัดแถวที่มีค่าเดียวกันเป็นกลุ่มเพื่อคำนวณ COUNT/SUM/AVG ต่อกลุ่ม · WHERE กรองทีละแถวก่อนรวมกลุ่ม · HAVING กรองทีละกลุ่มหลัง GROUP BY และใช้ aggregate function ได้"
         },
         {
           "key": "ข",
-          "text": "WHERE ใช้ได้เฉพาะกับ JOIN ส่วน HAVING ใช้กับตารางเดียว"
+          "text": "GROUP BY เรียงลำดับข้อมูลจากมากไปน้อย · WHERE ใช้ได้เฉพาะกับ JOIN · HAVING ใช้กับตารางเดียว"
         },
         {
           "key": "ค",
-          "text": "HAVING ทำงานก่อน WHERE เสมอ"
+          "text": "GROUP BY ลบแถวที่ซ้ำ · HAVING ทำงานก่อน WHERE เสมอ"
         },
         {
           "key": "ง",
-          "text": "ทั้งสองใช้แทนกันได้ทุกกรณี รวมถึง WHERE AVG(gpa) > 3"
+          "text": "ทั้งสามใช้แทนกันได้ทุกกรณี รวมถึง WHERE AVG(gpa) > 3"
         }
       ],
       "answer": "ก",
-      "explanation": "WHERE ทำงานก่อนการรวมกลุ่มจึงใช้ aggregate ไม่ได้ การเขียน WHERE AVG(gpa) > 3 จะ error ต้องใช้ HAVING แทน (สัปดาห์ 5 หัวข้อ 1)"
+      "explanation": "ลำดับการทำงาน: FROM → WHERE (กรองแถว) → GROUP BY (จัดกลุ่ม) → HAVING (กรองกลุ่ม) → SELECT → ORDER BY (เรียงลำดับ) WHERE ใช้ aggregate ไม่ได้ การเขียน WHERE AVG(gpa) > 3 จะ error ต้องใช้ HAVING แทน (สัปดาห์ 5 หัวข้อ 1)"
     },
     {
       "id": 14,
@@ -464,27 +464,27 @@
     },
     {
       "id": 20,
-      "question": "เวกเตอร์ embedding a = (3, 4) และ b = (4, 3) มีค่า cosine similarity เท่าใด",
+      "question": "ฐานข้อมูลเวกเตอร์ (Vector Database) มักวัดความคล้ายของ embedding ด้วยวิธีใด และถ้า a = (3, 4), b = (4, 3) จะได้ค่าเท่าใด",
       "choices": [
         {
           "key": "ก",
-          "text": "0.75"
+          "text": "นับจำนวนคำที่ตรงกัน (keyword match) ได้ 0"
         },
         {
           "key": "ข",
-          "text": "1.00"
+          "text": "Cosine similarity ได้ 1.00"
         },
         {
           "key": "ค",
-          "text": "0.00"
+          "text": "เทียบความยาวของข้อความ ได้ 0.75"
         },
         {
           "key": "ง",
-          "text": "0.96"
+          "text": "Cosine similarity ได้ 0.96 ซึ่งใกล้ 1 แปลว่าความหมายใกล้เคียงกันมาก"
         }
       ],
       "answer": "ง",
-      "explanation": "a·b = 3×4 + 4×3 = 24 และ ‖a‖ = ‖b‖ = 5 ดังนั้น cos θ = 24 / 25 = 0.96 ซึ่งใกล้ 1 แปลว่าทิศทางคล้ายกันมาก (สัปดาห์ 5 หัวข้อ 3)"
+      "explanation": "Vector DB ค้นหาตามความหมาย (semantic search) โดยวัดมุมระหว่างเวกเตอร์ด้วย cosine similarity = a·b ÷ (‖a‖‖b‖) ได้ a·b = 3×4 + 4×3 = 24 และ ‖a‖ = ‖b‖ = 5 จึงได้ 24/25 = 0.96 ค่าใกล้ 1 = คล้ายกันมาก ใกล้ 0 = ไม่เกี่ยวกัน (สัปดาห์ 5 หัวข้อ 3)"
     }
   ]
 }

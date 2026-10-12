@@ -438,35 +438,35 @@
     },
     {
       "id": 19,
-      "question": "ข้อใดอธิบายความต่างระหว่าง VM กับ container ได้ถูกต้อง",
+      "question": "ทีมเขียนคำสั่ง FROM python:3.12-slim, COPY . /app, RUN pip install -r requirements.txt และ CMD [\"python\", \"app.py\"] ไว้ในไฟล์หนึ่ง แล้วสั่ง docker build -t asset-app . ไฟล์นี้คืออะไร",
       "choices": [
         {
           "key": "ก",
-          "text": "Container มี Guest OS เต็มชุดของตัวเอง จึงแยกขาดจากกันมากกว่า VM"
+          "text": "docker-compose.yml ที่ใช้ตั้งค่า Kubernetes cluster"
         },
         {
           "key": "ข",
-          "text": "VM เบาและเริ่มทำงานเร็วกว่า container เพราะใช้ hypervisor"
+          "text": "requirements.txt ที่เก็บรายชื่อไลบรารีเท่านั้น"
         },
         {
           "key": "ค",
-          "text": "Container ทุกตัวต้องมี hypervisor แยกของตัวเอง"
+          "text": "README.md ที่อธิบายวิธีใช้โปรเจกต์"
         },
         {
           "key": "ง",
-          "text": "Container แชร์ kernel ของ Host OS จึงเบาและเริ่มได้เร็วกว่า VM ที่มี Guest OS เต็มชุด"
+          "text": "Dockerfile ซึ่งเป็นสูตรกำหนดขั้นตอนสร้าง Docker image ทีละชั้น (layer)"
         }
       ],
       "answer": "ง",
-      "explanation": "VM เหมือนบ้านเดี่ยวที่มี Guest OS ของตัวเอง ส่วน container เหมือนห้องในคอนโดที่ใช้ kernel ร่วมกัน จึงเบาและย้ายได้เร็ว (สัปดาห์ 7 อธิบายเพิ่มเติมข้อ 2)"
+      "explanation": "Dockerfile = ไฟล์ข้อความที่บอกวิธีสร้าง image: FROM (image ฐาน) → COPY (คัดลอกโค้ด) → RUN (ติดตั้ง) → CMD (คำสั่งเมื่อรัน) จากนั้น docker build สร้าง image และ docker run สร้าง container จาก image นั้น docker-compose.yml ใช้กำหนดหลาย container ที่ทำงานร่วมกัน"
     },
     {
       "id": 20,
-      "question": "ไฮเปอร์ไวเซอร์ (Hypervisor) มีหน้าที่อะไร",
+      "question": "บนเซิร์ฟเวอร์จริงหนึ่งเครื่องมี VM ทำงานพร้อมกัน 6 เครื่อง ซอฟต์แวร์ชั้นใดสร้างและแบ่งทรัพยากรให้ VM เหล่านั้น",
       "choices": [
         {
           "key": "ก",
-          "text": "สร้างและจัดการเครื่องเสมือน (VM) หลายเครื่องบนเครื่องจริงเครื่องเดียว โดยแบ่งปัน CPU หน่วยความจำ และดิสก์ให้แต่ละ VM"
+          "text": "Hypervisor ที่สร้างและจัดการ VM หลายเครื่องบนฮาร์ดแวร์เดียว โดยแบ่ง CPU หน่วยความจำ และดิสก์ให้แต่ละ VM"
         },
         {
           "key": "ข",

@@ -415,27 +415,27 @@
     },
     {
       "id": 18,
-      "question": "ผล ping แสดงว่า Packets: Sent = 4, Received = 3 อัตราการสูญหายของ packet (packet loss) เท่ากับเท่าใด",
+      "question": "คำสั่ง ping ใช้ทดสอบอะไร และถ้าผลแสดงว่า Packets: Sent = 4, Received = 3 อัตราการสูญหายของ packet (packet loss) เท่ากับเท่าใด",
       "choices": [
         {
           "key": "ก",
-          "text": "75%"
+          "text": "ทดสอบความเร็วดาวน์โหลด · loss 75%"
         },
         {
           "key": "ข",
-          "text": "3%"
+          "text": "แปลงชื่อโดเมนเป็น IP · loss 3%"
         },
         {
           "key": "ค",
-          "text": "25%"
+          "text": "ส่ง ICMP Echo Request ทดสอบว่าเข้าถึงปลายทางได้หรือไม่และวัดเวลาไป–กลับ (RTT) · loss 25%"
         },
         {
           "key": "ง",
-          "text": "1%"
+          "text": "แสดงเส้นทางทุก router ที่ผ่าน · loss 1%"
         }
       ],
       "answer": "ค",
-      "explanation": "หายไป 4 − 3 = 1 packet จาก 4 จึงเป็น 1/4 × 100% = 25% ค่า loss สูงบ่งบอกว่าเครือข่ายไม่เสถียร (Lab 6)"
+      "explanation": "ping ส่ง ICMP Echo Request แล้วรอ Echo Reply บอกได้ว่าเชื่อมต่อถึงปลายทางหรือไม่ เวลาไป–กลับกี่ ms และ TTL หายไป 4 − 3 = 1 packet จาก 4 = 25% ค่า loss สูงบ่งบอกว่าเครือข่ายไม่เสถียร การแสดงเส้นทางทีละ hop เป็นงานของ tracert (Lab 6)"
     },
     {
       "id": 19,
