@@ -48,7 +48,7 @@
             <tr><td>ความครบ/ลำดับ</td><td>รับประกัน ส่งซ้ำเมื่อหาย</td><td>ไม่รับประกัน</td></tr>
             <tr><td>เหมาะกับ</td><td>เว็บ, อีเมล, ไฟล์, API</td><td>DNS, เกม, video call, stream</td></tr>
           </table>
-          <div class="def-row"><span class="def-key">Ports</span><span class="def-val">DNS 53 · HTTP 80 · HTTPS 443 · SSH 22 · DHCP 67/68 · HTTP/3 ใช้ QUIC บน UDP</span></div>
+          <div class="def-row"><span class="def-key">Ports</span><span class="def-val">DNS 53 · HTTP 80 · HTTPS 443 · SSH 22 · <b>SMTP 25</b> (ส่งอีเมลระหว่าง mail server; อ่านเมลใช้ POP3/IMAP) · DHCP 67/68 · HTTP/3 ใช้ QUIC บน UDP</span></div>
         </div>
       </div>
 
@@ -142,6 +142,7 @@ curl -v https://example.com <span class="comment"># ดู HTTP status/header</s
         <div class="section-body">
           <div class="def-row"><span class="def-key">Switch</span><span class="def-val">ส่ง frame ภายใน LAN ด้วย MAC (L2)</span></div>
           <div class="def-row"><span class="def-key">Router</span><span class="def-val">ส่ง packet ข้ามเครือข่ายด้วย IP (L3) · default gateway</span></div>
+          <div class="def-row"><span class="def-key">Firewall</span><span class="def-val">กรองทราฟฟิกเข้า/ออกตามกฎ (IP, พอร์ต, โพรโทคอล) อนุญาตหรือปิดกั้น</span></div>
           <div class="def-row"><span class="def-key">PAN&lt;LAN&lt;MAN&lt;WAN</span><span class="def-val">Bluetooth · ห้องแล็บ · เมือง · ข้ามประเทศ (อินเทอร์เน็ต)</span></div>
           <div class="def-row"><span class="def-key">เทรนด์</span><span class="def-val">Wi-Fi 7 (802.11be) · 5G-Advanced (3GPP Rel-18) → 6G · SDN/NFV · LEO satellite</span></div>
         </div>
