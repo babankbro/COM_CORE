@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = path.join(ROOT, "content");
 const WEEKS = Array.from({ length: 17 }, (_, i) => String(i + 1).padStart(2, "0"));
-const EXAM_WEEKS = WEEKS.filter((w) => !["08", "16", "17"].includes(w));
+const EXAM_WEEKS = WEEKS;
 const LAB_WEEKS = WEEKS.filter((w) => !["08", "16", "17"].includes(w));
 
 let errors = 0;

@@ -110,7 +110,7 @@ export const modules: ModuleData[] = [
     description: "ทบทวนภาพรวมสัปดาห์ 1–7 เป็นภาพระบบเดียว ฝึกโจทย์วิเคราะห์ และสอบกลางภาคตาม CLO1–CLO3",
     clo: ["CLO1", "CLO2", "CLO3"],
     topics: ["Midterm", "Review", "Concept map"],
-    project: null, hasLab: false, hasExam: false,
+    project: null, hasLab: false, hasExam: true,
     icon: "ClipboardList", color: "slate",
   },
   {
@@ -197,7 +197,7 @@ export const modules: ModuleData[] = [
     description: "การนำเสนอโครงงานรวม 4 โมดูล: problem → architecture → demo → result → limitation และการตอบคำถามเชิงเทคนิค/จริยธรรม",
     clo: ["CLO3", "CLO6"],
     topics: ["Presentation", "Demo", "Rubric", "Q&A"],
-    project: null, hasLab: false, hasExam: false,
+    project: null, hasLab: false, hasExam: true,
     icon: "Presentation", color: "fuchsia",
   },
   {
@@ -207,7 +207,7 @@ export const modules: ModuleData[] = [
     description: "ทบทวนครึ่งหลังของรายวิชา (AI, GenAI, IoT, security, ethics, DevOps) ด้วยกรณีศึกษา และสอบปลายภาคตาม CLO1, CLO2, CLO4, CLO5",
     clo: ["CLO1", "CLO2", "CLO4", "CLO5"],
     topics: ["Final exam", "Case study", "Review"],
-    project: null, hasLab: false, hasExam: false,
+    project: null, hasLab: false, hasExam: true,
     icon: "GraduationCap", color: "slate",
   },
 ];
