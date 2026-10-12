@@ -319,27 +319,27 @@
     },
     {
       "id": 14,
-      "question": "ESP32 publish ข้อความด้วย QoS 2 ขณะที่ dashboard subscribe topic เดียวกันด้วย QoS 0 ข้อความที่ส่งถึง dashboard ใช้ QoS ระดับใด",
+      "question": "Dashboard ต้องการรับข้อมูลทุก topic ภายใต้ farm/ เช่น farm/zone1/temp และ farm/zone2/soil/moisture ควร subscribe topic filter ใด",
       "choices": [
         {
           "key": "ก",
-          "text": "QoS 2 ตามฝั่ง publisher"
+          "text": "farm/+"
         },
         {
           "key": "ข",
-          "text": "QoS 1 ซึ่งเป็นค่ากลาง"
+          "text": "farm/*"
         },
         {
           "key": "ค",
-          "text": "QoS 2 เพราะ broker ยกระดับให้อัตโนมัติ"
+          "text": "#/farm"
         },
         {
           "key": "ง",
-          "text": "QoS 0 ตามค่าที่ต่ำกว่า"
+          "text": "farm/#"
         }
       ],
       "answer": "ง",
-      "explanation": "QoS ที่ใช้จริงขาไปผู้รับคือค่าที่ต่ำกว่าระหว่างฝั่ง publish กับฝั่ง subscribe ความน่าเชื่อถือจึงต้องออกแบบทั้งเส้นทาง (สัปดาห์ 11 อธิบายเพิ่มเติมข้อ 4)"
+      "explanation": "ใน MQTT \"#\" คือ multi-level wildcard แทนทุกระดับที่อยู่ถัดลงไป ต้องอยู่ท้ายสุดของ filter ส่วน \"+\" คือ single-level wildcard แทนได้ระดับเดียว (farm/+ จึงไม่ได้ farm/zone2/soil/moisture) และ MQTT ไม่ใช้ \"*\""
     },
     {
       "id": 15,

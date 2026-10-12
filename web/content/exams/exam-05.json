@@ -320,51 +320,51 @@
     },
     {
       "id": 14,
-      "question": "คำสั่งใดลบทั้งข้อมูลและโครงสร้างตาราง (schema และ index) ออกไปทั้งหมด",
+      "question": "ข้อใดจับคู่งานกับคำสั่ง SQL ได้ถูกต้องทั้งหมด",
       "choices": [
         {
           "key": "ก",
-          "text": "DELETE FROM t"
+          "text": "สร้างตารางใหม่ = INSERT · เพิ่มแถว = CREATE TABLE · แก้ไขค่า = SELECT · ลบแถว = DROP"
         },
         {
           "key": "ข",
-          "text": "DELETE FROM t WHERE id = 1"
+          "text": "สร้างตารางใหม่ = SELECT · เพิ่มแถว = UPDATE · แก้ไขค่า = INSERT · ลบแถว = ALTER"
         },
         {
           "key": "ค",
-          "text": "TRUNCATE TABLE t"
+          "text": "สร้างตารางใหม่ = ALTER · เพิ่มแถว = DELETE · แก้ไขค่า = CREATE · ลบแถว = UPDATE"
         },
         {
           "key": "ง",
-          "text": "DROP TABLE t"
+          "text": "สร้างตารางใหม่ = CREATE TABLE · เพิ่มแถว = INSERT INTO · แก้ไขค่าในแถวที่มีอยู่ = UPDATE … SET … WHERE · ลบบางแถว = DELETE FROM … WHERE"
         }
       ],
       "answer": "ง",
-      "explanation": "DROP TABLE ลบตัวตารางทิ้งทั้งหมด ส่วน DELETE และ TRUNCATE ลบเฉพาะแถวโดยโครงสร้างตารางยังอยู่ (สัปดาห์ 5 หัวข้อ 1)"
+      "explanation": "DDL: CREATE (สร้าง), ALTER (แก้โครงสร้าง), DROP (ลบทั้งตาราง) · DML: INSERT (เพิ่มแถว), UPDATE (แก้ค่าแถวที่มีอยู่), DELETE (ลบแถว), SELECT (ดึงข้อมูล) ข้อควรระวัง: UPDATE/DELETE ที่ไม่มี WHERE จะกระทบทุกแถว และ DROP TABLE ลบทั้งข้อมูลและโครงสร้าง"
     },
     {
       "id": 15,
-      "question": "โซเชียลมีเดียยอมให้ยอดไลก์ที่เพื่อนเห็นช้ากว่าความจริงเล็กน้อย เพื่อให้ระบบตอบทุกคำขอได้แม้เครือข่ายขาดบางส่วน ตาม CAP Theorem ระบบนี้เลือกแบบใด",
+      "question": "ข้อใดเป็นตัวอย่างประเภทของฐานข้อมูล NoSQL ได้ถูกต้อง",
       "choices": [
         {
           "key": "ก",
-          "text": "CP — ยอมปฏิเสธบางคำขอเพื่อให้ข้อมูลตรงกันทุก node"
+          "text": "MySQL, PostgreSQL และ Oracle"
         },
         {
           "key": "ข",
-          "text": "CA — ไม่ต้องรองรับ network partition"
+          "text": "Excel, CSV และ PDF"
         },
         {
           "key": "ค",
-          "text": "AP — เน้น Availability และยอมรับ eventual consistency"
+          "text": "Document (MongoDB เก็บเป็น JSON), Key-Value (Redis) และ Graph (Neo4j)"
         },
         {
           "key": "ง",
-          "text": "ACID — ทุกธุรกรรมต้อง commit พร้อมกันทุก node"
+          "text": "HTML, CSS และ JavaScript"
         }
       ],
       "answer": "ค",
-      "explanation": "ระบบกระจายหลีกเลี่ยง partition ไม่ได้ การเลือกตอบเสมอแม้ข้อมูลยังไม่ล่าสุดคือ AP ซึ่งทุก replica จะตรงกันในที่สุด (eventual consistency) (สัปดาห์ 5 หัวข้อ 2)"
+      "explanation": "NoSQL มี 4 แบบหลัก: Document (MongoDB เก็บเอกสาร JSON/BSON), Key-Value (Redis, DynamoDB), Wide-Column (Cassandra) และ Graph (Neo4j เก็บโหนดและความสัมพันธ์) ส่วน MySQL, PostgreSQL, Oracle เป็น Relational DBMS ที่ใช้ SQL และตาราง"
     },
     {
       "id": 16,
@@ -440,27 +440,27 @@
     },
     {
       "id": 19,
-      "question": "ข้อใดอธิบายแนวทาง ELT (Extract → Load → Transform) ได้ถูกต้อง",
+      "question": "ธนาคารมีผู้ใช้สองคนโอนเงินออกจากบัญชีเดียวกันในเวลาเดียวกัน ระบบต้องทำให้ผลลัพธ์เหมือนทำทีละรายการ ไม่ให้ธุรกรรมหนึ่งเห็นข้อมูลที่อีกธุรกรรมยังทำไม่เสร็จ คุณสมบัตินี้คือข้อใดของ ACID",
       "choices": [
         {
           "key": "ก",
-          "text": "โหลดข้อมูลดิบเข้า data lake/warehouse บนคลาวด์ก่อน แล้วใช้พลังประมวลผลปลายทางแปลงข้อมูลภายหลัง"
+          "text": "Isolation (การแยกกัน)"
         },
         {
           "key": "ข",
-          "text": "แปลงและทำความสะอาดข้อมูลให้เสร็จก่อนจึงโหลดเข้า warehouse"
+          "text": "Atomicity (ทำทั้งหมดหรือไม่ทำเลย)"
         },
         {
           "key": "ค",
-          "text": "ใช้เฉพาะข้อมูลแบบ stream เท่านั้น"
+          "text": "Consistency (ข้อมูลถูกต้องตามกฎ)"
         },
         {
           "key": "ง",
-          "text": "ลบข้อมูลดิบทิ้งทันทีหลัง extract"
+          "text": "Durability (บันทึกถาวร)"
         }
       ],
       "answer": "ก",
-      "explanation": "ELT โหลดข้อมูลดิบเข้าปลายทางก่อนแล้วค่อยแปลง ส่วนข้อ ข คือ ETL แบบดั้งเดิมที่แปลงก่อนโหลด (สัปดาห์ 5 หัวข้อ 4)"
+      "explanation": "ACID: Atomicity = ธุรกรรมสำเร็จทั้งหมดหรือยกเลิกทั้งหมด · Consistency = ข้อมูลยังถูกต้องตามกฎ/constraint หลังธุรกรรม · Isolation = ธุรกรรมที่ทำพร้อมกันไม่รบกวนกัน ผลเหมือนทำทีละรายการ · Durability = commit แล้วข้อมูลไม่หายแม้ไฟดับ"
     },
     {
       "id": 20,

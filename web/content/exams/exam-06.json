@@ -150,27 +150,27 @@
     },
     {
       "id": 7,
-      "question": "เครื่องมือใดใช้ตรวจเส้นทางที่ packet เดินทางผ่าน router ต่าง ๆ ไปยังปลายทาง",
+      "question": "ผล tracert ไปยังเว็บไซต์แสดงรายการ hop 8 ลำดับ แต่ละ hop คืออุปกรณ์ชนิดใด และทำหน้าที่อะไร",
       "choices": [
         {
           "key": "ก",
-          "text": "ping"
+          "text": "Switch ที่ส่งเฟรมตาม MAC address ภายใน LAN"
         },
         {
           "key": "ข",
-          "text": "nslookup"
+          "text": "Hub ที่กระจายสัญญาณไปทุกพอร์ต"
         },
         {
           "key": "ค",
-          "text": "tracert / traceroute"
+          "text": "Router ที่เชื่อมเครือข่ายต่างกันและเลือกเส้นทาง (routing) ส่ง packet ต่อตาม IP ปลายทาง"
         },
         {
           "key": "ง",
-          "text": "ipconfig"
+          "text": "Access Point ที่แปลง Wi-Fi เป็นสาย LAN"
         }
       ],
       "answer": "ค",
-      "explanation": "traceroute แสดง hop แต่ละจุด ส่วน ping ทดสอบการเข้าถึงและ latency และ nslookup ใช้สอบถาม DNS"
+      "explanation": "tracert (traceroute) แสดง router แต่ละตัวที่ packet ผ่าน (hop) Router ทำงานชั้น Network/Internet (L3) เชื่อมเครือข่ายต่างกันและเลือกเส้นทางด้วย routing table ส่วน Switch ทำงานชั้น Data Link (L2) ส่งเฟรมตาม MAC ภายใน LAN เดียวกัน"
     },
     {
       "id": 8,
@@ -222,27 +222,27 @@
     },
     {
       "id": 10,
-      "question": "REST API ที่ส่งคำขอ GET ไปยัง /api/status เพื่อดึงสถานะของอุปกรณ์ ทำงานที่ชั้นใดของ TCP/IP model",
+      "question": "แอปเรียก REST API ด้วย HTTP GET ผ่าน TCP ไปยัง IP ของเซิร์ฟเวอร์ ข้อใดระบุชั้นของโพรโทคอลได้ถูกต้อง",
       "choices": [
         {
           "key": "ก",
-          "text": "Link"
+          "text": "HTTP อยู่ชั้น Transport, TCP อยู่ชั้น Application และ OSI มี 4 ชั้น"
         },
         {
           "key": "ข",
-          "text": "Internet"
+          "text": "HTTP อยู่ชั้น Internet, TCP อยู่ชั้น Link และ OSI มี 5 ชั้น"
         },
         {
           "key": "ค",
-          "text": "Transport"
+          "text": "HTTP, TCP และ IP อยู่ชั้นเดียวกันทั้งหมด"
         },
         {
           "key": "ง",
-          "text": "Application"
+          "text": "HTTP อยู่ชั้น Application, TCP (และ UDP) อยู่ชั้น Transport, IP อยู่ชั้น Internet ส่วนแบบจำลอง OSI แบ่งละเอียดกว่าเป็น 7 ชั้น"
         }
       ],
       "answer": "ง",
-      "explanation": "HTTP/REST อยู่ในชั้น application โดยอาศัย TCP (transport) และ IP (internet) ด้านล่าง"
+      "explanation": "TCP/IP 4 ชั้น: Application (HTTP, DNS, DHCP, SMTP) → Transport (TCP, UDP, พอร์ต) → Internet (IP, ICMP) → Link (Ethernet, Wi-Fi) ส่วน OSI มี 7 ชั้น: Physical, Data Link, Network, Transport, Session, Presentation, Application"
     },
     {
       "id": 11,

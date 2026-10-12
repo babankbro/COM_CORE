@@ -198,27 +198,27 @@
     },
     {
       "id": 9,
-      "question": "NIST AI Risk Management Framework ชี้ว่า AI ที่น่าเชื่อถือควรพิจารณาเรื่องใดนอกเหนือจากความแม่นยำ",
+      "question": "ข้อใดจับคู่งาน Machine Learning กับประเภทงานได้ถูกต้อง",
       "choices": [
         {
           "key": "ก",
-          "text": "ความเร็วของ GPU เท่านั้น"
+          "text": "แยกอีเมลเป็นสแปม/ไม่สแปม = Regression · ทำนายยอดขายเป็นบาท = Clustering"
         },
         {
           "key": "ข",
-          "text": "validity, safety, security, fairness, accountability และ governance"
+          "text": "แยกภาพเป็น \"รถ\" หรือ \"จักรยาน\" = Classification · ทำนายราคาคอนโดเป็นบาท = Regression · หาธุรกรรมผิดปกติจากข้อมูลที่ไม่มีป้ายกำกับ = Anomaly Detection (Unsupervised)"
         },
         {
           "key": "ค",
-          "text": "จำนวนบรรทัดโค้ด"
+          "text": "จัดกลุ่มลูกค้าโดยไม่มีป้ายกำกับ = Supervised Classification"
         },
         {
           "key": "ง",
-          "text": "ราคาของ cloud"
+          "text": "ทำนายอุณหภูมิเป็น °C = Classification · แยกภาพสัตว์ = Regression"
         }
       ],
       "answer": "ข",
-      "explanation": "NIST AI RMF มอง AI แบบองค์รวม ครอบคลุมความปลอดภัย ความเป็นธรรม ความรับผิดชอบ และธรรมาภิบาล"
+      "explanation": "Classification ทำนาย \"กลุ่ม/คลาส\" (ค่าไม่ต่อเนื่อง) · Regression ทำนาย \"ตัวเลขต่อเนื่อง\" (ราคา อุณหภูมิ) ทั้งสองเป็น Supervised เพราะมีป้ายกำกับ · Clustering และ Anomaly Detection ทำได้โดยไม่มีป้ายกำกับ (Unsupervised) โดยหาจุดข้อมูลที่ต่างจากกลุ่มส่วนใหญ่"
     },
     {
       "id": 10,
@@ -294,27 +294,27 @@
     },
     {
       "id": 13,
-      "question": "นิวรอนหนึ่งตัวมี input x = [1, 2], weight w = [0.5, −0.4], bias b = 0.1 และใช้ activation ReLU ค่า output เท่ากับเท่าใด",
+      "question": "โมเดลได้ความแม่นยำ 99% บนข้อมูลฝึก แต่เหลือเพียง 60% บนข้อมูลใหม่ที่ไม่เคยเห็น ปัญหานี้เรียกว่าอะไร และแก้อย่างไร",
       "choices": [
         {
           "key": "ก",
-          "text": "−0.2"
+          "text": "Underfitting แก้โดยลดจำนวนข้อมูล"
         },
         {
           "key": "ข",
-          "text": "1.4"
+          "text": "Data Drift แก้โดยปิดระบบ"
         },
         {
           "key": "ค",
-          "text": "0.2"
+          "text": "Hallucination แก้โดยเพิ่ม temperature"
         },
         {
           "key": "ง",
-          "text": "0"
+          "text": "Overfitting (โมเดลจำข้อมูลฝึกแทนการเรียนรู้รูปแบบทั่วไป) แก้โดยเพิ่มข้อมูล ลดความซับซ้อนของโมเดล ใช้ regularization หรือ early stopping"
         }
       ],
       "answer": "ง",
-      "explanation": "z = 1(0.5) + 2(−0.4) + 0.1 = −0.2 และ ReLU = max(0, z) จึงได้ 0 ส่วน −0.2 คือค่า z ก่อนผ่าน activation (สัปดาห์ 9 หัวข้อ 2)"
+      "explanation": "Overfitting = ดีมากบน train แต่แย่บน test/ข้อมูลจริง · Underfitting = แย่ทั้งบน train และ test เพราะโมเดลง่ายเกินไป ตรวจได้โดยแบ่งข้อมูล train/validation/test แล้วเทียบผล"
     },
     {
       "id": 14,
@@ -414,27 +414,27 @@
     },
     {
       "id": 18,
-      "question": "ข้อใดคือสิ่งที่ pipeline ของ MLOps เพิ่มเข้ามาจาก CI/CD ของ DevOps",
+      "question": "ข้อใดอธิบายการเรียนรู้เชิงลึก (Deep Learning) ได้ถูกต้อง",
       "choices": [
         {
           "key": "ก",
-          "text": "Continuous Testing ที่ทดสอบเฉพาะหน้า UI"
+          "text": "การเขียนกฎ IF–THEN ด้วยมือจำนวนมาก"
         },
         {
           "key": "ข",
-          "text": "Code Translation ที่แปลงโค้ดเป็นหลายภาษา"
+          "text": "การเก็บข้อมูลลงฐานข้อมูลเชิงสัมพันธ์"
         },
         {
           "key": "ค",
-          "text": "Cloud Tenancy ที่แบ่งผู้เช่าบนคลาวด์"
+          "text": "การใช้ตารางสถิติเฉลี่ยค่าอย่างเดียว"
         },
         {
           "key": "ง",
-          "text": "Continuous Training (CT) ที่ฝึกโมเดลใหม่อัตโนมัติเมื่อข้อมูลเปลี่ยน"
+          "text": "ML ประเภทหนึ่งที่ใช้โครงข่ายประสาทเทียมหลายชั้น (deep neural network) เรียนรู้ feature จากข้อมูลดิบได้เอง เช่น ภาพ เสียง ข้อความ"
         }
       ],
       "answer": "ง",
-      "explanation": "โมเดลเสื่อมได้เองเมื่อโลกเปลี่ยน MLOps จึงเพิ่ม CT ให้ฝึกและตรวจโมเดลใหม่ในไปป์ไลน์ นอกเหนือจาก CI/CD (สัปดาห์ 9 หัวข้อ 5)"
+      "explanation": "AI ⊃ ML ⊃ Deep Learning: DL เป็นส่วนหนึ่งของ ML ที่ใช้ neural network หลายชั้น (CNN สำหรับภาพ, Transformer สำหรับข้อความ) เรียน feature เองโดยไม่ต้องออกแบบด้วยมือ แต่ต้องใช้ข้อมูลมากและ GPU/NPU การเขียนกฎ IF–THEN ด้วยมือคือ rule-based AI"
     },
     {
       "id": 19,
