@@ -2,16 +2,28 @@
   "moduleId": "03",
   "title": "Digital Logic & Modern Processors",
   "titleTh": "วงจรตรรกะและหน่วยประมวลผล",
-  "timeMinutes": 15,
+  "timeMinutes": 30,
   "questions": [
     {
       "id": 1,
       "question": "เกต (gate) ใดให้เอาต์พุตเป็น 1 ก็ต่อเมื่ออินพุตทั้งสองเป็น 1",
       "choices": [
-        { "key": "ก", "text": "OR" },
-        { "key": "ข", "text": "AND" },
-        { "key": "ค", "text": "XOR" },
-        { "key": "ง", "text": "NOT" }
+        {
+          "key": "ก",
+          "text": "OR"
+        },
+        {
+          "key": "ข",
+          "text": "AND"
+        },
+        {
+          "key": "ค",
+          "text": "XOR"
+        },
+        {
+          "key": "ง",
+          "text": "NOT"
+        }
       ],
       "answer": "ข",
       "explanation": "AND ให้ 1 เฉพาะเมื่ออินพุตทุกตัวเป็น 1 ส่วน OR ให้ 1 เมื่อมีอินพุตใดเป็น 1 และ XOR ให้ 1 เมื่ออินพุตต่างกัน"
@@ -20,10 +32,22 @@
       "id": 2,
       "question": "Half-adder ที่บวกบิต A และ B ใช้เกตใดสร้างผลบวก (Sum) และตัวทด (Carry) ตามลำดับ",
       "choices": [
-        { "key": "ก", "text": "Sum = AND, Carry = OR" },
-        { "key": "ข", "text": "Sum = OR, Carry = XOR" },
-        { "key": "ค", "text": "Sum = XOR, Carry = AND" },
-        { "key": "ง", "text": "Sum = NOT, Carry = NAND" }
+        {
+          "key": "ก",
+          "text": "Sum = AND, Carry = OR"
+        },
+        {
+          "key": "ข",
+          "text": "Sum = OR, Carry = XOR"
+        },
+        {
+          "key": "ค",
+          "text": "Sum = XOR, Carry = AND"
+        },
+        {
+          "key": "ง",
+          "text": "Sum = NOT, Carry = NAND"
+        }
       ],
       "answer": "ค",
       "explanation": "Sum = A XOR B และ Carry = A AND B — แสดงว่าการบวกเลขเริ่มจากตรรกะพื้นฐาน"
@@ -32,10 +56,22 @@
       "id": 3,
       "question": "วงจรพื้นฐานของหน่วยประมวลผลที่ดึงคำสั่ง แปลคำสั่ง แล้วดำเนินการ เรียกว่าอะไร",
       "choices": [
-        { "key": "ก", "text": "Fetch–Decode–Execute cycle" },
-        { "key": "ข", "text": "Read–Write cycle" },
-        { "key": "ค", "text": "Compile–Link–Run" },
-        { "key": "ง", "text": "Request–Response" }
+        {
+          "key": "ก",
+          "text": "Fetch–Decode–Execute cycle"
+        },
+        {
+          "key": "ข",
+          "text": "Read–Write cycle"
+        },
+        {
+          "key": "ค",
+          "text": "Compile–Link–Run"
+        },
+        {
+          "key": "ง",
+          "text": "Request–Response"
+        }
       ],
       "answer": "ก",
       "explanation": "fetch-decode-execute คือวงจรการทำงานพื้นฐานของ processor"
@@ -44,10 +80,22 @@
       "id": 4,
       "question": "ตามสถาปัตยกรรม von Neumann ส่วนประกอบใดของ CPU ทำหน้าที่คำนวณทางคณิตศาสตร์และตรรกะ",
       "choices": [
-        { "key": "ก", "text": "Control Unit" },
-        { "key": "ข", "text": "ALU (Arithmetic Logic Unit)" },
-        { "key": "ค", "text": "Bus" },
-        { "key": "ง", "text": "Main memory" }
+        {
+          "key": "ก",
+          "text": "Control Unit"
+        },
+        {
+          "key": "ข",
+          "text": "ALU (Arithmetic Logic Unit)"
+        },
+        {
+          "key": "ค",
+          "text": "Bus"
+        },
+        {
+          "key": "ง",
+          "text": "Main memory"
+        }
       ],
       "answer": "ข",
       "explanation": "CPU ประกอบด้วย ALU (คำนวณ), Control Unit (ควบคุม) และ Register (เก็บข้อมูลชั่วคราว) โดยสื่อสารกับ memory ผ่าน bus"
@@ -56,10 +104,22 @@
       "id": 5,
       "question": "ข้อใดคือความแตกต่างหลักระหว่างสถาปัตยกรรม von Neumann กับ Harvard",
       "choices": [
-        { "key": "ก", "text": "Harvard ไม่มี CPU" },
-        { "key": "ข", "text": "von Neumann เก็บคำสั่งและข้อมูลในหน่วยความจำเดียวกัน ส่วน Harvard แยกหน่วยความจำคำสั่งและข้อมูล" },
-        { "key": "ค", "text": "von Neumann ใช้เฉพาะกับ GPU" },
-        { "key": "ง", "text": "Harvard ไม่ใช้ bus" }
+        {
+          "key": "ก",
+          "text": "Harvard ไม่มี CPU"
+        },
+        {
+          "key": "ข",
+          "text": "von Neumann เก็บคำสั่งและข้อมูลในหน่วยความจำเดียวกัน ส่วน Harvard แยกหน่วยความจำคำสั่งและข้อมูล"
+        },
+        {
+          "key": "ค",
+          "text": "von Neumann ใช้เฉพาะกับ GPU"
+        },
+        {
+          "key": "ง",
+          "text": "Harvard ไม่ใช้ bus"
+        }
       ],
       "answer": "ข",
       "explanation": "von Neumann ใช้หน่วยความจำและ bus ร่วมกันสำหรับคำสั่งและข้อมูล (เกิด von Neumann bottleneck) ส่วน Harvard แยกออกจากกัน พบมากในไมโครคอนโทรลเลอร์"
@@ -68,10 +128,22 @@
       "id": 6,
       "question": "RISC-V มีลักษณะเด่นอย่างไร",
       "choices": [
-        { "key": "ก", "text": "เป็น ISA แบบปิดที่ต้องจ่ายค่าลิขสิทธิ์" },
-        { "key": "ข", "text": "เป็นชุดคำสั่ง (ISA) แบบเปิดและไม่มีค่าลิขสิทธิ์" },
-        { "key": "ค", "text": "เป็นภาษาโปรแกรมระดับสูง" },
-        { "key": "ง", "text": "เป็นระบบปฏิบัติการสำหรับเซิร์ฟเวอร์" }
+        {
+          "key": "ก",
+          "text": "เป็น ISA แบบปิดที่ต้องจ่ายค่าลิขสิทธิ์"
+        },
+        {
+          "key": "ข",
+          "text": "เป็นชุดคำสั่ง (ISA) แบบเปิดและไม่มีค่าลิขสิทธิ์"
+        },
+        {
+          "key": "ค",
+          "text": "เป็นภาษาโปรแกรมระดับสูง"
+        },
+        {
+          "key": "ง",
+          "text": "เป็นระบบปฏิบัติการสำหรับเซิร์ฟเวอร์"
+        }
       ],
       "answer": "ข",
       "explanation": "RISC-V เป็น open ISA ทำให้นักออกแบบสร้างหน่วยประมวลผลได้ยืดหยุ่น ควบคุมต้นทุน และมีอธิปไตยด้านฮาร์ดแวร์"
@@ -80,10 +152,22 @@
       "id": 7,
       "question": "ISA (Instruction Set Architecture) ทำหน้าที่เป็นอะไรในระบบคอมพิวเตอร์",
       "choices": [
-        { "key": "ก", "text": "สัญญา (interface) ระหว่างซอฟต์แวร์กับฮาร์ดแวร์" },
-        { "key": "ข", "text": "ระบบระบายความร้อนของชิป" },
-        { "key": "ค", "text": "โปรโตคอลเครือข่าย" },
-        { "key": "ง", "text": "รูปแบบไฟล์ข้อมูล" }
+        {
+          "key": "ก",
+          "text": "สัญญา (interface) ระหว่างซอฟต์แวร์กับฮาร์ดแวร์"
+        },
+        {
+          "key": "ข",
+          "text": "ระบบระบายความร้อนของชิป"
+        },
+        {
+          "key": "ค",
+          "text": "โปรโตคอลเครือข่าย"
+        },
+        {
+          "key": "ง",
+          "text": "รูปแบบไฟล์ข้อมูล"
+        }
       ],
       "answer": "ก",
       "explanation": "ISA กำหนดชุดคำสั่งที่ซอฟต์แวร์ใช้สั่งฮาร์ดแวร์ จึงเป็นสัญญาระหว่างสองฝั่ง"
@@ -92,10 +176,22 @@
       "id": 8,
       "question": "บทบาทของ GPU/NPU ในระบบคอมพิวเตอร์ยุค AI คือข้อใด",
       "choices": [
-        { "key": "ก", "text": "แทนที่ CPU ทั้งหมด" },
-        { "key": "ข", "text": "เร่งงานเฉพาะ เช่น matrix multiplication และ inference โดยทำงานร่วมกับ CPU" },
-        { "key": "ค", "text": "เก็บข้อมูลถาวรแทนฮาร์ดดิสก์" },
-        { "key": "ง", "text": "จัดการ system call ของระบบปฏิบัติการ" }
+        {
+          "key": "ก",
+          "text": "แทนที่ CPU ทั้งหมด"
+        },
+        {
+          "key": "ข",
+          "text": "เร่งงานเฉพาะ เช่น matrix multiplication และ inference โดยทำงานร่วมกับ CPU"
+        },
+        {
+          "key": "ค",
+          "text": "เก็บข้อมูลถาวรแทนฮาร์ดดิสก์"
+        },
+        {
+          "key": "ง",
+          "text": "จัดการ system call ของระบบปฏิบัติการ"
+        }
       ],
       "answer": "ข",
       "explanation": "GPU/NPU ไม่ได้แทน CPU แต่เป็นตัวเร่ง (accelerator) สำหรับงานเฉพาะที่ขนานได้สูง"
@@ -104,25 +200,290 @@
       "id": 9,
       "question": "เทคโนโลยี Chiplet คืออะไร",
       "choices": [
-        { "key": "ก", "text": "การผลิตชิปขนาดใหญ่ชิ้นเดียวให้ครบทุกฟังก์ชัน" },
-        { "key": "ข", "text": "การประกอบชิปจากชิ้นส่วนซิลิคอนขนาดเล็กหลายชิ้น (die) เข้าด้วยกันในแพ็กเกจเดียว" },
-        { "key": "ค", "text": "ชิปที่ใช้เฉพาะในสมาร์ตวอตช์" },
-        { "key": "ง", "text": "ชื่อของไมโครโปรเซสเซอร์รุ่นแรก" }
+        {
+          "key": "ก",
+          "text": "การประกอบชิปจากชิ้นส่วนซิลิคอนขนาดเล็กหลายชิ้น (die) เข้าด้วยกันในแพ็กเกจเดียว"
+        },
+        {
+          "key": "ข",
+          "text": "การผลิตชิปขนาดใหญ่ชิ้นเดียวให้ครบทุกฟังก์ชัน"
+        },
+        {
+          "key": "ค",
+          "text": "ชิปที่ใช้เฉพาะในสมาร์ตวอตช์"
+        },
+        {
+          "key": "ง",
+          "text": "ชื่อของไมโครโปรเซสเซอร์รุ่นแรก"
+        }
       ],
-      "answer": "ข",
+      "answer": "ก",
       "explanation": "chiplet แบ่งชิปเป็นหลาย die แล้วเชื่อมกันในแพ็กเกจเดียว ช่วยเพิ่ม yield และผสมเทคโนโลยีการผลิตต่างกันได้ในยุคหลัง Moore's Law"
     },
     {
       "id": 10,
       "question": "เลขฐานสอง 1011 มีค่าเท่าใดในเลขฐานสิบ",
       "choices": [
-        { "key": "ก", "text": "9" },
-        { "key": "ข", "text": "10" },
-        { "key": "ค", "text": "11" },
-        { "key": "ง", "text": "13" }
+        {
+          "key": "ก",
+          "text": "9"
+        },
+        {
+          "key": "ข",
+          "text": "10"
+        },
+        {
+          "key": "ค",
+          "text": "11"
+        },
+        {
+          "key": "ง",
+          "text": "13"
+        }
       ],
       "answer": "ค",
       "explanation": "1×8 + 0×4 + 1×2 + 1×1 = 11"
+    },
+    {
+      "id": 11,
+      "question": "นิพจน์ Y = (A OR B) AND (NOT C) มีกี่แถวในตารางความจริง 8 แถว ที่ให้ Y = 1",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "2 แถว"
+        },
+        {
+          "key": "ข",
+          "text": "4 แถว"
+        },
+        {
+          "key": "ค",
+          "text": "3 แถว"
+        },
+        {
+          "key": "ง",
+          "text": "5 แถว"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "Y = 1 เมื่อ C = 0 และ A, B ไม่เป็น 0 ทั้งคู่ จึงได้ (A,B) = 01, 10, 11 รวม 3 แถว (สัปดาห์ 3 หัวข้อ 1)"
+    },
+    {
+      "id": 12,
+      "question": "Full Adder ที่รับ A = 1, B = 0 และ Cin = 1 จะให้ Sum และ Cout เท่าใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Sum = 1, Cout = 0"
+        },
+        {
+          "key": "ข",
+          "text": "Sum = 1, Cout = 1"
+        },
+        {
+          "key": "ค",
+          "text": "Sum = 0, Cout = 0"
+        },
+        {
+          "key": "ง",
+          "text": "Sum = 0, Cout = 1"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Sum = 1 ⊕ 0 ⊕ 1 = 0 และ Cout = AB + Cin(A ⊕ B) = 0 + 1·1 = 1 ตรงกับ 1 + 0 + 1 = 10₂ (สัปดาห์ 3 หัวข้อ 1)"
+    },
+    {
+      "id": 13,
+      "question": "ถ้าต้องการสร้างเกต NOT A โดยใช้เกต NAND เพียงตัวเดียว ต้องต่อวงจรอย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ต่อ A เข้าทั้งสองขาอินพุตของ NAND"
+        },
+        {
+          "key": "ข",
+          "text": "ต่อ A กับค่าคงที่ 0 เข้า NAND"
+        },
+        {
+          "key": "ค",
+          "text": "ต่อ NAND สองตัวอนุกรมกันโดยใช้ A เป็นอินพุต"
+        },
+        {
+          "key": "ง",
+          "text": "NAND สร้าง NOT ไม่ได้ ต้องใช้ NOR"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "A NAND A = NOT(A·A) = NOT A จึงใช้ 1 เกต ส่วนการต่อกับ 0 จะได้ 1 เสมอ NAND เป็น universal gate ที่สร้างเกตอื่นได้ทุกชนิด (สัปดาห์ 3 หัวข้อ 1)"
+    },
+    {
+      "id": 14,
+      "question": "เลขฐานสิบ 173 เขียนเป็นเลขฐานสิบหกได้เท่าใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "DA"
+        },
+        {
+          "key": "ข",
+          "text": "9D"
+        },
+        {
+          "key": "ค",
+          "text": "AB"
+        },
+        {
+          "key": "ง",
+          "text": "AD"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "173 ÷ 16 = 10 เศษ 13 คือ A และ D จึงได้ AD₁₆ ตรวจได้จาก 173 = 10101101₂ → 1010 1101 → A D (สัปดาห์ 3 หัวข้อ 1)"
+    },
+    {
+      "id": 15,
+      "question": "จากฟังก์ชันใน game_logic.py ของ Lab 3 การเรียก can_open_door(True, True, 40) จะคืนค่าใด",
+      "code": "def can_open_door(has_key, is_night, hp):\n    return has_key and (not is_night or hp > 50)",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "True"
+        },
+        {
+          "key": "ข",
+          "text": "None"
+        },
+        {
+          "key": "ค",
+          "text": "False"
+        },
+        {
+          "key": "ง",
+          "text": "เกิด TypeError"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "has_key เป็น True แต่ (not is_night or hp > 50) = (False or False) = False ผลรวมด้วย and จึงเป็น False (สัปดาห์ 3 Lab 3)"
+    },
+    {
+      "id": 16,
+      "question": "von Neumann bottleneck เกิดจากสาเหตุใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "CPU มี ALU เพียงตัวเดียว"
+        },
+        {
+          "key": "ข",
+          "text": "หน่วยความจำคำสั่งเต็มแต่หน่วยความจำข้อมูลยังเหลือ"
+        },
+        {
+          "key": "ค",
+          "text": "Control Unit ถอดรหัสคำสั่งไม่ได้"
+        },
+        {
+          "key": "ง",
+          "text": "คำสั่งและข้อมูลใช้หน่วยความจำและบัสเดียวกัน CPU จึงดึงคำสั่งและอ่าน/เขียนข้อมูลพร้อมกันไม่ได้"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "การแชร์บัสเดียวทำให้ต้องผลัดกันใช้ระหว่างการ fetch คำสั่งกับการเข้าถึงข้อมูล ส่วนกรณีหน่วยความจำคำสั่งเต็มแต่ข้อมูลเหลือเป็นข้อเสียของ Harvard (สัปดาห์ 3 หัวข้อ 2)"
+    },
+    {
+      "id": 17,
+      "question": "สถาปัตยกรรม Systolic Array ใน TPU ช่วยเร่งงาน AI ได้อย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "เพิ่ม clock speed ของ CPU ให้สูงขึ้นหลายเท่า"
+        },
+        {
+          "key": "ข",
+          "text": "ใช้ branch prediction ทำนายคำสั่ง if-else"
+        },
+        {
+          "key": "ค",
+          "text": "เก็บโมเดลทั้งหมดไว้บน SSD"
+        },
+        {
+          "key": "ง",
+          "text": "ให้ข้อมูลไหลผ่านตารางหน่วยคำนวณ MAC ต่อเป็นทอด ๆ ลดการอ่าน/เขียนหน่วยความจำในแต่ละขั้น"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "ใน Systolic Array ผลลัพธ์ของหน่วยหนึ่งส่งต่อให้หน่วยถัดไปโดยตรง จึงลดคอขวดการเคลื่อนย้ายข้อมูล ได้ throughput สูงและประหยัดพลังงาน (สัปดาห์ 3 หัวข้อ 4)"
+    },
+    {
+      "id": 18,
+      "question": "บริษัทหนึ่งผลิตชิปขนาดใหญ่ชิ้นเดียว (monolithic) แล้วพบว่าอัตราชิปที่ใช้ได้ (yield) ต่ำและต้นทุนสูง การเปลี่ยนมาใช้ chiplet ช่วยได้อย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ชิ้นเล็กแต่ละชิ้นมีโอกาสเจอจุดบกพร่องน้อยกว่า yield จึงสูงขึ้น และเลือก process node ต่างกันให้แต่ละชิ้นได้"
+        },
+        {
+          "key": "ข",
+          "text": "ทำให้ไม่ต้องใช้ advanced packaging ในการเชื่อมต่อ"
+        },
+        {
+          "key": "ค",
+          "text": "ทำให้ชิปทุกชิ้นต้องผลิตด้วย process node 3nm เท่านั้น"
+        },
+        {
+          "key": "ง",
+          "text": "ลดจำนวนทรานซิสเตอร์ทั้งหมดในระบบลงเหลือครึ่งหนึ่ง"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "chiplet แบ่งชิปเป็นชิ้นเล็กตามหน้าที่ yield ดีขึ้นและทำ heterogeneous integration ได้ แต่ยังต้องพึ่ง advanced packaging เช่น 2.5D หรือ 3D stacking (สัปดาห์ 3 หัวข้อ 5)"
+    },
+    {
+      "id": 19,
+      "question": "ในวงรอบ Fetch–Decode–Execute register ใดเก็บ address ของคำสั่งถัดไปที่จะดึงมาทำงาน",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "IR (Instruction Register)"
+        },
+        {
+          "key": "ข",
+          "text": "MDR (Memory Data Register)"
+        },
+        {
+          "key": "ค",
+          "text": "PC (Program Counter)"
+        },
+        {
+          "key": "ง",
+          "text": "ACC (Accumulator)"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "ขั้น fetch เริ่มจาก MAR ← PC แล้ว PC ← PC + 1 ส่วน IR เก็บตัวคำสั่งที่ดึงมาแล้วเพื่อนำไปถอดรหัส (สัปดาห์ 3 หัวข้อ 2)"
+    },
+    {
+      "id": 20,
+      "question": "CPU สมัยใหม่มี L1 cache แยกเป็น L1i (คำสั่ง) และ L1d (ข้อมูล) แต่ใช้หน่วยความจำหลักร่วมกัน การออกแบบนี้เรียกว่าอะไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Pure von Neumann"
+        },
+        {
+          "key": "ข",
+          "text": "Chiplet design"
+        },
+        {
+          "key": "ค",
+          "text": "Systolic Array"
+        },
+        {
+          "key": "ง",
+          "text": "Modified Harvard Architecture"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Modified Harvard แยกคำสั่งกับข้อมูลที่ระดับ cache เพื่อเข้าถึงพร้อมกันได้ แต่ยังใช้หน่วยความจำหลักร่วมกันแบบ von Neumann (สัปดาห์ 3 หัวข้อ 2)"
     }
   ]
 }

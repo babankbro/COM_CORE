@@ -2,16 +2,28 @@
   "moduleId": "09",
   "title": "AI & Machine Learning Foundations",
   "titleTh": "ปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง",
-  "timeMinutes": 15,
+  "timeMinutes": 30,
   "questions": [
     {
       "id": 1,
       "question": "ความสัมพันธ์ระหว่าง AI, Machine Learning และ Deep Learning ข้อใดถูกต้อง",
       "choices": [
-        { "key": "ก", "text": "AI ⊂ ML ⊂ DL" },
-        { "key": "ข", "text": "DL ⊂ ML ⊂ AI" },
-        { "key": "ค", "text": "ML และ AI ไม่เกี่ยวข้องกัน" },
-        { "key": "ง", "text": "DL คือชื่อเรียกอีกอย่างของ AI" }
+        {
+          "key": "ก",
+          "text": "AI ⊂ ML ⊂ DL"
+        },
+        {
+          "key": "ข",
+          "text": "DL ⊂ ML ⊂ AI"
+        },
+        {
+          "key": "ค",
+          "text": "ML และ AI ไม่เกี่ยวข้องกัน"
+        },
+        {
+          "key": "ง",
+          "text": "DL คือชื่อเรียกอีกอย่างของ AI"
+        }
       ],
       "answer": "ข",
       "explanation": "AI เป็นร่มใหญ่, ML เป็นส่วนย่อยที่เรียนรู้จากข้อมูล, DL เป็น ML ที่ใช้ neural network หลายชั้น"
@@ -20,10 +32,22 @@
       "id": 2,
       "question": "Machine Learning แตกต่างจากการเขียนโปรแกรมแบบดั้งเดิมอย่างไร",
       "choices": [
-        { "key": "ก", "text": "ML สร้างโมเดลจากข้อมูลเพื่อทำนาย/จัดกลุ่ม โดยไม่ต้องเขียนกฎทุกข้อด้วยมือ" },
-        { "key": "ข", "text": "ML ไม่ต้องใช้ข้อมูลเลย" },
-        { "key": "ค", "text": "ML ใช้ได้เฉพาะกับตัวเลข" },
-        { "key": "ง", "text": "ML เขียนกฎ IF-THEN มากกว่าโปรแกรมปกติ" }
+        {
+          "key": "ก",
+          "text": "ML สร้างโมเดลจากข้อมูลเพื่อทำนาย/จัดกลุ่ม โดยไม่ต้องเขียนกฎทุกข้อด้วยมือ"
+        },
+        {
+          "key": "ข",
+          "text": "ML ไม่ต้องใช้ข้อมูลเลย"
+        },
+        {
+          "key": "ค",
+          "text": "ML ใช้ได้เฉพาะกับตัวเลข"
+        },
+        {
+          "key": "ง",
+          "text": "ML เขียนกฎ IF-THEN มากกว่าโปรแกรมปกติ"
+        }
       ],
       "answer": "ก",
       "explanation": "ML ป้อนข้อมูลพร้อมคำตอบตัวอย่างให้อัลกอริทึมหา pattern เอง แทนการเขียนกฎทุกข้อ"
@@ -32,10 +56,22 @@
       "id": 3,
       "question": "ในโจทย์จำแนกผลไม้ด้วยน้ำหนักและสี \"น้ำหนัก\" และ \"สี\" เรียกว่าอะไร",
       "choices": [
-        { "key": "ก", "text": "Label" },
-        { "key": "ข", "text": "Feature" },
-        { "key": "ค", "text": "Model" },
-        { "key": "ง", "text": "Prediction" }
+        {
+          "key": "ก",
+          "text": "Label"
+        },
+        {
+          "key": "ข",
+          "text": "Feature"
+        },
+        {
+          "key": "ค",
+          "text": "Model"
+        },
+        {
+          "key": "ง",
+          "text": "Prediction"
+        }
       ],
       "answer": "ข",
       "explanation": "feature คือคุณลักษณะอินพุต ส่วน label คือคำตอบ (ชนิดผลไม้) ที่โมเดลต้องทำนาย"
@@ -44,10 +80,22 @@
       "id": 4,
       "question": "Supervised learning แตกต่างจาก unsupervised learning อย่างไร",
       "choices": [
-        { "key": "ก", "text": "supervised มี label ให้เรียน ส่วน unsupervised หาโครงสร้าง/กลุ่มในข้อมูลที่ไม่มี label" },
-        { "key": "ข", "text": "supervised ไม่ใช้ข้อมูล" },
-        { "key": "ค", "text": "unsupervised ต้องมีมนุษย์กำกับตลอดเวลา" },
-        { "key": "ง", "text": "ทั้งสองแบบเหมือนกัน" }
+        {
+          "key": "ก",
+          "text": "supervised มี label ให้เรียน ส่วน unsupervised หาโครงสร้าง/กลุ่มในข้อมูลที่ไม่มี label"
+        },
+        {
+          "key": "ข",
+          "text": "supervised ไม่ใช้ข้อมูล"
+        },
+        {
+          "key": "ค",
+          "text": "unsupervised ต้องมีมนุษย์กำกับตลอดเวลา"
+        },
+        {
+          "key": "ง",
+          "text": "ทั้งสองแบบเหมือนกัน"
+        }
       ],
       "answer": "ก",
       "explanation": "supervised เรียนจากคู่ (อินพุต, คำตอบ) ส่วน unsupervised เช่น clustering หาโครงสร้างในข้อมูลเอง"
@@ -56,10 +104,22 @@
       "id": 5,
       "question": "การเรียนรู้แบบที่ agent ได้รับรางวัล (reward) จากการกระทำในสภาพแวดล้อม เรียกว่าอะไร",
       "choices": [
-        { "key": "ก", "text": "Supervised learning" },
-        { "key": "ข", "text": "Unsupervised learning" },
-        { "key": "ค", "text": "Reinforcement learning" },
-        { "key": "ง", "text": "Transfer learning" }
+        {
+          "key": "ก",
+          "text": "Supervised learning"
+        },
+        {
+          "key": "ข",
+          "text": "Unsupervised learning"
+        },
+        {
+          "key": "ค",
+          "text": "Reinforcement learning"
+        },
+        {
+          "key": "ง",
+          "text": "Transfer learning"
+        }
       ],
       "answer": "ค",
       "explanation": "reinforcement learning เรียนรู้นโยบายจากการลองผิดลองถูกและ reward ใช้ในเกม หุ่นยนต์ และการควบคุม"
@@ -68,10 +128,22 @@
       "id": 6,
       "question": "เหตุใด \"คุณภาพข้อมูล\" จึงส่งผลต่อคุณภาพโมเดลโดยตรง",
       "choices": [
-        { "key": "ก", "text": "เพราะโมเดลเรียนรู้ pattern รวมถึง bias ที่อยู่ในข้อมูล" },
-        { "key": "ข", "text": "เพราะโมเดลไม่ได้ใช้ข้อมูลในการเรียน" },
-        { "key": "ค", "text": "เพราะข้อมูลมากขึ้นทำให้โมเดลแย่ลงเสมอ" },
-        { "key": "ง", "text": "เพราะข้อมูลมีผลเฉพาะกับความเร็ว" }
+        {
+          "key": "ก",
+          "text": "เพราะโมเดลเรียนรู้ pattern รวมถึง bias ที่อยู่ในข้อมูล"
+        },
+        {
+          "key": "ข",
+          "text": "เพราะโมเดลไม่ได้ใช้ข้อมูลในการเรียน"
+        },
+        {
+          "key": "ค",
+          "text": "เพราะข้อมูลมากขึ้นทำให้โมเดลแย่ลงเสมอ"
+        },
+        {
+          "key": "ง",
+          "text": "เพราะข้อมูลมีผลเฉพาะกับความเร็ว"
+        }
       ],
       "answer": "ก",
       "explanation": "garbage in, garbage out — ข้อมูลที่ไม่เป็นตัวแทนหรือมีอคติจะทำให้โมเดลสืบทอดอคตินั้น"
@@ -80,10 +152,22 @@
       "id": 7,
       "question": "Neural network ประกอบด้วยหน่วยพื้นฐานใดที่รับอินพุตถ่วงน้ำหนักแล้วส่งผ่าน activation function",
       "choices": [
-        { "key": "ก", "text": "Transistor" },
-        { "key": "ข", "text": "Neuron (perceptron)" },
-        { "key": "ค", "text": "Packet" },
-        { "key": "ง", "text": "Primary key" }
+        {
+          "key": "ก",
+          "text": "Transistor"
+        },
+        {
+          "key": "ข",
+          "text": "Neuron (perceptron)"
+        },
+        {
+          "key": "ค",
+          "text": "Packet"
+        },
+        {
+          "key": "ง",
+          "text": "Primary key"
+        }
       ],
       "answer": "ข",
       "explanation": "neuron เทียม (perceptron) คำนวณผลรวมถ่วงน้ำหนักของอินพุตแล้วใช้ activation function ให้เอาต์พุต"
@@ -92,10 +176,22 @@
       "id": 8,
       "question": "MLOps มีจุดประสงค์หลักอย่างไร",
       "choices": [
-        { "key": "ก", "text": "ทำให้การฝึก ประเมิน deploy และ monitor โมเดลเป็นกระบวนการที่ตรวจสอบซ้ำได้" },
-        { "key": "ข", "text": "ทำให้โมเดลไม่ต้องทดสอบ" },
-        { "key": "ค", "text": "แทนที่ data scientist ทั้งหมด" },
-        { "key": "ง", "text": "ใช้เฉพาะกับโมเดลภาพ" }
+        {
+          "key": "ก",
+          "text": "ทำให้การฝึก ประเมิน deploy และ monitor โมเดลเป็นกระบวนการที่ตรวจสอบซ้ำได้"
+        },
+        {
+          "key": "ข",
+          "text": "ทำให้โมเดลไม่ต้องทดสอบ"
+        },
+        {
+          "key": "ค",
+          "text": "แทนที่ data scientist ทั้งหมด"
+        },
+        {
+          "key": "ง",
+          "text": "ใช้เฉพาะกับโมเดลภาพ"
+        }
       ],
       "answer": "ก",
       "explanation": "MLOps นำแนวคิด DevOps มาใช้กับวงจรชีวิตโมเดล ตั้งแต่ข้อมูล ฝึก deploy จนถึง monitor drift"
@@ -104,10 +200,22 @@
       "id": 9,
       "question": "NIST AI Risk Management Framework ชี้ว่า AI ที่น่าเชื่อถือควรพิจารณาเรื่องใดนอกเหนือจากความแม่นยำ",
       "choices": [
-        { "key": "ก", "text": "ความเร็วของ GPU เท่านั้น" },
-        { "key": "ข", "text": "validity, safety, security, fairness, accountability และ governance" },
-        { "key": "ค", "text": "จำนวนบรรทัดโค้ด" },
-        { "key": "ง", "text": "ราคาของ cloud" }
+        {
+          "key": "ก",
+          "text": "ความเร็วของ GPU เท่านั้น"
+        },
+        {
+          "key": "ข",
+          "text": "validity, safety, security, fairness, accountability และ governance"
+        },
+        {
+          "key": "ค",
+          "text": "จำนวนบรรทัดโค้ด"
+        },
+        {
+          "key": "ง",
+          "text": "ราคาของ cloud"
+        }
       ],
       "answer": "ข",
       "explanation": "NIST AI RMF มอง AI แบบองค์รวม ครอบคลุมความปลอดภัย ความเป็นธรรม ความรับผิดชอบ และธรรมาภิบาล"
@@ -116,13 +224,266 @@
       "id": 10,
       "question": "ขั้นตอนใดของวงจรชีวิตข้อมูลในระบบ AI ที่ตรวจว่าโมเดลยังทำงานดีอยู่หลังนำไปใช้จริง",
       "choices": [
-        { "key": "ก", "text": "Data collection" },
-        { "key": "ข", "text": "Training" },
-        { "key": "ค", "text": "Monitoring" },
-        { "key": "ง", "text": "Labeling" }
+        {
+          "key": "ก",
+          "text": "Data collection"
+        },
+        {
+          "key": "ข",
+          "text": "Training"
+        },
+        {
+          "key": "ค",
+          "text": "Monitoring"
+        },
+        {
+          "key": "ง",
+          "text": "Labeling"
+        }
       ],
       "answer": "ค",
       "explanation": "monitoring ติดตามประสิทธิภาพและ data drift ใน production เพื่อตัดสินใจฝึกใหม่"
+    },
+    {
+      "id": 11,
+      "question": "โมเดลทำนายค่า ŷ = [5, 6, 7] ขณะที่ค่าจริง y = [4, 6, 10] ค่า MAE เท่ากับเท่าใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "3.33"
+        },
+        {
+          "key": "ข",
+          "text": "1.83"
+        },
+        {
+          "key": "ค",
+          "text": "1.33"
+        },
+        {
+          "key": "ง",
+          "text": "4.00"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "error สัมบูรณ์คือ 1, 0, 3 รวม 4 หารด้วย 3 ได้ MAE ≈ 1.33 ส่วน 3.33 คือ MSE และ 1.83 คือ RMSE (Lab 9)"
+    },
+    {
+      "id": 12,
+      "question": "เหตุใด RMSE จึงไวต่อค่าทำนายที่พลาดมาก ๆ มากกว่า MAE",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "RMSE มีหน่วยเป็นหน่วยของ y ยกกำลังสอง"
+        },
+        {
+          "key": "ข",
+          "text": "MAE ยกกำลังสองค่า error ก่อนหาค่าเฉลี่ย"
+        },
+        {
+          "key": "ค",
+          "text": "RMSE ใช้ได้เฉพาะงาน classification"
+        },
+        {
+          "key": "ง",
+          "text": "RMSE ยกกำลังสอง error ก่อนเฉลี่ย error ขนาดใหญ่จึงมีน้ำหนักมากขึ้น"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "การยกกำลังสองทำให้ error ใหญ่ถูกขยายมากกว่า error เล็ก แล้วถอดรากเพื่อกลับมาหน่วยเดียวกับ y (หน่วยกำลังสองเป็นของ MSE) (Lab 9)"
+    },
+    {
+      "id": 13,
+      "question": "นิวรอนหนึ่งตัวมี input x = [1, 2], weight w = [0.5, −0.4], bias b = 0.1 และใช้ activation ReLU ค่า output เท่ากับเท่าใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "−0.2"
+        },
+        {
+          "key": "ข",
+          "text": "1.4"
+        },
+        {
+          "key": "ค",
+          "text": "0.2"
+        },
+        {
+          "key": "ง",
+          "text": "0"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "z = 1(0.5) + 2(−0.4) + 0.1 = −0.2 และ ReLU = max(0, z) จึงได้ 0 ส่วน −0.2 คือค่า z ก่อนผ่าน activation (สัปดาห์ 9 หัวข้อ 2)"
+    },
+    {
+      "id": 14,
+      "question": "Activation function ใดเหมาะกับ output layer ของงานจำแนกหลายคลาส (multi-class) เพราะให้ค่าทุกคลาสรวมกันได้ 1",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ReLU"
+        },
+        {
+          "key": "ข",
+          "text": "Softmax"
+        },
+        {
+          "key": "ค",
+          "text": "Step"
+        },
+        {
+          "key": "ง",
+          "text": "Tanh"
+        }
+      ],
+      "answer": "ข",
+      "explanation": "Softmax แปลงคะแนนของแต่ละคลาสเป็นค่าในช่วง (0, 1) ที่รวมกันได้ 1 จึงตีความเป็นความน่าจะเป็นได้ (สัปดาห์ 9 หัวข้อ 2)"
+    },
+    {
+      "id": 15,
+      "question": "ระบบจดจำใบหน้าจากภาพถ่ายเหมาะกับสถาปัตยกรรม deep learning ใดมากที่สุด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "RNN/LSTM เพราะมีความจำส่งต่อตามลำดับเวลา"
+        },
+        {
+          "key": "ข",
+          "text": "MLP ที่ใช้ feature ที่มนุษย์ออกแบบจากตาราง"
+        },
+        {
+          "key": "ค",
+          "text": "CNN เพราะใช้ฟิลเตอร์เลื่อนสแกนหา pattern เฉพาะที่ในภาพ"
+        },
+        {
+          "key": "ง",
+          "text": "Transformer ที่ใช้ได้เฉพาะข้อความเท่านั้น"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "CNN ใช้ convolution filter ตรวจหา pattern เฉพาะที่ เช่น ขอบและรูปร่าง จึงเหมาะกับข้อมูลภาพ ส่วน RNN/LSTM เหมาะกับข้อมูลลำดับ (สัปดาห์ 9 หัวข้อ 3)"
+    },
+    {
+      "id": 16,
+      "question": "ชุดข้อมูลมี label \"hot\", \"Hot\" และ \" hot \" ปนกันทั้งที่หมายถึงสิ่งเดียวกัน เป็นปัญหาคุณภาพข้อมูลมิติใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Completeness"
+        },
+        {
+          "key": "ข",
+          "text": "Timeliness"
+        },
+        {
+          "key": "ค",
+          "text": "Uniqueness"
+        },
+        {
+          "key": "ง",
+          "text": "Consistency"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Consistency คือข้อมูลต้องใช้รูปแบบเดียวกันทั้งชุด label ที่สะกดหรือเว้นวรรคต่างกันทำให้โมเดลมองเป็นคนละคลาส (สัปดาห์ 9 หัวข้อ 4)"
+    },
+    {
+      "id": 17,
+      "question": "ทีมพบว่าโมเดลได้ accuracy บน test set สูงผิดปกติ แต่ใช้งานจริงแล้วแย่มาก เมื่อตรวจสอบพบว่าข้อมูลบางแถวของ test set ถูกนำไปใช้ฝึกด้วย ปัญหานี้คืออะไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Data leakage ที่เกิดจากขั้น splitting"
+        },
+        {
+          "key": "ข",
+          "text": "Data drift ที่ตรวจพบในขั้น monitoring"
+        },
+        {
+          "key": "ค",
+          "text": "Underfitting ที่เกิดจากขั้น training"
+        },
+        {
+          "key": "ง",
+          "text": "Label ไม่สม่ำเสมอที่เกิดจากขั้น labeling"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "เมื่อข้อมูล test รั่วเข้าไปใน train โมเดลเคยเห็นคำตอบแล้ว ผลประเมินจึงดีเกินจริง ต้องแบ่ง train/validation/test ให้แยกกันจริง (สัปดาห์ 9 หัวข้อ 4)"
+    },
+    {
+      "id": 18,
+      "question": "ข้อใดคือสิ่งที่ pipeline ของ MLOps เพิ่มเข้ามาจาก CI/CD ของ DevOps",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Continuous Testing ที่ทดสอบเฉพาะหน้า UI"
+        },
+        {
+          "key": "ข",
+          "text": "Code Translation ที่แปลงโค้ดเป็นหลายภาษา"
+        },
+        {
+          "key": "ค",
+          "text": "Cloud Tenancy ที่แบ่งผู้เช่าบนคลาวด์"
+        },
+        {
+          "key": "ง",
+          "text": "Continuous Training (CT) ที่ฝึกโมเดลใหม่อัตโนมัติเมื่อข้อมูลเปลี่ยน"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "โมเดลเสื่อมได้เองเมื่อโลกเปลี่ยน MLOps จึงเพิ่ม CT ให้ฝึกและตรวจโมเดลใหม่ในไปป์ไลน์ นอกเหนือจาก CI/CD (สัปดาห์ 9 หัวข้อ 5)"
+    },
+    {
+      "id": 19,
+      "question": "งานทำนายอุณหภูมิของพรุ่งนี้เป็นตัวเลข (°C) จากข้อมูลย้อนหลังที่มีค่าจริงกำกับ จัดเป็นงานประเภทใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Classification แบบ supervised"
+        },
+        {
+          "key": "ข",
+          "text": "Clustering แบบ unsupervised"
+        },
+        {
+          "key": "ค",
+          "text": "Regression แบบ supervised"
+        },
+        {
+          "key": "ง",
+          "text": "Reinforcement learning"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "ผลลัพธ์เป็นตัวเลขต่อเนื่องและข้อมูลฝึกมี label จึงเป็น regression แบบ supervised ส่วน classification ให้ผลเป็นหมวดหมู่ (สัปดาห์ 9 หัวข้อ 1)"
+    },
+    {
+      "id": 20,
+      "question": "ใน gradient descent ถ้า m = 2, learning rate = 0.05 และ gradient ของ loss เทียบกับ m เท่ากับ −0.5 ค่า m หลังปรับ 1 รอบเท่ากับเท่าใด",
+      "code": "m = m - lr * grad_m",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "1.975"
+        },
+        {
+          "key": "ข",
+          "text": "1.5"
+        },
+        {
+          "key": "ค",
+          "text": "2.25"
+        },
+        {
+          "key": "ง",
+          "text": "2.025"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "m ← m − lr × ∂L/∂m = 2 − 0.05 × (−0.5) = 2.025 เมื่อ gradient เป็นลบจึงต้องเพิ่ม m เพื่อให้ loss ลดลง (Lab 9)"
     }
   ]
 }

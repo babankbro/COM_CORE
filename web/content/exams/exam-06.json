@@ -2,16 +2,28 @@
   "moduleId": "06",
   "title": "Computer Networks & Internet",
   "titleTh": "เครือข่ายคอมพิวเตอร์และอินเทอร์เน็ต",
-  "timeMinutes": 15,
+  "timeMinutes": 30,
   "questions": [
     {
       "id": 1,
       "question": "TCP/IP model แบ่งการทำงานของเครือข่ายเป็นชั้นใดบ้าง (เรียงจากล่างขึ้นบน)",
       "choices": [
-        { "key": "ก", "text": "Link → Internet → Transport → Application" },
-        { "key": "ข", "text": "Application → Transport → Internet → Link" },
-        { "key": "ค", "text": "Physical → Session → Presentation → Application" },
-        { "key": "ง", "text": "Internet → Link → Application → Transport" }
+        {
+          "key": "ก",
+          "text": "Link → Internet → Transport → Application"
+        },
+        {
+          "key": "ข",
+          "text": "Application → Transport → Internet → Link"
+        },
+        {
+          "key": "ค",
+          "text": "Physical → Session → Presentation → Application"
+        },
+        {
+          "key": "ง",
+          "text": "Internet → Link → Application → Transport"
+        }
       ],
       "answer": "ก",
       "explanation": "TCP/IP มี 4 ชั้น: link, internet, transport, application ส่วน OSI มี 7 ชั้น"
@@ -20,10 +32,22 @@
       "id": 2,
       "question": "DNS ทำหน้าที่อะไร",
       "choices": [
-        { "key": "ก", "text": "เข้ารหัสข้อมูลระหว่างทาง" },
-        { "key": "ข", "text": "แปลงชื่อโดเมน (เช่น ksu.ac.th) เป็น IP address" },
-        { "key": "ค", "text": "กำหนดเส้นทางของ packet ผ่าน router" },
-        { "key": "ง", "text": "ตรวจสอบความสมบูรณ์ของไฟล์" }
+        {
+          "key": "ก",
+          "text": "เข้ารหัสข้อมูลระหว่างทาง"
+        },
+        {
+          "key": "ข",
+          "text": "แปลงชื่อโดเมน (เช่น ksu.ac.th) เป็น IP address"
+        },
+        {
+          "key": "ค",
+          "text": "กำหนดเส้นทางของ packet ผ่าน router"
+        },
+        {
+          "key": "ง",
+          "text": "ตรวจสอบความสมบูรณ์ของไฟล์"
+        }
       ],
       "answer": "ข",
       "explanation": "DNS คือสมุดโทรศัพท์ของอินเทอร์เน็ต แปลงชื่อที่มนุษย์อ่านได้ให้เป็นที่อยู่ IP"
@@ -32,10 +56,22 @@
       "id": 3,
       "question": "ข้อใดคือความแตกต่างระหว่าง TCP กับ UDP",
       "choices": [
-        { "key": "ก", "text": "TCP ไม่รับประกันลำดับข้อมูล ส่วน UDP รับประกัน" },
-        { "key": "ข", "text": "TCP เน้นความครบถ้วนและลำดับข้อมูล ส่วน UDP ลด overhead เหมาะกับงาน real-time" },
-        { "key": "ค", "text": "UDP ใช้เฉพาะกับอีเมล" },
-        { "key": "ง", "text": "ทั้งสองอย่างเหมือนกันทุกประการ" }
+        {
+          "key": "ก",
+          "text": "TCP ไม่รับประกันลำดับข้อมูล ส่วน UDP รับประกัน"
+        },
+        {
+          "key": "ข",
+          "text": "TCP เน้นความครบถ้วนและลำดับข้อมูล ส่วน UDP ลด overhead เหมาะกับงาน real-time"
+        },
+        {
+          "key": "ค",
+          "text": "UDP ใช้เฉพาะกับอีเมล"
+        },
+        {
+          "key": "ง",
+          "text": "ทั้งสองอย่างเหมือนกันทุกประการ"
+        }
       ],
       "answer": "ข",
       "explanation": "TCP เป็น connection-oriented มีการยืนยันและเรียงลำดับ ส่วน UDP ไม่มี จึงเร็วกว่าและเหมาะกับ streaming/เกมออนไลน์"
@@ -44,10 +80,22 @@
       "id": 4,
       "question": "IPv6 (RFC 8200) แก้ข้อจำกัดสำคัญใดของ IPv4",
       "choices": [
-        { "key": "ก", "text": "ความเร็วของสาย LAN" },
-        { "key": "ข", "text": "จำนวน address ที่ไม่เพียงพอ (IPv4 มี 32 บิต ส่วน IPv6 มี 128 บิต)" },
-        { "key": "ค", "text": "การเข้ารหัส Wi-Fi" },
-        { "key": "ง", "text": "ขนาดของไฟล์ HTML" }
+        {
+          "key": "ก",
+          "text": "ความเร็วของสาย LAN"
+        },
+        {
+          "key": "ข",
+          "text": "จำนวน address ที่ไม่เพียงพอ (IPv4 มี 32 บิต ส่วน IPv6 มี 128 บิต)"
+        },
+        {
+          "key": "ค",
+          "text": "การเข้ารหัส Wi-Fi"
+        },
+        {
+          "key": "ง",
+          "text": "ขนาดของไฟล์ HTML"
+        }
       ],
       "answer": "ข",
       "explanation": "IPv6 ใช้ address 128 บิต ทำให้มีพื้นที่ address มหาศาลรองรับการเติบโตของอินเทอร์เน็ตและ IoT"
@@ -56,10 +104,22 @@
       "id": 5,
       "question": "เมื่อเปิดเว็บหนึ่งหน้า ลำดับเหตุการณ์ข้อใดถูกต้อง",
       "choices": [
-        { "key": "ก", "text": "HTTP request → DNS lookup → TCP connection" },
-        { "key": "ข", "text": "DNS lookup → TCP/TLS connection → HTTP request/response" },
-        { "key": "ค", "text": "TCP connection → HTTP response → DNS lookup" },
-        { "key": "ง", "text": "HTTP response → DNS lookup → TCP connection" }
+        {
+          "key": "ก",
+          "text": "HTTP request → DNS lookup → TCP connection"
+        },
+        {
+          "key": "ข",
+          "text": "DNS lookup → TCP/TLS connection → HTTP request/response"
+        },
+        {
+          "key": "ค",
+          "text": "TCP connection → HTTP response → DNS lookup"
+        },
+        {
+          "key": "ง",
+          "text": "HTTP response → DNS lookup → TCP connection"
+        }
       ],
       "answer": "ข",
       "explanation": "ต้องรู้ IP ก่อน (DNS) จึงสร้างการเชื่อมต่อ (TCP/TLS) แล้วส่ง HTTP request และรับ response"
@@ -68,10 +128,22 @@
       "id": 6,
       "question": "HTTPS แตกต่างจาก HTTP อย่างไร",
       "choices": [
-        { "key": "ก", "text": "HTTPS เร็วกว่าเสมอเพราะไม่เข้ารหัส" },
-        { "key": "ข", "text": "HTTPS เข้ารหัสการสื่อสารด้วย TLS เพื่อความลับและความถูกต้องของข้อมูล" },
-        { "key": "ค", "text": "HTTPS ใช้ได้เฉพาะในเครือข่ายภายใน" },
-        { "key": "ง", "text": "HTTPS ไม่ต้องใช้ DNS" }
+        {
+          "key": "ก",
+          "text": "HTTPS เร็วกว่าเสมอเพราะไม่เข้ารหัส"
+        },
+        {
+          "key": "ข",
+          "text": "HTTPS เข้ารหัสการสื่อสารด้วย TLS เพื่อความลับและความถูกต้องของข้อมูล"
+        },
+        {
+          "key": "ค",
+          "text": "HTTPS ใช้ได้เฉพาะในเครือข่ายภายใน"
+        },
+        {
+          "key": "ง",
+          "text": "HTTPS ไม่ต้องใช้ DNS"
+        }
       ],
       "answer": "ข",
       "explanation": "HTTPS = HTTP over TLS ป้องกันการดักฟังและปลอมแปลงข้อมูลระหว่างทาง"
@@ -80,10 +152,22 @@
       "id": 7,
       "question": "เครื่องมือใดใช้ตรวจเส้นทางที่ packet เดินทางผ่าน router ต่าง ๆ ไปยังปลายทาง",
       "choices": [
-        { "key": "ก", "text": "ping" },
-        { "key": "ข", "text": "nslookup" },
-        { "key": "ค", "text": "tracert / traceroute" },
-        { "key": "ง", "text": "ipconfig" }
+        {
+          "key": "ก",
+          "text": "ping"
+        },
+        {
+          "key": "ข",
+          "text": "nslookup"
+        },
+        {
+          "key": "ค",
+          "text": "tracert / traceroute"
+        },
+        {
+          "key": "ง",
+          "text": "ipconfig"
+        }
       ],
       "answer": "ค",
       "explanation": "traceroute แสดง hop แต่ละจุด ส่วน ping ทดสอบการเข้าถึงและ latency และ nslookup ใช้สอบถาม DNS"
@@ -92,10 +176,22 @@
       "id": 8,
       "question": "ในสถาปัตยกรรม microservices บน Kubernetes เหตุใดหัวข้อเช่น latency, retry, timeout และ observability จึงสำคัญ",
       "choices": [
-        { "key": "ก", "text": "เพราะ service จำนวนมากต้องสื่อสารกันผ่านเครือข่ายภายใน cluster" },
-        { "key": "ข", "text": "เพราะ microservices ไม่ใช้เครือข่าย" },
-        { "key": "ค", "text": "เพราะ Kubernetes ห้ามใช้ TCP" },
-        { "key": "ง", "text": "เพราะทุก service อยู่ใน process เดียวกัน" }
+        {
+          "key": "ก",
+          "text": "เพราะ service จำนวนมากต้องสื่อสารกันผ่านเครือข่ายภายใน cluster"
+        },
+        {
+          "key": "ข",
+          "text": "เพราะ microservices ไม่ใช้เครือข่าย"
+        },
+        {
+          "key": "ค",
+          "text": "เพราะ Kubernetes ห้ามใช้ TCP"
+        },
+        {
+          "key": "ง",
+          "text": "เพราะทุก service อยู่ใน process เดียวกัน"
+        }
       ],
       "answer": "ก",
       "explanation": "cloud-native networking ทำให้การสื่อสารระหว่าง service กลายเป็นประเด็นวิศวกรรมหลัก ต้องออกแบบ retry/timeout และมีการสังเกตการณ์"
@@ -104,25 +200,290 @@
       "id": 9,
       "question": "มาตรฐาน IEEE 802.11be-2024 รู้จักในชื่อใด",
       "choices": [
-        { "key": "ก", "text": "Bluetooth 5" },
-        { "key": "ข", "text": "Wi-Fi 7" },
-        { "key": "ค", "text": "5G NR" },
-        { "key": "ง", "text": "Ethernet 10G" }
+        {
+          "key": "ก",
+          "text": "Bluetooth 5"
+        },
+        {
+          "key": "ข",
+          "text": "5G NR"
+        },
+        {
+          "key": "ค",
+          "text": "Ethernet 10G"
+        },
+        {
+          "key": "ง",
+          "text": "Wi-Fi 7"
+        }
       ],
-      "answer": "ข",
+      "answer": "ง",
       "explanation": "Wi-Fi 7 (802.11be) เพิ่ม throughput และปรับ PHY/MAC เพื่อรองรับงาน latency ต่ำและ edge applications"
     },
     {
       "id": 10,
       "question": "REST API ที่ส่งคำขอ GET ไปยัง /api/status เพื่อดึงสถานะของอุปกรณ์ ทำงานที่ชั้นใดของ TCP/IP model",
       "choices": [
-        { "key": "ก", "text": "Link" },
-        { "key": "ข", "text": "Internet" },
-        { "key": "ค", "text": "Transport" },
-        { "key": "ง", "text": "Application" }
+        {
+          "key": "ก",
+          "text": "Link"
+        },
+        {
+          "key": "ข",
+          "text": "Internet"
+        },
+        {
+          "key": "ค",
+          "text": "Transport"
+        },
+        {
+          "key": "ง",
+          "text": "Application"
+        }
       ],
       "answer": "ง",
       "explanation": "HTTP/REST อยู่ในชั้น application โดยอาศัย TCP (transport) และ IP (internet) ด้านล่าง"
+    },
+    {
+      "id": 11,
+      "question": "IP address ใดต่อไปนี้เป็น private IP ตามช่วงของ RFC 1918",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "172.32.0.1"
+        },
+        {
+          "key": "ข",
+          "text": "8.8.8.8"
+        },
+        {
+          "key": "ค",
+          "text": "172.20.10.5"
+        },
+        {
+          "key": "ง",
+          "text": "127.0.0.1"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "ช่วง 172.16.0.0/12 ครอบคลุม 172.16.0.0–172.31.255.255 จึงรวม 172.20.10.5 ส่วน 172.32.0.1 อยู่นอกช่วง และ 127.0.0.1 เป็น loopback ที่ไม่อยู่ใน RFC 1918 (สัปดาห์ 6 หัวข้อ 2)"
+    },
+    {
+      "id": 12,
+      "question": "บริการใดใช้พอร์ตมาตรฐาน 22 เพื่อเข้าควบคุมเครื่องระยะไกลแบบเข้ารหัส",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Telnet"
+        },
+        {
+          "key": "ข",
+          "text": "FTP"
+        },
+        {
+          "key": "ค",
+          "text": "SMTP"
+        },
+        {
+          "key": "ง",
+          "text": "SSH"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "SSH ใช้พอร์ต 22 และเข้ารหัสข้อมูล จึงใช้แทน Telnet (พอร์ต 23) ที่ส่งข้อมูลแบบไม่เข้ารหัส (สัปดาห์ 6 หัวข้อ 2)"
+    },
+    {
+      "id": 13,
+      "question": "อุปกรณ์เครือข่ายใดเรียนรู้ว่า MAC address ใดอยู่พอร์ตไหน แล้วส่งเฟรมไปเฉพาะพอร์ตปลายทางภายใน LAN เดียวกัน",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Switch"
+        },
+        {
+          "key": "ข",
+          "text": "Hub"
+        },
+        {
+          "key": "ค",
+          "text": "Router"
+        },
+        {
+          "key": "ง",
+          "text": "Modem"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "Switch ทำงานที่ชั้น L2 ใช้ MAC Address Table ส่งเฟรมเฉพาะพอร์ตปลายทาง ต่างจาก Hub ที่กระจายทุกพอร์ต และ Router ที่ใช้ IP ส่งข้ามเครือข่าย (สัปดาห์ 6 หัวข้อ 1)"
+    },
+    {
+      "id": 14,
+      "question": "ใน Lab 6 คำสั่ง nslookup ksu.ac.th ใช้ตรวจสอบสิ่งใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "เวลาไป-กลับ (round trip time) ของ packet ไปยังเซิร์ฟเวอร์"
+        },
+        {
+          "key": "ข",
+          "text": "รายชื่อ router ทุก hop ระหว่างเครื่องเรากับปลายทาง"
+        },
+        {
+          "key": "ค",
+          "text": "DNS แปลงชื่อโดเมนนี้เป็น IP address ใด"
+        },
+        {
+          "key": "ง",
+          "text": "IP address, subnet mask และ default gateway ของเครื่องตัวเอง"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "nslookup (หรือ dig) สอบถาม DNS server ว่าชื่อโดเมนแปลงเป็น IP ใด ส่วน RTT ดูด้วย ping เส้นทางดูด้วย tracert/traceroute และค่าเครือข่ายของเครื่องดูด้วย ipconfig (Lab 6)"
+    },
+    {
+      "id": 15,
+      "question": "นักศึกษาพบว่า ping 8.8.8.8 ได้รับ Reply ครบทุกครั้ง แต่ ping google.com แจ้งว่าหา host ไม่พบ สาเหตุที่น่าจะเป็นมากที่สุดคืออะไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "สาย LAN หรือ Wi-Fi หลุด ทำให้ออกอินเทอร์เน็ตไม่ได้"
+        },
+        {
+          "key": "ข",
+          "text": "Default gateway เสีย ส่ง packet ออกนอกเครือข่ายไม่ได้"
+        },
+        {
+          "key": "ค",
+          "text": "เซิร์ฟเวอร์ของ Google ปิดรับ ICMP ทั้งหมด"
+        },
+        {
+          "key": "ง",
+          "text": "การแปลงชื่อโดเมนผ่าน DNS มีปัญหา"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "การ ping IP ภายนอกได้แสดงว่าการเชื่อมต่อและ gateway ปกติ ปัญหาจึงอยู่ที่ขั้นแปลงชื่อเป็น IP ซึ่งตรวจต่อได้ด้วย nslookup (Lab 6)"
+    },
+    {
+      "id": 16,
+      "question": "ตามหลัก REST ใน Lab 6 เมื่อ POST /assets เพิ่มครุภัณฑ์ใหม่สำเร็จ เซิร์ฟเวอร์ควรตอบ status code ใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "201 Created"
+        },
+        {
+          "key": "ข",
+          "text": "200 OK"
+        },
+        {
+          "key": "ค",
+          "text": "404 Not Found"
+        },
+        {
+          "key": "ง",
+          "text": "500 Internal Server Error"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "201 Created บอกชัดว่ามีการสร้างทรัพยากรใหม่สำเร็จ ส่วน 200 ใช้กับการตอบกลับสำเร็จทั่วไป เช่น GET (Lab 6)"
+    },
+    {
+      "id": 17,
+      "question": "จากโค้ด Flask ด้านล่าง ถ้าส่ง POST /assets พร้อม body {\"room\": \"EN-303\"} (ไม่มี name) จะได้ status code ใด",
+      "code": "@app.post(\"/assets\")\ndef create_asset():\n    data = request.get_json(silent=True)\n    if not data or \"name\" not in data:\n        return jsonify({\"error\": \"name is required\"}), 400\n    # ... สร้าง new\n    return jsonify(new), 201",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "201"
+        },
+        {
+          "key": "ข",
+          "text": "404"
+        },
+        {
+          "key": "ค",
+          "text": "400"
+        },
+        {
+          "key": "ง",
+          "text": "500"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "โค้ดตรวจพบว่าไม่มีคีย์ name จึงคืน 400 Bad Request ก่อนสร้างข้อมูล ซึ่งเป็นรหัสสำหรับคำขอที่รูปแบบไม่ถูกต้อง (Lab 6)"
+    },
+    {
+      "id": 18,
+      "question": "ผล ping แสดงว่า Packets: Sent = 4, Received = 3 อัตราการสูญหายของ packet (packet loss) เท่ากับเท่าใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "75%"
+        },
+        {
+          "key": "ข",
+          "text": "3%"
+        },
+        {
+          "key": "ค",
+          "text": "25%"
+        },
+        {
+          "key": "ง",
+          "text": "1%"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "หายไป 4 − 3 = 1 packet จาก 4 จึงเป็น 1/4 × 100% = 25% ค่า loss สูงบ่งบอกว่าเครือข่ายไม่เสถียร (Lab 6)"
+    },
+    {
+      "id": 19,
+      "question": "Service Mesh เช่น Istio หรือ Linkerd จัดการ retry และ mTLS ระหว่าง microservices โดยไม่ต้องเขียนโค้ดในทุก service ด้วยสถาปัตยกรรมใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "DHCP server กลางที่แจก IP ให้ทุก container"
+        },
+        {
+          "key": "ข",
+          "text": "NAT ที่ router แปลง private IP เป็น public IP"
+        },
+        {
+          "key": "ค",
+          "text": "Hub ที่กระจาย packet ไปทุก node ในคลัสเตอร์"
+        },
+        {
+          "key": "ง",
+          "text": "Sidecar proxy ที่ทำงานคู่กับแต่ละ service"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Service Mesh วาง sidecar proxy ไว้ข้างแต่ละ service ให้จัดการการเชื่อมต่อ retry และการยืนยันตัวตนแทนโค้ดของแอป (สัปดาห์ 6 หัวข้อ 3)"
+    },
+    {
+      "id": 20,
+      "question": "รถยนต์ไร้คนขับต้องตัดสินใจเบรกจากข้อมูลกล้องภายในเสี้ยววินาที เหตุใดจึงควรประมวลผลที่ edge (ในรถหรือ 5G MEC ใกล้ ๆ) แทนการส่งไป cloud ศูนย์กลางที่อยู่ไกล",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ลด latency เพราะข้อมูลไม่ต้องเดินทางไกลไปและกลับจาก cloud"
+        },
+        {
+          "key": "ข",
+          "text": "ได้ IP address เพิ่มขึ้นเพราะ edge ใช้ IPv6 เท่านั้น"
+        },
+        {
+          "key": "ค",
+          "text": "ไม่ต้องเข้ารหัสข้อมูลเพราะ edge อยู่ในเครือข่ายเดียวกัน"
+        },
+        {
+          "key": "ง",
+          "text": "ลดจำนวนเซนเซอร์ที่ต้องติดตั้งบนรถ"
+        }
+      ],
+      "answer": "ก",
+      "explanation": "การส่งข้อมูลข้ามระยะไกลใช้เวลาหลายสิบถึงร้อย ms การประมวลผลใกล้แหล่งข้อมูลจึงลดความหน่วงสำหรับงานที่ต้องตอบสนองทันที (สัปดาห์ 6 หัวข้อ 4)"
     }
   ]
 }

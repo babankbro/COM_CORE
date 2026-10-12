@@ -2,16 +2,28 @@
   "moduleId": "11",
   "title": "Embedded Systems & IoT",
   "titleTh": "ระบบฝังตัวและอินเทอร์เน็ตของสรรพสิ่ง",
-  "timeMinutes": 15,
+  "timeMinutes": 30,
   "questions": [
     {
       "id": 1,
       "question": "Embedded system คืออะไร",
       "choices": [
-        { "key": "ก", "text": "คอมพิวเตอร์ที่ฝังอยู่ในอุปกรณ์เพื่อทำงานเฉพาะ เช่น อ่าน sensor และควบคุม actuator" },
-        { "key": "ข", "text": "เซิร์ฟเวอร์ขนาดใหญ่ใน data center" },
-        { "key": "ค", "text": "โปรแกรมแก้ไขข้อความ" },
-        { "key": "ง", "text": "ระบบฐานข้อมูลเชิงสัมพันธ์" }
+        {
+          "key": "ก",
+          "text": "คอมพิวเตอร์ที่ฝังอยู่ในอุปกรณ์เพื่อทำงานเฉพาะ เช่น อ่าน sensor และควบคุม actuator"
+        },
+        {
+          "key": "ข",
+          "text": "เซิร์ฟเวอร์ขนาดใหญ่ใน data center"
+        },
+        {
+          "key": "ค",
+          "text": "โปรแกรมแก้ไขข้อความ"
+        },
+        {
+          "key": "ง",
+          "text": "ระบบฐานข้อมูลเชิงสัมพันธ์"
+        }
       ],
       "answer": "ก",
       "explanation": "embedded system มีทรัพยากรจำกัดและออกแบบเพื่องานเฉพาะ ต่างจากคอมพิวเตอร์อเนกประสงค์"
@@ -20,10 +32,22 @@
       "id": 2,
       "question": "อุปกรณ์ใดทำหน้าที่ \"รับรู้\" สภาพแวดล้อม (เช่น อุณหภูมิ ความชื้น) ให้ไมโครคอนโทรลเลอร์",
       "choices": [
-        { "key": "ก", "text": "Actuator" },
-        { "key": "ข", "text": "Sensor" },
-        { "key": "ค", "text": "Broker" },
-        { "key": "ง", "text": "Dashboard" }
+        {
+          "key": "ก",
+          "text": "Actuator"
+        },
+        {
+          "key": "ข",
+          "text": "Sensor"
+        },
+        {
+          "key": "ค",
+          "text": "Broker"
+        },
+        {
+          "key": "ง",
+          "text": "Dashboard"
+        }
       ],
       "answer": "ข",
       "explanation": "sensor รับอินพุตจากโลกจริง ส่วน actuator (มอเตอร์ รีเลย์) ลงมือกระทำ"
@@ -32,10 +56,22 @@
       "id": 3,
       "question": "สถาปัตยกรรม IoT แบบ device–edge–cloud ส่วน \"edge\" ทำหน้าที่อะไร",
       "choices": [
-        { "key": "ก", "text": "ประมวลผลเบื้องต้นใกล้อุปกรณ์เพื่อลด latency และข้อมูลที่ส่งขึ้น cloud" },
-        { "key": "ข", "text": "เก็บข้อมูลระยะยาวทั้งหมด" },
-        { "key": "ค", "text": "แสดงผลให้ผู้ใช้เท่านั้น" },
-        { "key": "ง", "text": "ผลิตไฟฟ้าให้อุปกรณ์" }
+        {
+          "key": "ก",
+          "text": "ประมวลผลเบื้องต้นใกล้อุปกรณ์เพื่อลด latency และข้อมูลที่ส่งขึ้น cloud"
+        },
+        {
+          "key": "ข",
+          "text": "เก็บข้อมูลระยะยาวทั้งหมด"
+        },
+        {
+          "key": "ค",
+          "text": "แสดงผลให้ผู้ใช้เท่านั้น"
+        },
+        {
+          "key": "ง",
+          "text": "ผลิตไฟฟ้าให้อุปกรณ์"
+        }
       ],
       "answer": "ก",
       "explanation": "edge (gateway/local server) กรองและประมวลผลข้อมูลก่อนส่งขึ้น cloud สำหรับเก็บและวิเคราะห์ระยะยาว"
@@ -44,10 +80,22 @@
       "id": 4,
       "question": "MQTT ใช้รูปแบบการสื่อสารแบบใด",
       "choices": [
-        { "key": "ก", "text": "Request/Response เหมือน HTTP" },
-        { "key": "ข", "text": "Publish/Subscribe ผ่าน broker" },
-        { "key": "ค", "text": "Peer-to-peer โดยไม่มีตัวกลาง" },
-        { "key": "ง", "text": "Broadcast ทาง Bluetooth เท่านั้น" }
+        {
+          "key": "ก",
+          "text": "Request/Response เหมือน HTTP"
+        },
+        {
+          "key": "ข",
+          "text": "Publish/Subscribe ผ่าน broker"
+        },
+        {
+          "key": "ค",
+          "text": "Peer-to-peer โดยไม่มีตัวกลาง"
+        },
+        {
+          "key": "ง",
+          "text": "Broadcast ทาง Bluetooth เท่านั้น"
+        }
       ],
       "answer": "ข",
       "explanation": "publisher ส่งข้อความไปยัง topic ที่ broker และ subscriber ที่สนใจ topic นั้นจะได้รับ เหมาะกับอุปกรณ์และเครือข่ายจำกัด"
@@ -56,10 +104,22 @@
       "id": 5,
       "question": "ในระบบ MQTT องค์ประกอบใดเป็นตัวกลางที่รับข้อความจาก publisher แล้วกระจายให้ subscriber",
       "choices": [
-        { "key": "ก", "text": "Router" },
-        { "key": "ข", "text": "Broker" },
-        { "key": "ค", "text": "DNS" },
-        { "key": "ง", "text": "Firewall" }
+        {
+          "key": "ก",
+          "text": "Router"
+        },
+        {
+          "key": "ข",
+          "text": "Broker"
+        },
+        {
+          "key": "ค",
+          "text": "DNS"
+        },
+        {
+          "key": "ง",
+          "text": "Firewall"
+        }
       ],
       "answer": "ข",
       "explanation": "broker (เช่น Mosquitto) จัดการ topic และการส่งต่อข้อความ พร้อมระดับ QoS 0/1/2"
@@ -68,10 +128,22 @@
       "id": 6,
       "question": "ESP32 เซนเซอร์อุณหภูมิส่งค่าไปยัง topic \"home/room1/temp\" ส่วน dashboard ต้องทำอะไรเพื่อรับค่า",
       "choices": [
-        { "key": "ก", "text": "Subscribe topic \"home/room1/temp\" ที่ broker" },
-        { "key": "ข", "text": "Publish ค่าไปยัง ESP32" },
-        { "key": "ค", "text": "ส่ง HTTP GET ไปยัง ESP32 ทุกวินาที" },
-        { "key": "ง", "text": "เชื่อมต่อสาย USB กับ ESP32" }
+        {
+          "key": "ก",
+          "text": "Subscribe topic \"home/room1/temp\" ที่ broker"
+        },
+        {
+          "key": "ข",
+          "text": "Publish ค่าไปยัง ESP32"
+        },
+        {
+          "key": "ค",
+          "text": "ส่ง HTTP GET ไปยัง ESP32 ทุกวินาที"
+        },
+        {
+          "key": "ง",
+          "text": "เชื่อมต่อสาย USB กับ ESP32"
+        }
       ],
       "answer": "ก",
       "explanation": "subscriber สมัครรับ topic ที่ broker แล้ว broker จะส่งข้อความใหม่ให้โดยอัตโนมัติ"
@@ -80,10 +152,22 @@
       "id": 7,
       "question": "MQTT QoS 1 หมายถึงอะไร",
       "choices": [
-        { "key": "ก", "text": "ส่งอย่างมากหนึ่งครั้ง อาจสูญหาย" },
-        { "key": "ข", "text": "ส่งอย่างน้อยหนึ่งครั้ง อาจซ้ำ" },
-        { "key": "ค", "text": "ส่งครั้งเดียวพอดีเสมอ" },
-        { "key": "ง", "text": "ไม่ส่งเลย" }
+        {
+          "key": "ก",
+          "text": "ส่งอย่างมากหนึ่งครั้ง อาจสูญหาย"
+        },
+        {
+          "key": "ข",
+          "text": "ส่งอย่างน้อยหนึ่งครั้ง อาจซ้ำ"
+        },
+        {
+          "key": "ค",
+          "text": "ส่งครั้งเดียวพอดีเสมอ"
+        },
+        {
+          "key": "ง",
+          "text": "ไม่ส่งเลย"
+        }
       ],
       "answer": "ข",
       "explanation": "QoS 0 = at most once, QoS 1 = at least once, QoS 2 = exactly once"
@@ -92,10 +176,22 @@
       "id": 8,
       "question": "โปรโตคอลใดออกแบบเป็น REST-like สำหรับอุปกรณ์ทรัพยากรจำกัดโดยทำงานบน UDP",
       "choices": [
-        { "key": "ก", "text": "CoAP" },
-        { "key": "ข", "text": "FTP" },
-        { "key": "ค", "text": "SMTP" },
-        { "key": "ง", "text": "SSH" }
+        {
+          "key": "ก",
+          "text": "CoAP"
+        },
+        {
+          "key": "ข",
+          "text": "FTP"
+        },
+        {
+          "key": "ค",
+          "text": "SMTP"
+        },
+        {
+          "key": "ง",
+          "text": "SSH"
+        }
       ],
       "answer": "ก",
       "explanation": "CoAP (Constrained Application Protocol) ใช้ UDP และโมเดล request/response คล้าย HTTP แต่เบากว่า ส่วน Zigbee เป็นเครือข่าย mesh พลังงานต่ำ"
@@ -104,10 +200,22 @@
       "id": 9,
       "question": "TinyML หมายถึงอะไร",
       "choices": [
-        { "key": "ก", "text": "การรันโมเดล ML ขนาดเล็กบนไมโครคอนโทรลเลอร์ที่มีทรัพยากรจำกัด" },
-        { "key": "ข", "text": "การฝึกโมเดลภาษาขนาดใหญ่บน GPU หลายพันตัว" },
-        { "key": "ค", "text": "ภาษาโปรแกรมสำหรับเด็ก" },
-        { "key": "ง", "text": "ฐานข้อมูลขนาดเล็ก" }
+        {
+          "key": "ก",
+          "text": "การรันโมเดล ML ขนาดเล็กบนไมโครคอนโทรลเลอร์ที่มีทรัพยากรจำกัด"
+        },
+        {
+          "key": "ข",
+          "text": "การฝึกโมเดลภาษาขนาดใหญ่บน GPU หลายพันตัว"
+        },
+        {
+          "key": "ค",
+          "text": "ภาษาโปรแกรมสำหรับเด็ก"
+        },
+        {
+          "key": "ง",
+          "text": "ฐานข้อมูลขนาดเล็ก"
+        }
       ],
       "answer": "ก",
       "explanation": "TinyML/edge AI ทำให้งานเช่นตรวจจับเสียงหรือภาพเบื้องต้นทำได้บนอุปกรณ์ ลด latency และข้อมูลที่ส่งออก"
@@ -116,13 +224,267 @@
       "id": 10,
       "question": "ในระบบ smart factory เหตุใดจึงมักต้องแยกเครือข่าย OT (ระบบควบคุม) ออกจากเครือข่าย IT",
       "choices": [
-        { "key": "ก", "text": "เพื่อลดความเสี่ยงที่ภัยคุกคามจากฝั่ง IT จะกระทบระบบควบคุมเครื่องจักรที่ต้องการ reliability และ safety สูง" },
-        { "key": "ข", "text": "เพราะกฎหมายห้ามใช้ Wi-Fi ในโรงงาน" },
-        { "key": "ค", "text": "เพราะเครื่องจักรไม่ใช้ไฟฟ้า" },
-        { "key": "ง", "text": "เพราะ OT ไม่มีข้อมูล" }
+        {
+          "key": "ก",
+          "text": "เพราะกฎหมายห้ามใช้ Wi-Fi ในโรงงาน"
+        },
+        {
+          "key": "ข",
+          "text": "เพราะเครื่องจักรไม่ใช้ไฟฟ้า"
+        },
+        {
+          "key": "ค",
+          "text": "เพราะ OT ไม่มีข้อมูล"
+        },
+        {
+          "key": "ง",
+          "text": "เพื่อลดความเสี่ยงที่ภัยคุกคามจากฝั่ง IT จะกระทบระบบควบคุมเครื่องจักรที่ต้องการ reliability และ safety สูง"
+        }
       ],
-      "answer": "ก",
+      "answer": "ง",
       "explanation": "network segmentation ระหว่าง OT/IT เป็นแนวปฏิบัติด้านความปลอดภัยที่สำคัญของระบบอุตสาหกรรม"
+    },
+    {
+      "id": 11,
+      "question": "อ่าน register ของเซนเซอร์ผ่าน I2C ได้ data = [0x2C, 0x01] (LSB มาก่อน แบบ little-endian) ค่าที่รวมได้จากโค้ดด้านล่างเป็นฐานสิบเท่าใด",
+      "code": "value = (data[1] << 8) | data[0]",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "11265"
+        },
+        {
+          "key": "ข",
+          "text": "256"
+        },
+        {
+          "key": "ค",
+          "text": "300"
+        },
+        {
+          "key": "ง",
+          "text": "45"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "data[1] << 8 = 0x0100 แล้ว OR กับ 0x2C ได้ 0x012C = 1×256 + 44 = 300 ส่วน 11265 คือ 0x2C01 ที่เรียงไบต์สลับกัน (Lab 11)"
+    },
+    {
+      "id": 12,
+      "question": "Subscriber ที่ subscribe topic filter building5/+/temperature จะได้รับข้อความจาก topic ใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "building5/EN301/humidity"
+        },
+        {
+          "key": "ข",
+          "text": "building5/EN301/a/temperature"
+        },
+        {
+          "key": "ค",
+          "text": "building6/EN301/temperature"
+        },
+        {
+          "key": "ง",
+          "text": "building5/EN302/temperature"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "+ แทนหนึ่งระดับพอดี จึงตรงกับ building5/EN302/temperature แต่ไม่ตรงกับ topic ที่มีสองระดับตรงกลาง หรือ topic ของอาคารอื่น (สัปดาห์ 11 หัวข้อ 3)"
+    },
+    {
+      "id": 13,
+      "question": "Topic filter ใดเขียนถูกต้องตามกฎ wildcard ของ MQTT",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "building5/#/temperature"
+        },
+        {
+          "key": "ข",
+          "text": "building5/EN+/temperature"
+        },
+        {
+          "key": "ค",
+          "text": "building5/#"
+        },
+        {
+          "key": "ง",
+          "text": "#/building5"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "# ต้องเป็นตัวสุดท้ายของ filter และอยู่เต็มระดับ ส่วน + ก็ต้องอยู่เต็มระดับ จึงเขียน EN+ ไม่ได้ (สัปดาห์ 11 หัวข้อ 3)"
+    },
+    {
+      "id": 14,
+      "question": "ESP32 publish ข้อความด้วย QoS 2 ขณะที่ dashboard subscribe topic เดียวกันด้วย QoS 0 ข้อความที่ส่งถึง dashboard ใช้ QoS ระดับใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "QoS 2 ตามฝั่ง publisher"
+        },
+        {
+          "key": "ข",
+          "text": "QoS 1 ซึ่งเป็นค่ากลาง"
+        },
+        {
+          "key": "ค",
+          "text": "QoS 2 เพราะ broker ยกระดับให้อัตโนมัติ"
+        },
+        {
+          "key": "ง",
+          "text": "QoS 0 ตามค่าที่ต่ำกว่า"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "QoS ที่ใช้จริงขาไปผู้รับคือค่าที่ต่ำกว่าระหว่างฝั่ง publish กับฝั่ง subscribe ความน่าเชื่อถือจึงต้องออกแบบทั้งเส้นทาง (สัปดาห์ 11 อธิบายเพิ่มเติมข้อ 4)"
+    },
+    {
+      "id": 15,
+      "question": "ข้อใดอธิบายความต่างระหว่าง MCU (microcontroller) กับ MPU (microprocessor) ได้ถูกต้อง",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "MPU รวม CPU, RAM, Flash และ I/O ไว้ในชิปเดียว ส่วน MCU ต้องต่อ RAM ภายนอก"
+        },
+        {
+          "key": "ข",
+          "text": "MCU ต้องรันระบบปฏิบัติการเต็มรูปแบบอย่าง Windows เสมอ"
+        },
+        {
+          "key": "ค",
+          "text": "MCU รวม CPU, RAM, Flash และ I/O ไว้ในชิปเดียว ส่วน MPU ต้องต่อ RAM และหน่วยเก็บข้อมูลภายนอก"
+        },
+        {
+          "key": "ง",
+          "text": "MCU และ MPU ต่างกันเพียงความเร็วสัญญาณนาฬิกา"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "MCU เช่น ESP32 รวมทุกส่วนในชิปเดียว เหมาะกับงานเฉพาะที่ใช้พลังงานต่ำ ส่วน MPU มีเฉพาะ CPU และต้องพึ่งหน่วยความจำภายนอก (สัปดาห์ 11 หัวข้อ 1)"
+    },
+    {
+      "id": 16,
+      "question": "ADC ของ ESP32 มีความละเอียด 12-bit ค่าดิจิทัลที่อ่านได้อยู่ในช่วงใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "0–1023"
+        },
+        {
+          "key": "ข",
+          "text": "0–4095"
+        },
+        {
+          "key": "ค",
+          "text": "0–255"
+        },
+        {
+          "key": "ง",
+          "text": "0–3300"
+        }
+      ],
+      "answer": "ข",
+      "explanation": "12 บิตให้ค่าได้ 2^12 = 4,096 ระดับ คือ 0–4095 (แรงดันเข้าห้ามเกิน 3.3 V) ส่วน 0–1023 เป็นของ ADC 10-bit (สัปดาห์ 11 อธิบายเพิ่มเติมข้อ 2)"
+    },
+    {
+      "id": 17,
+      "question": "เซนเซอร์ประตูใช้แบตเตอรี่ต้องอยู่ได้นาน และประตูเปิดเพียงไม่กี่ครั้งต่อวัน ควรออกแบบให้ MCU ตรวจจับการเปิดประตูอย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Polling อ่านขาทุก 1 ms ตลอดเวลา"
+        },
+        {
+          "key": "ข",
+          "text": "วนลูป while True โดยไม่มี sleep เพื่อไม่พลาดเหตุการณ์"
+        },
+        {
+          "key": "ค",
+          "text": "เพิ่มความถี่สัญญาณนาฬิกาของ CPU ให้สูงสุด"
+        },
+        {
+          "key": "ง",
+          "text": "ใช้ interrupt ปลุก MCU เมื่อมีเหตุการณ์ และให้ MCU เข้า sleep ระหว่างรอ"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Interrupt ตอบสนองทันทีเมื่อมีเหตุการณ์และให้ MCU เข้า sleep ระหว่างรอ ขณะที่ polling เปลือง CPU และพลังงาน (สัปดาห์ 11 อธิบายเพิ่มเติมข้อ 2)"
+    },
+    {
+      "id": 18,
+      "question": "เทคนิค quantization ใน TinyML ทำสิ่งใดเพื่อให้โมเดลรันบน MCU ได้",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ลบ neuron หรือ weight ที่มีค่าใกล้ศูนย์ออกจาก network"
+        },
+        {
+          "key": "ข",
+          "text": "ส่งข้อมูลทั้งหมดไปประมวลผลบน cloud แทน MCU"
+        },
+        {
+          "key": "ค",
+          "text": "ลดความละเอียดตัวเลขจาก Float32 เป็น Int8 ทำให้ขนาดโมเดลเล็กลงเกือบ 4 เท่า"
+        },
+        {
+          "key": "ง",
+          "text": "เพิ่มจำนวนชั้นของ network เพื่อให้แม่นยำขึ้น"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "Quantization แปลง weight จาก 32 บิตเป็น 8 บิต ลดหน่วยความจำราว 4 เท่าและคำนวณจำนวนเต็มได้เร็วกว่า ส่วนการลบ weight ใกล้ศูนย์คือ pruning (สัปดาห์ 11 หัวข้อ 4)"
+    },
+    {
+      "id": 19,
+      "question": "จากโค้ดด้านล่าง ถ้าอ่านค่าได้ t = 29 °C และ h = 62% ตัวแปร level จะมีค่าใด",
+      "code": "heat = t + 0.1 * h\nif heat >= 38:\n    level = \"DANGER\"\nelif heat >= 35:\n    level = \"WARNING\"\nelse:\n    level = \"OK\"",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "\"OK\""
+        },
+        {
+          "key": "ข",
+          "text": "\"DANGER\""
+        },
+        {
+          "key": "ค",
+          "text": "\"WARNING\""
+        },
+        {
+          "key": "ง",
+          "text": "เกิด error เพราะ heat เป็นทศนิยม"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "heat = 29 + 0.1 × 62 = 35.2 ซึ่งไม่ถึง 38 แต่ ≥ 35 จึงเข้าเงื่อนไข elif ได้ \"WARNING\" (Lab 11)"
+    },
+    {
+      "id": 20,
+      "question": "บนบัส I2C ที่เซนเซอร์หลายตัวต่อสาย SDA และ SCL ร่วมกัน ESP32 (controller) เลือกคุยกับเซนเซอร์ตัวใดตัวหนึ่งได้อย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ต่อสาย chip select แยกให้เซนเซอร์แต่ละตัว"
+        },
+        {
+          "key": "ข",
+          "text": "ตั้ง baud rate ของแต่ละเซนเซอร์ให้ไม่ซ้ำกัน"
+        },
+        {
+          "key": "ค",
+          "text": "อ่านค่าจากทุกเซนเซอร์พร้อมกันแล้วแยกด้วยซอฟต์แวร์"
+        },
+        {
+          "key": "ง",
+          "text": "เรียก address 7 บิตของเซนเซอร์ (target) ตัวนั้น"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "Target แต่ละตัวมี address 7 บิตของตัวเอง เช่น 0x10 หรือ 0x76 และตอบเฉพาะเมื่อ controller เรียก address นั้น ส่วน chip select เป็นแนวทางของบัส SPI (Lab 11)"
     }
   ]
 }

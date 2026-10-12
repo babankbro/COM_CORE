@@ -2,16 +2,28 @@
   "moduleId": "14",
   "title": "Applied System Engineering & DevOps",
   "titleTh": "โครงงานประยุกต์และวิศวกรรมระบบ DevOps",
-  "timeMinutes": 15,
+  "timeMinutes": 30,
   "questions": [
     {
       "id": 1,
       "question": "SDLC (Software Development Life Cycle) ครอบคลุมขั้นตอนใดบ้าง",
       "choices": [
-        { "key": "ก", "text": "เฉพาะการเขียนโค้ด" },
-        { "key": "ข", "text": "requirement → design → implementation → testing → deployment → maintenance" },
-        { "key": "ค", "text": "เฉพาะการทดสอบและ deploy" },
-        { "key": "ง", "text": "เฉพาะการออกแบบ UI" }
+        {
+          "key": "ก",
+          "text": "เฉพาะการเขียนโค้ด"
+        },
+        {
+          "key": "ข",
+          "text": "requirement → design → implementation → testing → deployment → maintenance"
+        },
+        {
+          "key": "ค",
+          "text": "เฉพาะการทดสอบและ deploy"
+        },
+        {
+          "key": "ง",
+          "text": "เฉพาะการออกแบบ UI"
+        }
       ],
       "answer": "ข",
       "explanation": "SDLC ทำให้การพัฒนาระบบมีขั้นตอนตั้งแต่เก็บความต้องการจนถึงบำรุงรักษา"
@@ -20,10 +32,22 @@
       "id": 2,
       "question": "แนวคิด Agile แตกต่างจาก Waterfall อย่างไร",
       "choices": [
-        { "key": "ก", "text": "Agile ส่งมอบเป็นรอบสั้น ๆ (iteration) และปรับตามฟีดแบ็ก ส่วน Waterfall ทำทีละขั้นตอนจนจบ" },
-        { "key": "ข", "text": "Agile ไม่มีการทดสอบ" },
-        { "key": "ค", "text": "Waterfall เร็วกว่าเสมอ" },
-        { "key": "ง", "text": "ทั้งสองเหมือนกัน" }
+        {
+          "key": "ก",
+          "text": "Agile ส่งมอบเป็นรอบสั้น ๆ (iteration) และปรับตามฟีดแบ็ก ส่วน Waterfall ทำทีละขั้นตอนจนจบ"
+        },
+        {
+          "key": "ข",
+          "text": "Agile ไม่มีการทดสอบ"
+        },
+        {
+          "key": "ค",
+          "text": "Waterfall เร็วกว่าเสมอ"
+        },
+        {
+          "key": "ง",
+          "text": "ทั้งสองเหมือนกัน"
+        }
       ],
       "answer": "ก",
       "explanation": "Agile เน้นความคล่องตัว ส่งมอบคุณค่าเร็วและปรับตามการเปลี่ยนแปลง"
@@ -32,10 +56,22 @@
       "id": 3,
       "question": "DevOps มีเป้าหมายหลักอย่างไร",
       "choices": [
-        { "key": "ก", "text": "ลดช่องว่างระหว่างทีมพัฒนาและทีมปฏิบัติการด้วย automation, feedback และ ownership ร่วม" },
-        { "key": "ข", "text": "แยกทีม Dev และ Ops ให้ห่างกันมากขึ้น" },
-        { "key": "ค", "text": "ยกเลิกการทดสอบซอฟต์แวร์" },
-        { "key": "ง", "text": "ใช้เฉพาะกับฮาร์ดแวร์" }
+        {
+          "key": "ก",
+          "text": "ลดช่องว่างระหว่างทีมพัฒนาและทีมปฏิบัติการด้วย automation, feedback และ ownership ร่วม"
+        },
+        {
+          "key": "ข",
+          "text": "แยกทีม Dev และ Ops ให้ห่างกันมากขึ้น"
+        },
+        {
+          "key": "ค",
+          "text": "ยกเลิกการทดสอบซอฟต์แวร์"
+        },
+        {
+          "key": "ง",
+          "text": "ใช้เฉพาะกับฮาร์ดแวร์"
+        }
       ],
       "answer": "ก",
       "explanation": "DevOps เป็นวัฒนธรรมและแนวปฏิบัติที่ทลายกำแพง silo ด้วย collaboration, automation, CI/CD และ monitoring"
@@ -44,10 +80,22 @@
       "id": 4,
       "question": "CI (Continuous Integration) หมายถึงอะไร",
       "choices": [
-        { "key": "ก", "text": "รวมโค้ดเข้า repository บ่อย ๆ และให้ระบบ build/test อัตโนมัติทุก commit" },
-        { "key": "ข", "text": "รวมโค้ดปีละครั้ง" },
-        { "key": "ค", "text": "ติดตั้งโปรแกรมบนเครื่องผู้ใช้" },
-        { "key": "ง", "text": "ตรวจสอบสเปกฮาร์ดแวร์" }
+        {
+          "key": "ก",
+          "text": "รวมโค้ดเข้า repository บ่อย ๆ และให้ระบบ build/test อัตโนมัติทุก commit"
+        },
+        {
+          "key": "ข",
+          "text": "รวมโค้ดปีละครั้ง"
+        },
+        {
+          "key": "ค",
+          "text": "ติดตั้งโปรแกรมบนเครื่องผู้ใช้"
+        },
+        {
+          "key": "ง",
+          "text": "ตรวจสอบสเปกฮาร์ดแวร์"
+        }
       ],
       "answer": "ก",
       "explanation": "CI ทำให้พบข้อผิดพลาดเร็ว ส่วน CD (Continuous Delivery/Deployment) ส่งมอบซอฟต์แวร์ที่ผ่าน test ไปยัง production อย่างอัตโนมัติ"
@@ -56,10 +104,22 @@
       "id": 5,
       "question": "ประโยชน์ของ CI/CD pipeline เมื่อเทียบกับการ deploy แบบ manual คือข้อใด",
       "choices": [
-        { "key": "ก", "text": "ทำให้ build-test-deploy ทำซ้ำได้และลดความเสี่ยงจากความผิดพลาดของมนุษย์" },
-        { "key": "ข", "text": "ไม่ต้องเขียน test" },
-        { "key": "ค", "text": "ทำให้โค้ดไม่มีบั๊กเลย" },
-        { "key": "ง", "text": "ไม่ต้องใช้ version control" }
+        {
+          "key": "ก",
+          "text": "ทำให้ build-test-deploy ทำซ้ำได้และลดความเสี่ยงจากความผิดพลาดของมนุษย์"
+        },
+        {
+          "key": "ข",
+          "text": "ไม่ต้องเขียน test"
+        },
+        {
+          "key": "ค",
+          "text": "ทำให้โค้ดไม่มีบั๊กเลย"
+        },
+        {
+          "key": "ง",
+          "text": "ไม่ต้องใช้ version control"
+        }
       ],
       "answer": "ก",
       "explanation": "pipeline ทำให้ทุก commit ผ่าน test ก่อน deploy และกระบวนการส่งมอบเป็นมาตรฐานเดียวกัน"
@@ -68,10 +128,22 @@
       "id": 6,
       "question": "Git workflow ขั้นต่ำสำหรับการทำงานเป็นทีมควรมีขั้นตอนใด",
       "choices": [
-        { "key": "ก", "text": "issue/task → branch → commit → pull request/review → release tag" },
-        { "key": "ข", "text": "ทุกคน commit ตรงเข้า main โดยไม่ review" },
-        { "key": "ค", "text": "ส่งโค้ดทางอีเมลให้กัน" },
-        { "key": "ง", "text": "เก็บโค้ดใน USB แล้วส่งต่อ" }
+        {
+          "key": "ก",
+          "text": "issue/task → branch → commit → pull request/review → release tag"
+        },
+        {
+          "key": "ข",
+          "text": "ทุกคน commit ตรงเข้า main โดยไม่ review"
+        },
+        {
+          "key": "ค",
+          "text": "ส่งโค้ดทางอีเมลให้กัน"
+        },
+        {
+          "key": "ง",
+          "text": "เก็บโค้ดใน USB แล้วส่งต่อ"
+        }
       ],
       "answer": "ก",
       "explanation": "การใช้ branch และ pull request ทำให้ review โค้ดได้ก่อนรวมและติดตามงานผ่าน issue"
@@ -80,49 +152,340 @@
       "id": 7,
       "question": "เหตุใด container จึงช่วยงาน DevOps",
       "choices": [
-        { "key": "ก", "text": "ทำให้ส่งมอบ environment ได้ชัดเจน รันเหมือนกันทั้งเครื่อง dev, test และ production" },
-        { "key": "ข", "text": "ทำให้ไม่ต้องใช้เซิร์ฟเวอร์" },
-        { "key": "ค", "text": "ทำให้โค้ดเขียนเองได้" },
-        { "key": "ง", "text": "ทำให้ไม่ต้องมี pipeline" }
+        {
+          "key": "ก",
+          "text": "ทำให้ไม่ต้องใช้เซิร์ฟเวอร์"
+        },
+        {
+          "key": "ข",
+          "text": "ทำให้โค้ดเขียนเองได้"
+        },
+        {
+          "key": "ค",
+          "text": "ทำให้ไม่ต้องมี pipeline"
+        },
+        {
+          "key": "ง",
+          "text": "ทำให้ส่งมอบ environment ได้ชัดเจน รันเหมือนกันทั้งเครื่อง dev, test และ production"
+        }
       ],
-      "answer": "ก",
+      "answer": "ง",
       "explanation": "container แพ็กแอปกับ dependencies แก้ปัญหา \"มันรันได้บนเครื่องผม\" และทำงานร่วมกับ pipeline ได้ดี"
     },
     {
       "id": 8,
       "question": "MLOps แตกต่างจาก AIOps อย่างไร",
       "choices": [
-        { "key": "ก", "text": "MLOps คือการนำแนวคิด DevOps มาใช้กับวงจรชีวิตโมเดล ML ส่วน AIOps คือการใช้ AI ช่วยงานปฏิบัติการ IT (เช่น ตรวจจับความผิดปกติ)" },
-        { "key": "ข", "text": "ทั้งสองคือสิ่งเดียวกัน" },
-        { "key": "ค", "text": "AIOps ใช้ฝึกโมเดล ส่วน MLOps ใช้ดูแลเซิร์ฟเวอร์" },
-        { "key": "ง", "text": "MLOps ใช้เฉพาะกับหุ่นยนต์" }
+        {
+          "key": "ก",
+          "text": "ทั้งสองคือสิ่งเดียวกัน"
+        },
+        {
+          "key": "ข",
+          "text": "MLOps คือการนำแนวคิด DevOps มาใช้กับวงจรชีวิตโมเดล ML ส่วน AIOps คือการใช้ AI ช่วยงานปฏิบัติการ IT (เช่น ตรวจจับความผิดปกติ)"
+        },
+        {
+          "key": "ค",
+          "text": "AIOps ใช้ฝึกโมเดล ส่วน MLOps ใช้ดูแลเซิร์ฟเวอร์"
+        },
+        {
+          "key": "ง",
+          "text": "MLOps ใช้เฉพาะกับหุ่นยนต์"
+        }
       ],
-      "answer": "ก",
+      "answer": "ข",
       "explanation": "MLOps = operations สำหรับ ML, AIOps = AI สำหรับ IT operations"
     },
     {
       "id": 9,
       "question": "ในการวางแผน capstone project ขั้นตอนใดช่วยเปลี่ยน \"ไอเดีย\" ให้เป็น \"แผนงาน\" ที่ทำได้จริง",
       "choices": [
-        { "key": "ก", "text": "แตกเป็น requirement, architecture, backlog, task และ acceptance criteria" },
-        { "key": "ข", "text": "เริ่มเขียนโค้ดทันทีโดยไม่วางแผน" },
-        { "key": "ค", "text": "รอให้ AI ทำให้ทั้งหมด" },
-        { "key": "ง", "text": "ซื้อฮาร์ดแวร์ให้ครบก่อน" }
+        {
+          "key": "ก",
+          "text": "เริ่มเขียนโค้ดทันทีโดยไม่วางแผน"
+        },
+        {
+          "key": "ข",
+          "text": "รอให้ AI ทำให้ทั้งหมด"
+        },
+        {
+          "key": "ค",
+          "text": "แตกเป็น requirement, architecture, backlog, task และ acceptance criteria"
+        },
+        {
+          "key": "ง",
+          "text": "ซื้อฮาร์ดแวร์ให้ครบก่อน"
+        }
       ],
-      "answer": "ก",
+      "answer": "ค",
       "explanation": "การกำหนด acceptance criteria ทำให้รู้ว่างานแต่ละชิ้น \"เสร็จ\" เมื่อใด และวางแผน sprint ได้"
     },
     {
       "id": 10,
       "question": "Monitoring & feedback loop ใน DevOps มีความสำคัญอย่างไร",
       "choices": [
-        { "key": "ก", "text": "เฝ้าระวังประสิทธิภาพระบบแบบเรียลไทม์และนำข้อมูลกลับมาพัฒนาต่อ" },
-        { "key": "ข", "text": "ใช้เฉพาะตอนระบบล่มแล้ว" },
-        { "key": "ค", "text": "ไม่จำเป็นหากมี CI/CD" },
-        { "key": "ง", "text": "ใช้เพื่อลงโทษนักพัฒนา" }
+        {
+          "key": "ก",
+          "text": "ใช้เฉพาะตอนระบบล่มแล้ว"
+        },
+        {
+          "key": "ข",
+          "text": "ไม่จำเป็นหากมี CI/CD"
+        },
+        {
+          "key": "ค",
+          "text": "ใช้เพื่อลงโทษนักพัฒนา"
+        },
+        {
+          "key": "ง",
+          "text": "เฝ้าระวังประสิทธิภาพระบบแบบเรียลไทม์และนำข้อมูลกลับมาพัฒนาต่อ"
+        }
       ],
-      "answer": "ก",
+      "answer": "ง",
       "explanation": "monitoring ปิดวงจร DevOps ทำให้ทีมเห็นผลของการเปลี่ยนแปลงและปรับปรุงอย่างต่อเนื่อง"
+    },
+    {
+      "id": 11,
+      "question": "Waterfall model เหมาะกับโครงการลักษณะใดมากที่สุด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "แอปสตาร์ทอัพที่ต้องทดลองฟีเจอร์ใหม่ทุกสัปดาห์"
+        },
+        {
+          "key": "ข",
+          "text": "บริการออนไลน์ที่ต้อง deploy หลายครั้งต่อวัน"
+        },
+        {
+          "key": "ค",
+          "text": "ระบบที่ความต้องการชัดเจนและมีมาตรฐานกำกับเข้มงวด เช่น ซอฟต์แวร์ในเครื่องบินหรืออุปกรณ์การแพทย์"
+        },
+        {
+          "key": "ง",
+          "text": "โครงงานที่ยังไม่รู้ว่าผู้ใช้คือใคร"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "Waterfall ต้องจบเฟสหนึ่งก่อนเริ่มเฟสถัดไป จึงเหมาะกับงานที่ requirement นิ่งและมีมาตรฐานกำกับชัด ส่วนงานที่ต้องทดลองเหมาะกับ Agile (สัปดาห์ 14 หัวข้อ 1)"
+    },
+    {
+      "id": 12,
+      "question": "ใน Scrum งานถูกแบ่งเป็นรอบการพัฒนาสั้น ๆ เรียกว่าอะไร และทีมใช้กิจกรรมใดตรวจความคืบหน้าทุกวัน",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Phase และ Gate review"
+        },
+        {
+          "key": "ข",
+          "text": "Sprint และ Daily Stand-up"
+        },
+        {
+          "key": "ค",
+          "text": "Release และ Code freeze"
+        },
+        {
+          "key": "ง",
+          "text": "Pipeline และ Retrospective รายเดือน"
+        }
+      ],
+      "answer": "ข",
+      "explanation": "Scrum แบ่งงานเป็น Sprint (ปกติ 2–4 สัปดาห์) มี Daily Stand-up สั้น ๆ ทุกวัน และมี Sprint Review เพื่อปรับทิศทาง (สัปดาห์ 14 หัวข้อ 2)"
+    },
+    {
+      "id": 13,
+      "question": "Continuous Delivery แตกต่างจาก Continuous Deployment อย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "Continuous Delivery ไม่มีการรัน test อัตโนมัติ"
+        },
+        {
+          "key": "ข",
+          "text": "Continuous Deployment ใช้ได้เฉพาะกับ Waterfall"
+        },
+        {
+          "key": "ค",
+          "text": "Continuous Delivery คือการรวมโค้ดเข้ากิ่งหลักบ่อย ๆ เท่านั้น"
+        },
+        {
+          "key": "ง",
+          "text": "Continuous Delivery ทำให้ทุกเวอร์ชันพร้อมขึ้นระบบแต่ยังมีคนกดอนุมัติ ส่วน Continuous Deployment ขึ้น production อัตโนมัติเมื่อผ่านทุกด่าน"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "ทั้งสองต่อจาก CI ความต่างอยู่ที่ขั้นสุดท้าย คือมีคนอนุมัติ (Delivery) หรือขึ้นอัตโนมัติทันที (Deployment) (สัปดาห์ 14 อธิบายเพิ่มเติม ข้อ 2)"
+    },
+    {
+      "id": 14,
+      "question": "จาก GitHub Actions workflow ต่อไปนี้ ถ้าคำสั่ง npm test ล้มเหลว จะเกิดอะไรขึ้นกับ job deploy",
+      "code": "on:\n  push:\n    branches: [ \"main\" ]\njobs:\n  build-and-test:\n    runs-on: ubuntu-latest\n    steps:\n    - run: npm install\n    - run: npm test\n  deploy:\n    needs: build-and-test\n    runs-on: ubuntu-latest\n    steps:\n    - run: echo \"Starting deployment\"",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "deploy รันทันทีพร้อมกับ build-and-test"
+        },
+        {
+          "key": "ข",
+          "text": "deploy รันตามปกติ แต่แสดงคำเตือนสีเหลือง"
+        },
+        {
+          "key": "ค",
+          "text": "deploy ไม่ถูกรัน เพราะ needs: build-and-test กำหนดให้รอ job นั้นสำเร็จก่อน"
+        },
+        {
+          "key": "ง",
+          "text": "deploy รันเฉพาะส่วน echo แต่ข้ามการ restart container"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "needs ทำให้ deploy ขึ้นกับ build-and-test เมื่อ test ไม่ผ่าน job ที่ขึ้นกับมันจะไม่ถูกรัน โค้ดที่ test ล้มจึงไม่ถูก deploy (สัปดาห์ 14 หัวข้อ 3)"
+    },
+    {
+      "id": 15,
+      "question": "ไฟล์ .github/workflows/ci.yml ต่อไปนี้จะถูกเรียกให้ทำงานเมื่อใด",
+      "code": "name: CI\non: [push, pull_request]\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: \"3.11\"\n      - run: pip install -r requirements.txt\n      - run: pytest -q",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "เฉพาะเมื่อมีการติด tag เวอร์ชันใหม่"
+        },
+        {
+          "key": "ข",
+          "text": "ทุกครั้งที่มีการ push และเมื่อมี pull request"
+        },
+        {
+          "key": "ค",
+          "text": "วันละครั้งตามเวลาที่กำหนดไว้ใน cron"
+        },
+        {
+          "key": "ง",
+          "text": "เฉพาะเมื่อผู้ดูแลกดปุ่ม Run workflow ด้วยตนเอง"
+        }
+      ],
+      "answer": "ข",
+      "explanation": "on: [push, pull_request] กำหนด event ที่ trigger workflow คือการ push และ pull request จากนั้น job test จะติดตั้ง dependencies แล้วรัน pytest (Lab 14)"
+    },
+    {
+      "id": 16,
+      "question": "ในโค้ด transfer learning ต่อไปนี้ argument include_top=False มีหน้าที่อะไร",
+      "code": "base_model = MobileNetV2(weights='imagenet',\n                         include_top=False,\n                         input_shape=(224, 224, 3))\nbase_model.trainable = False",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "สั่งให้ train ทุก layer ของ MobileNetV2 ใหม่ตั้งแต่ต้น"
+        },
+        {
+          "key": "ข",
+          "text": "สุ่ม weights ใหม่แทนการใช้ weights จาก ImageNet"
+        },
+        {
+          "key": "ค",
+          "text": "ลดขนาดภาพ input ให้เหลือ 112×112"
+        },
+        {
+          "key": "ง",
+          "text": "ตัดหัว classifier เดิม 1,000 classes ของ ImageNet ออก เหลือส่วนดึง feature เพื่อใส่หัวใหม่ตามจำนวน class ของเรา"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "include_top=False ตัดชั้น classifier เดิมออก ส่วน weights='imagenet' โหลด weights ที่ train แล้ว และ trainable = False แช่แข็ง base ไว้ (Lab 14)"
+    },
+    {
+      "id": 17,
+      "question": "ตั้งค่า EarlyStopping(monitor='val_accuracy', patience=20, restore_best_weights=True) และ epochs=50 ถ้า val_accuracy ดีที่สุดที่ epoch 15 แล้วไม่ดีขึ้นอีกเลย การ train จะหยุดหลัง epoch ใด และ model สุดท้ายใช้ weights ของ epoch ใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "หยุดหลัง epoch 20 ใช้ weights ของ epoch 20"
+        },
+        {
+          "key": "ข",
+          "text": "หยุดหลัง epoch 50 ใช้ weights ของ epoch 50"
+        },
+        {
+          "key": "ค",
+          "text": "หยุดหลัง epoch 35 ใช้ weights ของ epoch 15"
+        },
+        {
+          "key": "ง",
+          "text": "หยุดหลัง epoch 35 ใช้ weights ของ epoch 35"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "val_accuracy ไม่ดีขึ้นติดต่อกัน 20 epochs หลัง epoch 15 จึงหยุดหลัง epoch 15 + 20 = 35 และ restore_best_weights=True คืน weights ของ epoch 15 (Lab 14)"
+    },
+    {
+      "id": 18,
+      "question": "ทีมเปิด pull request แล้ว GitHub Actions ขึ้นเครื่องหมายสีแดงเพราะ pytest ล้มเหลว 1 test ทีมควรทำอย่างไร",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "merge เข้า main ทันที แล้วค่อยแก้ test ภายหลัง"
+        },
+        {
+          "key": "ข",
+          "text": "ยังไม่ merge แก้โค้ดใน branch เดิมแล้ว push ใหม่จน CI ผ่าน และให้เพื่อนรีวิวก่อน merge"
+        },
+        {
+          "key": "ค",
+          "text": "ลบไฟล์ test ที่ล้มเหลวออกเพื่อให้ CI เป็นสีเขียว"
+        },
+        {
+          "key": "ง",
+          "text": "ปิด GitHub Actions ชั่วคราวแล้ว merge"
+        }
+      ],
+      "answer": "ข",
+      "explanation": "PR ที่ CI ไม่ผ่านไม่ควร merge ทีมต้องแก้ใน branch เดิมจนผ่าน แล้วจึงรีวิวและ merge ตามลำดับ issue → branch → PR → CI → review → merge (สัปดาห์ 14 อธิบายเพิ่มเติม ข้อ 3)"
+    },
+    {
+      "id": 19,
+      "question": "ข้อใดเป็น acceptance criteria ที่ดีที่สุดสำหรับ user story \"เจ้าหน้าที่ต้องการเห็นจำนวนคนในห้องแบบ real-time\"",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "ระบบต้องทำงานเร็วและแม่นยำมาก"
+        },
+        {
+          "key": "ข",
+          "text": "dashboard ต้องสวยงามและใช้งานง่าย"
+        },
+        {
+          "key": "ค",
+          "text": "ระบบต้องใช้ model ที่ทันสมัยที่สุด"
+        },
+        {
+          "key": "ง",
+          "text": "อัปเดตทุก ≤ 5 วินาที และคลาดเคลื่อนไม่เกิน 1 คนในการทดสอบ 20 ภาพ"
+        }
+      ],
+      "answer": "ง",
+      "explanation": "acceptance criteria ต้องวัดและตรวจได้ ทีมจึงตกลงกันได้ว่า \"เสร็จ\" คืออะไร ส่วนคำว่าเร็ว สวย หรือทันสมัยวัดไม่ได้ (สัปดาห์ 14 อธิบายเพิ่มเติม ข้อ 5)"
+    },
+    {
+      "id": 20,
+      "question": "ลำดับการ fine-tuning ที่ถูกต้องใน Lab 14 คือข้อใด",
+      "choices": [
+        {
+          "key": "ก",
+          "text": "unfreeze ทุก layer ตั้งแต่แรก แล้ว train พร้อมกับหัวใหม่"
+        },
+        {
+          "key": "ข",
+          "text": "fine-tune ชั้นล่างของ base ก่อน แล้วค่อยต่อหัว classifier"
+        },
+        {
+          "key": "ค",
+          "text": "train หัวใหม่ขณะ base ถูก freeze จนนิ่งก่อน แล้วจึงปลด freeze ชั้นบนของ base และ train ต่ออีกรอบ"
+        },
+        {
+          "key": "ง",
+          "text": "ไม่ต้อง train หัวใหม่ เพราะ MobileNetV2 รู้จัก class ของเราแล้ว"
+        }
+      ],
+      "answer": "ค",
+      "explanation": "ถ้า unfreeze ตั้งแต่แรก gradient จากหัวที่ยังสุ่มจะทำลาย weights ของ base จึงต้อง train หัวก่อน แล้วปรับเฉพาะชั้นบนที่เก็บ feature เฉพาะงาน (Lab 14)"
     }
   ]
 }
