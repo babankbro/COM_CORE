@@ -174,51 +174,51 @@
     },
     {
       "id": 8,
-      "question": "ในสถาปัตยกรรม microservices บน Kubernetes เหตุใดหัวข้อเช่น latency, retry, timeout และ observability จึงสำคัญ",
+      "question": "เมื่อโน้ตบุ๊กเชื่อมต่อ Wi-Fi ของมหาวิทยาลัย แล้วได้ IP address, subnet mask, default gateway และ DNS server มาโดยอัตโนมัติ เป็นหน้าที่ของโพรโทคอลใด",
       "choices": [
         {
           "key": "ก",
-          "text": "เพราะ service จำนวนมากต้องสื่อสารกันผ่านเครือข่ายภายใน cluster"
+          "text": "DHCP (Dynamic Host Configuration Protocol)"
         },
         {
           "key": "ข",
-          "text": "เพราะ microservices ไม่ใช้เครือข่าย"
+          "text": "DNS (Domain Name System)"
         },
         {
           "key": "ค",
-          "text": "เพราะ Kubernetes ห้ามใช้ TCP"
+          "text": "SMTP (Simple Mail Transfer Protocol)"
         },
         {
           "key": "ง",
-          "text": "เพราะทุก service อยู่ใน process เดียวกัน"
+          "text": "FTP (File Transfer Protocol)"
         }
       ],
       "answer": "ก",
-      "explanation": "cloud-native networking ทำให้การสื่อสารระหว่าง service กลายเป็นประเด็นวิศวกรรมหลัก ต้องออกแบบ retry/timeout และมีการสังเกตการณ์"
+      "explanation": "DHCP แจก IP address และค่าเครือข่ายอื่นให้อุปกรณ์อัตโนมัติ ตามลำดับ Discover → Offer → Request → Acknowledge (DORA) ส่วน DNS แปลงชื่อโดเมนเป็น IP ซึ่งเป็นคนละหน้าที่กัน"
     },
     {
       "id": 9,
-      "question": "มาตรฐาน IEEE 802.11be-2024 รู้จักในชื่อใด",
+      "question": "เมื่อกดส่งอีเมล เครื่องแม่ข่ายอีเมล (mail server) ใช้โพรโทคอลใดส่งต่ออีเมลไปยังเครื่องแม่ข่ายของผู้รับ",
       "choices": [
         {
           "key": "ก",
-          "text": "Bluetooth 5"
+          "text": "HTTP"
         },
         {
           "key": "ข",
-          "text": "5G NR"
+          "text": "DHCP"
         },
         {
           "key": "ค",
-          "text": "Ethernet 10G"
+          "text": "SSH"
         },
         {
           "key": "ง",
-          "text": "Wi-Fi 7"
+          "text": "SMTP (Simple Mail Transfer Protocol)"
         }
       ],
       "answer": "ง",
-      "explanation": "Wi-Fi 7 (802.11be) เพิ่ม throughput และปรับ PHY/MAC เพื่อรองรับงาน latency ต่ำและ edge applications"
+      "explanation": "SMTP เป็นโพรโทคอลชั้น Application สำหรับ \"ส่ง\" อีเมลระหว่าง mail server ส่วนการ \"ดึง\" อีเมลมาอ่านที่เครื่องผู้ใช้ใช้ POP3 หรือ IMAP SSH ใช้เข้าควบคุมเครื่องระยะไกล DHCP ใช้แจก IP"
     },
     {
       "id": 10,
@@ -439,27 +439,27 @@
     },
     {
       "id": 19,
-      "question": "Service Mesh เช่น Istio หรือ Linkerd จัดการ retry และ mTLS ระหว่าง microservices โดยไม่ต้องเขียนโค้ดในทุก service ด้วยสถาปัตยกรรมใด",
+      "question": "อุปกรณ์หรือซอฟต์แวร์ใดทำหน้าที่ตรวจทราฟฟิกที่เข้าและออกจากเครือข่าย แล้วอนุญาตหรือปิดกั้นตามกฎความปลอดภัย เช่น ปิดทุกพอร์ตยกเว้น 443",
       "choices": [
         {
           "key": "ก",
-          "text": "DHCP server กลางที่แจก IP ให้ทุก container"
+          "text": "Switch"
         },
         {
           "key": "ข",
-          "text": "NAT ที่ router แปลง private IP เป็น public IP"
+          "text": "Access Point"
         },
         {
           "key": "ค",
-          "text": "Hub ที่กระจาย packet ไปทุก node ในคลัสเตอร์"
+          "text": "DNS Server"
         },
         {
           "key": "ง",
-          "text": "Sidecar proxy ที่ทำงานคู่กับแต่ละ service"
+          "text": "Firewall"
         }
       ],
       "answer": "ง",
-      "explanation": "Service Mesh วาง sidecar proxy ไว้ข้างแต่ละ service ให้จัดการการเชื่อมต่อ retry และการยืนยันตัวตนแทนโค้ดของแอป (สัปดาห์ 6 หัวข้อ 3)"
+      "explanation": "Firewall กรอง packet หรือการเชื่อมต่อตามกฎ (rule) เช่น IP ต้นทาง/ปลายทาง พอร์ต และโพรโทคอล เป็นด่านป้องกันระหว่างเครือข่ายภายในกับภายนอก Switch ส่งเฟรมตาม MAC ภายใน LAN, Access Point ให้บริการ Wi-Fi และ DNS แปลงชื่อเป็น IP"
     },
     {
       "id": 20,
